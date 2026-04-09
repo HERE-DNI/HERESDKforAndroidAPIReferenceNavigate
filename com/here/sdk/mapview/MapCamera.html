@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="172e3c36-656b-45ca-a574-6b6da9a30031"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T15:37:33+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -186,8 +186,13 @@ loadScripts(document, 'script');</script>
 <div class="block">Used to report back results of dry update application to camera.</div>
 </div>
 <div class="col-first odd-row-color"><code>static final class </code></div>
-<div class="col-second odd-row-color"><code><a href="MapCamera.State.html" class="type-name-link" title="class in com.here.sdk.mapview">MapCamera.State</a></code></div>
+<div class="col-second odd-row-color"><code><a href="MapCamera.FarPlaneConfiguration.html" class="type-name-link" title="class in com.here.sdk.mapview">MapCamera.FarPlaneConfiguration</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">Far plane distance configuration for a zoom level.</div>
+</div>
+<div class="col-first even-row-color"><code>static final class </code></div>
+<div class="col-second even-row-color"><code><a href="MapCamera.State.html" class="type-name-link" title="class in com.here.sdk.mapview">MapCamera.State</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Encapsulates state of the camera.</div>
 </div>
 </div>
@@ -307,35 +312,40 @@ loadScripts(document, 'script');</script>
 <div class="block">Makes the camera look at current target from certain distance</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOrientationAtTarget(com.here.sdk.core.GeoOrientationUpdate)" class="member-name-link">setOrientationAtTarget</a><wbr>(<a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation)</wbr></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setFarPlaneConfiguration(java.util.Map)" class="member-name-link">setFarPlaneConfiguration</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>,<wbr><a href="MapCamera.FarPlaneConfiguration.html" title="class in com.here.sdk.mapview">MapCamera.FarPlaneConfiguration</a>&gt; configs)</wbr></wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets far plane distance configs per zoom level.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOrientationAtTarget(com.here.sdk.core.GeoOrientationUpdate)" class="member-name-link">setOrientationAtTarget</a><wbr>(<a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Changes camera orientation in relation to target location.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPrincipalPoint(com.here.sdk.core.Point2D)" class="member-name-link">setPrincipalPoint</a><wbr>(<a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPrincipalPoint(com.here.sdk.core.Point2D)" class="member-name-link">setPrincipalPoint</a><wbr>(<a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the pixel point that determines where the target appears within the map view.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#startAnimation(com.here.sdk.mapview.MapCameraAnimation)" class="member-name-link">startAnimation</a><wbr>(<a href="MapCameraAnimation.html" title="class in com.here.sdk.mapview">MapCameraAnimation</a> cameraAnimation)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Starts a given camera animation.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#startAnimation(com.here.sdk.mapview.MapCameraAnimation,com.here.sdk.animation.AnimationListener)" class="member-name-link">startAnimation</a><wbr>(<a href="MapCameraAnimation.html" title="class in com.here.sdk.mapview">MapCameraAnimation</a> cameraAnimation,
- <a href="../animation/AnimationListener.html" title="interface in com.here.sdk.animation">AnimationListener</a> animationListener)</wbr></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#startAnimation(com.here.sdk.mapview.MapCameraAnimation)" class="member-name-link">startAnimation</a><wbr>(<a href="MapCameraAnimation.html" title="class in com.here.sdk.mapview">MapCameraAnimation</a> cameraAnimation)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Starts a given camera animation.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#zoomBy(double,com.here.sdk.core.Point2D)" class="member-name-link">zoomBy</a><wbr>(double factor,
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> origin)</wbr></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#startAnimation(com.here.sdk.mapview.MapCameraAnimation,com.here.sdk.animation.AnimationListener)" class="member-name-link">startAnimation</a><wbr>(<a href="MapCameraAnimation.html" title="class in com.here.sdk.mapview">MapCameraAnimation</a> cameraAnimation,
+ <a href="../animation/AnimationListener.html" title="interface in com.here.sdk.animation">AnimationListener</a> animationListener)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Starts a given camera animation.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#zoomBy(double,com.here.sdk.core.Point2D)" class="member-name-link">zoomBy</a><wbr>(double factor,
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> origin)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Zooms in or out by a specified factor.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#zoomTo(double)" class="member-name-link">zoomTo</a><wbr>(double zoomLevel)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#zoomTo(double)" class="member-name-link">zoomTo</a><wbr>(double zoomLevel)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Zooms to the specified zoom level.</div>
 </div>
 </div>
@@ -355,6 +365,36 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="setFarPlaneConfiguration(java.util.Map)">
+<h3>setFarPlaneConfiguration</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setFarPlaneConfiguration</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>,<wbr><a href="MapCamera.FarPlaneConfiguration.html" title="class in com.here.sdk.mapview">MapCamera.FarPlaneConfiguration</a>&gt; configs)</wbr></span></wbr></div>
+<div class="block"><p>Sets far plane distance configs per zoom level.
+ </p><p>Values are linearly interpolated between provided zoom levels.
+ For z between z0 and z1:
+ t = (z - z0) / (z1 - z0)
+ distanceFactor(z) = lerp(distanceFactor0, distanceFactor1, t)
+ minDistance(z) = lerp(minDistance0, minDistance1, t)
+ </p><p>Effective far plane for the current frame is:
+ farPlaneInMeters = max(
+ minDistance(z),
+ distanceToTargetInMeters * distanceFactor(z)
+ )
+ </p><p>Sample Configuration (balanced quality/performance, tune per zoom level):
+ 14.4  -&gt; FarPlaneConfiguration(1.3)
+ 18.34 -&gt; FarPlaneConfiguration(2.0)
+ 19.60 -&gt; FarPlaneConfiguration(1.3)
+ minDistanceInMeters remains default in this case.
+ Passing an empty map clears the per-zoom override and restores the default behavior.
+ Non-finite zoom levels or values are ignored. Distance factors are clamped to 0.1 to 10.0.
+ The minimum distance is clamped to a range of [100, 3000] meters.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>configs</code> - <p>Per-zoom override mapping from zoom level to distance configuration.</p></dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="addListener(com.here.sdk.mapview.MapCameraListener)">
 <h3>addListener</h3>

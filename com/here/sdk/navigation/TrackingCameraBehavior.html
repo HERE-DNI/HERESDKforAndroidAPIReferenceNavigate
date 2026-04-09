@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="172e3c36-656b-45ca-a574-6b6da9a30031"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T15:37:33+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -172,10 +172,20 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBearingInDegrees()" class="member-name-link">getBearingInDegrees</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#flagFixedDurationForNextAnimation()" class="member-name-link">flagFixedDurationForNextAnimation</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Enables fixed-duration animation mode for the next property change.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBearingInDegrees()" class="member-name-link">getBearingInDegrees</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the bearing in degrees.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCropRectangle()" class="member-name-link">getCropRectangle</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the current crop rectangle, if it's set.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TrackingCameraBehavior.ManeuverModeConfiguration.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverModeConfiguration</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverModeConfiguration()" class="member-name-link">getManeuverModeConfiguration</a>()</code></div>
@@ -228,48 +238,53 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <div class="block">Sets the bearing in degrees.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverDetectionEnabled(boolean)" class="member-name-link">setManeuverDetectionEnabled</a><wbr>(boolean value)</wbr></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCropRectangle(com.here.sdk.core.Rectangle2D)" class="member-name-link">setCropRectangle</a><wbr>(<a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> value)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets a crop rectangle.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverDetectionEnabled(boolean)" class="member-name-link">setManeuverDetectionEnabled</a><wbr>(boolean value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets whether maneuver detection is enabled.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverModeConfiguration(com.here.sdk.navigation.TrackingCameraBehavior.ManeuverModeConfiguration)" class="member-name-link">setManeuverModeConfiguration</a><wbr>(<a href="TrackingCameraBehavior.ManeuverModeConfiguration.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverModeConfiguration</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverModeConfiguration(com.here.sdk.navigation.TrackingCameraBehavior.ManeuverModeConfiguration)" class="member-name-link">setManeuverModeConfiguration</a><wbr>(<a href="TrackingCameraBehavior.ManeuverModeConfiguration.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverModeConfiguration</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the maneuver mode configuration.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaxRotationSpeedInDegreesPerSecond(double)" class="member-name-link">setMaxRotationSpeedInDegreesPerSecond</a><wbr>(double value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaxRotationSpeedInDegreesPerSecond(double)" class="member-name-link">setMaxRotationSpeedInDegreesPerSecond</a><wbr>(double value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the maximum rotation speed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)" class="member-name-link">setNormalizedPrincipalPoint</a><wbr>(<a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)" class="member-name-link">setNormalizedPrincipalPoint</a><wbr>(<a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets a normalized principal point to be used during navigation.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPrincipalPointAnimationDuration(com.here.time.Duration)" class="member-name-link">setPrincipalPointAnimationDuration</a><wbr>(<a href="../../time/Duration.html" title="class in com.here.time">Duration</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPrincipalPointAnimationDuration(com.here.time.Duration)" class="member-name-link">setPrincipalPointAnimationDuration</a><wbr>(<a href="../../time/Duration.html" title="class in com.here.time">Duration</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the current principal point animation in milliseconds.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRecenterAnimationDuration(com.here.time.Duration)" class="member-name-link">setRecenterAnimationDuration</a><wbr>(<a href="../../time/Duration.html" title="class in com.here.time">Duration</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRecenterAnimationDuration(com.here.time.Duration)" class="member-name-link">setRecenterAnimationDuration</a><wbr>(<a href="../../time/Duration.html" title="class in com.here.time">Duration</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the recenter animation duration in milliseconds.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTiltInDegrees(double)" class="member-name-link">setTiltInDegrees</a><wbr>(double value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTiltInDegrees(double)" class="member-name-link">setTiltInDegrees</a><wbr>(double value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the camera tilt in degrees.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZoomPolicy(com.here.sdk.navigation.TrackingCameraBehavior.ZoomPolicy)" class="member-name-link">setZoomPolicy</a><wbr>(<a href="TrackingCameraBehavior.ZoomPolicy.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ZoomPolicy</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZoomPolicy(com.here.sdk.navigation.TrackingCameraBehavior.ZoomPolicy)" class="member-name-link">setZoomPolicy</a><wbr>(<a href="TrackingCameraBehavior.ZoomPolicy.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ZoomPolicy</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the current zoom computation strategy.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZoomSpeedInLevelsPerSecond(double)" class="member-name-link">setZoomSpeedInLevelsPerSecond</a><wbr>(double value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZoomSpeedInLevelsPerSecond(double)" class="member-name-link">setZoomSpeedInLevelsPerSecond</a><wbr>(double value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the zoom level transition speed.</div>
 </div>
 </div>
@@ -305,6 +320,16 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="flagFixedDurationForNextAnimation()">
+<h3>flagFixedDurationForNextAnimation</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">flagFixedDurationForNextAnimation</span>()</div>
+<div class="block"><p>Enables fixed-duration animation mode for the next property change.
+ When called, the next setter call (e.g., tilt_in_degrees or bearing_in_degrees)
+ will animate using a fast fixed-duration animation instead of the default
+ speed-based animation. The flag is automatically reset after the next setter is called.</p></div>
+</section>
+</li>
+<li>
 <section class="detail" id="getRecenterAnimationDuration()">
 <h3>getRecenterAnimationDuration</h3>
 <div class="member-signature"><span class="annotations">@NonNull
@@ -329,6 +354,36 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>value</code> - <p>The duration of recenter animation in milliseconds.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCropRectangle()">
+<h3>getCropRectangle</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a></span> <span class="element-name">getCropRectangle</span>()</div>
+<div class="block"><p>Gets the current crop rectangle, if it's set.
+ </p><p>Defines a sub-space of the screen that the behavior should consider
+ for camera updates.
+ If not set, it uses the viewport bounds of the underlying map view.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd><p>The crop rectangle for camera updates.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setCropRectangle(com.here.sdk.core.Rectangle2D)">
+<h3>setCropRectangle</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setCropRectangle</span><wbr><span class="parameters">(@Nullable
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> value)</span></wbr></div>
+<div class="block"><p>Sets a crop rectangle.
+ </p><p>Defines a sub-space of the screen that the behavior should consider
+ for camera updates.
+ If not set, it uses the viewport bounds of the underlying map view.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>value</code> - <p>The crop rectangle for camera updates.</p></dd>
 </dl>
 </section>
 </li>

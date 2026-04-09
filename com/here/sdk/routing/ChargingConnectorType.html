@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="172e3c36-656b-45ca-a574-6b6da9a30031"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T15:37:33+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -121,9 +121,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Type 2 Combo connector, commonly called "CCS2".</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#TESLA" class="member-name-link">TESLA</a></code></div>
+<div class="col-first even-row-color"><code><a href="#SAE_J3400" class="member-name-link">SAE_J3400</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Tesla connector.</div>
+<div class="block">SAE J3400 - North American Charging Standard (NACS) for Electric Vehicles</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#TESLA" class="member-name-link">TESLA</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0, use <a href="#SAE_J3400"><code>SAE_J3400</code></a> instead.</div>
+</div>
 </div>
 </div>
 </section>
@@ -194,7 +200,11 @@ the order they are declared.</div>
 <li>
 <section class="detail" id="TESLA">
 <h3>TESLA</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ChargingConnectorType.html" title="enum class in com.here.sdk.routing">ChargingConnectorType</a></span> <span class="element-name">TESLA</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public static final</span> <span class="return-type"><a href="ChargingConnectorType.html" title="enum class in com.here.sdk.routing">ChargingConnectorType</a></span> <span class="element-name">TESLA</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0, use <a href="#SAE_J3400"><code>SAE_J3400</code></a> instead.</p></div>
+</div>
 <div class="block"><p>Tesla connector.</p></div>
 </section>
 </li>
@@ -203,6 +213,13 @@ the order they are declared.</div>
 <h3>GBT_DC</h3>
 <div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ChargingConnectorType.html" title="enum class in com.here.sdk.routing">ChargingConnectorType</a></span> <span class="element-name">GBT_DC</span></div>
 <div class="block"><p>Guobiao GB/T 20234.3 DC connector, commonly called "GB/T DC".</p></div>
+</section>
+</li>
+<li>
+<section class="detail" id="SAE_J3400">
+<h3>SAE_J3400</h3>
+<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ChargingConnectorType.html" title="enum class in com.here.sdk.routing">ChargingConnectorType</a></span> <span class="element-name">SAE_J3400</span></div>
+<div class="block"><p>SAE J3400 - North American Charging Standard (NACS) for Electric Vehicles</p></div>
 </section>
 </li>
 </ul>

@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="172e3c36-656b-45ca-a574-6b6da9a30031"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T15:37:33+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -108,33 +108,21 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code><a href="#DATA_NOT_READY" class="member-name-link">DATA_NOT_READY</a></code></div>
+<div class="col-first even-row-color"><code><a href="#ENGINE_NOT_AVAILABLE" class="member-name-link">ENGINE_NOT_AVAILABLE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Error code for the data in map not being ready.</div>
+<div class="block">Electronic horizon engine state is not available.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#INVALID_SEGMENT_DATA" class="member-name-link">INVALID_SEGMENT_DATA</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#PATH_TREE_INCONSISTENT" class="member-name-link">PATH_TREE_INCONSISTENT</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Invalid directed segment</div>
+<div class="block">Path tree is inconsistent.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#NONE" class="member-name-link">NONE</a></code></div>
+<div class="col-first even-row-color"><code><a href="#POSITION_NOT_FOUND" class="member-name-link">POSITION_NOT_FOUND</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">No error is present.</div>
+<div class="block">Current position cannot be resolved in the current electronic horizon tree.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#PATH_NOT_FOUND" class="member-name-link">PATH_NOT_FOUND</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#POSITION_OFF_ROAD" class="member-name-link">POSITION_OFF_ROAD</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Path not found in the current tree</div>
-</div>
-<div class="col-first even-row-color"><code><a href="#SEGMENT_NOT_FOUND_IN_CACHE" class="member-name-link">SEGMENT_NOT_FOUND_IN_CACHE</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">Segment not present in the cache.</div>
-</div>
-<div class="col-first odd-row-color"><code><a href="#SEGMENT_NOT_READY" class="member-name-link">SEGMENT_NOT_READY</a></code></div>
-<div class="col-last odd-row-color">
-<div class="block">Segment is not yet loaded, but scheduled to be loaded.</div>
-</div>
-<div class="col-first even-row-color"><code><a href="#UNKNOWN" class="member-name-link">UNKNOWN</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">Unknown error code.</div>
+<div class="block">Current position cannot be matched to a road segment.</div>
 </div>
 </div>
 </section>
@@ -182,52 +170,31 @@ the order they are declared.</div>
 <h2>Enum Constant Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="NONE">
-<h3>NONE</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">NONE</span></div>
-<div class="block"><p>No error is present.</p></div>
+<section class="detail" id="ENGINE_NOT_AVAILABLE">
+<h3>ENGINE_NOT_AVAILABLE</h3>
+<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">ENGINE_NOT_AVAILABLE</span></div>
+<div class="block"><p>Electronic horizon engine state is not available.</p></div>
 </section>
 </li>
 <li>
-<section class="detail" id="UNKNOWN">
-<h3>UNKNOWN</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">UNKNOWN</span></div>
-<div class="block"><p>Unknown error code.</p></div>
+<section class="detail" id="POSITION_NOT_FOUND">
+<h3>POSITION_NOT_FOUND</h3>
+<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">POSITION_NOT_FOUND</span></div>
+<div class="block"><p>Current position cannot be resolved in the current electronic horizon tree.</p></div>
 </section>
 </li>
 <li>
-<section class="detail" id="DATA_NOT_READY">
-<h3>DATA_NOT_READY</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">DATA_NOT_READY</span></div>
-<div class="block"><p>Error code for the data in map not being ready.</p></div>
+<section class="detail" id="POSITION_OFF_ROAD">
+<h3>POSITION_OFF_ROAD</h3>
+<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">POSITION_OFF_ROAD</span></div>
+<div class="block"><p>Current position cannot be matched to a road segment.</p></div>
 </section>
 </li>
 <li>
-<section class="detail" id="SEGMENT_NOT_FOUND_IN_CACHE">
-<h3>SEGMENT_NOT_FOUND_IN_CACHE</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">SEGMENT_NOT_FOUND_IN_CACHE</span></div>
-<div class="block"><p>Segment not present in the cache.</p></div>
-</section>
-</li>
-<li>
-<section class="detail" id="SEGMENT_NOT_READY">
-<h3>SEGMENT_NOT_READY</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">SEGMENT_NOT_READY</span></div>
-<div class="block"><p>Segment is not yet loaded, but scheduled to be loaded.</p></div>
-</section>
-</li>
-<li>
-<section class="detail" id="PATH_NOT_FOUND">
-<h3>PATH_NOT_FOUND</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">PATH_NOT_FOUND</span></div>
-<div class="block"><p>Path not found in the current tree</p></div>
-</section>
-</li>
-<li>
-<section class="detail" id="INVALID_SEGMENT_DATA">
-<h3>INVALID_SEGMENT_DATA</h3>
-<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">INVALID_SEGMENT_DATA</span></div>
-<div class="block"><p>Invalid directed segment</p></div>
+<section class="detail" id="PATH_TREE_INCONSISTENT">
+<h3>PATH_TREE_INCONSISTENT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a></span> <span class="element-name">PATH_TREE_INCONSISTENT</span></div>
+<div class="block"><p>Path tree is inconsistent.</p></div>
 </section>
 </li>
 </ul>

@@ -13,7 +13,7 @@
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="172e3c36-656b-45ca-a574-6b6da9a30031"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T15:37:33+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
 <body class="deprecated-list-page">
 <script type="text/javascript">var pathtoroot = "./";
 loadScripts(document, 'script');</script>
@@ -140,56 +140,60 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Please use <a href="com/here/sdk/mapdata/PhysicalAttributes.html#divider"><code>PhysicalAttributes.divider</code></a> instead for getting <a href="com/here/sdk/mapdata/RoadDivider.html" title="enum class in com.here.sdk.mapdata"><code>RoadDivider</code></a> and <a href="com/here/sdk/mapdata/PhysicalAttributes.html#isMultiplyDigitized"><code>PhysicalAttributes.isMultiplyDigitized</code></a> for getting multiply digitized attribute.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#countryCode">com.here.sdk.navigation.BorderCrossingWarning.countryCode</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/mapdata/TollCost.html#vehicleProfiles">com.here.sdk.mapdata.TollCost.vehicleProfiles</a></div>
 <div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>TollCost.transport_specifications</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#countryCode">com.here.sdk.navigation.BorderCrossingWarning.countryCode</a></div>
+<div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the country code.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#speedLimits">com.here.sdk.navigation.BorderCrossingWarning.speedLimits</a></div>
-<div class="col-last even-row-color">
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#speedLimits">com.here.sdk.navigation.BorderCrossingWarning.speedLimits</a></div>
+<div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the speed limits.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#stateCode">com.here.sdk.navigation.BorderCrossingWarning.stateCode</a></div>
-<div class="col-last odd-row-color">
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#stateCode">com.here.sdk.navigation.BorderCrossingWarning.stateCode</a></div>
+<div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the state code.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/ManeuverNotificationOptions.html#enableDestinationReachedNotification">com.here.sdk.navigation.ManeuverNotificationOptions.enableDestinationReachedNotification</a></div>
-<div class="col-last even-row-color">
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/ManeuverNotificationOptions.html#enableDestinationReachedNotification">com.here.sdk.navigation.ManeuverNotificationOptions.enableDestinationReachedNotification</a></div>
+<div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use the <a href="com/here/sdk/navigation/ManeuverNotificationOptions.html#arrivalNotificationOption"><code>ManeuverNotificationOptions.arrivalNotificationOption</code></a> instead</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/RouteProgress.html#sectionIndex">com.here.sdk.navigation.RouteProgress.sectionIndex</a></div>
-<div class="col-last odd-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <a href="com/here/sdk/navigation/RouteProgress.html#routeMatchedLocation"><code>RouteProgress.routeMatchedLocation</code></a> instead.</p></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/RouteProgress.html#spanIndex">com.here.sdk.navigation.RouteProgress.spanIndex</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/RouteProgress.html#sectionIndex">com.here.sdk.navigation.RouteProgress.sectionIndex</a></div>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <a href="com/here/sdk/navigation/RouteProgress.html#routeMatchedLocation"><code>RouteProgress.routeMatchedLocation</code></a> instead.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#carOptions">com.here.sdk.routing.IsolineOptions.carOptions</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/RouteProgress.html#spanIndex">com.here.sdk.navigation.RouteProgress.spanIndex</a></div>
 <div class="col-last odd-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>routing_options</code> instead.</p></div>
+<div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <a href="com/here/sdk/navigation/RouteProgress.html#routeMatchedLocation"><code>RouteProgress.routeMatchedLocation</code></a> instead.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#evCarOptions">com.here.sdk.routing.IsolineOptions.evCarOptions</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#carOptions">com.here.sdk.routing.IsolineOptions.carOptions</a></div>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>routing_options</code> instead.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#evTruckOptions">com.here.sdk.routing.IsolineOptions.evTruckOptions</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#evCarOptions">com.here.sdk.routing.IsolineOptions.evCarOptions</a></div>
 <div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>routing_options</code> instead.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#truckOptions">com.here.sdk.routing.IsolineOptions.truckOptions</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#evTruckOptions">com.here.sdk.routing.IsolineOptions.evTruckOptions</a></div>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>routing_options</code> instead.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/ViolatedRestriction.Details.html#forbiddenTruckType">com.here.sdk.routing.ViolatedRestriction.Details.forbiddenTruckType</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/IsolineOptions.html#truckOptions">com.here.sdk.routing.IsolineOptions.truckOptions</a></div>
 <div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>routing_options</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/ViolatedRestriction.Details.html#forbiddenTruckType">com.here.sdk.routing.ViolatedRestriction.Details.forbiddenTruckType</a></div>
+<div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <code>forbidden_truck_category</code> instead.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/search/PlaceCategory.html#SIGHTS_LANDMARK_ATTACTION">com.here.sdk.search.PlaceCategory.SIGHTS_LANDMARK_ATTACTION</a></div>
-<div class="col-last even-row-color">
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/search/PlaceCategory.html#SIGHTS_LANDMARK_ATTACTION">com.here.sdk.search.PlaceCategory.SIGHTS_LANDMARK_ATTACTION</a></div>
+<div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Please use SIGHTS_LANDMARK_ATTRACTION instead.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/transport/VehicleSpecification.html#truckType">com.here.sdk.transport.VehicleSpecification.truckType</a></div>
-<div class="col-last odd-row-color">
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/transport/VehicleSpecification.html#truckType">com.here.sdk.transport.VehicleSpecification.truckType</a></div>
+<div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <code>VehicleSpecification.truckCategory</code> instead.</p></div>
 </div>
 </div>
@@ -521,16 +525,20 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Enum Constant</div>
 <div class="table-header col-last">Description</div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/venue/routing/VenueTransportMode.html#AUTO">com.here.sdk.venue.routing.VenueTransportMode.AUTO</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/ChargingConnectorType.html#TESLA">com.here.sdk.routing.ChargingConnectorType.TESLA</a></div>
 <div class="col-last even-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use transport code <code>CAR</code> instead.</p></div>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0, use <a href="com/here/sdk/routing/ChargingConnectorType.html#SAE_J3400"><code>ChargingConnectorType.SAE_J3400</code></a> instead.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/venue/routing/VenueTransportMode.html#EMERGENCY_VEHICLE">com.here.sdk.venue.routing.VenueTransportMode.EMERGENCY_VEHICLE</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/venue/routing/VenueTransportMode.html#AUTO">com.here.sdk.venue.routing.VenueTransportMode.AUTO</a></div>
 <div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Use transport code <code>CAR</code> instead.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/venue/routing/VenueTransportMode.html#MOTORCYCLE">com.here.sdk.venue.routing.VenueTransportMode.MOTORCYCLE</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/venue/routing/VenueTransportMode.html#EMERGENCY_VEHICLE">com.here.sdk.venue.routing.VenueTransportMode.EMERGENCY_VEHICLE</a></div>
 <div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use transport code <code>CAR</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/venue/routing/VenueTransportMode.html#MOTORCYCLE">com.here.sdk.venue.routing.VenueTransportMode.MOTORCYCLE</a></div>
+<div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.26.0. Use transport code <code>SCOOTER</code> instead.</p></div>
 </div>
 </div>
