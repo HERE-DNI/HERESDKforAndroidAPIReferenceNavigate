@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -485,61 +485,71 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
 <div class="deprecation-comment">Will be removed in v4.28.0.</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
- <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
- <a href="RefreshRouteOptions.html" title="class in com.here.sdk.routing">RefreshRouteOptions</a> refreshRouteOptions,
- <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.28.0.</div>
-</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
- <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
- <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> options,
- <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
- the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
- <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> lastTraveledSectionIndex,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> traveledDistanceOnLastSectionInMeters,
- <a href="RefreshRouteOptions.html" title="class in com.here.sdk.routing">RefreshRouteOptions</a> refreshRouteOptions,
- <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.28.0.</div>
-</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
- <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> lastTraveledSectionIndex,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> traveledDistanceOnLastSectionInMeters,
- <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> options,
- <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
- the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>.</div>
-</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#returnToRoute(com.here.sdk.routing.Route,com.here.sdk.routing.Waypoint,int,int,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">returnToRoute</a><wbr>(<a href="Route.html" title="class in com.here.sdk.routing">Route</a> route,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refreshRoute(com.here.sdk.routing.RefreshRouteParameters,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RefreshRouteParameters.html" title="class in com.here.sdk.routing">RefreshRouteParameters</a> refreshRouteParameters,
+ <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> routingOptions,
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
+ the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
+ <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
+ <a href="RefreshRouteOptions.html" title="class in com.here.sdk.routing">RefreshRouteOptions</a> refreshRouteOptions,
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
+ <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
+ <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> options,
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
+ <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> lastTraveledSectionIndex,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> traveledDistanceOnLastSectionInMeters,
+ <a href="RefreshRouteOptions.html" title="class in com.here.sdk.routing">RefreshRouteOptions</a> refreshRouteOptions,
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
+ <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> lastTraveledSectionIndex,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a> traveledDistanceOnLastSectionInMeters,
+ <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> options,
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#returnToRoute(com.here.sdk.routing.Route,com.here.sdk.routing.Waypoint,int,int,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">returnToRoute</a><wbr>(<a href="Route.html" title="class in com.here.sdk.routing">Route</a> route,
  <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
  int lastTraveledSectionIndex,
  int traveledDistanceOnLastSectionInMeters,
  <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Asynchronously calculates a new route that leads back to the original route.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomOption(java.lang.String,java.lang.String)" class="member-name-link">setCustomOption</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> name,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomOption(java.lang.String,java.lang.String)" class="member-name-link">setCustomOption</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> name,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets a custom option for routing backend queries.</div>
 </div>
 </div>
@@ -722,7 +732,8 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
 <li>
 <section class="detail" id="refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)">
 <h3>refreshRoute</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></span> <span class="element-name">refreshRoute</span><wbr><span class="parameters">(@NonNull
  <a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
  @Nullable
@@ -735,6 +746,9 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
  <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> options,
  @NonNull
  <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</span></wbr></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RefreshRouteParameters parameter instead.</p></div>
+</div>
 <div class="block"><p>Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
  the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>. The route shape from the new
  starting point to the destination remains unchanged, and only metadata such as arrival time and traffic
@@ -767,7 +781,8 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
 <li>
 <section class="detail" id="refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)">
 <h3>refreshRoute</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></span> <span class="element-name">refreshRoute</span><wbr><span class="parameters">(@NonNull
  <a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a> routeHandle,
  @NonNull
@@ -776,6 +791,9 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
  <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> options,
  @NonNull
  <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</span></wbr></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RefreshRouteParameters parameter instead.</p></div>
+</div>
 <div class="block"><p>Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
  the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>. The route shape from the new
  starting point to the destination remains unchanged, and only metadata such as arrival time and traffic
@@ -796,6 +814,31 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
      route, the route refresh may fail and an <a href="RoutingError.html#COULD_NOT_MATCH_ORIGIN"><code>RoutingError.COULD_NOT_MATCH_ORIGIN</code></a> error is triggered.
      In that case, an application may decide to calculate a new route from scratch.</p></dd>
 <dd><code>options</code> - <p>The options define the vehicle and route options to calculate the route.</p></dd>
+<dd><code>callback</code> - <p>Callback object that will be invoked after refreshing the route.
+     It is always invoked on the main thread.</p></dd>
+<dt>Returns:</dt>
+<dd><p>Handle that will be used to manipulate the execution of the task.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="refreshRoute(com.here.sdk.routing.RefreshRouteParameters,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)">
+<h3>refreshRoute</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></span> <span class="element-name">refreshRoute</span><wbr><span class="parameters">(@NonNull
+ <a href="RefreshRouteParameters.html" title="class in com.here.sdk.routing">RefreshRouteParameters</a> refreshRouteParameters,
+ @NonNull
+ <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> routingOptions,
+ @NonNull
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</span></wbr></div>
+<div class="block"><p>Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
+ the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>. The route shape from the new
+ starting point to the destination remains unchanged, and only metadata such as arrival time and traffic
+ delays are updated.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>refreshRouteParameters</code> - <p>The parameters used to refresh the route</p></dd>
+<dd><code>routingOptions</code> - <p>The options define the vehicle and route options used to calculate the route.</p></dd>
 <dd><code>callback</code> - <p>Callback object that will be invoked after refreshing the route.
      It is always invoked on the main thread.</p></dd>
 <dt>Returns:</dt>

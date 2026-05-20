@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -78,12 +78,11 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">BorderCrossingWarning</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block"><p>A border crossing. The main fields describing the border crossing are <a href="#type"><code>type</code></a> specifying whether the border crossing
- is given for a country border or for a state border and <a href="#countryCode"><code>countryCode</code></a> which should be present
- at all times, regardless if the warning is a country border or a state border.
- A border crossing must contain a known <a href="#type"><code>type</code></a> and a <a href="#countryCode"><code>countryCode</code></a>. The <a href="#stateCode"><code>stateCode</code></a>
- is optional.
- Use <code>BorderCrossingWarningListener</code> to get notifications about upcoming country or state border crossings.</p></div>
+<div class="block"><p>A border crossing. The main field describing the border crossing is <a href="#type"><code>type</code></a> specifying whether the border crossing
+ is given for a country border or a state border. The <a href="#type"><code>type</code></a> must be known.
+ The country and state codes are contained in <a href="#administrativeRules"><code>administrativeRules</code></a> along with other information such as speed
+ limits, u-turn regulations or pre-trip planning information contained by the <a href="../mapdata/AdministrativeRules.html" title="class in com.here.sdk.mapdata"><code>AdministrativeRules</code></a>.
+ </p><p>Use <code>BorderCrossingWarningListener</code> to get notifications about upcoming country or state border crossings.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -101,12 +100,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The administrative rules for the country or state after the border crossing.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="../core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#countryCode" class="member-name-link">countryCode</a></code></div>
+<div class="col-first odd-row-color"><code><a href="../mapdata/AdministrativeCommercialVehicleRules.html" title="class in com.here.sdk.mapdata">AdministrativeCommercialVehicleRules</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#commercialVehicleRegulations" class="member-name-link">commercialVehicleRegulations</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.26.0.</div>
-</div>
+<div class="block">Commercial vehicle regulations for the administrative region after the border crossing.</div>
 </div>
 <div class="col-first even-row-color"><code>double</code></div>
 <div class="col-second even-row-color"><code><a href="#distanceToBorderCrossingInMeters" class="member-name-link">distanceToBorderCrossingInMeters</a></code></div>
@@ -118,23 +115,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">The distance type for the warning, e.g.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="../transport/GeneralVehicleSpeedLimits.html" title="class in com.here.sdk.transport">GeneralVehicleSpeedLimits</a></code></div>
-<div class="col-second even-row-color"><code><a href="#speedLimits" class="member-name-link">speedLimits</a></code></div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
 <div class="col-last even-row-color">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.26.0.</div>
+<div class="block">Unique identifier for this specific border crossing warning instance.</div>
 </div>
-</div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#stateCode" class="member-name-link">stateCode</a></code></div>
+<div class="col-first odd-row-color"><code><a href="BorderCrossingType.html" title="enum class in com.here.sdk.navigation">BorderCrossingType</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#type" class="member-name-link">type</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.26.0.</div>
-</div>
-</div>
-<div class="col-first even-row-color"><code><a href="BorderCrossingType.html" title="enum class in com.here.sdk.navigation">BorderCrossingType</a></code></div>
-<div class="col-second even-row-color"><code><a href="#type" class="member-name-link">type</a></code></div>
-<div class="col-last even-row-color">
 <div class="block">Type of border crossing.</div>
 </div>
 </div>
@@ -193,6 +181,15 @@ loadScripts(document, 'script');</script>
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="id">
+<h3>id</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">int</span> <span class="element-name">id</span></div>
+<div class="block"><p>Unique identifier for this specific border crossing warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</p></div>
+</section>
+</li>
+<li>
 <section class="detail" id="distanceToBorderCrossingInMeters">
 <h3>distanceToBorderCrossingInMeters</h3>
 <div class="member-signature"><span class="modifiers">public</span> <span class="return-type">double</span> <span class="element-name">distanceToBorderCrossingInMeters</span></div>
@@ -205,46 +202,6 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span> <span class="return-type"><a href="BorderCrossingType.html" title="enum class in com.here.sdk.navigation">BorderCrossingType</a></span> <span class="element-name">type</span></div>
 <div class="block"><p>Type of border crossing.</p></div>
-</section>
-</li>
-<li>
-<section class="detail" id="countryCode">
-<h3>countryCode</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-@NonNull
-</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></span> <span class="element-name">countryCode</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the country code.</p></div>
-</div>
-<div class="block"><p>Country code for the country after the border crossing. It can be the same as the current country
- if the border crossing warning is given for a state border crossing.</p></div>
-</section>
-</li>
-<li>
-<section class="detail" id="stateCode">
-<h3>stateCode</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-@Nullable
-</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span> <span class="element-name">stateCode</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the state code.</p></div>
-</div>
-<div class="block"><p>The state code after the border crossing. It represents the state / province code. It is a 1 to 3 upper-case
- characters string that follows the ISO 3166-2 standard, but without the preceding country code (e.g. for Texas,
- the state code will be TX). It will be <code>null</code> for countries without states or countries in which the states
- have very similar regulations (e.g. for Germany there will be no state borders).</p></div>
-</section>
-</li>
-<li>
-<section class="detail" id="speedLimits">
-<h3>speedLimits</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-@NonNull
-</span><span class="modifiers">public</span> <span class="return-type"><a href="../transport/GeneralVehicleSpeedLimits.html" title="class in com.here.sdk.transport">GeneralVehicleSpeedLimits</a></span> <span class="element-name">speedLimits</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the speed limits.</p></div>
-</div>
-<div class="block"><p>The general speed limits in the country / state after border crossing.</p></div>
 </section>
 </li>
 <li>
@@ -264,6 +221,16 @@ loadScripts(document, 'script');</script>
 <div class="block"><p>The distance type for the warning, e.g. a warning for a new border crossing ahead or a warning for
  passing a border crossing. Since the border crossing warning is given relative to a single position on
  the route, <a href="DistanceType.html#REACHED"><code>DistanceType.REACHED</code></a> will never be given for this warning.</p></div>
+</section>
+</li>
+<li>
+<section class="detail" id="commercialVehicleRegulations">
+<h3>commercialVehicleRegulations</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../mapdata/AdministrativeCommercialVehicleRules.html" title="class in com.here.sdk.mapdata">AdministrativeCommercialVehicleRules</a></span> <span class="element-name">commercialVehicleRegulations</span></div>
+<div class="block"><p>Commercial vehicle regulations for the administrative region after the border crossing.
+ Contains access restrictions, speed limits, and drive/rest rules applicable to commercial vehicles.
+ This field is only populated when crossing into a region with specific commercial vehicle regulations.</p></div>
 </section>
 </li>
 </ul>

@@ -13,7 +13,7 @@
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="deprecated-list-page">
 <script type="text/javascript">var pathtoroot = "./";
 loadScripts(document, 'script');</script>
@@ -66,6 +66,14 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/core/PedestrianProfile.html" title="class in com.here.sdk.core">com.here.sdk.core.PedestrianProfile</a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>sdk.transport.TransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/core/TransportProfile.html" title="class in com.here.sdk.core">com.here.sdk.core.TransportProfile</a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>TransportSpecification</code> instead.</p></div>
+</div>
 <div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/BicycleOptions.html" title="class in com.here.sdk.routing">com.here.sdk.routing.BicycleOptions</a></div>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>RoutingOptions</code> class instead.</p></div>
@@ -110,6 +118,22 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>RoutingOptions</code> class instead.</p></div>
 </div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/transport/BusSpecifications.html" title="class in com.here.sdk.transport">com.here.sdk.transport.BusSpecifications</a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>TransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/transport/CarSpecifications.html" title="class in com.here.sdk.transport">com.here.sdk.transport.CarSpecifications</a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>TransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/transport/TruckSpecifications.html" title="class in com.here.sdk.transport">com.here.sdk.transport.TruckSpecifications</a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>TransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/transport/VehicleProfile.html" title="class in com.here.sdk.transport">com.here.sdk.transport.VehicleProfile</a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>sdk.transport.TransportSpecification</code> instead.</p></div>
+</div>
 </div>
 </div>
 </li>
@@ -125,6 +149,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <code>TruckCategory</code> instead.</p></div>
 </div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/transport/VehicleType.html" title="enum class in com.here.sdk.transport">com.here.sdk.transport.VehicleType</a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>sdk.transport.TransportMode</code> instead.</p></div>
+</div>
 </div>
 </div>
 </li>
@@ -136,25 +164,9 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/mapdata/PhysicalAttributes.html#isDividedRoad">com.here.sdk.mapdata.PhysicalAttributes.isDividedRoad</a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/mapdata/TollCost.html#vehicleProfiles">com.here.sdk.mapdata.TollCost.vehicleProfiles</a></div>
 <div class="col-last even-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Please use <a href="com/here/sdk/mapdata/PhysicalAttributes.html#divider"><code>PhysicalAttributes.divider</code></a> instead for getting <a href="com/here/sdk/mapdata/RoadDivider.html" title="enum class in com.here.sdk.mapdata"><code>RoadDivider</code></a> and <a href="com/here/sdk/mapdata/PhysicalAttributes.html#isMultiplyDigitized"><code>PhysicalAttributes.isMultiplyDigitized</code></a> for getting multiply digitized attribute.</p></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/mapdata/TollCost.html#vehicleProfiles">com.here.sdk.mapdata.TollCost.vehicleProfiles</a></div>
-<div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>TollCost.transport_specifications</code> instead.</p></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#countryCode">com.here.sdk.navigation.BorderCrossingWarning.countryCode</a></div>
-<div class="col-last even-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the country code.</p></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#speedLimits">com.here.sdk.navigation.BorderCrossingWarning.speedLimits</a></div>
-<div class="col-last odd-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the speed limits.</p></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/BorderCrossingWarning.html#stateCode">com.here.sdk.navigation.BorderCrossingWarning.stateCode</a></div>
-<div class="col-last even-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Use the administrative_rules property to determine the state code.</p></div>
 </div>
 <div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/ManeuverNotificationOptions.html#enableDestinationReachedNotification">com.here.sdk.navigation.ManeuverNotificationOptions.enableDestinationReachedNotification</a></div>
 <div class="col-last odd-row-color">
@@ -188,12 +200,8 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <code>forbidden_truck_category</code> instead.</p></div>
 </div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/search/PlaceCategory.html#SIGHTS_LANDMARK_ATTACTION">com.here.sdk.search.PlaceCategory.SIGHTS_LANDMARK_ATTACTION</a></div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/transport/VehicleSpecification.html#truckType">com.here.sdk.transport.VehicleSpecification.truckType</a></div>
 <div class="col-last odd-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Please use SIGHTS_LANDMARK_ATTRACTION instead.</p></div>
-</div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/transport/VehicleSpecification.html#truckType">com.here.sdk.transport.VehicleSpecification.truckType</a></div>
-<div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.27.0. Use <code>VehicleSpecification.truckCategory</code> instead.</p></div>
 </div>
 </div>
@@ -231,14 +239,6 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0, use <a href="com/here/sdk/mapview/MapContentSettings.html#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)"><code>MapContentSettings.configureVehicleRestrictionFilter(TransportSpecification)</code></a> instead.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/mapview/MapSurface.html#setSurface(android.content.Context,android.view.Surface,int,int)">com.here.sdk.mapview.MapSurface.setSurface<wbr>(Context, Surface, int, int)</wbr></a></div>
-<div class="col-last even-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Please use attachSurface.</p></div>
-</div>
-<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/mapview/MapSurface.html#setSurface(android.content.Context,android.view.Surface,int,int,com.here.sdk.mapview.MapSurface.RenderListener)">com.here.sdk.mapview.MapSurface.setSurface<wbr>(Context, Surface, int, int, MapSurface.RenderListener)</wbr></a></div>
-<div class="col-last odd-row-color">
-<div class="deprecation-comment"><p>Will be removed in v4.26.0. Please use attachSurface.</p></div>
-</div>
 <div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/FixedCameraBehavior.html#getCameraDistanceInMeters()">com.here.sdk.navigation.FixedCameraBehavior.getCameraDistanceInMeters()</a></div>
 <div class="col-last even-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <a href="com/here/sdk/navigation/FixedCameraBehavior.html#getZoom()"><code>FixedCameraBehavior.getZoom()</code></a> instead.</p></div>
@@ -246,6 +246,30 @@ loadScripts(document, 'script');</script>
 <div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/FixedCameraBehavior.html#setCameraDistanceInMeters(double)">com.here.sdk.navigation.FixedCameraBehavior.setCameraDistanceInMeters<wbr>(double)</wbr></a></div>
 <div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <a href="com/here/sdk/navigation/FixedCameraBehavior.html#getZoom()"><code>FixedCameraBehavior.getZoom()</code></a> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/Navigator.html#getTrackingTransportProfile()">com.here.sdk.navigation.Navigator.getTrackingTransportProfile()</a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/Navigator.html#setTrackingTransportProfile(com.here.sdk.core.TransportProfile)">com.here.sdk.navigation.Navigator.setTrackingTransportProfile<wbr>(TransportProfile)</wbr></a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/NavigatorInterface.html#getTrackingTransportProfile()">com.here.sdk.navigation.NavigatorInterface.getTrackingTransportProfile()</a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/NavigatorInterface.html#setTrackingTransportProfile(com.here.sdk.core.TransportProfile)">com.here.sdk.navigation.NavigatorInterface.setTrackingTransportProfile<wbr>(TransportProfile)</wbr></a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/navigation/VisualNavigator.html#getTrackingTransportProfile()">com.here.sdk.navigation.VisualNavigator.getTrackingTransportProfile()</a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/navigation/VisualNavigator.html#setTrackingTransportProfile(com.here.sdk.core.TransportProfile)">com.here.sdk.navigation.VisualNavigator.setTrackingTransportProfile<wbr>(TransportProfile)</wbr></a></div>
+<div class="col-last odd-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
 </div>
 <div class="col-summary-item-name even-row-color"><a href="com/here/sdk/prefetcher/RoutePrefetcher.html#prefetchAroundLocationWithRadius(com.here.sdk.core.GeoCoordinates,java.lang.Double)">com.here.sdk.prefetcher.RoutePrefetcher.prefetchAroundLocationWithRadius<wbr>(GeoCoordinates, Double)</wbr></a></div>
 <div class="col-last even-row-color">
@@ -423,9 +447,17 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RoutingOptions parameter instead.</p></div>
 </div>
-<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)">com.here.sdk.routing.RoutingEngine.refreshRoute<wbr>(RouteHandle, Waypoint, Integer, Integer, RefreshRouteOptions, CalculateRouteCallback)</wbr></a></div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)">com.here.sdk.routing.RoutingEngine.refreshRoute<wbr>(RouteHandle, Waypoint, RoutingOptions, CalculateRouteCallback)</wbr></a></div>
 <div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RefreshRouteParameters parameter instead.</p></div>
+</div>
+<div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)">com.here.sdk.routing.RoutingEngine.refreshRoute<wbr>(RouteHandle, Waypoint, Integer, Integer, RefreshRouteOptions, CalculateRouteCallback)</wbr></a></div>
+<div class="col-last odd-row-color">
 <div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RoutingOptions parameter instead.</p></div>
+</div>
+<div class="col-summary-item-name even-row-color"><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)">com.here.sdk.routing.RoutingEngine.refreshRoute<wbr>(RouteHandle, Waypoint, Integer, Integer, RoutingOptions, CalculateRouteCallback)</wbr></a></div>
+<div class="col-last even-row-color">
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RefreshRouteParameters parameter instead.</p></div>
 </div>
 <div class="col-summary-item-name odd-row-color"><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)">com.here.sdk.routing.RoutingInterface.calculateRoute<wbr>(List&lt;Waypoint&gt;, BicycleOptions, CalculateRouteCallback)</wbr></a></div>
 <div class="col-last odd-row-color">

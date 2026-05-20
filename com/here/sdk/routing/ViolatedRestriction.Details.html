@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -251,7 +251,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span> <span class="element-name">maxWeightPerAxleInKilograms</span></div>
 <div class="block"><p>Max permitted weight per axle during the trip, in kilograms.
- This property will be set if the <a href="../transport/TruckSpecifications.html#weightPerAxleInKilograms"><code>TruckSpecifications.weightPerAxleInKilograms</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#weightPerAxleInKilograms"><code>VehicleSpecification.weightPerAxleInKilograms</code></a>
  exceeds this value.</p></div>
 </section>
 </li>
@@ -261,7 +261,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="MaxAxleGroupWeight.html" title="class in com.here.sdk.routing">MaxAxleGroupWeight</a></span> <span class="element-name">maxWeightPerAxleGroupInKilograms</span></div>
 <div class="block"><p>Max permitted weight per axle group during the trip, in kilograms.
- This property will be set if the <a href="../transport/TruckSpecifications.html#weightPerAxleGroup"><code>TruckSpecifications.weightPerAxleGroup</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#weightPerAxleGroup"><code>VehicleSpecification.weightPerAxleGroup</code></a>
  exceeds this value.</p></div>
 </section>
 </li>
@@ -271,7 +271,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span> <span class="element-name">maxHeightInCentimeters</span></div>
 <div class="block"><p>Max permitted height during the trip, in centimeters.
- This property will be set if the <a href="../transport/TruckSpecifications.html#heightInCentimeters"><code>TruckSpecifications.heightInCentimeters</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#heightInCentimeters"><code>VehicleSpecification.heightInCentimeters</code></a>
  exceeds this value.</p></div>
 </section>
 </li>
@@ -281,7 +281,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span> <span class="element-name">maxWidthInCentimeters</span></div>
 <div class="block"><p>Max permitted width during the trip, in centimeters.
- This property will be set if the <a href="../transport/TruckSpecifications.html#widthInCentimeters"><code>TruckSpecifications.widthInCentimeters</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#widthInCentimeters"><code>VehicleSpecification.widthInCentimeters</code></a>
  exceeds this value.</p></div>
 </section>
 </li>
@@ -291,7 +291,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span> <span class="element-name">maxLengthInCentimeters</span></div>
 <div class="block"><p>Max permitted length during the trip, in centimeters.
- This property will be set if the <a href="../transport/TruckSpecifications.html#lengthInCentimeters"><code>TruckSpecifications.lengthInCentimeters</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#lengthInCentimeters"><code>VehicleSpecification.lengthInCentimeters</code></a>
  exceeds this value.</p></div>
 </section>
 </li>
@@ -301,7 +301,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a></span> <span class="element-name">forbiddenAxleCount</span></div>
 <div class="block"><p>The restriction to trucks with axles number within specified range during the trip.
- This property will be set if the <a href="../transport/TruckSpecifications.html#axleCount"><code>TruckSpecifications.axleCount</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#axleCount"><code>VehicleSpecification.axleCount</code></a>
  is within this range.</p></div>
 </section>
 </li>
@@ -311,7 +311,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a></span> <span class="element-name">forbiddenTrailerCount</span></div>
 <div class="block"><p>Constrains the restriction to trucks with number of trailer within specified range during the trip.
- This property will be set if the <a href="../transport/TruckSpecifications.html#trailerCount"><code>TruckSpecifications.trailerCount</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#trailerCount"><code>VehicleSpecification.trailerCount</code></a>
  is within this range.</p></div>
 </section>
 </li>
@@ -384,7 +384,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span> <span class="element-name">maxPayloadCapacityInKilograms</span></div>
 <div class="block"><p>Max permitted payload capacity during the trip, in kilograms.
- This property will be set if the <a href="../transport/TruckSpecifications.html#payloadCapacityInKilograms"><code>TruckSpecifications.payloadCapacityInKilograms</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#payloadCapacityInKilograms"><code>VehicleSpecification.payloadCapacityInKilograms</code></a>
  exceeds this value.</p></div>
 </section>
 </li>
@@ -402,7 +402,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="VehicleRestrictionMaxWeight.html" title="class in com.here.sdk.routing">VehicleRestrictionMaxWeight</a></span> <span class="element-name">maxWeight</span></div>
 <div class="block"><p>Max permitted weight during the trip, in kilograms, along with the specific type of maximum permitted weight restriction.
- This property will be set if the <a href="../transport/TruckSpecifications.html#grossWeightInKilograms"><code>TruckSpecifications.grossWeightInKilograms</code></a>
+ This property will be set if the <a href="../transport/VehicleSpecification.html#grossWeightInKilograms"><code>VehicleSpecification.grossWeightInKilograms</code></a>
  parameter used for route calculation exceeds this value.</p></div>
 </section>
 </li>

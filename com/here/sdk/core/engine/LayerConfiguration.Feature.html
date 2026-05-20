@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -98,7 +98,6 @@ loadScripts(document, 'script');</script>
  <li><a href="#OFFLINE_SEARCH"><code>OFFLINE_SEARCH</code></a></li>
  <li><a href="#OFFLINE_ROUTING"><code>OFFLINE_ROUTING</code></a></li>
  <li><a href="#RENDERING"><code>RENDERING</code></a></li>
- <li><a href="#TRUCK"><code>TRUCK</code></a></li>
  </ul>
  <p>All other features are disabled, by default.
  </p><p>Each feature enables a set of OCM layer groups to be downloaded by <code>sdk.maploader.MapDownloader</code>.
@@ -106,12 +105,7 @@ loadScripts(document, 'script');</script>
  <a href="https://www.here.com/docs/bundle/optimized-client-map-developer-guide/page/README.html">HERE Optimized Client Map Developer Guide</a>
  </p><p>Following features are enabled by default for implicit prefetch:
  </p><ul>
- <li><a href="#DETAIL_RENDERING"><code>DETAIL_RENDERING</code></a></li>
  <li><a href="#NAVIGATION"><code>NAVIGATION</code></a></li>
- <li><a href="#OFFLINE_SEARCH"><code>OFFLINE_SEARCH</code></a></li>
- <li><a href="#OFFLINE_ROUTING"><code>OFFLINE_ROUTING</code></a></li>
- <li><a href="#RENDERING"><code>RENDERING</code></a></li>
- <li><a href="#TRUCK"><code>TRUCK</code></a></li>
  </ul>
  <p>Implicit prefetch downloads map content for implicit prefetch features within a view port currently showed by MapView.
  Explicit prefetching is done using <code>sdk.prefetcher.RoutePrefetcher</code> and <code>sdk.prefetcher.PolygonPrefetcher</code>.
@@ -337,20 +331,39 @@ the order they are declared.</div>
  across broader geographic areas and improves both performance and accuracy
  by leveraging global search indices.
  By default this feature is disabled.
- </p><p>Enables HERE SDK to use the enhanced offline search algorithm when
- <code>OFFLINE_SEARCH_GLOBAL</code> is present in <a href="LayerConfiguration.html#enabledFeatures"><code>LayerConfiguration.enabledFeatures</code></a>
- and downloaded map regions exist with required OCM layer groups listed below.
- Note: Currently, this algorithm supports only offline maps stored in persistent (protected) storage.
- </p><p>To prevent excessive map size growth, it is recommended to enable only one of
+ </p><p>Enables the HERE SDK to use the enhanced offline search algorithm for downloaded map regions when:
+ </p><ul>
+ <li><code>OFFLINE_SEARCH_GLOBAL</code> is included in <a href="LayerConfiguration.html#enabledFeatures"><code>LayerConfiguration.enabledFeatures</code></a> and</li>
+ <li>downloaded map regions contain the required OCM layer groups listed below.</li>
+ </ul>
+ <p>Also enables the enhanced offline search algorithm for implicitly prefetched map content when:
+ </p><ul>
+ <li><code>OFFLINE_SEARCH_GLOBAL</code> is included in <a href="LayerConfiguration.html#implicitlyPrefetchedFeatures"><code>LayerConfiguration.implicitlyPrefetchedFeatures</code></a> and</li>
+ <li>downloaded map regions (if present) contain the required OCM layer groups.</li>
+ </ul>
+ <p>Both options can be enabled together. However, if enabling the feature for
+ implicitly prefetched content, it is recommended to also enable it for
+ downloaded map regions to ensure consistent search behavior.
+ </p><p><strong>Important</strong>: After enabling this feature, make sure to update the cached offline maps.
+ If the cached maps are not updated, the algorithm will either:
+ </p><ol>
+ <li>Fall back to the stable offline search if <code>OFFLINE_SEARCH</code> is still included in <a href="LayerConfiguration.html#enabledFeatures"><code>LayerConfiguration.enabledFeatures</code></a>, or</li>
+ <li>Produce a <code>LAYERS_NOT_DOWNLOADED</code> error if the necessary layers are missing.</li>
+ </ol>
+ <p>To prevent excessive map size growth, it is recommended to enable only one of
  <code>OFFLINE_SEARCH_GLOBAL</code> or <code>OFFLINE_SEARCH</code> at a time.
- </p><p>Enabling this feature increases the size of downloaded map regions by approximately 11–16%
- when enabled via <a href="LayerConfiguration.html#enabledFeatures"><code>LayerConfiguration.enabledFeatures</code></a>.
- </p><p>Feature enables following OCM layer groups:
+ </p><p>Enabling this feature increases storage requirements:
+ </p><ul>
+ <li>Downloaded map region size by ~11–16% when enabled via <a href="LayerConfiguration.html#enabledFeatures"><code>LayerConfiguration.enabledFeatures</code></a>.</li>
+ <li>Map cache size by ~40–140% when enabled via <a href="LayerConfiguration.html#implicitlyPrefetchedFeatures"><code>LayerConfiguration.implicitlyPrefetchedFeatures</code></a>
+ (upper bound occurs for long routes, e.g., Paris → Rome).</li>
+ </ul>
+ <p>Feature enables following OCM layer groups:
  </p><ul>
  <li>"search_global"</li>
  <li>"search_data"</li>
  </ul>
- <p><strong>Note:</strong> This is an alpha release of this feature, so there could be a few bugs and unexpected behaviors.
+ <p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
  Related APIs may change for new releases without a deprecation process.</p></div>
 </section>
 </li>
@@ -389,10 +402,12 @@ the order they are declared.</div>
 <div class="member-signature"><span class="modifiers">public static final</span> <span class="return-type"><a href="LayerConfiguration.Feature.html" title="enum class in com.here.sdk.core.engine">LayerConfiguration.Feature</a></span> <span class="element-name">TRUCK</span></div>
 <div class="block"><p>Map data that is used to calculate truck routes. When not set,
  the <code>OfflineRoutingEngine</code> may not work properly when being used to calculate truck routes.
- It is also used for map matching during truck navigation.
+ It is also used for map matching during truck navigation and for vehicle restriction
+ visualization.
  When not set, truck navigation may not work properly when being used offline.
  Online truck navigation will still work when the device has an online connection.
  Increase of 0.7-1.1% is to be expected for map size, in case of enabling this feature.
+ By default this feature is disabled.
  </p><p>Feature enables following OCM layer groups:
  </p><ul>
  <li>"truck"</li>

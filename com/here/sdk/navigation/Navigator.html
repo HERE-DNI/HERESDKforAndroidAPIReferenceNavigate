@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -133,7 +133,7 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -194,155 +194,167 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive junction view lane assistance notifications.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="LowSpeedZoneWarningListener.html" title="interface in com.here.sdk.navigation">LowSpeedZoneWarningListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLowSpeedZoneWarningListener()" class="member-name-link">getLowSpeedZoneWarningListener</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../mapmatcher/LocationManager.html" title="class in com.here.sdk.mapmatcher">LocationManager</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLocationManager()" class="member-name-link">getLocationManager</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the location manager instance used by the navigator.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="LowSpeedZoneWarningListener.html" title="interface in com.here.sdk.navigation">LowSpeedZoneWarningListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLowSpeedZoneWarningListener()" class="member-name-link">getLowSpeedZoneWarningListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications about low speed zones on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../routing/Maneuver.html" title="class in com.here.sdk.routing">Maneuver</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuver(int)" class="member-name-link">getManeuver</a><wbr>(int index)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../routing/Maneuver.html" title="class in com.here.sdk.routing">Maneuver</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuver(int)" class="member-name-link">getManeuver</a><wbr>(int index)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns maneuver at the given index.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ManeuverNotificationOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverNotificationOptions()" class="member-name-link">getManeuverNotificationOptions</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ManeuverNotificationOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationOptions</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverNotificationOptions()" class="member-name-link">getManeuverNotificationOptions</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the maneuver notification options.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ManeuverNotificationTimingOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationTimingOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverNotificationTimingOptions(com.here.sdk.transport.TransportMode,com.here.sdk.navigation.TimingProfile)" class="member-name-link">getManeuverNotificationTimingOptions</a><wbr>(<a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a> transportMode,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ManeuverNotificationTimingOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationTimingOptions</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverNotificationTimingOptions(com.here.sdk.transport.TransportMode,com.here.sdk.navigation.TimingProfile)" class="member-name-link">getManeuverNotificationTimingOptions</a><wbr>(<a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a> transportMode,
  <a href="TimingProfile.html" title="enum class in com.here.sdk.navigation">TimingProfile</a> timingProfile)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns maneuver notification timing options with default values given the combination of transport mode and timing profile.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ManeuverViewLaneAssistanceListener.html" title="interface in com.here.sdk.navigation">ManeuverViewLaneAssistanceListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverViewLaneAssistanceListener()" class="member-name-link">getManeuverViewLaneAssistanceListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ManeuverViewLaneAssistanceListener.html" title="interface in com.here.sdk.navigation">ManeuverViewLaneAssistanceListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getManeuverViewLaneAssistanceListener()" class="member-name-link">getManeuverViewLaneAssistanceListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive maneuver view lane assistance notifications.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MilestoneStatusListener.html" title="interface in com.here.sdk.navigation">MilestoneStatusListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMilestoneStatusListener()" class="member-name-link">getMilestoneStatusListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MilestoneStatusListener.html" title="interface in com.here.sdk.navigation">MilestoneStatusListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMilestoneStatusListener()" class="member-name-link">getMilestoneStatusListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener that notifies when a <a href="Milestone.html" title="class in com.here.sdk.navigation"><code>Milestone</code></a> has been reached or missed.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="NavigableLocationListener.html" title="interface in com.here.sdk.navigation">NavigableLocationListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNavigableLocationListener()" class="member-name-link">getNavigableLocationListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="NavigableLocationListener.html" title="interface in com.here.sdk.navigation">NavigableLocationListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNavigableLocationListener()" class="member-name-link">getNavigableLocationListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener that notifies current location updates.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OffRoadDestinationReachedListener.html" title="interface in com.here.sdk.navigation">OffRoadDestinationReachedListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOffRoadDestinationReachedListener()" class="member-name-link">getOffRoadDestinationReachedListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OffRoadDestinationReachedListener.html" title="interface in com.here.sdk.navigation">OffRoadDestinationReachedListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOffRoadDestinationReachedListener()" class="member-name-link">getOffRoadDestinationReachedListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener that notifies when the off-road destination has been reached.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OffRoadProgressListener.html" title="interface in com.here.sdk.navigation">OffRoadProgressListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOffRoadProgressListener()" class="member-name-link">getOffRoadProgressListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OffRoadProgressListener.html" title="interface in com.here.sdk.navigation">OffRoadProgressListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOffRoadProgressListener()" class="member-name-link">getOffRoadProgressListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener that notifies about off-road progress.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="PostActionListener.html" title="interface in com.here.sdk.navigation">PostActionListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPostActionListener()" class="member-name-link">getPostActionListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="PostActionListener.html" title="interface in com.here.sdk.navigation">PostActionListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPostActionListener()" class="member-name-link">getPostActionListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive post action notifications, such as a charge action at a charging station.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RailwayCrossingWarningListener.html" title="interface in com.here.sdk.navigation">RailwayCrossingWarningListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRailwayCrossingWarningListener()" class="member-name-link">getRailwayCrossingWarningListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RailwayCrossingWarningListener.html" title="interface in com.here.sdk.navigation">RailwayCrossingWarningListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRailwayCrossingWarningListener()" class="member-name-link">getRailwayCrossingWarningListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications about railway crossings on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RealisticViewWarningListener.html" title="interface in com.here.sdk.navigation">RealisticViewWarningListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRealisticViewWarningListener()" class="member-name-link">getRealisticViewWarningListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RealisticViewWarningListener.html" title="interface in com.here.sdk.navigation">RealisticViewWarningListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRealisticViewWarningListener()" class="member-name-link">getRealisticViewWarningListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications about junction views on the current road.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RealisticViewWarningOptions.html" title="class in com.here.sdk.navigation">RealisticViewWarningOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRealisticViewWarningOptions()" class="member-name-link">getRealisticViewWarningOptions</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RealisticViewWarningOptions.html" title="class in com.here.sdk.navigation">RealisticViewWarningOptions</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRealisticViewWarningOptions()" class="member-name-link">getRealisticViewWarningOptions</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets realistic view warning options that allow to filter realistic views to be passed to
  <a href="RealisticViewWarningListener.html" title="interface in com.here.sdk.navigation"><code>RealisticViewWarningListener</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadAttributesListener.html" title="interface in com.here.sdk.navigation">RoadAttributesListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadAttributesListener()" class="member-name-link">getRoadAttributesListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadAttributesListener.html" title="interface in com.here.sdk.navigation">RoadAttributesListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadAttributesListener()" class="member-name-link">getRoadAttributesListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive notifications about attributes of the current road.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadSignWarningListener.html" title="interface in com.here.sdk.navigation">RoadSignWarningListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadSignWarningListener()" class="member-name-link">getRoadSignWarningListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadSignWarningListener.html" title="interface in com.here.sdk.navigation">RoadSignWarningListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadSignWarningListener()" class="member-name-link">getRoadSignWarningListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications about road signs on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadSignWarningOptions.html" title="class in com.here.sdk.navigation">RoadSignWarningOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadSignWarningOptions()" class="member-name-link">getRoadSignWarningOptions</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadSignWarningOptions.html" title="class in com.here.sdk.navigation">RoadSignWarningOptions</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadSignWarningOptions()" class="member-name-link">getRoadSignWarningOptions</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets road sign warning options that allow to filter road signs to be passed to <a href="RoadSignWarningListener.html" title="interface in com.here.sdk.navigation"><code>RoadSignWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadTextsListener.html" title="interface in com.here.sdk.navigation">RoadTextsListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadTextsListener()" class="member-name-link">getRoadTextsListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RoadTextsListener.html" title="interface in com.here.sdk.navigation">RoadTextsListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoadTextsListener()" class="member-name-link">getRoadTextsListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive notifications about the textual attributes of the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../routing/Route.html" title="class in com.here.sdk.routing">Route</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoute()" class="member-name-link">getRoute</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../routing/Route.html" title="class in com.here.sdk.routing">Route</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRoute()" class="member-name-link">getRoute</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the route that is being navigated.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RouteDeviationListener.html" title="interface in com.here.sdk.navigation">RouteDeviationListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRouteDeviationListener()" class="member-name-link">getRouteDeviationListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RouteDeviationListener.html" title="interface in com.here.sdk.navigation">RouteDeviationListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRouteDeviationListener()" class="member-name-link">getRouteDeviationListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener that notifies when deviation from the route is observed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RouteProgressListener.html" title="interface in com.here.sdk.navigation">RouteProgressListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRouteProgressListener()" class="member-name-link">getRouteProgressListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="RouteProgressListener.html" title="interface in com.here.sdk.navigation">RouteProgressListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRouteProgressListener()" class="member-name-link">getRouteProgressListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener that notifies when a route progress change occurs.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SafetyCameraWarningListener.html" title="interface in com.here.sdk.navigation">SafetyCameraWarningListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSafetyCameraWarningListener()" class="member-name-link">getSafetyCameraWarningListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SafetyCameraWarningListener.html" title="interface in com.here.sdk.navigation">SafetyCameraWarningListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSafetyCameraWarningListener()" class="member-name-link">getSafetyCameraWarningListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive safety camera warning notifications.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SafetyCameraWarningOptions.html" title="class in com.here.sdk.navigation">SafetyCameraWarningOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSafetyCameraWarningOptions()" class="member-name-link">getSafetyCameraWarningOptions</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SafetyCameraWarningOptions.html" title="class in com.here.sdk.navigation">SafetyCameraWarningOptions</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSafetyCameraWarningOptions()" class="member-name-link">getSafetyCameraWarningOptions</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets safety camera warning options to be passed to <a href="SafetyCameraWarningListener.html" title="interface in com.here.sdk.navigation"><code>SafetyCameraWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SchoolZoneWarningListener.html" title="interface in com.here.sdk.navigation">SchoolZoneWarningListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSchoolZoneWarningListener()" class="member-name-link">getSchoolZoneWarningListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SchoolZoneWarningListener.html" title="interface in com.here.sdk.navigation">SchoolZoneWarningListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSchoolZoneWarningListener()" class="member-name-link">getSchoolZoneWarningListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications about school zones on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SchoolZoneWarningOptions.html" title="class in com.here.sdk.navigation">SchoolZoneWarningOptions</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSchoolZoneWarningOptions()" class="member-name-link">getSchoolZoneWarningOptions</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SchoolZoneWarningOptions.html" title="class in com.here.sdk.navigation">SchoolZoneWarningOptions</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSchoolZoneWarningOptions()" class="member-name-link">getSchoolZoneWarningOptions</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets school zone warning options that allow to configure school zone notifications to be
  passed to <a href="SchoolZoneWarningListener.html" title="interface in com.here.sdk.navigation"><code>SchoolZoneWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SpeedLimitListener.html" title="interface in com.here.sdk.navigation">SpeedLimitListener</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSpeedLimitListener()" class="member-name-link">getSpeedLimitListener</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SpeedLimitListener.html" title="interface in com.here.sdk.navigation">SpeedLimitListener</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSpeedLimitListener()" class="member-name-link">getSpeedLimitListener</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener  to receive notifications about the speed limit of the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SpeedWarningListener.html" title="interface in com.here.sdk.navigation">SpeedWarningListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSpeedWarningListener()" class="member-name-link">getSpeedWarningListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SpeedWarningListener.html" title="interface in com.here.sdk.navigation">SpeedWarningListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSpeedWarningListener()" class="member-name-link">getSpeedWarningListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications
  when a speed limit on a road is exceeded or driving speed is restored back to normal.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SpeedWarningOptions.html" title="class in com.here.sdk.navigation">SpeedWarningOptions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSpeedWarningOptions()" class="member-name-link">getSpeedWarningOptions</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SpeedWarningOptions.html" title="class in com.here.sdk.navigation">SpeedWarningOptions</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSpeedWarningOptions()" class="member-name-link">getSpeedWarningOptions</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the speed warning options.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TollStopWarningListener.html" title="interface in com.here.sdk.navigation">TollStopWarningListener</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTollStopWarningListener()" class="member-name-link">getTollStopWarningListener</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TollStopWarningListener.html" title="interface in com.here.sdk.navigation">TollStopWarningListener</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTollStopWarningListener()" class="member-name-link">getTollStopWarningListener</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the listener to receive notifications about
  the the upcoming toll stop.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/TransportProfile.html" title="class in com.here.sdk.core">TransportProfile</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTrackingTransportProfile()" class="member-name-link">getTrackingTransportProfile</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="../core/TransportProfile.html" title="class in com.here.sdk.core">TransportProfile</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getTrackingTransportProfile()" class="member-name-link">getTrackingTransportProfile</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTrackingTransportSpecification()" class="member-name-link">getTrackingTransportSpecification</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the transport profile for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</div>
+<div class="block">Gets the transport specification for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TrafficMergeWarningListener.html" title="interface in com.here.sdk.navigation">TrafficMergeWarningListener</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTrafficMergeWarningListener()" class="member-name-link">getTrafficMergeWarningListener</a>()</code></div>
@@ -373,237 +385,249 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <div class="block">Gets truck restrictions warning options that allow to filter truck restrictions to be
  passed to <a href="TruckRestrictionsWarningListener.html" title="interface in com.here.sdk.navigation"><code>TruckRestrictionsWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getWarningNotificationDistances(com.here.sdk.navigation.WarningType)" class="member-name-link">getWarningNotificationDistances</a><wbr>(<a href="WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a> warningType)</wbr></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../warner/WarnerEngine.html" title="class in com.here.sdk.warner">WarnerEngine</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getWarnerEngine()" class="member-name-link">getWarnerEngine</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the warner engine used by the navigator.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getWarningNotificationDistances(com.here.sdk.navigation.WarningType)" class="member-name-link">getWarningNotificationDistances</a><wbr>(<a href="WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a> warningType)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the warning notification distances for the requested warning type.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEnableTunnelExtrapolation()" class="member-name-link">isEnableTunnelExtrapolation</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEnableTunnelExtrapolation()" class="member-name-link">isEnableTunnelExtrapolation</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return <code>true</code> if tunnel extrapolation is enabled otherwise <code>false</code>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPassthroughWaypointsHandlingEnabled()" class="member-name-link">isPassthroughWaypointsHandlingEnabled</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPassthroughWaypointsHandlingEnabled()" class="member-name-link">isPassthroughWaypointsHandlingEnabled</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Return <code>true</code> if handling of passthrough waypoints is enabled, otherwise - <code>false</code>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onLocationUpdated(com.here.sdk.core.Location)" class="member-name-link">onLocationUpdated</a><wbr>(<a href="../core/Location.html" title="class in com.here.sdk.core">Location</a> location)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onLocationUpdated(com.here.sdk.core.Location)" class="member-name-link">onLocationUpdated</a><wbr>(<a href="../core/Location.html" title="class in com.here.sdk.core">Location</a> location)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Called each time a new location is available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#repeatLastManeuverNotification()" class="member-name-link">repeatLastManeuverNotification</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#repeatLastManeuverNotification()" class="member-name-link">repeatLastManeuverNotification</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Call of this function is used to trigger the navigator to repeat the last maneuver notification based on the current position.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBorderCrossingWarningListener(com.here.sdk.navigation.BorderCrossingWarningListener)" class="member-name-link">setBorderCrossingWarningListener</a><wbr>(<a href="BorderCrossingWarningListener.html" title="interface in com.here.sdk.navigation">BorderCrossingWarningListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBorderCrossingWarningListener(com.here.sdk.navigation.BorderCrossingWarningListener)" class="member-name-link">setBorderCrossingWarningListener</a><wbr>(<a href="BorderCrossingWarningListener.html" title="interface in com.here.sdk.navigation">BorderCrossingWarningListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about border crossings on the current road.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBorderCrossingWarningOptions(com.here.sdk.navigation.BorderCrossingWarningOptions)" class="member-name-link">setBorderCrossingWarningOptions</a><wbr>(<a href="BorderCrossingWarningOptions.html" title="class in com.here.sdk.navigation">BorderCrossingWarningOptions</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBorderCrossingWarningOptions(com.here.sdk.navigation.BorderCrossingWarningOptions)" class="member-name-link">setBorderCrossingWarningOptions</a><wbr>(<a href="BorderCrossingWarningOptions.html" title="class in com.here.sdk.navigation">BorderCrossingWarningOptions</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets border crossing warning options to be passed to <a href="BorderCrossingWarningListener.html" title="interface in com.here.sdk.navigation"><code>BorderCrossingWarningListener</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCurrentSituationLaneAssistanceViewListener(com.here.sdk.navigation.CurrentSituationLaneAssistanceViewListener)" class="member-name-link">setCurrentSituationLaneAssistanceViewListener</a><wbr>(<a href="CurrentSituationLaneAssistanceViewListener.html" title="interface in com.here.sdk.navigation">CurrentSituationLaneAssistanceViewListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCurrentSituationLaneAssistanceViewListener(com.here.sdk.navigation.CurrentSituationLaneAssistanceViewListener)" class="member-name-link">setCurrentSituationLaneAssistanceViewListener</a><wbr>(<a href="CurrentSituationLaneAssistanceViewListener.html" title="interface in com.here.sdk.navigation">CurrentSituationLaneAssistanceViewListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive current situation lane assistance view notifications.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomOption(java.lang.String,java.lang.String)" class="member-name-link">setCustomOption</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> key,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomOption(java.lang.String,java.lang.String)" class="member-name-link">setCustomOption</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> key,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This method sets custom options that controls navigator behavior.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDangerZoneWarningListener(com.here.sdk.navigation.DangerZoneWarningListener)" class="member-name-link">setDangerZoneWarningListener</a><wbr>(<a href="DangerZoneWarningListener.html" title="interface in com.here.sdk.navigation">DangerZoneWarningListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDangerZoneWarningListener(com.here.sdk.navigation.DangerZoneWarningListener)" class="member-name-link">setDangerZoneWarningListener</a><wbr>(<a href="DangerZoneWarningListener.html" title="interface in com.here.sdk.navigation">DangerZoneWarningListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive current danger zones notifications.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDestinationReachedListener(com.here.sdk.navigation.DestinationReachedListener)" class="member-name-link">setDestinationReachedListener</a><wbr>(<a href="DestinationReachedListener.html" title="interface in com.here.sdk.navigation">DestinationReachedListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDestinationReachedListener(com.here.sdk.navigation.DestinationReachedListener)" class="member-name-link">setDestinationReachedListener</a><wbr>(<a href="DestinationReachedListener.html" title="interface in com.here.sdk.navigation">DestinationReachedListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notify when the destination has been reached.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnableTunnelExtrapolation(boolean)" class="member-name-link">setEnableTunnelExtrapolation</a><wbr>(boolean value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnableTunnelExtrapolation(boolean)" class="member-name-link">setEnableTunnelExtrapolation</a><wbr>(boolean value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Set to <code>true</code> to enable tunnel extrapolation, set to <code>false</code> to disable tunnel extrapolation.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnvironmentalZoneWarningListener(com.here.sdk.navigation.EnvironmentalZoneWarningListener)" class="member-name-link">setEnvironmentalZoneWarningListener</a><wbr>(<a href="EnvironmentalZoneWarningListener.html" title="interface in com.here.sdk.navigation">EnvironmentalZoneWarningListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnvironmentalZoneWarningListener(com.here.sdk.navigation.EnvironmentalZoneWarningListener)" class="member-name-link">setEnvironmentalZoneWarningListener</a><wbr>(<a href="EnvironmentalZoneWarningListener.html" title="interface in com.here.sdk.navigation">EnvironmentalZoneWarningListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive current environmental zones notifications.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEventTextListener(com.here.sdk.navigation.EventTextListener)" class="member-name-link">setEventTextListener</a><wbr>(<a href="EventTextListener.html" title="interface in com.here.sdk.navigation">EventTextListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEventTextListener(com.here.sdk.navigation.EventTextListener)" class="member-name-link">setEventTextListener</a><wbr>(<a href="EventTextListener.html" title="interface in com.here.sdk.navigation">EventTextListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies when a text notification is available.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEventTextOptions(com.here.sdk.navigation.EventTextOptions)" class="member-name-link">setEventTextOptions</a><wbr>(<a href="EventTextOptions.html" title="class in com.here.sdk.navigation">EventTextOptions</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEventTextOptions(com.here.sdk.navigation.EventTextOptions)" class="member-name-link">setEventTextOptions</a><wbr>(<a href="EventTextOptions.html" title="class in com.here.sdk.navigation">EventTextOptions</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the text notification options.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setJunctionViewLaneAssistanceListener(com.here.sdk.navigation.JunctionViewLaneAssistanceListener)" class="member-name-link">setJunctionViewLaneAssistanceListener</a><wbr>(<a href="JunctionViewLaneAssistanceListener.html" title="interface in com.here.sdk.navigation">JunctionViewLaneAssistanceListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setJunctionViewLaneAssistanceListener(com.here.sdk.navigation.JunctionViewLaneAssistanceListener)" class="member-name-link">setJunctionViewLaneAssistanceListener</a><wbr>(<a href="JunctionViewLaneAssistanceListener.html" title="interface in com.here.sdk.navigation">JunctionViewLaneAssistanceListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive junction view lane assistance notifications.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setLowSpeedZoneWarningListener(com.here.sdk.navigation.LowSpeedZoneWarningListener)" class="member-name-link">setLowSpeedZoneWarningListener</a><wbr>(<a href="LowSpeedZoneWarningListener.html" title="interface in com.here.sdk.navigation">LowSpeedZoneWarningListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setLowSpeedZoneWarningListener(com.here.sdk.navigation.LowSpeedZoneWarningListener)" class="member-name-link">setLowSpeedZoneWarningListener</a><wbr>(<a href="LowSpeedZoneWarningListener.html" title="interface in com.here.sdk.navigation">LowSpeedZoneWarningListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about low speed zones on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverNotificationOptions(com.here.sdk.navigation.ManeuverNotificationOptions)" class="member-name-link">setManeuverNotificationOptions</a><wbr>(<a href="ManeuverNotificationOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationOptions</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverNotificationOptions(com.here.sdk.navigation.ManeuverNotificationOptions)" class="member-name-link">setManeuverNotificationOptions</a><wbr>(<a href="ManeuverNotificationOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationOptions</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the maneuver notification options.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverNotificationTimingOptions(com.here.sdk.transport.TransportMode,com.here.sdk.navigation.TimingProfile,com.here.sdk.navigation.ManeuverNotificationTimingOptions)" class="member-name-link">setManeuverNotificationTimingOptions</a><wbr>(<a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a> transportMode,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverNotificationTimingOptions(com.here.sdk.transport.TransportMode,com.here.sdk.navigation.TimingProfile,com.here.sdk.navigation.ManeuverNotificationTimingOptions)" class="member-name-link">setManeuverNotificationTimingOptions</a><wbr>(<a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a> transportMode,
  <a href="TimingProfile.html" title="enum class in com.here.sdk.navigation">TimingProfile</a> timingProfile,
  <a href="ManeuverNotificationTimingOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationTimingOptions</a> options)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Set timing option values for the combination of transport mode and timing profile.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverViewLaneAssistanceListener(com.here.sdk.navigation.ManeuverViewLaneAssistanceListener)" class="member-name-link">setManeuverViewLaneAssistanceListener</a><wbr>(<a href="ManeuverViewLaneAssistanceListener.html" title="interface in com.here.sdk.navigation">ManeuverViewLaneAssistanceListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManeuverViewLaneAssistanceListener(com.here.sdk.navigation.ManeuverViewLaneAssistanceListener)" class="member-name-link">setManeuverViewLaneAssistanceListener</a><wbr>(<a href="ManeuverViewLaneAssistanceListener.html" title="interface in com.here.sdk.navigation">ManeuverViewLaneAssistanceListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive maneuver view lane assistance notifications.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMilestoneStatusListener(com.here.sdk.navigation.MilestoneStatusListener)" class="member-name-link">setMilestoneStatusListener</a><wbr>(<a href="MilestoneStatusListener.html" title="interface in com.here.sdk.navigation">MilestoneStatusListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMilestoneStatusListener(com.here.sdk.navigation.MilestoneStatusListener)" class="member-name-link">setMilestoneStatusListener</a><wbr>(<a href="MilestoneStatusListener.html" title="interface in com.here.sdk.navigation">MilestoneStatusListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies when a <a href="Milestone.html" title="class in com.here.sdk.navigation"><code>Milestone</code></a> has been reached or missed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setNavigableLocationListener(com.here.sdk.navigation.NavigableLocationListener)" class="member-name-link">setNavigableLocationListener</a><wbr>(<a href="NavigableLocationListener.html" title="interface in com.here.sdk.navigation">NavigableLocationListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setNavigableLocationListener(com.here.sdk.navigation.NavigableLocationListener)" class="member-name-link">setNavigableLocationListener</a><wbr>(<a href="NavigableLocationListener.html" title="interface in com.here.sdk.navigation">NavigableLocationListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies current location updates.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOffRoadDestinationReachedListener(com.here.sdk.navigation.OffRoadDestinationReachedListener)" class="member-name-link">setOffRoadDestinationReachedListener</a><wbr>(<a href="OffRoadDestinationReachedListener.html" title="interface in com.here.sdk.navigation">OffRoadDestinationReachedListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOffRoadDestinationReachedListener(com.here.sdk.navigation.OffRoadDestinationReachedListener)" class="member-name-link">setOffRoadDestinationReachedListener</a><wbr>(<a href="OffRoadDestinationReachedListener.html" title="interface in com.here.sdk.navigation">OffRoadDestinationReachedListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies when the off-road destination has been reached.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOffRoadProgressListener(com.here.sdk.navigation.OffRoadProgressListener)" class="member-name-link">setOffRoadProgressListener</a><wbr>(<a href="OffRoadProgressListener.html" title="interface in com.here.sdk.navigation">OffRoadProgressListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOffRoadProgressListener(com.here.sdk.navigation.OffRoadProgressListener)" class="member-name-link">setOffRoadProgressListener</a><wbr>(<a href="OffRoadProgressListener.html" title="interface in com.here.sdk.navigation">OffRoadProgressListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies about off-road progress.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPassthroughWaypointsHandlingEnabled(boolean)" class="member-name-link">setPassthroughWaypointsHandlingEnabled</a><wbr>(boolean value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPassthroughWaypointsHandlingEnabled(boolean)" class="member-name-link">setPassthroughWaypointsHandlingEnabled</a><wbr>(boolean value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Set to <code>true</code> enables handling of passthrough waypoints, set to <code>false</code> disables handling of passthrough waypoints.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPostActionListener(com.here.sdk.navigation.PostActionListener)" class="member-name-link">setPostActionListener</a><wbr>(<a href="PostActionListener.html" title="interface in com.here.sdk.navigation">PostActionListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPostActionListener(com.here.sdk.navigation.PostActionListener)" class="member-name-link">setPostActionListener</a><wbr>(<a href="PostActionListener.html" title="interface in com.here.sdk.navigation">PostActionListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive post action notifications, such as a charge action at a charging station.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRailwayCrossingWarningListener(com.here.sdk.navigation.RailwayCrossingWarningListener)" class="member-name-link">setRailwayCrossingWarningListener</a><wbr>(<a href="RailwayCrossingWarningListener.html" title="interface in com.here.sdk.navigation">RailwayCrossingWarningListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRailwayCrossingWarningListener(com.here.sdk.navigation.RailwayCrossingWarningListener)" class="member-name-link">setRailwayCrossingWarningListener</a><wbr>(<a href="RailwayCrossingWarningListener.html" title="interface in com.here.sdk.navigation">RailwayCrossingWarningListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about railway crossings on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRealisticViewWarningListener(com.here.sdk.navigation.RealisticViewWarningListener)" class="member-name-link">setRealisticViewWarningListener</a><wbr>(<a href="RealisticViewWarningListener.html" title="interface in com.here.sdk.navigation">RealisticViewWarningListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRealisticViewWarningListener(com.here.sdk.navigation.RealisticViewWarningListener)" class="member-name-link">setRealisticViewWarningListener</a><wbr>(<a href="RealisticViewWarningListener.html" title="interface in com.here.sdk.navigation">RealisticViewWarningListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about junction views on the current road.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRealisticViewWarningOptions(com.here.sdk.navigation.RealisticViewWarningOptions)" class="member-name-link">setRealisticViewWarningOptions</a><wbr>(<a href="RealisticViewWarningOptions.html" title="class in com.here.sdk.navigation">RealisticViewWarningOptions</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRealisticViewWarningOptions(com.here.sdk.navigation.RealisticViewWarningOptions)" class="member-name-link">setRealisticViewWarningOptions</a><wbr>(<a href="RealisticViewWarningOptions.html" title="class in com.here.sdk.navigation">RealisticViewWarningOptions</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets realistic view warning options that allow to filter realistic views to be passed to
  <a href="RealisticViewWarningListener.html" title="interface in com.here.sdk.navigation"><code>RealisticViewWarningListener</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadAttributesListener(com.here.sdk.navigation.RoadAttributesListener)" class="member-name-link">setRoadAttributesListener</a><wbr>(<a href="RoadAttributesListener.html" title="interface in com.here.sdk.navigation">RoadAttributesListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadAttributesListener(com.here.sdk.navigation.RoadAttributesListener)" class="member-name-link">setRoadAttributesListener</a><wbr>(<a href="RoadAttributesListener.html" title="interface in com.here.sdk.navigation">RoadAttributesListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive notifications about attributes of the current road.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadSignWarningListener(com.here.sdk.navigation.RoadSignWarningListener)" class="member-name-link">setRoadSignWarningListener</a><wbr>(<a href="RoadSignWarningListener.html" title="interface in com.here.sdk.navigation">RoadSignWarningListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadSignWarningListener(com.here.sdk.navigation.RoadSignWarningListener)" class="member-name-link">setRoadSignWarningListener</a><wbr>(<a href="RoadSignWarningListener.html" title="interface in com.here.sdk.navigation">RoadSignWarningListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about road signs on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadSignWarningOptions(com.here.sdk.navigation.RoadSignWarningOptions)" class="member-name-link">setRoadSignWarningOptions</a><wbr>(<a href="RoadSignWarningOptions.html" title="class in com.here.sdk.navigation">RoadSignWarningOptions</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadSignWarningOptions(com.here.sdk.navigation.RoadSignWarningOptions)" class="member-name-link">setRoadSignWarningOptions</a><wbr>(<a href="RoadSignWarningOptions.html" title="class in com.here.sdk.navigation">RoadSignWarningOptions</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets road sign warning options that allow to filter road signs to be passed to <a href="RoadSignWarningListener.html" title="interface in com.here.sdk.navigation"><code>RoadSignWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadTextsListener(com.here.sdk.navigation.RoadTextsListener)" class="member-name-link">setRoadTextsListener</a><wbr>(<a href="RoadTextsListener.html" title="interface in com.here.sdk.navigation">RoadTextsListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoadTextsListener(com.here.sdk.navigation.RoadTextsListener)" class="member-name-link">setRoadTextsListener</a><wbr>(<a href="RoadTextsListener.html" title="interface in com.here.sdk.navigation">RoadTextsListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive notifications about the textual attributes of the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoute(com.here.sdk.routing.Route)" class="member-name-link">setRoute</a><wbr>(<a href="../routing/Route.html" title="class in com.here.sdk.routing">Route</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRoute(com.here.sdk.routing.Route)" class="member-name-link">setRoute</a><wbr>(<a href="../routing/Route.html" title="class in com.here.sdk.routing">Route</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the route to navigate.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRouteDeviationListener(com.here.sdk.navigation.RouteDeviationListener)" class="member-name-link">setRouteDeviationListener</a><wbr>(<a href="RouteDeviationListener.html" title="interface in com.here.sdk.navigation">RouteDeviationListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRouteDeviationListener(com.here.sdk.navigation.RouteDeviationListener)" class="member-name-link">setRouteDeviationListener</a><wbr>(<a href="RouteDeviationListener.html" title="interface in com.here.sdk.navigation">RouteDeviationListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies when deviation from the route is observed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRouteProgressListener(com.here.sdk.navigation.RouteProgressListener)" class="member-name-link">setRouteProgressListener</a><wbr>(<a href="RouteProgressListener.html" title="interface in com.here.sdk.navigation">RouteProgressListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRouteProgressListener(com.here.sdk.navigation.RouteProgressListener)" class="member-name-link">setRouteProgressListener</a><wbr>(<a href="RouteProgressListener.html" title="interface in com.here.sdk.navigation">RouteProgressListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener that notifies when a route progress change occurs.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSafetyCameraWarningListener(com.here.sdk.navigation.SafetyCameraWarningListener)" class="member-name-link">setSafetyCameraWarningListener</a><wbr>(<a href="SafetyCameraWarningListener.html" title="interface in com.here.sdk.navigation">SafetyCameraWarningListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSafetyCameraWarningListener(com.here.sdk.navigation.SafetyCameraWarningListener)" class="member-name-link">setSafetyCameraWarningListener</a><wbr>(<a href="SafetyCameraWarningListener.html" title="interface in com.here.sdk.navigation">SafetyCameraWarningListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive safety camera warning notifications.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSafetyCameraWarningOptions(com.here.sdk.navigation.SafetyCameraWarningOptions)" class="member-name-link">setSafetyCameraWarningOptions</a><wbr>(<a href="SafetyCameraWarningOptions.html" title="class in com.here.sdk.navigation">SafetyCameraWarningOptions</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSafetyCameraWarningOptions(com.here.sdk.navigation.SafetyCameraWarningOptions)" class="member-name-link">setSafetyCameraWarningOptions</a><wbr>(<a href="SafetyCameraWarningOptions.html" title="class in com.here.sdk.navigation">SafetyCameraWarningOptions</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets safety camera warning options to be passed to <a href="SafetyCameraWarningListener.html" title="interface in com.here.sdk.navigation"><code>SafetyCameraWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSchoolZoneWarningListener(com.here.sdk.navigation.SchoolZoneWarningListener)" class="member-name-link">setSchoolZoneWarningListener</a><wbr>(<a href="SchoolZoneWarningListener.html" title="interface in com.here.sdk.navigation">SchoolZoneWarningListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSchoolZoneWarningListener(com.here.sdk.navigation.SchoolZoneWarningListener)" class="member-name-link">setSchoolZoneWarningListener</a><wbr>(<a href="SchoolZoneWarningListener.html" title="interface in com.here.sdk.navigation">SchoolZoneWarningListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about school zones on the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSchoolZoneWarningOptions(com.here.sdk.navigation.SchoolZoneWarningOptions)" class="member-name-link">setSchoolZoneWarningOptions</a><wbr>(<a href="SchoolZoneWarningOptions.html" title="class in com.here.sdk.navigation">SchoolZoneWarningOptions</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSchoolZoneWarningOptions(com.here.sdk.navigation.SchoolZoneWarningOptions)" class="member-name-link">setSchoolZoneWarningOptions</a><wbr>(<a href="SchoolZoneWarningOptions.html" title="class in com.here.sdk.navigation">SchoolZoneWarningOptions</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets school zone warning options that allow to configure school zone notifications to be
  passed to <a href="SchoolZoneWarningListener.html" title="interface in com.here.sdk.navigation"><code>SchoolZoneWarningListener</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeedLimitListener(com.here.sdk.navigation.SpeedLimitListener)" class="member-name-link">setSpeedLimitListener</a><wbr>(<a href="SpeedLimitListener.html" title="interface in com.here.sdk.navigation">SpeedLimitListener</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeedLimitListener(com.here.sdk.navigation.SpeedLimitListener)" class="member-name-link">setSpeedLimitListener</a><wbr>(<a href="SpeedLimitListener.html" title="interface in com.here.sdk.navigation">SpeedLimitListener</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener  to receive notifications about the speed limit of the current road.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeedWarningListener(com.here.sdk.navigation.SpeedWarningListener)" class="member-name-link">setSpeedWarningListener</a><wbr>(<a href="SpeedWarningListener.html" title="interface in com.here.sdk.navigation">SpeedWarningListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeedWarningListener(com.here.sdk.navigation.SpeedWarningListener)" class="member-name-link">setSpeedWarningListener</a><wbr>(<a href="SpeedWarningListener.html" title="interface in com.here.sdk.navigation">SpeedWarningListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications
  when a speed limit on a road is exceeded or driving speed is restored back to normal.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeedWarningOptions(com.here.sdk.navigation.SpeedWarningOptions)" class="member-name-link">setSpeedWarningOptions</a><wbr>(<a href="SpeedWarningOptions.html" title="class in com.here.sdk.navigation">SpeedWarningOptions</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setSpeedWarningOptions(com.here.sdk.navigation.SpeedWarningOptions)" class="member-name-link">setSpeedWarningOptions</a><wbr>(<a href="SpeedWarningOptions.html" title="class in com.here.sdk.navigation">SpeedWarningOptions</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the speed warning options.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTollStopWarningListener(com.here.sdk.navigation.TollStopWarningListener)" class="member-name-link">setTollStopWarningListener</a><wbr>(<a href="TollStopWarningListener.html" title="interface in com.here.sdk.navigation">TollStopWarningListener</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTollStopWarningListener(com.here.sdk.navigation.TollStopWarningListener)" class="member-name-link">setTollStopWarningListener</a><wbr>(<a href="TollStopWarningListener.html" title="interface in com.here.sdk.navigation">TollStopWarningListener</a> value)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the listener to receive notifications about
  the upcoming toll stop.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#setTrackingTransportProfile(com.here.sdk.core.TransportProfile)" class="member-name-link">setTrackingTransportProfile</a><wbr>(<a href="../core/TransportProfile.html" title="class in com.here.sdk.core">TransportProfile</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTrackingTransportProfile(com.here.sdk.core.TransportProfile)" class="member-name-link">setTrackingTransportProfile</a><wbr>(<a href="../core/TransportProfile.html" title="class in com.here.sdk.core">TransportProfile</a> value)</wbr></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTrackingTransportSpecification(com.here.sdk.transport.TransportSpecification)" class="member-name-link">setTrackingTransportSpecification</a><wbr>(<a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a> value)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets the transport profile for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</div>
+<div class="block">Sets the transport specification for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTrafficMergeWarningListener(com.here.sdk.navigation.TrafficMergeWarningListener)" class="member-name-link">setTrafficMergeWarningListener</a><wbr>(<a href="TrafficMergeWarningListener.html" title="interface in com.here.sdk.navigation">TrafficMergeWarningListener</a> value)</wbr></code></div>
@@ -928,8 +952,12 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <li>
 <section class="detail" id="getTrackingTransportProfile()">
 <h3>getTrackingTransportProfile</h3>
-<div class="member-signature"><span class="annotations">@Nullable
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../core/TransportProfile.html" title="class in com.here.sdk.core">TransportProfile</a></span> <span class="element-name">getTrackingTransportProfile</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
 <div class="block"><p>Gets the transport profile for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.
  </p><p>Properly setting the transport profile optimizes the navigation experience, and improves resource consumption.
  For example, a <a href="../core/TransportProfile.html" title="class in com.here.sdk.core"><code>TransportProfile</code></a> can be defined with a <a href="../transport/VehicleProfile.html" title="class in com.here.sdk.transport"><code>VehicleProfile</code></a>.
@@ -959,8 +987,12 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <li>
 <section class="detail" id="setTrackingTransportProfile(com.here.sdk.core.TransportProfile)">
 <h3>setTrackingTransportProfile</h3>
-<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setTrackingTransportProfile</span><wbr><span class="parameters">(@Nullable
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setTrackingTransportProfile</span><wbr><span class="parameters">(@Nullable
  <a href="../core/TransportProfile.html" title="class in com.here.sdk.core">TransportProfile</a> value)</span></wbr></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>NavigatorInterface.trackingTransportSpecification</code> instead.</p></div>
+</div>
 <div class="block"><p>Sets the transport profile for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.
  </p><p>Properly setting the transport profile optimizes the navigation experience, and improves resource consumption.
  For example, a <a href="../core/TransportProfile.html" title="class in com.here.sdk.core"><code>TransportProfile</code></a> can be defined with a <a href="../transport/VehicleProfile.html" title="class in com.here.sdk.transport"><code>VehicleProfile</code></a>.
@@ -984,6 +1016,68 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <dd><code><a href="NavigatorInterface.html#setTrackingTransportProfile(com.here.sdk.core.TransportProfile)">setTrackingTransportProfile</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>value</code> - <p>Defines the transport profile for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getTrackingTransportSpecification()">
+<h3>getTrackingTransportSpecification</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a></span> <span class="element-name">getTrackingTransportSpecification</span>()</div>
+<div class="block"><p>Gets the transport specification for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.
+ </p><p>Properly setting the transport specification optimizes the navigation experience, and improves
+ resource consumption. An <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport"><code>TransportSpecification</code></a> must have the <a href="../transport/TransportSpecification.html#transportMode"><code>TransportSpecification.transportMode</code></a> set.
+ A transport specification can have several parameters defined such as <a href="../transport/VehicleSpecification.html#lengthInCentimeters"><code>VehicleSpecification.lengthInCentimeters</code></a>
+ defined in <a href="../transport/TransportSpecification.html#vehicleSpecification"><code>TransportSpecification.vehicleSpecification</code></a> to set the source of information describing the vehicle.
+ By default the <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport"><code>TransportSpecification</code></a> will have the transport mode set to <a href="../transport/TransportMode.html#CAR"><code>TransportMode.CAR</code></a>.
+ </p><p>Currently used members of <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport"><code>TransportSpecification</code></a>
+ </p><ul>
+ <li><a href="../transport/TransportSpecification.html#transportMode"><code>TransportSpecification.transportMode</code></a>: Sets the transport mode.</li>
+ <li>From <a href="../transport/TransportSpecification.html#vehicleSpecification"><code>TransportSpecification.vehicleSpecification</code></a>:
+ <ul>
+ <li><a href="../transport/VehicleSpecification.html#grossWeightInKilograms"><code>VehicleSpecification.grossWeightInKilograms</code></a>: Required for truck related speed information.</li>
+ <li><a href="../transport/VehicleSpecification.html#heightInCentimeters"><code>VehicleSpecification.heightInCentimeters</code></a>: Required for truck related speed information.</li>
+ <li><a href="../transport/VehicleSpecification.html#widthInCentimeters"><code>VehicleSpecification.widthInCentimeters</code></a>: Additional truck definition for more specific truck speed information.</li>
+ <li><a href="../transport/VehicleSpecification.html#lengthInCentimeters"><code>VehicleSpecification.lengthInCentimeters</code></a>: Additional truck definition for more specific truck speed information.</li>
+ </ul>
+ </li>
+ </ul></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="NavigatorInterface.html#getTrackingTransportSpecification()">getTrackingTransportSpecification</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
+<dt>Returns:</dt>
+<dd><p>Defines the transport specification for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setTrackingTransportSpecification(com.here.sdk.transport.TransportSpecification)">
+<h3>setTrackingTransportSpecification</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setTrackingTransportSpecification</span><wbr><span class="parameters">(@Nullable
+ <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a> value)</span></wbr></div>
+<div class="block"><p>Sets the transport specification for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.
+ </p><p>Properly setting the transport specification optimizes the navigation experience, and improves
+ resource consumption. An <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport"><code>TransportSpecification</code></a> must have the <a href="../transport/TransportSpecification.html#transportMode"><code>TransportSpecification.transportMode</code></a> set.
+ A transport specification can have several parameters defined such as <a href="../transport/VehicleSpecification.html#lengthInCentimeters"><code>VehicleSpecification.lengthInCentimeters</code></a>
+ defined in <a href="../transport/TransportSpecification.html#vehicleSpecification"><code>TransportSpecification.vehicleSpecification</code></a> to set the source of information describing the vehicle.
+ By default the <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport"><code>TransportSpecification</code></a> will have the transport mode set to <a href="../transport/TransportMode.html#CAR"><code>TransportMode.CAR</code></a>.
+ </p><p>Currently used members of <a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport"><code>TransportSpecification</code></a>
+ </p><ul>
+ <li><a href="../transport/TransportSpecification.html#transportMode"><code>TransportSpecification.transportMode</code></a>: Sets the transport mode.</li>
+ <li>From <a href="../transport/TransportSpecification.html#vehicleSpecification"><code>TransportSpecification.vehicleSpecification</code></a>:
+ <ul>
+ <li><a href="../transport/VehicleSpecification.html#grossWeightInKilograms"><code>VehicleSpecification.grossWeightInKilograms</code></a>: Required for truck related speed information.</li>
+ <li><a href="../transport/VehicleSpecification.html#heightInCentimeters"><code>VehicleSpecification.heightInCentimeters</code></a>: Required for truck related speed information.</li>
+ <li><a href="../transport/VehicleSpecification.html#widthInCentimeters"><code>VehicleSpecification.widthInCentimeters</code></a>: Additional truck definition for more specific truck speed information.</li>
+ <li><a href="../transport/VehicleSpecification.html#lengthInCentimeters"><code>VehicleSpecification.lengthInCentimeters</code></a>: Additional truck definition for more specific truck speed information.</li>
+ </ul>
+ </li>
+ </ul></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="NavigatorInterface.html#setTrackingTransportSpecification(com.here.sdk.transport.TransportSpecification)">setTrackingTransportSpecification</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>value</code> - <p>Defines the transport specification for the <a href="Navigator.html" title="class in com.here.sdk.navigation"><code>Navigator</code></a>, when no route is present.</p></dd>
 </dl>
 </section>
 </li>
@@ -1494,6 +1588,21 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <dd><code><a href="NavigatorInterface.html#setTruckRestrictionsWarningListener(com.here.sdk.navigation.TruckRestrictionsWarningListener)">setTruckRestrictionsWarningListener</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>value</code> - <p>Object to receive notifications about truck restrictions on the current road.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getWarnerEngine()">
+<h3>getWarnerEngine</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../warner/WarnerEngine.html" title="class in com.here.sdk.warner">WarnerEngine</a></span> <span class="element-name">getWarnerEngine</span>()</div>
+<div class="block"><p>Gets the warner engine used by the navigator.
+ </p><p>This engine can be used to configure navigation warnings.</p></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="NavigatorInterface.html#getWarnerEngine()">getWarnerEngine</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
+<dt>Returns:</dt>
+<dd><p>Warner engine used by the navigator.</p></dd>
 </dl>
 </section>
 </li>
@@ -2349,6 +2458,20 @@ implements <a href="NavigatorInterface.html" title="interface in com.here.sdk.na
 <dd><code><a href="NavigatorInterface.html#setTrafficOnRoute(com.here.sdk.routing.TrafficOnRoute)">setTrafficOnRoute</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>value</code> - <p>Traffic information for the current route.</p></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getLocationManager()">
+<h3>getLocationManager</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../mapmatcher/LocationManager.html" title="class in com.here.sdk.mapmatcher">LocationManager</a></span> <span class="element-name">getLocationManager</span>()</div>
+<div class="block"><p>Gets the location manager instance used by the navigator.</p></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="NavigatorInterface.html#getLocationManager()">getLocationManager</a></code> in interface <code><a href="NavigatorInterface.html" title="interface in com.here.sdk.navigation">NavigatorInterface</a></code></dd>
+<dt>Returns:</dt>
+<dd><p>The location manager used by the navigator for map-matched location processing.</p></dd>
 </dl>
 </section>
 </li>

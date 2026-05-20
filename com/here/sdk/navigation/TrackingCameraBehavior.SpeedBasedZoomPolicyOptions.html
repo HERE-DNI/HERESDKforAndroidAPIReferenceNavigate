@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var pathtoroot = "../../../../";
 loadScripts(document, 'script');</script>
@@ -78,7 +78,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static final class </span><span class="element-name type-name-label">TrackingCameraBehavior.SpeedBasedZoomPolicyOptions</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
-<div class="block"><p>Configuration for computing zoom levels from speed thresholds defined per road classification.</p></div>
+<div class="block"><p>Configuration for computing zoom levels from speed thresholds defined per road classification.
+ For correct default initialization, use <a href="TrackingCameraBehavior.html#defaultSpeedBasedZoomPolicyOptions()"><code>TrackingCameraBehavior.defaultSpeedBasedZoomPolicyOptions()</code></a>.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -145,7 +146,8 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../../time/Duration.html" title="class in com.here.time">Duration</a></span> <span class="element-name">delayBetweenThresholdChanges</span></div>
 <div class="block"><p>Minimum time interval that must pass before the zoom level is
- allowed to switch to a new speed threshold.</p></div>
+ allowed to switch to a new speed threshold. If <a href="TrackingCameraBehavior.html#defaultSpeedBasedZoomPolicyOptions()"><code>TrackingCameraBehavior.defaultSpeedBasedZoomPolicyOptions()</code></a> is not used
+ for <a href="TrackingCameraBehavior.SpeedBasedZoomPolicyOptions.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior.SpeedBasedZoomPolicyOptions</code></a>, it will be <code>null</code>.</p></div>
 </section>
 </li>
 <li>
@@ -154,7 +156,8 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="RoadClassification.html" title="enum class in com.here.sdk.navigation">RoadClassification</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TrackingCameraBehavior.SpeedThreshold.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.SpeedThreshold</a>&gt;&gt;</wbr></span> <span class="element-name">roadClassificationToSpeedThreshold</span></div>
 <div class="block"><p>Defines, per road classification, how the zoom level should change in
- response to different vehicle speeds.</p></div>
+ response to different vehicle speeds. If <a href="TrackingCameraBehavior.html#defaultSpeedBasedZoomPolicyOptions()"><code>TrackingCameraBehavior.defaultSpeedBasedZoomPolicyOptions()</code></a> is not used
+ for <a href="TrackingCameraBehavior.SpeedBasedZoomPolicyOptions.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior.SpeedBasedZoomPolicyOptions</code></a>, it will be an empty map.</p></div>
 </section>
 </li>
 </ul>

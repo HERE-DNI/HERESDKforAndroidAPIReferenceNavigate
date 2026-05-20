@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -118,45 +118,50 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Specifies the general warning to which the road sign belongs.</div>
 </div>
-<div class="col-first odd-row-color"><code>boolean</code></div>
-<div class="col-second odd-row-color"><code><a href="#isPrioritySign" class="member-name-link">isPrioritySign</a></code></div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">Unique identifier for this specific road sign warning instance.</div>
+</div>
+<div class="col-first even-row-color"><code>boolean</code></div>
+<div class="col-second even-row-color"><code><a href="#isPrioritySign" class="member-name-link">isPrioritySign</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Flag indicating if the road sign is a priority sign.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
-<div class="col-second even-row-color"><code><a href="#preWarning" class="member-name-link">preWarning</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#preWarning" class="member-name-link">preWarning</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Optional pre-warning in terms of distance, of the upcoming warning or regulation.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="../routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#roadSignSegment" class="member-name-link">roadSignSegment</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="../routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a></code></div>
+<div class="col-second even-row-color"><code><a href="#roadSignSegment" class="member-name-link">roadSignSegment</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">The reference to the segment where the road sign is located.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
-<div class="col-second even-row-color"><code><a href="#signValue" class="member-name-link">signValue</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#signValue" class="member-name-link">signValue</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Optional value visible on the main sign related to specific road sign types, as it is printed on the local road sign.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="RoadSignType.html" title="enum class in com.here.sdk.navigation">RoadSignType</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#type" class="member-name-link">type</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="RoadSignType.html" title="enum class in com.here.sdk.navigation">RoadSignType</a></code></div>
+<div class="col-second even-row-color"><code><a href="#type" class="member-name-link">type</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Type of the road sign.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
-<div class="col-second even-row-color"><code><a href="#validityTime" class="member-name-link">validityTime</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#validityTime" class="member-name-link">validityTime</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Optional text visible on the supplemental sign indicating specific
  time(s) at which the road sign is applicable.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RoadSignVehicleType.html" title="enum class in com.here.sdk.navigation">RoadSignVehicleType</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#vehicleTypes" class="member-name-link">vehicleTypes</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RoadSignVehicleType.html" title="enum class in com.here.sdk.navigation">RoadSignVehicleType</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#vehicleTypes" class="member-name-link">vehicleTypes</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Specifies a list of vehicle types for which the road sign is applicable.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="WeatherType.html" title="enum class in com.here.sdk.navigation">WeatherType</a></code></div>
-<div class="col-second even-row-color"><code><a href="#weatherType" class="member-name-link">weatherType</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="WeatherType.html" title="enum class in com.here.sdk.navigation">WeatherType</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#weatherType" class="member-name-link">weatherType</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Specifies the weather type for which the sign is applicable.</div>
 </div>
 </div>
@@ -219,6 +224,15 @@ loadScripts(document, 'script');</script>
 <section class="field-details" id="field-detail">
 <h2>Field Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="id">
+<h3>id</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">int</span> <span class="element-name">id</span></div>
+<div class="block"><p>Unique identifier for this specific road sign warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</p></div>
+</section>
+</li>
 <li>
 <section class="detail" id="distanceToRoadSignInMeters">
 <h3>distanceToRoadSignInMeters</h3>

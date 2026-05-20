@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -103,14 +103,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">The distance type for the warning, e.g.</div>
 </div>
-<div class="col-first even-row-color"><code>double</code></div>
-<div class="col-second even-row-color"><code><a href="#speedLimitInMetersPerSecond" class="member-name-link">speedLimitInMetersPerSecond</a></code></div>
+<div class="col-first even-row-color"><code>int</code></div>
+<div class="col-second even-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
 <div class="col-last even-row-color">
+<div class="block">Unique identifier for this specific school zone warning instance.</div>
+</div>
+<div class="col-first odd-row-color"><code>double</code></div>
+<div class="col-second odd-row-color"><code><a href="#speedLimitInMetersPerSecond" class="member-name-link">speedLimitInMetersPerSecond</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Speed limit meters/second, which applies to current school zone.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="../core/TimeRule.html" title="class in com.here.sdk.core">TimeRule</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#timeRule" class="member-name-link">timeRule</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="../core/TimeRule.html" title="class in com.here.sdk.core">TimeRule</a></code></div>
+<div class="col-second even-row-color"><code><a href="#timeRule" class="member-name-link">timeRule</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Time rule indicating the time periods for which the warning applies.</div>
 </div>
 </div>
@@ -167,6 +172,15 @@ loadScripts(document, 'script');</script>
 <section class="field-details" id="field-detail">
 <h2>Field Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="id">
+<h3>id</h3>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">int</span> <span class="element-name">id</span></div>
+<div class="block"><p>Unique identifier for this specific school zone warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</p></div>
+</section>
+</li>
 <li>
 <section class="detail" id="distanceToSchoolZoneInMeters">
 <h3>distanceToSchoolZoneInMeters</h3>

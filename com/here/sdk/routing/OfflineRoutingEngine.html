@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -111,7 +111,12 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
  Currently blocked or closed roads or roads with traffic incident are not considered offline, i.e.
  the road may pass through such road.
  Only seasonal road closures are considered based on the departure time, if given.
- Traffic information is only considered for online route calculation with the <code>RoutingEngine</code>.</p></div>
+ Traffic information is only considered for online route calculation with the <code>RoutingEngine</code>.
+ </p><p><strong>Note:</strong> Route handles produced by this engine are not compatible with those created by
+ the <code>RoutingEngine</code>. Importing, refreshing, or returning to a route via a route
+ handle is supported only when the route was calculated with the same engine. However,
+ this engine supports returning to a route calculated with the <code>RoutingEngine</code> when
+ the route object is provided.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -275,23 +280,31 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
 <div class="block">Asynchronously recreates a route from the <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a> provided, i.e.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#returnToRoute(com.here.sdk.routing.Route,com.here.sdk.routing.Waypoint,int,int,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">returnToRoute</a><wbr>(<a href="Route.html" title="class in com.here.sdk.routing">Route</a> route,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#refreshRoute(com.here.sdk.routing.RefreshRouteParameters,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute</a><wbr>(<a href="RefreshRouteParameters.html" title="class in com.here.sdk.routing">RefreshRouteParameters</a> refreshRouteParameters,
+ <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> routingOptions,
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
+ the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#returnToRoute(com.here.sdk.routing.Route,com.here.sdk.routing.Waypoint,int,int,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">returnToRoute</a><wbr>(<a href="Route.html" title="class in com.here.sdk.routing">Route</a> route,
  <a href="Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a> startingPoint,
  int lastTraveledSectionIndex,
  int traveledDistanceOnLastSectionInMeters,
  <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Asynchronously calculates a new route that leads back to the original route.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setInternalOption(java.lang.String,java.lang.String)" class="member-name-link">setInternalOption</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> key,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setInternalOption(java.lang.String,java.lang.String)" class="member-name-link">setInternalOption</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> key,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">This method sets internal options that controls offline route calculation behavior.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTrafficDataProvider(com.here.sdk.traffic.TrafficDataProvider)" class="member-name-link">setTrafficDataProvider</a><wbr>(<a href="../traffic/TrafficDataProvider.html" title="class in com.here.sdk.traffic">TrafficDataProvider</a> value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTrafficDataProvider(com.here.sdk.traffic.TrafficDataProvider)" class="member-name-link">setTrafficDataProvider</a><wbr>(<a href="../traffic/TrafficDataProvider.html" title="class in com.here.sdk.traffic">TrafficDataProvider</a> value)</wbr></code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the traffic data provider that provides internal traffic information considering in routing.</div>
 </div>
 </div>
@@ -364,6 +377,31 @@ implements <a href="RoutingInterface.html" title="interface in com.here.sdk.rout
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="refreshRoute(com.here.sdk.routing.RefreshRouteParameters,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)">
+<h3>refreshRoute</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/threading/TaskHandle.html" title="interface in com.here.sdk.core.threading">TaskHandle</a></span> <span class="element-name">refreshRoute</span><wbr><span class="parameters">(@NonNull
+ <a href="RefreshRouteParameters.html" title="class in com.here.sdk.routing">RefreshRouteParameters</a> refreshRouteParameters,
+ @NonNull
+ <a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a> routingOptions,
+ @NonNull
+ <a href="CalculateRouteCallback.html" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> callback)</span></wbr></div>
+<div class="block"><p>Asynchronously refreshes a previously calculated route from the provided <a href="RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
+ the starting point and route metadata based on <a href="RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>. The route shape from the new
+ starting point to the destination remains unchanged, and only metadata such as arrival time and traffic
+ delays are updated.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>refreshRouteParameters</code> - <p>The parameters used to refresh the route</p></dd>
+<dd><code>routingOptions</code> - <p>The options define the vehicle and route options used to calculate the route.</p></dd>
+<dd><code>callback</code> - <p>Callback object that will be invoked after refreshing the route.
+     It is always invoked on the main thread.</p></dd>
+<dt>Returns:</dt>
+<dd><p>Handle that will be used to manipulate the execution of the task.</p></dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="importRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)">
 <h3>importRoute</h3>

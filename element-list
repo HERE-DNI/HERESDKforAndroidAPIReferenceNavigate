@@ -30,4 +30,5 @@ com.here.sdk.venue.data
 com.here.sdk.venue.routing
 com.here.sdk.venue.service
 com.here.sdk.venue.style
+com.here.sdk.warner
 com.here.time

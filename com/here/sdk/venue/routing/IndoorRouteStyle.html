@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -123,7 +123,7 @@ loadScripts(document, 'script');</script>
 <div class="block">The drive map marker of the resulting route.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIndoorMarkerFor(com.here.sdk.venue.routing.IndoorFeatures,int)" class="member-name-link">getIndoorMarkerFor</a><wbr>(<a href="IndoorFeatures.html" title="enum class in com.here.sdk.venue.routing">IndoorFeatures</a> feature,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIndoorMarkerFor(com.here.sdk.routing.IndoorLevelChangeFeatures,int)" class="member-name-link">getIndoorMarkerFor</a><wbr>(<a href="../../routing/IndoorLevelChangeFeatures.html" title="enum class in com.here.sdk.routing">IndoorLevelChangeFeatures</a> feature,
  int deltaZ)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a <a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a> for a given indoor feature and
@@ -138,16 +138,6 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIndoorPolylineWidth()" class="member-name-link">getIndoorPolylineWidth</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The width in pixels of polylines for indoor route sections.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../core/Color.html" title="class in com.here.sdk.core">Color</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOutdoorPolylineColor()" class="member-name-link">getOutdoorPolylineColor</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The color of polylines for outdoor route sections.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getOutdoorPolylineWidth()" class="member-name-link">getOutdoorPolylineWidth</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The width in pixels of polylines for outdoor route sections.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStartMarker()" class="member-name-link">getStartMarker</a>()</code></div>
@@ -170,7 +160,7 @@ loadScripts(document, 'script');</script>
 <div class="block">The drive map marker of the resulting route.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setIndoorMarkersFor(com.here.sdk.venue.routing.IndoorFeatures,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker)" class="member-name-link">setIndoorMarkersFor</a><wbr>(<a href="IndoorFeatures.html" title="enum class in com.here.sdk.venue.routing">IndoorFeatures</a> feature,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setIndoorMarkersFor(com.here.sdk.routing.IndoorLevelChangeFeatures,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker)" class="member-name-link">setIndoorMarkersFor</a><wbr>(<a href="../../routing/IndoorLevelChangeFeatures.html" title="enum class in com.here.sdk.routing">IndoorLevelChangeFeatures</a> feature,
  <a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a> upMarker,
  <a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a> downMarker,
  <a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a> exitMarker)</wbr></code></div>
@@ -186,16 +176,6 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setIndoorPolylineWidth(double)" class="member-name-link">setIndoorPolylineWidth</a><wbr>(double value)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The width in pixels of polylines for indoor route sections.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOutdoorPolylineColor(com.here.sdk.core.Color)" class="member-name-link">setOutdoorPolylineColor</a><wbr>(<a href="../../core/Color.html" title="class in com.here.sdk.core">Color</a> value)</wbr></code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The color of polylines for outdoor route sections.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOutdoorPolylineWidth(double)" class="member-name-link">setOutdoorPolylineWidth</a><wbr>(double value)</wbr></code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">The width in pixels of polylines for outdoor route sections.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setStartMarker(com.here.sdk.mapview.MapMarker)" class="member-name-link">setStartMarker</a><wbr>(<a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a> value)</wbr></code></div>
@@ -240,11 +220,11 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getIndoorMarkerFor(com.here.sdk.venue.routing.IndoorFeatures,int)">
+<section class="detail" id="getIndoorMarkerFor(com.here.sdk.routing.IndoorLevelChangeFeatures,int)">
 <h3>getIndoorMarkerFor</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a></span> <span class="element-name">getIndoorMarkerFor</span><wbr><span class="parameters">(@NonNull
- <a href="IndoorFeatures.html" title="enum class in com.here.sdk.venue.routing">IndoorFeatures</a> feature,
+ <a href="../../routing/IndoorLevelChangeFeatures.html" title="enum class in com.here.sdk.routing">IndoorLevelChangeFeatures</a> feature,
  int deltaZ)</span></wbr></div>
 <div class="block"><p>Returns a <a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a> for a given indoor feature and
  the number of levels to change. By default, no map markers are provided.</p></div>
@@ -259,10 +239,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="setIndoorMarkersFor(com.here.sdk.venue.routing.IndoorFeatures,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker)">
+<section class="detail" id="setIndoorMarkersFor(com.here.sdk.routing.IndoorLevelChangeFeatures,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker)">
 <h3>setIndoorMarkersFor</h3>
 <div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setIndoorMarkersFor</span><wbr><span class="parameters">(@NonNull
- <a href="IndoorFeatures.html" title="enum class in com.here.sdk.venue.routing">IndoorFeatures</a> feature,
+ <a href="../../routing/IndoorLevelChangeFeatures.html" title="enum class in com.here.sdk.routing">IndoorLevelChangeFeatures</a> feature,
  @Nullable
  <a href="../../mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a> upMarker,
  @Nullable
@@ -322,52 +302,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>value</code> - <p>The color value. The default color is #48DAD0.</p></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getOutdoorPolylineWidth()">
-<h3>getOutdoorPolylineWidth</h3>
-<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">double</span> <span class="element-name">getOutdoorPolylineWidth</span>()</div>
-<div class="block"><p>The width in pixels of polylines for outdoor route sections.</p></div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd><p>The width in pixels. The default width is 20 pixel</p></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="setOutdoorPolylineWidth(double)">
-<h3>setOutdoorPolylineWidth</h3>
-<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setOutdoorPolylineWidth</span><wbr><span class="parameters">(double value)</span></wbr></div>
-<div class="block"><p>The width in pixels of polylines for outdoor route sections.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>value</code> - <p>The width in pixels. The default width is 20 pixel</p></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getOutdoorPolylineColor()">
-<h3>getOutdoorPolylineColor</h3>
-<div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span> <span class="return-type"><a href="../../core/Color.html" title="class in com.here.sdk.core">Color</a></span> <span class="element-name">getOutdoorPolylineColor</span>()</div>
-<div class="block"><p>The color of polylines for outdoor route sections.</p></div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd><p>The color value. The default color is #00908</p></dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="setOutdoorPolylineColor(com.here.sdk.core.Color)">
-<h3>setOutdoorPolylineColor</h3>
-<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">void</span> <span class="element-name">setOutdoorPolylineColor</span><wbr><span class="parameters">(@NonNull
- <a href="../../core/Color.html" title="class in com.here.sdk.core">Color</a> value)</span></wbr></div>
-<div class="block"><p>The color of polylines for outdoor route sections.</p></div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>value</code> - <p>The color value. The default color is #00908</p></dd>
 </dl>
 </section>
 </li>

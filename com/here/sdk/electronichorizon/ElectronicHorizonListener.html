@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -72,6 +72,10 @@ loadScripts(document, 'script');</script>
 <h1 title="Interface ElectronicHorizonListener" class="title">Interface ElectronicHorizonListener</h1>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="../warner/WarnerEngine.html" title="class in com.here.sdk.warner">WarnerEngine</a></code></dd>
+</dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ElectronicHorizonListener</span></div>
 <div class="block"><p>Provides a listener for receiving updates during execution of the <a href="ElectronicHorizonEngine.html#update(com.here.sdk.navigation.MapMatchedLocation)"><code>ElectronicHorizonEngine.update(com.here.sdk.navigation.MapMatchedLocation)</code></a> method.
@@ -135,7 +139,9 @@ loadScripts(document, 'script');</script>
 <dd><code>errorCode</code> - <p>The error associated with the horizon computation.
      <code>null</code> means no error.</p></dd>
 <dd><code>update</code> - <p>The update describing the current electronic horizon state.
-     May be <code>null</code> if an update could not be produced.</p></dd>
+     May be <code>null</code> if an update could not be produced.
+     </p><p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
+     behaviors. Related APIs may change for new releases without a deprecation process.</p></dd>
 </dl>
 </section>
 </li>

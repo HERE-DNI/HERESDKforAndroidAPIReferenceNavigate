@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var pathtoroot = "../../../../";
 loadScripts(document, 'script');</script>
@@ -149,7 +149,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../routing/FunctionalRoadClass.html" title="enum class in com.here.sdk.routing">FunctionalRoadClass</a>&gt;</span> <span class="element-name">functionalRoadClasses</span></div>
 <div class="block"><p>List of functional road classes for which this rule applies. The list is unordered.
- When empty, this rule applies to all functional road classes.</p></div>
+ When empty, this rule applies to all functional road classes. Defaults to an empty list.</p></div>
 </section>
 </li>
 <li>
@@ -158,7 +158,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../routing/ManeuverAction.html" title="enum class in com.here.sdk.routing">ManeuverAction</a>&gt;</span> <span class="element-name">maneuverActions</span></div>
 <div class="block"><p>List of maneuver actions for which this rule applies. The list is unordered.
- When empty, this rule applies to all maneuver actions.</p></div>
+ When empty, this rule applies to all maneuver actions. Defaults to an empty list.</p></div>
 </section>
 </li>
 <li>
@@ -167,7 +167,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public</span> <span class="return-type"><a href="TrackingCameraBehavior.ManeuverRuleOptions.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverRuleOptions</a></span> <span class="element-name">maneuverRuleOptions</span></div>
 <div class="block"><p>The options for this rule. When set to <code>null</code>, the camera does not
- react to maneuvers that match this rule.</p></div>
+ react to maneuvers that match this rule. Defaults to <code>null</code>.</p></div>
 </section>
 </li>
 </ul>

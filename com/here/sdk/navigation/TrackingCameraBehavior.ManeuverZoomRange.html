@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="01889b3d-b8cc-482b-822a-5b198467479e"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:39:07+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="72aacb79-9c97-470e-bee9-7f4fb78de4da"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:10:50+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var pathtoroot = "../../../../";
 loadScripts(document, 'script');</script>
@@ -92,15 +92,15 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>double</code></div>
+<div class="col-first even-row-color"><code><a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></code></div>
 <div class="col-second even-row-color"><code><a href="#maxZoom" class="member-name-link">maxZoom</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Maximum camera zoom level.</div>
+<div class="block">Maximum camera zoom.</div>
 </div>
-<div class="col-first odd-row-color"><code>double</code></div>
+<div class="col-first odd-row-color"><code><a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#minZoom" class="member-name-link">minZoom</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Minimum camera zoom level.</div>
+<div class="block">Minimum camera zoom.</div>
 </div>
 </div>
 </section>
@@ -141,16 +141,20 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="minZoom">
 <h3>minZoom</h3>
-<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">double</span> <span class="element-name">minZoom</span></div>
-<div class="block"><p>Minimum camera zoom level. Valid range is 0.0 to 22.0. Defaults to 4.0.</p></div>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></span> <span class="element-name">minZoom</span></div>
+<div class="block"><p>Minimum camera zoom. Valid range is 0.0 to 22.0.
+ Defaults to a <a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview"><code>MapMeasure</code></a> with kind <a href="../mapview/MapMeasure.Kind.html#ZOOM_LEVEL"><code>MapMeasure.Kind.ZOOM_LEVEL</code></a> and value 4.0.</p></div>
 </section>
 </li>
 <li>
 <section class="detail" id="maxZoom">
 <h3>maxZoom</h3>
-<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">double</span> <span class="element-name">maxZoom</span></div>
-<div class="block"><p>Maximum camera zoom level. Valid range is 0.0 to 22.0. Must be greater than or equal
- to <a href="#minZoom"><code>minZoom</code></a>. Defaults to 20.0.</p></div>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></span> <span class="element-name">maxZoom</span></div>
+<div class="block"><p>Maximum camera zoom. Valid range is 0.0 to 22.0. Must be greater than or equal
+ to <a href="#minZoom"><code>minZoom</code></a>.
+ Defaults to a <a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview"><code>MapMeasure</code></a> with kind <a href="../mapview/MapMeasure.Kind.html#ZOOM_LEVEL"><code>MapMeasure.Kind.ZOOM_LEVEL</code></a> and value 20.0.</p></div>
 </section>
 </li>
 </ul>
