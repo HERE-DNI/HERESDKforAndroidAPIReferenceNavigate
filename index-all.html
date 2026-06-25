@@ -118,10 +118,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The list of transport types which have access</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#access" class="member-name-link">access</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
-<dd>
-<div class="block">Access characteristics of the lane that identifies the vehicle type(s) allowed to access a lane.</div>
-</dd>
 <dt><a href="com/here/sdk/navigation/CurrentSituationLaneView.html#access" class="member-name-link">access</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/CurrentSituationLaneView.html" title="class in com.here.sdk.navigation">CurrentSituationLaneView</a></dt>
 <dd>
 <div class="block">Indicates which vehicle types can access this lane.</div>
@@ -2285,6 +2281,26 @@ loadScripts(document, 'script');</script>
 <div class="block">Builds the <a href="com/here/sdk/transport/VehicleSpecification.html" title="class in com.here.sdk.transport"><code>VehicleSpecification</code></a> object for <a href="com/here/sdk/transport/TransportMode.html#TRUCK"><code>TransportMode.TRUCK</code></a> with the specifications taken
  from the <a href="com/here/sdk/transport/VehicleSpecification.TruckBuilder.html" title="class in com.here.sdk.transport"><code>VehicleSpecification.TruckBuilder</code></a> object.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.CarBuilder</a></dt>
+<dd>
+<div class="block">Builds the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> object for a car with the specifications taken
+ from the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification.CarBuilder</code></a> object.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.PedestrianBuilder</a></dt>
+<dd>
+<div class="block">Builds the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> object for a pedestrian profile with the specifications taken
+ from the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification.PedestrianBuilder</code></a> object.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.ScooterBuilder</a></dt>
+<dd>
+<div class="block">Builds the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> object for a scooter with the specifications taken
+ from the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification.ScooterBuilder</code></a> object.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.TaxiBuilder</a></dt>
+<dd>
+<div class="block">Builds the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> object for a taxi with the specifications taken
+ from the <a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification.TaxiBuilder</code></a> object.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapFeatures.html#BUILDING_FOOTPRINTS" class="member-name-link">BUILDING_FOOTPRINTS</a> - Static variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapFeatures.html" title="class in com.here.sdk.mapview">MapFeatures</a></dt>
 <dd>
 <div class="block">The 2D footprint of buildings.</div>
@@ -2616,7 +2632,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.CalculateIndoorRouteCallback)" class="member-name-link">calculateRoute(IndoorWaypoint, IndoorWaypoint, IndoorRouteOptions, CalculateIndoorRouteCallback)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html" title="class in com.here.sdk.venue.routing">IndoorRoutingEngine</a></dt>
 <dd>
-<div class="block">Asynchronously calculates a route inside a venue.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with IndoorRouteCallback parameter instead.</div>
+</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.IndoorRouteCallback)" class="member-name-link">calculateRoute(IndoorWaypoint, IndoorWaypoint, IndoorRouteOptions, IndoorRouteCallback)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html" title="class in com.here.sdk.venue.routing">IndoorRoutingEngine</a></dt>
+<dd>
+<div class="block">Asynchronously calculates a route inside a venue with route notices.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BicycleOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
 <dd>
@@ -3020,6 +3042,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance of this class.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html#%3Cinit%3E()" class="member-name-link">CarBuilder()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.CarBuilder</a></dt>
+<dd>
+<div class="block">Creates a new instance of this class.</div>
+</dd>
 <dt><a href="com/here/sdk/core/CardinalDirection.html" class="type-name-link" title="enum class in com.here.sdk.core">CardinalDirection</a> - Enum Class in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
 <dd>
 <div class="block">Indicates the official directional identifier assigned to this road.</div>
@@ -3053,6 +3079,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/TransportType.html#CARPOOLS" class="member-name-link">CARPOOLS</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportType.html" title="enum class in com.here.sdk.transport">TransportType</a></dt>
 <dd>
 <div class="block">Car pools.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#carSpecification" class="member-name-link">carSpecification</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
+<dd>
+<div class="block">The car specification for the car transport mode.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/CarOptions.html#carSpecifications" class="member-name-link">carSpecifications</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/CarOptions.html" title="class in com.here.sdk.routing">CarOptions</a></dt>
 <dd>
@@ -3261,6 +3291,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/ViolatedRestriction.html#cause" class="member-name-link">cause</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/ViolatedRestriction.html" title="class in com.here.sdk.routing">ViolatedRestriction</a></dt>
 <dd>
 <div class="block">Cause of the notice.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html#cause" class="member-name-link">cause</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a></dt>
+<dd>
+<div class="block">The cause describing the reason for the notice detail.</div>
 </dd>
 <dt><a href="com/here/sdk/core/CountryCode.html#CCK" class="member-name-link">CCK</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
@@ -3633,6 +3667,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/SectionNotice.html#code" class="member-name-link">code</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/SectionNotice.html" title="class in com.here.sdk.routing">SectionNotice</a></dt>
 <dd>
 <div class="block">The notice code.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#code" class="member-name-link">code</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>
+<div class="block">The indoor route notice code.</div>
 </dd>
 <dt><a href="com/here/sdk/core/CountryCode.html#COG" class="member-name-link">COG</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
@@ -4193,17 +4231,29 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Destination waypoint could not be matched to a road network.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#COULD_NOT_MATCH_DESTINATION" class="member-name-link">COULD_NOT_MATCH_DESTINATION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#COULD_NOT_MATCH_DESTINATION" class="member-name-link">COULD_NOT_MATCH_DESTINATION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
 <div class="block">Could not match destination.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#COULD_NOT_MATCH_DESTINATION" class="member-name-link">COULD_NOT_MATCH_DESTINATION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>IndoorRouteNoticeCode.COULD_NOT_MATCH_DESTINATION</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
 <div class="block">Origin waypoint could not be matched to a road network.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
 <div class="block">Could not match origin.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>IndoorRouteNoticeCode.COULD_NOT_MATCH_ORIGIN</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/routing/FarePassValidityPeriod.html#count" class="member-name-link">count</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/FarePassValidityPeriod.html" title="class in com.here.sdk.routing">FarePassValidityPeriod</a></dt>
 <dd>
@@ -4259,7 +4309,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#countryCode" class="member-name-link">countryCode</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
 <dd>
-<div class="block">The country code in ISO-3166-1 alpha-3 format, which will determine the type of road shield.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use <a href="com/here/sdk/mapview/RoadShieldIconProperties.html#isoCountryCode"><code>RoadShieldIconProperties.isoCountryCode</code></a> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/VehicleRestrictionIconProperties.html#countryCode" class="member-name-link">countryCode</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/VehicleRestrictionIconProperties.html" title="class in com.here.sdk.mapview">VehicleRestrictionIconProperties</a></dt>
 <dd>
@@ -5095,6 +5147,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">EV charging station attributes details.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#details" class="member-name-link">details</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>
+<div class="block">Detailed descriptions of the notice.</div>
+</dd>
 <dt><a href="com/here/sdk/search/Details.html" class="type-name-link" title="class in com.here.sdk.search">Details</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">Contains details of a specific place, such as contact information,
@@ -5813,7 +5869,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapContext.MemoryManagementStrategy.html#DYNAMIC" class="member-name-link">DYNAMIC</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContext.MemoryManagementStrategy.html" title="enum class in com.here.sdk.mapview">MapContext.MemoryManagementStrategy</a></dt>
 <dd>
-<div class="block">The cache of all loaded map-data can adjust dynamically to fit visible data.</div>
+<div class="block">The cache of all loaded map-data adjusts dynamically based on visible data requirements.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/DynamicCameraBehavior.html" class="type-name-link" title="class in com.here.sdk.navigation">DynamicCameraBehavior</a> - Class in <a href="com/here/sdk/navigation/package-summary.html">com.here.sdk.navigation</a></dt>
 <dd>
@@ -6304,6 +6360,22 @@ loadScripts(document, 'script');</script>
 <div class="block">Enables HERE SDK logging messages to console that can be
  viewed using logcat tool.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html#enableOption" class="member-name-link">enableOption</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueCarSpecification.html" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a></dt>
+<dd>
+<div class="block">Defines where the car transport mode is enabled along the route.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueScooterSpecification.html#enableOption" class="member-name-link">enableOption</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueScooterSpecification.html" title="class in com.here.sdk.venue.routing">VenueScooterSpecification</a></dt>
+<dd>
+<div class="block">Defines where the scooter transport mode is enabled along the route.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html#enableOption" class="member-name-link">enableOption</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html" title="class in com.here.sdk.venue.routing">VenueTaxiSpecification</a></dt>
+<dd>
+<div class="block">Defines where the taxi transport mode is enabled along the route.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html" class="type-name-link" title="enum class in com.here.sdk.venue.routing">EnableOption</a> - Enum Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Defines where the transport mode is enabled along the route.</div>
+</dd>
 <dt><a href="com/here/sdk/navigation/ManeuverNotificationOptions.html#enablePhoneme" class="member-name-link">enablePhoneme</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/ManeuverNotificationOptions.html" title="class in com.here.sdk.navigation">ManeuverNotificationOptions</a></dt>
 <dd>
 <div class="block">A flag that indicates whether phonemes in selected notification format for proper nouns (e.g.</div>
@@ -6495,6 +6567,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/ManeuverAction.html#ENTER_HIGHWAY_FROM_RIGHT" class="member-name-link">ENTER_HIGHWAY_FROM_RIGHT</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/ManeuverAction.html" title="enum class in com.here.sdk.routing">ManeuverAction</a></dt>
 <dd>
 <div class="block">Merge onto a highway from the right side.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html#ENTIRE_ROUTE" class="member-name-link">ENTIRE_ROUTE</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
+<dd>
+<div class="block">Enable for the entire duration of the route.</div>
 </dd>
 <dt><a href="com/here/sdk/core/GeoBox.html#envelope(com.here.sdk.core.GeoBox)" class="member-name-link">envelope(GeoBox)</a> - Method in class com.here.sdk.core.<a href="com/here/sdk/core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a></dt>
 <dd>
@@ -6688,8 +6764,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapdata/DriveRestRegulation.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DriveRestRegulation.html" title="class in com.here.sdk.mapdata">DriveRestRegulation</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/FileReference.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
 <dd>&nbsp;</dd>
@@ -6981,6 +7055,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutePlace.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutePlace.html" title="class in com.here.sdk.routing">RoutePlace</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RouteTextOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTextOptions.html" title="class in com.here.sdk.routing">RouteTextOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutingConnectionSettings.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingConnectionSettings.html" title="class in com.here.sdk.routing">RoutingConnectionSettings</a></dt>
@@ -7233,7 +7309,21 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorAvoidanceOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorAvoidanceOptions.html" title="class in com.here.sdk.venue.routing">IndoorAvoidanceOptions</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueCarSpecification.html" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html" title="class in com.here.sdk.venue.routing">VenuePedestrianSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueScooterSpecification.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueScooterSpecification.html" title="class in com.here.sdk.venue.routing">VenueScooterSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html" title="class in com.here.sdk.venue.routing">VenueTaxiSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/warner/CustomWarning.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.warner.<a href="com/here/sdk/warner/CustomWarning.html" title="class in com.here.sdk.warner">CustomWarning</a></dt>
 <dd>&nbsp;</dd>
@@ -8731,6 +8821,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The list of road sign general warning types for which a warning will be given.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#generate()" class="member-name-link">generate()</a> - Static method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>
+<div class="block">Generates a new unique route tag using a random UUID.</div>
+</dd>
 <dt><a href="com/here/sdk/search/GenericFuel.html" class="type-name-link" title="class in com.here.sdk.search">GenericFuel</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">Contains generic fuel type info of fuel station.</div>
@@ -10096,6 +10190,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the textual attributes of the intersection.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/Span.html#getIsoCountryCode()" class="member-name-link">getIsoCountryCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Span.html" title="class in com.here.sdk.routing">Span</a></dt>
+<dd>
+<div class="block">Gets the ISO 3166-1 alpha-3 country code of the span as enum.</div>
+</dd>
 <dt><a href="com/here/sdk/traffic/TrafficFlow.html#getJamFactor()" class="member-name-link">getJamFactor()</a> - Method in class com.here.sdk.traffic.<a href="com/here/sdk/traffic/TrafficFlow.html" title="class in com.here.sdk.traffic">TrafficFlow</a></dt>
 <dd>
 <div class="block">Gets a value for the amount of traffic on the roadway.</div>
@@ -10236,7 +10334,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#getLights()" class="member-name-link">getLights()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Gets a MapSceneLights instance that controls lights present in the scene.</div>
+<div class="block">Gets a <a href="com/here/sdk/mapview/MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance that controls lights present in the scene.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapCamera.html#getLimits()" class="member-name-link">getLimits()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapCamera.html" title="class in com.here.sdk.mapview">MapCamera</a></dt>
 <dd>
@@ -11153,6 +11251,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the listener that notifies when a route progress change occurs.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/Route.html#getRouteTag()" class="member-name-link">getRouteTag()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Route.html" title="class in com.here.sdk.routing">Route</a></dt>
+<dd>
+<div class="block">Gets the unique identifier of this route.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/Route.html#getRoutingOptions()" class="member-name-link">getRoutingOptions()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Route.html" title="class in com.here.sdk.routing">Route</a></dt>
 <dd>
 <div class="block">Gets the options used to calculate this route.</div>
@@ -11512,8 +11614,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#getSupportedFeatures()" class="member-name-link">getSupportedFeatures()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Gets features and all of their modes supported by the currently
- loaded scene configuration.</div>
+<div class="block">Gets features and all of their modes supported by the currently loaded scene configuration.</div>
 </dd>
 <dt><a href="com/here/sdk/search/EVChargingLocation.html#getSupportedVehicles()" class="member-name-link">getSupportedVehicles()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocation.html" title="class in com.here.sdk.search">EVChargingLocation</a></dt>
 <dd>
@@ -12500,8 +12601,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/FileReference.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/PhysicalAttributes.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PhysicalAttributes.html" title="class in com.here.sdk.mapdata">PhysicalAttributes</a></dt>
@@ -12792,6 +12891,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutePlace.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutePlace.html" title="class in com.here.sdk.routing">RoutePlace</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RouteTextOptions.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTextOptions.html" title="class in com.here.sdk.routing">RouteTextOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/RoutingConnectionSettings.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingConnectionSettings.html" title="class in com.here.sdk.routing">RoutingConnectionSettings</a></dt>
@@ -13044,7 +13145,21 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorAvoidanceOptions.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorAvoidanceOptions.html" title="class in com.here.sdk.venue.routing">IndoorAvoidanceOptions</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteOptions.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueCarSpecification.html" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html" title="class in com.here.sdk.venue.routing">VenuePedestrianSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueScooterSpecification.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueScooterSpecification.html" title="class in com.here.sdk.venue.routing">VenueScooterSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html" title="class in com.here.sdk.venue.routing">VenueTaxiSpecification</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/warner/CustomWarning.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.warner.<a href="com/here/sdk/warner/CustomWarning.html" title="class in com.here.sdk.warner">CustomWarning</a></dt>
 <dd>&nbsp;</dd>
@@ -13065,6 +13180,11 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/TruckAmenities.html#hasIdleReductionSystem" class="member-name-link">hasIdleReductionSystem</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/TruckAmenities.html" title="class in com.here.sdk.search">TruckAmenities</a></dt>
 <dd>
 <div class="block">Has idle reduction system</div>
+</dd>
+<dt><a href="com/here/sdk/search/EVChargingLocation.html#hasMoreNearbyPlaces()" class="member-name-link">hasMoreNearbyPlaces()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocation.html" title="class in com.here.sdk.search">EVChargingLocation</a></dt>
+<dd>
+<div class="block">Gets a boolean flag indicating whether there are additional nearby places beyond
+ those included in the nearbyPlaces list.</div>
 </dd>
 <dt><a href="com/here/sdk/search/TruckAmenities.html#hasParking" class="member-name-link">hasParking</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/TruckAmenities.html" title="class in com.here.sdk.search">TruckAmenities</a></dt>
 <dd>
@@ -13733,6 +13853,18 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Igbo - Latin (Nigera)</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#IGNORED_VEHICLE_AVOID_FEATURES" class="member-name-link">IGNORED_VEHICLE_AVOID_FEATURES</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Ignored vehicle avoid features parameter.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#IGNORED_VEHICLE_ENABLE" class="member-name-link">IGNORED_VEHICLE_ENABLE</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Ignored vehicle enable parameter.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#IGNORED_VEHICLE_SPEED" class="member-name-link">IGNORED_VEHICLE_SPEED</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Ignored vehicle speed parameter.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/datasource/RasterDataSourceConfiguration.html#ignoreExpiredData" class="member-name-link">ignoreExpiredData</a> - Variable in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/RasterDataSourceConfiguration.html" title="class in com.here.sdk.mapview.datasource">RasterDataSourceConfiguration</a></dt>
 <dd>
 <div class="block">A flag indicating whether expired data should be ignored until refreshed.</div>
@@ -14137,6 +14269,30 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/IndoorManeuverActions.html" class="type-name-link" title="enum class in com.here.sdk.routing">IndoorManeuverActions</a> - Enum Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
 <div class="block">Defines the types of actions for indoor maneuvers.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteCallback.html" class="type-name-link" title="interface in com.here.sdk.venue.routing">IndoorRouteCallback</a> - Interface in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">A function which is called by the IndoorRoutingEngine after route calculation has completed.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" class="type-name-link" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Explains an issue encountered during indoor route calculation.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#%3Cinit%3E(com.here.sdk.venue.routing.IndoorRouteNoticeCode)" class="member-name-link">IndoorRouteNotice(IndoorRouteNoticeCode)</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" class="type-name-link" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a> - Enum Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Notice codes which point to the issues encountered during indoor route calculation.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" class="type-name-link" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Detailed description entry for an indoor route notice.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html#%3Cinit%3E(java.lang.String)" class="member-name-link">IndoorRouteNoticeDetails(String)</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteOptions.html" class="type-name-link" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
 <dd>
@@ -14833,11 +14989,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Boolean flag indicating if the energy is 100% from regenerative sources.</div>
 </dd>
-<dt><a href="com/here/sdk/search/EVChargingLocation.html#isHasMoreNearbyPlaces()" class="member-name-link">isHasMoreNearbyPlaces()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocation.html" title="class in com.here.sdk.search">EVChargingLocation</a></dt>
-<dd>
-<div class="block">Gets a boolean flag indicating whether there are additional nearby places beyond
- those included in the nearbyPlaces list.</div>
-</dd>
 <dt><a href="com/here/sdk/navigation/LaneType.html#isHighOccupancyVehicle" class="member-name-link">isHighOccupancyVehicle</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/LaneType.html" title="class in com.here.sdk.navigation">LaneType</a></dt>
 <dd>
 <div class="block">A lane which is restricted for high occupancy vehicles.</div>
@@ -14898,6 +15049,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/navigation/RoadAttributes.html#isNoThrough" class="member-name-link">isNoThrough</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/RoadAttributes.html" title="class in com.here.sdk.navigation">RoadAttributes</a></dt>
 <dd>
 <div class="block">Identifies a no through road.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#isoCountryCode" class="member-name-link">isoCountryCode</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
+<dd>
+<div class="block">The country code in ISO-3166-1 alpha-3 format, which will determine the type of road shield.</div>
 </dd>
 <dt><a href="com/here/sdk/traffic/TrafficIncident.VehicleRestriction.html#isOddNumberPlateRestricted" class="member-name-link">isOddNumberPlateRestricted</a> - Variable in class com.here.sdk.traffic.<a href="com/here/sdk/traffic/TrafficIncident.VehicleRestriction.html" title="class in com.here.sdk.traffic">TrafficIncident.VehicleRestriction</a></dt>
 <dd>
@@ -15575,14 +15730,6 @@ loadScripts(document, 'script');</script>
  access a lane.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/LaneAccess.html#%3Cinit%3E(boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean)" class="member-name-link">LaneAccess(boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean)</a> - Constructor for class com.here.sdk.navigation.<a href="com/here/sdk/navigation/LaneAccess.html" title="class in com.here.sdk.navigation">LaneAccess</a></dt>
-<dd>
-<div class="block">Creates a new instance.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html" class="type-name-link" title="class in com.here.sdk.mapdata">LaneAttribute</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
-<dd>
-<div class="block">A class that describes attributes assigned to a specific section of a lane.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#%3Cinit%3E(int,com.here.sdk.navigation.LaneMarkings,com.here.sdk.navigation.LaneAccess,java.util.List)" class="member-name-link">LaneAttribute(int, LaneMarkings, LaneAccess, List&lt;TollStructure&gt;)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
@@ -16304,11 +16451,13 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#loadScene(java.lang.String,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene(String, MapScene.LoadSceneCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported formats.</div>
+<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported
+ formats.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#loadScene(java.lang.String,com.here.sdk.mapview.WatermarkStyle,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene(String, WatermarkStyle, MapScene.LoadSceneCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
-<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported formats.</div>
+<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported
+ formats.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoaderOptions.html#loadSpecialSpeedSituations" class="member-name-link">loadSpecialSpeedSituations</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a></dt>
 <dd>
@@ -17116,8 +17265,8 @@ loadScripts(document, 'script');</script>
 <div class="block">Pickable map content currently consists of:
  
  Embedded carto POI markers that by default are available on the map.
- Traffic incidents that are visible when they are enabled using <a href="com/here/sdk/mapview/MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a>
- with <a href="com/here/sdk/mapview/MapFeatures.html#TRAFFIC_INCIDENTS"><code>MapFeatures.TRAFFIC_INCIDENTS</code></a>.
+ Traffic incidents that are visible when they are enabled using
+ <a href="com/here/sdk/mapview/MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> with <a href="com/here/sdk/mapview/MapFeatures.html#TRAFFIC_INCIDENTS"><code>MapFeatures.TRAFFIC_INCIDENTS</code></a>.
  Vehicle restrictions are only available for the Navigate license.</div>
 </dd>
 <dt><a href="com/here/sdk/maploader/MapLoaderError.html#MAP_DATA_ERROR" class="member-name-link">MAP_DATA_ERROR</a> - Enum constant in enum class com.here.sdk.maploader.<a href="com/here/sdk/maploader/MapLoaderError.html" title="enum class in com.here.sdk.maploader">MapLoaderError</a></dt>
@@ -17949,10 +18098,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapMarkerCluster.Grouping.html#markers" class="member-name-link">markers</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapMarkerCluster.Grouping.html" title="class in com.here.sdk.mapview">MapMarkerCluster.Grouping</a></dt>
 <dd>
 <div class="block">List of map markers grouped on map view under map marker cluster icon.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#markings" class="member-name-link">markings</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
-<dd>
-<div class="block">Indicate the markings on the road</div>
 </dd>
 <dt><a href="com/here/sdk/traffic/TrafficIncidentType.html#MASS_TRANSIT" class="member-name-link">MASS_TRANSIT</a> - Enum constant in enum class com.here.sdk.traffic.<a href="com/here/sdk/traffic/TrafficIncidentType.html" title="enum class in com.here.sdk.traffic">TrafficIncidentType</a></dt>
 <dd>
@@ -19030,7 +19175,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/EVChargingLocationFeature.html#NEARBY" class="member-name-link">NEARBY</a> - Enum constant in enum class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingLocationFeature.html" title="enum class in com.here.sdk.search">EVChargingLocationFeature</a></dt>
 <dd>
 <div class="block"><a href="com/here/sdk/search/EVChargingLocation.html#getFacilityTypes()"><code>EVChargingLocation.getFacilityTypes()</code></a>, <a href="com/here/sdk/search/EVChargingLocation.html#getNearbyPlaces()"><code>EVChargingLocation.getNearbyPlaces()</code></a> and
- <a href="com/here/sdk/search/EVChargingLocation.html#isHasMoreNearbyPlaces()"><code>EVChargingLocation.isHasMoreNearbyPlaces()</code></a> will be returned.</div>
+ <a href="com/here/sdk/search/EVChargingLocation.html#hasMoreNearbyPlaces()"><code>EVChargingLocation.hasMoreNearbyPlaces()</code></a> will be returned.</div>
 </dd>
 <dt><a href="com/here/sdk/search/NearbyPlace.html" class="type-name-link" title="class in com.here.sdk.search">NearbyPlace</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
@@ -19264,9 +19409,15 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">No route can be calculated for the given input.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#NO_ROUTE_FOUND" class="member-name-link">NO_ROUTE_FOUND</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#NO_ROUTE_FOUND" class="member-name-link">NO_ROUTE_FOUND</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
 <div class="block">No route found.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#NO_ROUTE_FOUND" class="member-name-link">NO_ROUTE_FOUND</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>IndoorRouteNoticeCode.NO_ROUTE_FOUND</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#NO_ROUTE_HANDLE" class="member-name-link">NO_ROUTE_HANDLE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
@@ -19392,6 +19543,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/navigation/LaneRecommendationState.html#NOT_RECOMMENDED" class="member-name-link">NOT_RECOMMENDED</a> - Enum constant in enum class com.here.sdk.navigation.<a href="com/here/sdk/navigation/LaneRecommendationState.html" title="enum class in com.here.sdk.navigation">LaneRecommendationState</a></dt>
 <dd>
 <div class="block">This lane will not lead the user to the next maneuver.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html#NOT_SPECIFIC" class="member-name-link">NOT_SPECIFIC</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
+<dd>
+<div class="block">Not specifically defined.</div>
 </dd>
 <dt><a href="com/here/sdk/venue/service/VenueServiceInitStatus.html#NOT_STARTED" class="member-name-link">NOT_STARTED</a> - Enum constant in enum class com.here.sdk.venue.service.<a href="com/here/sdk/venue/service/VenueServiceInitStatus.html" title="enum class in com.here.sdk.venue.service">VenueServiceInitStatus</a></dt>
 <dd>
@@ -20023,6 +20178,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">A function which is called by the IndoorRoutingEngine after route calculation has completed.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteCallback.html#onIndoorRouteCalculated(com.here.sdk.venue.routing.IndoorRoutingError,java.util.List,java.util.List)" class="member-name-link">onIndoorRouteCalculated(IndoorRoutingError, List&lt;Route&gt;, List&lt;IndoorRouteNotice&gt;)</a> - Method in interface com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">IndoorRouteCallback</a></dt>
+<dd>
+<div class="block">A function which is called by the IndoorRoutingEngine after route calculation has completed.</div>
+</dd>
 <dt><a href="com/here/sdk/venue/service/VenueServiceListener.html#onInitializationCompleted(com.here.sdk.venue.service.VenueServiceInitStatus)" class="member-name-link">onInitializationCompleted(VenueServiceInitStatus)</a> - Method in interface com.here.sdk.venue.service.<a href="com/here/sdk/venue/service/VenueServiceListener.html" title="interface in com.here.sdk.venue.service">VenueServiceListener</a></dt>
 <dd>
 <div class="block">Called when a service initialization has been completed.</div>
@@ -20286,6 +20445,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Called after the render target has been released.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/MapView.html#onRestart()" class="member-name-link">onRestart()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapView.html" title="class in com.here.sdk.mapview">MapView</a></dt>
+<dd>
+<div class="block">Call this method in the onRestart() method of the lifecycle owner.</div>
+</dd>
 <dt><a href="com/here/sdk/maploader/CatalogUpdateProgressListener.html#onResume()" class="member-name-link">onResume()</a> - Method in interface com.here.sdk.maploader.<a href="com/here/sdk/maploader/CatalogUpdateProgressListener.html" title="interface in com.here.sdk.maploader">CatalogUpdateProgressListener</a></dt>
 <dd>
 <div class="block">Called when a paused map update is resumed.</div>
@@ -20418,6 +20581,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/location/LocationStatusListener.html#onStatusChanged(com.here.sdk.location.LocationEngineStatus)" class="member-name-link">onStatusChanged(LocationEngineStatus)</a> - Method in interface com.here.sdk.location.<a href="com/here/sdk/location/LocationStatusListener.html" title="interface in com.here.sdk.location">LocationStatusListener</a></dt>
 <dd>
 <div class="block">Called each time the status of the LocationEngine has changed.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapView.html#onStop()" class="member-name-link">onStop()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapView.html" title="class in com.here.sdk.mapview">MapView</a></dt>
+<dd>
+<div class="block">Call this method in the onStop() method of the lifecycle owner.</div>
 </dd>
 <dt><a href="com/here/sdk/search/SuggestCallback.html#onSuggestCompleted(com.here.sdk.search.SearchError,java.util.List)" class="member-name-link">onSuggestCompleted(SearchError, List&lt;Suggestion&gt;)</a> - Method in interface com.here.sdk.search.<a href="com/here/sdk/search/SuggestCallback.html" title="interface in com.here.sdk.search">SuggestCallback</a></dt>
 <dd>
@@ -21259,6 +21426,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance of this class.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html#%3Cinit%3E()" class="member-name-link">PedestrianBuilder()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.PedestrianBuilder</a></dt>
+<dd>
+<div class="block">Creates a new instance of this class.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/TransitRouteOptions.html#pedestrianMaxDistanceInMeters" class="member-name-link">pedestrianMaxDistanceInMeters</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/TransitRouteOptions.html" title="class in com.here.sdk.routing">TransitRouteOptions</a></dt>
 <dd>
 <div class="block">Maximum allowed walking distance in meters (e.g.</div>
@@ -21301,6 +21472,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/TransportSpecification.html#pedestrianSpecification" class="member-name-link">pedestrianSpecification</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a></dt>
 <dd>
 <div class="block">The pedestrian specification for the transport mode.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#pedestrianSpecification" class="member-name-link">pedestrianSpecification</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
+<dd>
+<div class="block">The pedestrian specification for the pedestrian transport mode.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/PedestrianSpecification.html" class="type-name-link" title="class in com.here.sdk.transport">PedestrianSpecification</a> - Class in <a href="com/here/sdk/transport/package-summary.html">com.here.sdk.transport</a></dt>
 <dd>
@@ -21389,7 +21564,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/core/errors/InstantiationErrorCode.html#PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED" class="member-name-link">PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</a> - Enum constant in enum class com.here.sdk.core.errors.<a href="com/here/sdk/core/errors/InstantiationErrorCode.html" title="enum class in com.here.sdk.core.errors">InstantiationErrorCode</a></dt>
 <dd>
-<div class="block">Access to the specified persistent map storage folder is denied</div>
+<div class="block">Access to the specified persistent map storage folder is denied
+ This may occur on Android due to insufficient permissions or scoped storage restrictions
+ (e.g.</div>
 </dd>
 <dt><a href="com/here/sdk/maploader/PersistentMapRepairError.html" class="type-name-link" title="enum class in com.here.sdk.maploader">PersistentMapRepairError</a> - Enum Class in <a href="com/here/sdk/maploader/package-summary.html">com.here.sdk.maploader</a></dt>
 <dd>
@@ -23942,9 +24119,15 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Contains the information required to create a road shield image.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#%3Cinit%3E(com.here.sdk.core.RouteType,com.here.sdk.core.CountryCode,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">RoadShieldIconProperties(RouteType, CountryCode, String, String, String)</a> - Constructor for class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
+<dd>
+<div class="block">Construct RoadShieldIconProperties instance with isoCountryCode.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/RoadShieldIconProperties.html#%3Cinit%3E(com.here.sdk.core.RouteType,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">RoadShieldIconProperties(RouteType, String, String, String, String)</a> - Constructor for class com.here.sdk.mapview.<a href="com/here/sdk/mapview/RoadShieldIconProperties.html" title="class in com.here.sdk.mapview">RoadShieldIconProperties</a></dt>
 <dd>
-<div class="block">Creates a new instance.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use constructor with <code>isoCountryCode</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/RoadSign.html" class="type-name-link" title="class in com.here.sdk.navigation">RoadSign</a> - Class in <a href="com/here/sdk/navigation/package-summary.html">com.here.sdk.navigation</a></dt>
 <dd>
@@ -24072,6 +24255,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Calculation did not succeed.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html#ROUTE_HEAD" class="member-name-link">ROUTE_HEAD</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
+<dd>
+<div class="block">Enable at the start of the route (route head).</div>
+</dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#ROUTE_LENGTH_LIMIT_EXCEEDED" class="member-name-link">ROUTE_LENGTH_LIMIT_EXCEEDED</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
 <div class="block">Distance between waypoints is too large for current options.</div>
@@ -24079,6 +24266,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/RouteLabelType.html#ROUTE_NUMBER" class="member-name-link">ROUTE_NUMBER</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteLabelType.html" title="enum class in com.here.sdk.routing">RouteLabelType</a></dt>
 <dd>
 <div class="block">The route label contains a route number.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html#ROUTE_TAIL" class="member-name-link">ROUTE_TAIL</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
+<dd>
+<div class="block">Enable at the end of the route (route tail).</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/RouteDeviation.html" class="type-name-link" title="class in com.here.sdk.navigation">RouteDeviation</a> - Class in <a href="com/here/sdk/navigation/package-summary.html">com.here.sdk.navigation</a></dt>
 <dd>
@@ -24320,6 +24511,18 @@ loadScripts(document, 'script');</script>
 <div class="block">Route stop that should be used together with import route functionality.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RouteStop.html#%3Cinit%3E(int)" class="member-name-link">RouteStop(int)</a> - Constructor for class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteStop.html" title="class in com.here.sdk.routing">RouteStop</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/TrafficOnRoute.html#routeTag" class="member-name-link">routeTag</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/TrafficOnRoute.html" title="class in com.here.sdk.routing">TrafficOnRoute</a></dt>
+<dd>
+<div class="block">The unique identifier of the route this traffic information belongs to.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html" class="type-name-link" title="class in com.here.sdk.routing">RouteTag</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
+<dd>
+<div class="block">Uniquely identifies a route.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#%3Cinit%3E()" class="member-name-link">RouteTag()</a> - Constructor for class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
@@ -24664,6 +24867,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance of this class.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html#%3Cinit%3E()" class="member-name-link">ScooterBuilder()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.ScooterBuilder</a></dt>
+<dd>
+<div class="block">Creates a new instance of this class.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/ScooterOptions.html" class="type-name-link" title="class in com.here.sdk.routing">ScooterOptions</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
@@ -24678,6 +24885,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/TransportSpecification.html#scooterSpecification" class="member-name-link">scooterSpecification</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a></dt>
 <dd>
 <div class="block">The scooter specification for the transport mode.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#scooterSpecification" class="member-name-link">scooterSpecification</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
+<dd>
+<div class="block">The scooter specification for the scooter transport mode.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/ScooterSpecification.html" class="type-name-link" title="class in com.here.sdk.transport">ScooterSpecification</a> - Class in <a href="com/here/sdk/transport/package-summary.html">com.here.sdk.transport</a></dt>
 <dd>
@@ -26852,6 +27063,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The notice severity.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#severity" class="member-name-link">severity</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>
+<div class="block">The severity of the notice.</div>
+</dd>
 <dt><a href="com/here/sdk/core/CountryCode.html#SGP" class="member-name-link">SGP</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
 <div class="block">Singapore</div>
@@ -27452,8 +27667,21 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteOptions.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a></dt>
 <dd>
-<div class="block">Specifies the speed that will be used by the service as the speed
- for <a href="com/here/sdk/venue/routing/VenueTransportMode.html" title="enum class in com.here.sdk.venue.routing"><code>VenueTransportMode</code></a> in meters per second.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>VenuePedestrianSpecification.walking_speed_in_meters_per_second</code> instead.</div>
+</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueCarSpecification.html" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a></dt>
+<dd>
+<div class="block">Speed in meters per second for venue car routing.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueScooterSpecification.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueScooterSpecification.html" title="class in com.here.sdk.venue.routing">VenueScooterSpecification</a></dt>
+<dd>
+<div class="block">Speed in meters per second for venue scooter routing.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html" title="class in com.here.sdk.venue.routing">VenueTaxiSpecification</a></dt>
+<dd>
+<div class="block">Speed in meters per second for venue taxi routing.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/SpeedLimit.html" class="type-name-link" title="class in com.here.sdk.navigation">SpeedLimit</a> - Class in <a href="com/here/sdk/navigation/package-summary.html">com.here.sdk.navigation</a></dt>
 <dd>
@@ -27732,10 +27960,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/electronichorizon/ElectronicHorizonSegment.html#startOffsetInMeters" class="member-name-link">startOffsetInMeters</a> - Variable in class com.here.sdk.electronichorizon.<a href="com/here/sdk/electronichorizon/ElectronicHorizonSegment.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonSegment</a></dt>
 <dd>
 <div class="block">The start offset from the beginning of the most preferred path in meters.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#startOffsetInMeters" class="member-name-link">startOffsetInMeters</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
-<dd>
-<div class="block">The start offset of the lane in meters from the beginning of the segment</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/RailwayCrossing.html#startOffsetInMeters" class="member-name-link">startOffsetInMeters</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/RailwayCrossing.html" title="class in com.here.sdk.mapdata">RailwayCrossing</a></dt>
 <dd>
@@ -28279,6 +28503,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance of this class.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html#%3Cinit%3E()" class="member-name-link">TaxiBuilder()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.TaxiBuilder</a></dt>
+<dd>
+<div class="block">Creates a new instance of this class.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/TaxiOptions.html" class="type-name-link" title="class in com.here.sdk.routing">TaxiOptions</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
@@ -28311,6 +28539,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/TransportSpecification.html#taxiSpecification" class="member-name-link">taxiSpecification</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a></dt>
 <dd>
 <div class="block">The taxi specification for the transport mode.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#taxiSpecification" class="member-name-link">taxiSpecification</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
+<dd>
+<div class="block">The taxi specification for the taxi transport mode.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/TaxiSpecification.html" class="type-name-link" title="class in com.here.sdk.transport">TaxiSpecification</a> - Class in <a href="com/here/sdk/transport/package-summary.html">com.here.sdk.transport</a></dt>
 <dd>
@@ -28813,6 +29045,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The localized title for the resource.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNotice.html#title" class="member-name-link">title</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNotice.html" title="class in com.here.sdk.venue.routing">IndoorRouteNotice</a></dt>
+<dd>
+<div class="block">The notice title providing a short summary of the issue.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html#title" class="member-name-link">title</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a></dt>
+<dd>
+<div class="block">The title providing a short summary of the notice detail.</div>
+</dd>
 <dt><a href="com/here/sdk/search/HighlightType.html#TITLE" class="member-name-link">TITLE</a> - Enum constant in enum class com.here.sdk.search.<a href="com/here/sdk/search/HighlightType.html" title="enum class in com.here.sdk.search">HighlightType</a></dt>
 <dd>
 <div class="block">Suggestion.title</div>
@@ -29133,11 +29373,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapdata/TollStructureManeuver.html#%3Cinit%3E(java.util.List)" class="member-name-link">TollStructureManeuver(List&lt;DirectedOCMSegmentId&gt;)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TollStructureManeuver.html" title="class in com.here.sdk.mapdata">TollStructureManeuver</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#tollStructures" class="member-name-link">tollStructures</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
-<dd>
-<div class="block">List of Toll Structure that identifies the presence of physical toll structures or automatic controls on the lane
- at entry and exit points along a toll road which requires payment (cash, electronic, etc.) or ticket</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/TollStructureType.html" class="type-name-link" title="enum class in com.here.sdk.mapdata">TollStructureType</a> - Enum Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
 <dd>
@@ -30418,10 +30653,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Identifies which type of file is (toll, junction view, etc...)</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/LaneAttribute.html#type" class="member-name-link">type</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LaneAttribute.html" title="class in com.here.sdk.mapdata">LaneAttribute</a></dt>
-<dd>
-<div class="block">Specifies the functional and regulatory roles a lane may serve, such as turn, express, HOV, or bike use</div>
-</dd>
 <dt><a href="com/here/sdk/navigation/BorderCrossingWarning.html#type" class="member-name-link">type</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/BorderCrossingWarning.html" title="class in com.here.sdk.navigation">BorderCrossingWarning</a></dt>
 <dd>
 <div class="block">Type of border crossing.</div>
@@ -30529,6 +30760,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/SpecificRestriction.html#type" class="member-name-link">type</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/SpecificRestriction.html" title="class in com.here.sdk.transport">SpecificRestriction</a></dt>
 <dd>
 <div class="block">Type of restriction.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html#type" class="member-name-link">type</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeDetails.html" title="class in com.here.sdk.venue.routing">IndoorRouteNoticeDetails</a></dt>
+<dd>
+<div class="block">The detail type identifier.</div>
 </dd>
 <dt><a href="com/here/sdk/core/RouteType.html#TYPE_UNKNOWN" class="member-name-link">TYPE_UNKNOWN</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/RouteType.html" title="enum class in com.here.sdk.core">RouteType</a></dt>
 <dd>
@@ -30972,6 +31207,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapMeasure.html#value" class="member-name-link">value</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></dt>
 <dd>
 <div class="block">The measure value.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RouteTag.html#value" class="member-name-link">value</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></dt>
+<dd>
+<div class="block">The raw tag string.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/SpecificRestriction.html#value" class="member-name-link">value</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/SpecificRestriction.html" title="class in com.here.sdk.transport">SpecificRestriction</a></dt>
 <dd>
@@ -31962,6 +32201,14 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
 <dt><a href="com/here/sdk/venue/data/VenueTopology.TopologyDirectionality.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.venue.data.<a href="com/here/sdk/venue/data/VenueTopology.TopologyDirectionality.html" title="enum class in com.here.sdk.venue.data">VenueTopology.TopologyDirectionality</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
@@ -33178,6 +33425,16 @@ the order they are declared.</div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/EnableOption.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
@@ -33434,6 +33691,14 @@ the order they are declared.</div>
 <dd>
 <div class="block">Controls the <a href="com/here/sdk/venue/data/VenueModel.html" title="class in com.here.sdk.venue.data"><code>VenueModel</code></a> inside the <a href="com/here/sdk/venue/control/VenueMap.html" title="class in com.here.sdk.venue.control"><code>VenueMap</code></a> object.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Contains venue car specific settings.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html#%3Cinit%3E()" class="member-name-link">VenueCarSpecification()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueCarSpecification.html" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/venue/data/VenueDrawing.html" class="type-name-link" title="class in com.here.sdk.venue.data">VenueDrawing</a> - Class in <a href="com/here/sdk/venue/data/package-summary.html">com.here.sdk.venue.data</a></dt>
 <dd>
 <div class="block">Represents a drawing inside the <a href="com/here/sdk/venue/data/VenueModel.html" title="class in com.here.sdk.venue.data"><code>VenueModel</code></a>.</div>
@@ -33558,6 +33823,22 @@ the order they are declared.</div>
 <dd>
 <div class="block">Represents a building or a complex of buildings, like airports or universities.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenuePedestrianSpecification</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Venue pedestrian specific settings.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html#%3Cinit%3E()" class="member-name-link">VenuePedestrianSpecification()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html" title="class in com.here.sdk.venue.routing">VenuePedestrianSpecification</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueScooterSpecification.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueScooterSpecification</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Contains venue scooter specific settings.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueScooterSpecification.html#%3Cinit%3E()" class="member-name-link">VenueScooterSpecification()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueScooterSpecification.html" title="class in com.here.sdk.venue.routing">VenueScooterSpecification</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/venue/control/VenueSelectionListener.html" class="type-name-link" title="interface in com.here.sdk.venue.control">VenueSelectionListener</a> - Interface in <a href="com/here/sdk/venue/control/package-summary.html">com.here.sdk.venue.control</a></dt>
 <dd>
 <div class="block">The interface for listeners for
@@ -33584,6 +33865,14 @@ the order they are declared.</div>
 <dd>
 <div class="block">Represents a style of the venue.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueTaxiSpecification</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Contains venue taxi specific settings.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html#%3Cinit%3E()" class="member-name-link">VenueTaxiSpecification()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTaxiSpecification.html" title="class in com.here.sdk.venue.routing">VenueTaxiSpecification</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/venue/data/VenueTopology.html" class="type-name-link" title="class in com.here.sdk.venue.data">VenueTopology</a> - Class in <a href="com/here/sdk/venue/data/package-summary.html">com.here.sdk.venue.data</a></dt>
 <dd>
 <div class="block">Represents routing topologies inside the <a href="com/here/sdk/venue/data/VenueLevel.html" title="class in com.here.sdk.venue.data"><code>VenueLevel</code></a>.</div>
@@ -33599,6 +33888,35 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/venue/routing/VenueTransportMode.html" class="type-name-link" title="enum class in com.here.sdk.venue.routing">VenueTransportMode</a> - Enum Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
 <dd>
 <div class="block">Available mode of transport on indoor topology.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteOptions.html#venueTransportSpecification" class="member-name-link">venueTransportSpecification</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a></dt>
+<dd>
+<div class="block">Defines the venue transport specification which contains the vehicle specifications
+ for the transport mode chosen via <a href="com/here/sdk/venue/routing/IndoorRouteOptions.html#transportMode"><code>IndoorRouteOptions.transportMode</code></a>.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">Contains transport attributes details related to the venue transport mode.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.html#%3Cinit%3E()" class="member-name-link">VenueTransportSpecification()</a> - Constructor for class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.CarBuilder</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">This class constructs a <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> for a car.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.PedestrianBuilder</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">This class constructs a <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> for a pedestrian.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.ScooterBuilder</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">This class constructs a <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> for a scooter.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html" class="type-name-link" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.TaxiBuilder</a> - Class in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
+<dd>
+<div class="block">This class constructs a <a href="com/here/sdk/venue/routing/VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing"><code>VenueTransportSpecification</code></a> for a taxi.</div>
 </dd>
 <dt><a href="com/here/sdk/core/engine/CatalogIdentifier.html#version" class="member-name-link">version</a> - Variable in class com.here.sdk.core.engine.<a href="com/here/sdk/core/engine/CatalogIdentifier.html" title="class in com.here.sdk.core.engine">CatalogIdentifier</a></dt>
 <dd>
@@ -33794,6 +34112,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Route goes through an emergency gate.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#VIOLATED_ENTIRE_ROUTE_CONDITION" class="member-name-link">VIOLATED_ENTIRE_ROUTE_CONDITION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Violated entire route condition.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/SectionNoticeCode.html#VIOLATED_MIN_CHARGE_AT_CS" class="member-name-link">VIOLATED_MIN_CHARGE_AT_CS</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/SectionNoticeCode.html" title="enum class in com.here.sdk.routing">SectionNoticeCode</a></dt>
 <dd>
 <div class="block">The route can not reach all charging stations on the route with the minimum required charge, as the initial charge was to low.</div>
@@ -33806,9 +34128,21 @@ the order they are declared.</div>
 <dd>
 <div class="block">The route can not reach the first charging station with the minimum required charge, as the initial charge was to low.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#VIOLATED_ROUTE_HEAD_CONDITION" class="member-name-link">VIOLATED_ROUTE_HEAD_CONDITION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Violated route head condition.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#VIOLATED_ROUTE_TAIL_CONDITION" class="member-name-link">VIOLATED_ROUTE_TAIL_CONDITION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Violated route tail condition.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/SectionNoticeCode.html#VIOLATED_START_DIRECTION" class="member-name-link">VIOLATED_START_DIRECTION</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/SectionNoticeCode.html" title="enum class in com.here.sdk.routing">SectionNoticeCode</a></dt>
 <dd>
 <div class="block">Start direction of the route is not as requested.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#VIOLATED_TRANSPORT_MODE" class="member-name-link">VIOLATED_TRANSPORT_MODE</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
+<dd>
+<div class="block">Violated transport mode.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#VIOLATED_TRANSPORT_MODE_IN_ROUTE_HANDLE_DECODING" class="member-name-link">VIOLATED_TRANSPORT_MODE_IN_ROUTE_HANDLE_DECODING</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
@@ -33960,6 +34294,10 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/transport/PedestrianSpecification.html#walkingSpeedInMetersPerSecond" class="member-name-link">walkingSpeedInMetersPerSecond</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/PedestrianSpecification.html" title="class in com.here.sdk.transport">PedestrianSpecification</a></dt>
 <dd>
 <div class="block">Walking speed in meters per second.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html#walkingSpeedInMetersPerSecond" class="member-name-link">walkingSpeedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenuePedestrianSpecification.html" title="class in com.here.sdk.venue.routing">VenuePedestrianSpecification</a></dt>
+<dd>
+<div class="block">Walking speed in meters per second for venue pedestrian routing.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/PedestrianOptions.html#walkSpeedInMetersPerSecond" class="member-name-link">walkSpeedInMetersPerSecond</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/PedestrianOptions.html" title="class in com.here.sdk.routing">PedestrianOptions</a></dt>
 <dd>
@@ -34410,6 +34748,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets the vehicle axle count.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html#withCarSpecification(com.here.sdk.venue.routing.VenueCarSpecification)" class="member-name-link">withCarSpecification(VenueCarSpecification)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.CarBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.CarBuilder</a></dt>
+<dd>
+<div class="block">Sets the car specification.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapLayerPriorityBuilder.html#withCategory(java.lang.String)" class="member-name-link">withCategory(String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></dt>
 <dd>
 <div class="block">Sets the layer category for which a priority could be defined with the next call to the functions
@@ -34708,6 +35050,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets the pedestrian specification.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html#withPedestrianSpecification(com.here.sdk.venue.routing.VenuePedestrianSpecification)" class="member-name-link">withPedestrianSpecification(VenuePedestrianSpecification)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.PedestrianBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.PedestrianBuilder</a></dt>
+<dd>
+<div class="block">Sets the pedestrian specification.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/datasource/PointDataSourceBuilder.html#withPoint(com.here.sdk.mapview.datasource.PointData)" class="member-name-link">withPoint(PointData)</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/PointDataSourceBuilder.html" title="class in com.here.sdk.mapview.datasource">PointDataSourceBuilder</a></dt>
 <dd>
 <div class="block">Configures the builder to insert the given point in the data source.</div>
@@ -34740,6 +35086,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets the scooter specification.</div>
 </dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html#withScooterSpecification(com.here.sdk.venue.routing.VenueScooterSpecification)" class="member-name-link">withScooterSpecification(VenueScooterSpecification)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.ScooterBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.ScooterBuilder</a></dt>
+<dd>
+<div class="block">Sets the scooter specification.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapLayerMapMeasureDependentStorageLevels.html#withStorageLevelOffset(int)" class="member-name-link">withStorageLevelOffset(int)</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapLayerMapMeasureDependentStorageLevels.html" title="class in com.here.sdk.mapview">MapLayerMapMeasureDependentStorageLevels</a></dt>
 <dd>
 <div class="block">Creates an instance of <a href="com/here/sdk/mapview/MapLayerMapMeasureDependentStorageLevels.html" title="class in com.here.sdk.mapview"><code>MapLayerMapMeasureDependentStorageLevels</code></a> with the specified storage level offset.</div>
@@ -34749,6 +35099,10 @@ the order they are declared.</div>
 <div class="block">Configures the builder to use a style.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/TransportSpecification.TaxiBuilder.html#withTaxiSpecification(com.here.sdk.transport.TaxiSpecification)" class="member-name-link">withTaxiSpecification(TaxiSpecification)</a> - Method in class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportSpecification.TaxiBuilder.html" title="class in com.here.sdk.transport">TransportSpecification.TaxiBuilder</a></dt>
+<dd>
+<div class="block">Sets the taxi specification.</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html#withTaxiSpecification(com.here.sdk.venue.routing.VenueTaxiSpecification)" class="member-name-link">withTaxiSpecification(VenueTaxiSpecification)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueTransportSpecification.TaxiBuilder.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification.TaxiBuilder</a></dt>
 <dd>
 <div class="block">Sets the taxi specification.</div>
 </dd>

@@ -118,19 +118,29 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.CalculateIndoorRouteCallback)" class="member-name-link">calculateRoute</a><wbr>(<a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;from,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.CalculateIndoorRouteCallback)" class="member-name-link">calculateRoute</a><wbr>(<a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;from,
  <a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;to,
  <a href="IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a>&nbsp;routeOptions,
  <a href="CalculateIndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">CalculateIndoorRouteCallback</a>&nbsp;callback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Asynchronously calculates a route inside a venue.</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.28.0.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.IndoorRouteCallback)" class="member-name-link">calculateRoute</a><wbr>(<a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;from,
+ <a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;to,
+ <a href="IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a>&nbsp;routeOptions,
+ <a href="IndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">IndoorRouteCallback</a>&nbsp;callback)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Asynchronously calculates a route inside a venue with route notices.</div>
 </div>
 </div>
 </div>
@@ -172,7 +182,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.CalculateIndoorRouteCallback)">
 <h3>calculateRoute</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">calculateRoute</span><wbr><span class="parameters">(@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">calculateRoute</span><wbr><span class="parameters">(@NonNull
  <a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;from,
  @NonNull
  <a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;to,
@@ -180,6 +191,9 @@ loadScripts(document, 'script');</script>
  <a href="IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a>&nbsp;routeOptions,
  @NonNull
  <a href="CalculateIndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">CalculateIndoorRouteCallback</a>&nbsp;callback)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with IndoorRouteCallback parameter instead.</div>
+</div>
 <div class="block"><p>Asynchronously calculates a route inside a venue.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -189,6 +203,29 @@ loadScripts(document, 'script');</script>
      common route options.</dd>
 <dd><code>callback</code> - <p>Callback object that will be invoked after route calculation.
      It is always invoked on the main thread.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.IndoorRouteCallback)">
+<h3>calculateRoute</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">calculateRoute</span><wbr><span class="parameters">(@NonNull
+ <a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;from,
+ @NonNull
+ <a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&nbsp;to,
+ @NonNull
+ <a href="IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a>&nbsp;routeOptions,
+ @NonNull
+ <a href="IndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">IndoorRouteCallback</a>&nbsp;callback)</span></div>
+<div class="block"><p>Asynchronously calculates a route inside a venue with route notices.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>from</code> - <p>A starting position of the route to calculate.</dd>
+<dd><code>to</code> - <p>A destination position of the route to calculate.</dd>
+<dd><code>routeOptions</code> - <p>Options specific for indoor route calculation, along with
+     common route options.</dd>
+<dd><code>callback</code> - <p>Callback object that will be invoked after route calculation.
+     It is always invoked on the main thread and includes route notices.</dd>
 </dl>
 </section>
 </li>

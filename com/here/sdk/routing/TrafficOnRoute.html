@@ -97,14 +97,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Indicates the index of the last traveled route section.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TrafficOnSection.html" title="class in com.here.sdk.routing">TrafficOnSection</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#trafficSections" class="member-name-link">trafficSections</a></code></div>
+<div class="col-first odd-row-color"><code><a href="RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#routeTag" class="member-name-link">routeTag</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">The unique identifier of the route this traffic information belongs to.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TrafficOnSection.html" title="class in com.here.sdk.routing">TrafficOnSection</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#trafficSections" class="member-name-link">trafficSections</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">List of traffic sections.</div>
 </div>
-<div class="col-first even-row-color"><code>int</code></div>
-<div class="col-second even-row-color"><code><a href="#traveledDistanceOnLastSectionInMeters" class="member-name-link">traveledDistanceOnLastSectionInMeters</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><code><a href="#traveledDistanceOnLastSectionInMeters" class="member-name-link">traveledDistanceOnLastSectionInMeters</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Offset, in meter, to the last visited position on the route section defined by the last
  traveled section index.</div>
 </div>
@@ -160,6 +165,15 @@ loadScripts(document, 'script');</script>
 <section class="field-details" id="field-detail">
 <h2>Field Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="routeTag">
+<h3>routeTag</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></span>&nbsp;<span class="element-name">routeTag</span></div>
+<div class="block"><p>The unique identifier of the route this traffic information belongs to.
+ <strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
+</section>
+</li>
 <li>
 <section class="detail" id="lastTraveledSectionIndex">
 <h3>lastTraveledSectionIndex</h3>

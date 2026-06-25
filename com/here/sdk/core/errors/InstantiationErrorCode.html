@@ -147,7 +147,9 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first even-row-color"><code><a href="#PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED" class="member-name-link">PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Access to the specified persistent map storage folder is denied</div>
+<div class="block">Access to the specified persistent map storage folder is denied
+ This may occur on Android due to insufficient permissions or scoped storage restrictions
+ (e.g.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#SDK_ENGINE_ALREADY_DISPOSED" class="member-name-link">SDK_ENGINE_ALREADY_DISPOSED</a></code></div>
 <div class="col-last odd-row-color">
@@ -236,7 +238,13 @@ the order they are declared.</div>
 <section class="detail" id="PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED">
 <h3>PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="InstantiationErrorCode.html" title="enum class in com.here.sdk.core.errors">InstantiationErrorCode</a></span>&nbsp;<span class="element-name">PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</span></div>
-<div class="block"><p>Access to the specified persistent map storage folder is denied</div>
+<div class="block"><p>Access to the specified persistent map storage folder is denied
+ This may occur on Android due to insufficient permissions or scoped storage restrictions
+ (e.g. attempting to access paths outside the application sandbox such as /sdcard/...).
+ Use application-specific directories (e.g. getFilesDir(), getExternalFilesDir())
+ or ensure the app has appropriate access rights to the provided path.
+ For detailed guidance, see the official Android documentation:
+ https://developer.android.com/guide/topics/permissions/overview</div>
 </section>
 </li>
 <li>

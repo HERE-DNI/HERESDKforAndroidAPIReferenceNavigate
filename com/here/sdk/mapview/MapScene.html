@@ -104,9 +104,10 @@ loadScripts(document, 'script');</script>
  with <a href="#disableFeatures(java.util.List)"><code>disableFeatures(java.util.List&lt;java.lang.String&gt;)</code></a>. Checking which features are currently enabled can be done using
  <a href="#getActiveFeatures()"><code>getActiveFeatures()</code></a>. For convenience, <a href="MapFeatures.html" title="class in com.here.sdk.mapview"><code>MapFeatures</code></a> and <a href="MapFeatureModes.html" title="class in com.here.sdk.mapview"><code>MapFeatureModes</code></a> hold
  constants for feature and mode names.
- <p>Since version 4.15.0, map features cannot be controlled using <a href="#setLayerVisibility(java.lang.String,com.here.sdk.mapview.VisibilityState)"><code>setLayerVisibility(java.lang.String, com.here.sdk.mapview.VisibilityState)</code></a>, since <a href="#setLayerVisibility(java.lang.String,com.here.sdk.mapview.VisibilityState)"><code>setLayerVisibility(java.lang.String, com.here.sdk.mapview.VisibilityState)</code></a> controls
- only visibility of the layers which are corresponding to the features enabled either by <a href="#enableFeatures(java.util.Map)"><code>enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a>
- or enabled by default for the scene.
+ <p>Since version 4.15.0, map features cannot be controlled using <a href="#setLayerVisibility(java.lang.String,com.here.sdk.mapview.VisibilityState)"><code>setLayerVisibility(java.lang.String, com.here.sdk.mapview.VisibilityState)</code></a>,
+ since <a href="#setLayerVisibility(java.lang.String,com.here.sdk.mapview.VisibilityState)"><code>setLayerVisibility(java.lang.String, com.here.sdk.mapview.VisibilityState)</code></a> controls only visibility of the layers which are
+ corresponding to the features enabled either by <a href="#enableFeatures(java.util.Map)"><code>enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> or enabled by default
+ for the scene.
  <h2> Map layers</h2>
  <p>A map scheme is organized in layers, which can be controlled using <a href="#setLayerVisibility(java.lang.String,com.here.sdk.mapview.VisibilityState)"><code>setLayerVisibility(java.lang.String, com.here.sdk.mapview.VisibilityState)</code></a>.
  It's possible to change the visibility state of any map layer as long as the name is known.
@@ -236,13 +237,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapSceneLights.html" title="class in com.here.sdk.mapview">MapSceneLights</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLights()" class="member-name-link">getLights</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets a MapSceneLights instance that controls lights present in the scene.</div>
+<div class="block">Gets a <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance that controls lights present in the scene.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSupportedFeatures()" class="member-name-link">getSupportedFeatures</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets features and all of their modes supported by the currently
- loaded scene configuration.</div>
+<div class="block">Gets features and all of their modes supported by the currently loaded scene configuration.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadScene(com.here.sdk.mapview.MapSceneLoadOptions,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene</a><wbr>(<a href="MapSceneLoadOptions.html" title="class in com.here.sdk.mapview">MapSceneLoadOptions</a>&nbsp;options,
@@ -260,14 +260,16 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadScene(java.lang.String,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;configurationFile,
  <a href="MapScene.LoadSceneCallback.html" title="interface in com.here.sdk.mapview">MapScene.LoadSceneCallback</a>&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported formats.</div>
+<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported
+ formats.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadScene(java.lang.String,com.here.sdk.mapview.WatermarkStyle,com.here.sdk.mapview.MapScene.LoadSceneCallback)" class="member-name-link">loadScene</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;configurationFile,
  <a href="WatermarkStyle.html" title="enum class in com.here.sdk.mapview">WatermarkStyle</a>&nbsp;watermarkStyle,
  <a href="MapScene.LoadSceneCallback.html" title="interface in com.here.sdk.mapview">MapScene.LoadSceneCallback</a>&nbsp;callback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported formats.</div>
+<div class="block">Asynchronously loads a map scene described by a specified file in one of the supported
+ formats.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reloadScene()" class="member-name-link">reloadScene</a>()</code></div>
@@ -386,15 +388,15 @@ loadScripts(document, 'script');</script>
  <a href="MapScene.LoadSceneCallback.html" title="interface in com.here.sdk.mapview">MapScene.LoadSceneCallback</a>&nbsp;callback)</span></div>
 <div class="block"><p>Asynchronously loads a map scene described by a specified map scheme.
  Any previous map scene config will be replaced. The loaded scene is cached and so any changes
- made to the scene files on disk might not get reflected on a successive call to this function.
- Instead the reloadScene API can handle such use-cases to force-update the scene.
+ made to the scene files on disk might not get reflected on a successive call to this
+ function. Instead the reloadScene API can handle such use-cases to force-update the scene.
  <p>Map features enabled or disabled using <a href="#enableFeatures(java.util.Map)"><code>enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a>
  and <a href="#disableFeatures(java.util.List)"><code>disableFeatures(java.util.List&lt;java.lang.String&gt;)</code></a> will be reset to defaults for the new
  scene configuration.
  <p>The callback is called on the main thread.
- When recreating an activity following a device rotation, it is not necessary to call this
- method a second time. The map scheme that was loaded when the map view was initially
- created will continue to be used.</div>
+ When recreating an activity following a device rotation, it is not necessary
+ to call this method a second time. The map scheme that was loaded when the
+ map view was initially created will continue to be used.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>mapScheme</code> - <p>Map scheme.</dd>
@@ -409,16 +411,16 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;configurationFile,
  @Nullable
  <a href="MapScene.LoadSceneCallback.html" title="interface in com.here.sdk.mapview">MapScene.LoadSceneCallback</a>&nbsp;callback)</span></div>
-<div class="block"><p>Asynchronously loads a map scene described by a specified file in one of the supported formats.
- Any previous map scene config will be replaced.
+<div class="block"><p>Asynchronously loads a map scene described by a specified file in one of the supported
+ formats. Any previous map scene config will be replaced.
  <p>When loading the same file again, consider to call <code>reloadScene()</code> instead.
  <p>Map features enabled or disabled using <a href="#enableFeatures(java.util.Map)"><code>enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a>
  and <a href="#disableFeatures(java.util.List)"><code>disableFeatures(java.util.List&lt;java.lang.String&gt;)</code></a> will be reset to defaults for the new
  scene configuration.
  <p>The callback is called on the main thread.
- When recreating an activity following a device rotation, it is not necessary to call this
- method a second time. The map scheme that was loaded when the map view was initially
- created will continue to be used.</div>
+ When recreating an activity following a device rotation, it is not necessary
+ to call this method a second time. The map scheme that was loaded when the
+ map view was initially created will continue to be used.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>configurationFile</code> - <p>Map scheme configuration file. It must contain the whole scene configuration.
@@ -437,17 +439,17 @@ loadScripts(document, 'script');</script>
  <a href="WatermarkStyle.html" title="enum class in com.here.sdk.mapview">WatermarkStyle</a>&nbsp;watermarkStyle,
  @Nullable
  <a href="MapScene.LoadSceneCallback.html" title="interface in com.here.sdk.mapview">MapScene.LoadSceneCallback</a>&nbsp;callback)</span></div>
-<div class="block"><p>Asynchronously loads a map scene described by a specified file in one of the supported formats.
- The style of the HERE watermark matching the map scheme is specified. Any previous map scene
- config will be replaced.
+<div class="block"><p>Asynchronously loads a map scene described by a specified file in one of the supported
+ formats. The style of the HERE watermark matching the map scheme is specified.
+ Any previous map scene config will be replaced.
  <p>When loading the same file again, consider to call <code>reloadScene()</code> instead.
  <p>Map features enabled or disabled using <a href="#enableFeatures(java.util.Map)"><code>enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a>
  and <a href="#disableFeatures(java.util.List)"><code>disableFeatures(java.util.List&lt;java.lang.String&gt;)</code></a> will be reset to defaults for the new
  scene configuration.
  <p>The callback is called on the main thread.
- When recreating an activity following a device rotation, it is not necessary to call this
- method a second time. The map scheme that was loaded when the map view was initially
- created will continue to be used.</div>
+ When recreating an activity following a device rotation, it is not necessary
+ to call this method a second time. The map scheme that was loaded when the
+ map view was initially created will continue to be used.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>configurationFile</code> - <p>Map scheme configuration file. It must contain the whole scene configuration.
@@ -482,8 +484,7 @@ loadScripts(document, 'script');</script>
  method a second time. The map scheme that was loaded when the map view was
  initially
  created will continue to be used.
- <p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
- Related APIs may change for new releases without a deprecation process.</div>
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>options</code> - <p>Scene configuration options created using MapSceneLoadOptionsBuilder.</dd>
@@ -874,9 +875,8 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">getActiveFeatures</span>()</div>
 <div class="block"><p>Gets map features that are currently active. Active features are features that are either
  enabled via a call to <a href="#enableFeatures(java.util.Map)"><code>enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> or that are enabled by default in the scene.
- <p>The key to the resulting map is the name of the feature
- and the value is the active mode.
- <p>Result is empty if scene has not been loaded.</div>
+ <p>The key to the resulting map is the name of the feature and the value is the active mode.
+ <p>The result is empty if the scene has not been loaded.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The map of active features.</dd>
@@ -888,11 +888,10 @@ loadScripts(document, 'script');</script>
 <h3>getSupportedFeatures</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&gt;</span>&nbsp;<span class="element-name">getSupportedFeatures</span>()</div>
-<div class="block"><p>Gets features and all of their modes supported by the currently
- loaded scene configuration.
+<div class="block"><p>Gets features and all of their modes supported by the currently loaded scene configuration.
  <p>The key to the resulting map is the name of the feature
  and the value is a list of modes for that feature.
- <p>Result is empty if scene has not been loaded.</div>
+ <p>The result is empty if the scene has not been loaded.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The map of supported features and all their modes.</dd>
@@ -910,8 +909,7 @@ loadScripts(document, 'script');</script>
  <p>Does not affect features that were not specified.
  Unsupported features are ignored.
  <p>May cause the current map configuration to be reloaded.
- <p>See <a href="MapFeatures.html" title="class in com.here.sdk.mapview"><code>MapFeatures</code></a> for feature names and <a href="MapFeatureModes.html" title="class in com.here.sdk.mapview"><code>MapFeatureModes</code></a> for
- feature mode names.</div>
+ <p>See <a href="MapFeatures.html" title="class in com.here.sdk.mapview"><code>MapFeatures</code></a> for feature names and <a href="MapFeatureModes.html" title="class in com.here.sdk.mapview"><code>MapFeatureModes</code></a> for feature mode names.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>features</code> - <p>The list of features to enable, key is the name of the feature
@@ -941,11 +939,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="reloadScene()">
 <h3>reloadScene</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">reloadScene</span>()</div>
-<div class="block"><p>Asynchronously reloads the current map scene from file. This skips any cached data used internally and reloads the
- scene including any changes made to the (custom) map styles in JSON.
+<div class="block"><p>Asynchronously reloads the current map scene from file. This skips any cached data used
+ internally and reloads the scene including any changes made to the (custom) map styles in
+ JSON.
  <p><code>MapFeature</code> settings will be preserved.
- <p>Internal optimization checks will be skipped to ensure all custom style changes are loaded. Therefore,
- calling this method may take slightly longer than calling one of the <code>loadScene(..)</code> overloads.</div>
+ <p>Internal optimization checks will be skipped to ensure all custom style changes are loaded.
+ Therefore, calling this method may take slightly longer than calling one of the
+ <code>loadScene(..)</code> overloads.</div>
 </section>
 </li>
 <li>
@@ -953,25 +953,23 @@ loadScripts(document, 'script');</script>
 <h3>getLights</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapSceneLights.html" title="class in com.here.sdk.mapview">MapSceneLights</a></span>&nbsp;<span class="element-name">getLights</span>()</div>
-<div class="block"><p>Gets a MapSceneLights instance that controls lights present in the scene.
- <p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
- Related APIs may change for new releases without a deprecation process.
- <p>Provides access to a MapSceneLights instance that controls the lights in the scene.
- <p>The behavior of the returned MapSceneLights instance depends on the state of the scene:
+<div class="block"><p>Gets a <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance that controls lights present in the scene.
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
+ <p>The behavior of the returned <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance depends on the state of the scene:
  <ul>
- <li>If the scene is not loaded, the returned MapSceneLights instance will not contain any light settings, as lights are not loaded without a scene.</li>
- <li>If the scene is loaded, the returned MapSceneLights instance reflects the current light settings of the loaded scene.</li>
+ <li>If the scene is not loaded, the returned <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance will not contain any light settings, as lights are not loaded without a scene.</li>
+ <li>If the scene is loaded, the returned <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance reflects the current light settings of the loaded scene.</li>
  </ul>
  <p>Scene Change Behavior:
  <ul>
- <li>If the scene changes, the MapSceneLights instance will be updated to reflect the light settings of the new scene.</li>
- <li>Any user-defined settings to MapSceneLights will be overridden by the new scene's light settings when the scene changes.</li>
+ <li>If the scene changes, the <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> instance will be updated to reflect the light settings of the new scene.</li>
+ <li>Any user-defined settings to <a href="MapSceneLights.html" title="class in com.here.sdk.mapview"><code>MapSceneLights</code></a> will be overridden by the new scene's light settings when the scene changes.</li>
  </ul>
  <p>Error Handling:
  <ul>
  <li>If the scene is loaded and the loaded scene does not utilize or specify light settings:
  <ul>
- <li>If the lights are not present, the error callback may return a NO_LIGHTS state.</li>
+ <li>If the lights are not present, the error callback may return a <code>NO_LIGHTS</code>{</li>
  </ul>
  </li>
  </ul></div>

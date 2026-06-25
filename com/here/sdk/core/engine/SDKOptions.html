@@ -340,7 +340,16 @@ loadScripts(document, 'script');</script>
  which may cause some functionality to not behave as expected.
  The recommended location in terms of file I/O speed is the app's internal storage directory, whereas an external SD card is expected to be slower.
  This also depends on the quality of the used SD card.
- <p>Note: If the persistent map storage location has the read only permission, then the <a href="#dataPath"><code>dataPath</code></a> must be configured.</div>
+ <p>Note: If the persistent map storage location has the read only permission, then the <a href="#dataPath"><code>dataPath</code></a> must be configured.
+ Note: On Android, using <code>persistentStoragePath</code> may fail due to file access restrictions introduced by scoped storage (Android 10+).
+ Due to scoped storage restrictions, direct access to arbitrary file system paths (e.g. <code>/sdcard/...</code>) may be denied, even if traditional storage permissions are declared.
+ This can result in errors such as: <code>PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</code>
+ To ensure reliable access, avoid using raw absolute paths outside your app sandbox, and prefer application-specific directories:
+ <ul>
+ <li><code>context.getFilesDir()</code></li>
+ <li><code>context.getExternalFilesDir()</code>
+ For detailed guidance, see the official <a href="https://developer.android.com/guide/topics/permissions/overview">Android documentation on permissions</a>.</li>
+ </ul></div>
 </section>
 </li>
 <li>

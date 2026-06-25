@@ -216,7 +216,7 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Unregisters a previously added warning listener.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomWarningNotificationDistances(int,com.here.sdk.navigation.WarningNotificationDistances)" class="member-name-link">setCustomWarningNotificationDistances</a><wbr>(int&nbsp;customWarningType,
  <a href="../navigation/WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a>&nbsp;warningNotificationDistances)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -232,7 +232,7 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the <a href="../navigation/TimingProfile.html" title="enum class in com.here.sdk.navigation"><code>TimingProfile</code></a> of the current position.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setWarningNotificationDistances(com.here.sdk.navigation.WarningType,com.here.sdk.navigation.WarningNotificationDistances)" class="member-name-link">setWarningNotificationDistances</a><wbr>(<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&nbsp;warningType,
  <a href="../navigation/WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a>&nbsp;warningNotificationDistances)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -444,7 +444,7 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <li>
 <section class="detail" id="setWarningNotificationDistances(com.here.sdk.navigation.WarningType,com.here.sdk.navigation.WarningNotificationDistances)">
 <h3>setWarningNotificationDistances</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">setWarningNotificationDistances</span><wbr><span class="parameters">(@NonNull
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setWarningNotificationDistances</span><wbr><span class="parameters">(@NonNull
  <a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&nbsp;warningType,
  @NonNull
  <a href="../navigation/WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a>&nbsp;warningNotificationDistances)</span></div>
@@ -457,9 +457,6 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <dd><code>warningType</code> - <p>The warning type for which the warning notification distances will be set.
      Must not be <a href="../navigation/WarningType.html#CUSTOM"><code>WarningType.CUSTOM</code></a>.</dd>
 <dd><code>warningNotificationDistances</code> - <p>The warning notification distances to be set for the specified warning type.</dd>
-<dt>Returns:</dt>
-<dd><p>True if the distances were successfully set; false if <code>warningType</code> is
-     <a href="../navigation/WarningType.html#CUSTOM"><code>WarningType.CUSTOM</code></a> or the options could not be applied.</dd>
 </dl>
 </section>
 </li>
@@ -488,7 +485,7 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <li>
 <section class="detail" id="setCustomWarningNotificationDistances(int,com.here.sdk.navigation.WarningNotificationDistances)">
 <h3>setCustomWarningNotificationDistances</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">setCustomWarningNotificationDistances</span><wbr><span class="parameters">(int&nbsp;customWarningType,
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCustomWarningNotificationDistances</span><wbr><span class="parameters">(int&nbsp;customWarningType,
  @NonNull
  <a href="../navigation/WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a>&nbsp;warningNotificationDistances)</span></div>
 <div class="block"><p>Sets the warning notification distances for the specified custom warning type.
@@ -501,9 +498,7 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <dd><code>customWarningType</code> - <p>The identifier of the custom warning type for which the
      notification distances should be set.</dd>
 <dd><code>warningNotificationDistances</code> - <p>The warning notification distances to be applied
-     for the specified <code>customWarningType</code>.</dd>
-<dt>Returns:</dt>
-<dd><p>True if the distances were successfully set; false otherwise.
+     for the specified <code>customWarningType</code>.
      <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
      behaviors. Related APIs may change for new releases without a deprecation process.</dd>
 </dl>
