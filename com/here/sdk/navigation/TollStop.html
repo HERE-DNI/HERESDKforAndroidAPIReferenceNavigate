@@ -94,12 +94,16 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>double</code></div>
 <div class="col-second even-row-color"><code><a href="#distanceToTollStopInMeters" class="member-name-link">distanceToTollStopInMeters</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Distance to the toll stop in meters.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#distanceType" class="member-name-link">distanceType</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Indicates if the specified toll stop is ahead of the vehicle or has just passed by.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first even-row-color"><code>int</code></div>
 <div class="col-second even-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
@@ -122,11 +126,14 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.navigation.DistanceType,double,java.util.List)" class="member-name-link">TollStop</a><wbr>(<a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,com.here.sdk.navigation.DistanceType,double,java.util.List)" class="member-name-link">TollStop</a><wbr>(int&nbsp;id,
+ <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
  double&nbsp;distanceToTollStopInMeters,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TollBoothLane.html" title="class in com.here.sdk.navigation">TollBoothLane</a>&gt;&nbsp;lanes)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates a new instance.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 </div>
 </section>
@@ -177,15 +184,23 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="distanceType">
 <h3>distanceType</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></span>&nbsp;<span class="element-name">distanceType</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningStatus</code> implementation instead.</div>
+</div>
 <div class="block"><p>Indicates if the specified toll stop is ahead of the vehicle or has just passed by.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="distanceToTollStopInMeters">
 <h3>distanceToTollStopInMeters</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceToTollStopInMeters</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceToTollStopInMeters</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningUpdate</code> implementation instead.</div>
+</div>
 <div class="block"><p>Distance to the toll stop in meters.</div>
 </section>
 </li>
@@ -212,16 +227,25 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.here.sdk.navigation.DistanceType,double,java.util.List)">
+<section class="detail" id="&lt;init&gt;(int,com.here.sdk.navigation.DistanceType,double,java.util.List)">
 <h3>TollStop</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TollStop</span><wbr><span class="parameters">(@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="element-name">TollStop</span><wbr><span class="parameters">(int&nbsp;id,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a> @NonNull
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
  double&nbsp;distanceToTollStopInMeters,
  @NonNull
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TollBoothLane.html" title="class in com.here.sdk.navigation">TollBoothLane</a>&gt;&nbsp;lanes)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the constructor without deprecated fields instead.</div>
+</div>
 <div class="block"><p>Creates a new instance.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>id</code> - <p>Unique identifier for this specific toll stop warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</dd>
 <dd><code>distanceType</code> - <p>Indicates if the specified toll stop is ahead of the vehicle or has just passed by.</dd>
 <dd><code>distanceToTollStopInMeters</code> - <p>Distance to the toll stop in meters.</dd>
 <dd><code>lanes</code> - <p>Describes the features of the booth for the lane.

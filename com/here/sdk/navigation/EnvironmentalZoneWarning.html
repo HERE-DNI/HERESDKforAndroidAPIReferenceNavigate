@@ -99,12 +99,16 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>double</code></div>
 <div class="col-second odd-row-color"><code><a href="#distanceInMeters" class="member-name-link">distanceInMeters</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The distance from the current location to the environmental zone.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first even-row-color"><code><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></code></div>
 <div class="col-second even-row-color"><code><a href="#distanceType" class="member-name-link">distanceType</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Indicates if the specified zone is ahead of the vehicle or has just passed by.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first odd-row-color"><code>int</code></div>
 <div class="col-second odd-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
@@ -137,12 +141,17 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(double,com.here.sdk.navigation.DistanceType,java.lang.String,java.lang.String)" class="member-name-link">EnvironmentalZoneWarning</a><wbr>(double&nbsp;distanceInMeters,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,double,com.here.sdk.navigation.DistanceType,java.lang.String,java.lang.String,com.here.sdk.core.LocalizedTexts,java.lang.String)" class="member-name-link">EnvironmentalZoneWarning</a><wbr>(int&nbsp;id,
+ double&nbsp;distanceInMeters,
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;zoneId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="../core/LocalizedTexts.html" title="class in com.here.sdk.core">LocalizedTexts</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;websiteUrl)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates a new instance.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 </div>
 </section>
@@ -193,15 +202,23 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="distanceInMeters">
 <h3>distanceInMeters</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceInMeters</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceInMeters</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningUpdate</code> implementation instead.</div>
+</div>
 <div class="block"><p>The distance from the current location to the environmental zone.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="distanceType">
 <h3>distanceType</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></span>&nbsp;<span class="element-name">distanceType</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningStatus</code> implementation instead.</div>
+</div>
 <div class="block"><p>Indicates if the specified zone is ahead of the vehicle or has just passed by. If it is
  ahead, then <a href="#distanceInMeters"><code>distanceInMeters</code></a> is greater than 0.</div>
 </section>
@@ -247,23 +264,38 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(double,com.here.sdk.navigation.DistanceType,java.lang.String,java.lang.String)">
+<section class="detail" id="&lt;init&gt;(int,double,com.here.sdk.navigation.DistanceType,java.lang.String,java.lang.String,com.here.sdk.core.LocalizedTexts,java.lang.String)">
 <h3>EnvironmentalZoneWarning</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">EnvironmentalZoneWarning</span><wbr><span class="parameters">(double&nbsp;distanceInMeters,
- @NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="element-name">EnvironmentalZoneWarning</span><wbr><span class="parameters">(int&nbsp;id,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+ double&nbsp;distanceInMeters,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a> @NonNull
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
  @NonNull
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;zoneId,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ @NonNull
+ <a href="../core/LocalizedTexts.html" title="class in com.here.sdk.core">LocalizedTexts</a>&nbsp;description,
+ @Nullable
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;websiteUrl)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the constructor without deprecated fields instead.</div>
+</div>
 <div class="block"><p>Creates a new instance.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>id</code> - <p>Unique identifier for this specific environmental zone warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</dd>
 <dd><code>distanceInMeters</code> - <p>The distance from the current location to the environmental zone.</dd>
 <dd><code>distanceType</code> - <p>Indicates if the specified zone is ahead of the vehicle or has just passed by. If it is
  ahead, then <a href="#distanceInMeters"><code>distanceInMeters</code></a> is greater than 0.</dd>
 <dd><code>zoneId</code> - <p>Indicates the environmental zone id in the map data.</dd>
 <dd><code>name</code> - <p>Indicates the official name of the environmental zone.</dd>
+<dd><code>description</code> - <p>Indicates the description of the environmental zone in the available languages.</dd>
+<dd><code>websiteUrl</code> - <p>Indicates the website of the environmental zone, if available.</dd>
 </dl>
 </section>
 </li>

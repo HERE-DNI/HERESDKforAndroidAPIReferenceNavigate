@@ -106,6 +106,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The vertical level index of this indoor location.</div>
 </div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#name" class="member-name-link">name</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">The location name (if available).</div>
+</div>
+<div class="col-first even-row-color"><code><a href="IndoorOriginalLocation.html" title="class in com.here.sdk.routing">IndoorOriginalLocation</a></code></div>
+<div class="col-second even-row-color"><code><a href="#originalLocation" class="member-name-link">originalLocation</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Original location from the request (if different from the matched location).</div>
+</div>
 <div class="col-first odd-row-color"><code><a href="RoutePlaceType.html" title="enum class in com.here.sdk.routing">RoutePlaceType</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#type" class="member-name-link">type</a></code></div>
 <div class="col-last odd-row-color">
@@ -115,6 +125,11 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><code><a href="#venueId" class="member-name-link">venueId</a></code></div>
 <div class="col-last even-row-color">
 <div class="block">The venue identifier of this indoor location.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#waypointIndex" class="member-name-link">waypointIndex</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Index of the corresponding waypoint in the request (if this place corresponds to a user-provided waypoint).</div>
 </div>
 </div>
 </section>
@@ -209,6 +224,31 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">levelId</span></div>
 <div class="block"><p>The level identifier of this indoor location.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="name">
+<h3>name</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">name</span></div>
+<div class="block"><p>The location name (if available).</div>
+</section>
+</li>
+<li>
+<section class="detail" id="waypointIndex">
+<h3>waypointIndex</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span>&nbsp;<span class="element-name">waypointIndex</span></div>
+<div class="block"><p>Index of the corresponding waypoint in the request (if this place corresponds to a user-provided waypoint).</div>
+</section>
+</li>
+<li>
+<section class="detail" id="originalLocation">
+<h3>originalLocation</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="IndoorOriginalLocation.html" title="class in com.here.sdk.routing">IndoorOriginalLocation</a></span>&nbsp;<span class="element-name">originalLocation</span></div>
+<div class="block"><p>Original location from the request (if different from the matched location).
+ This is populated when the routing service snaps the waypoint to a different location.</div>
 </section>
 </li>
 </ul>

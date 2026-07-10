@@ -110,6 +110,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the list of indoor maneuvers within this indoor section.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorPassThroughWaypoint.html" title="class in com.here.sdk.routing">IndoorPassThroughWaypoint</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPassthroughWaypoints()" class="member-name-link">getPassthroughWaypoints</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the list of passthrough waypoints within this section.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorManeuver.html" title="class in com.here.sdk.routing">IndoorManeuver</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPostActions()" class="member-name-link">getPostActions</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the list of post actions for this section.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorSectionNotice.html" title="class in com.here.sdk.routing">IndoorSectionNotice</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSectionNotices()" class="member-name-link">getSectionNotices</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -181,6 +191,36 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The notices which explain the issues encountered during processing of this section.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getPassthroughWaypoints()">
+<h3>getPassthroughWaypoints</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorPassThroughWaypoint.html" title="class in com.here.sdk.routing">IndoorPassThroughWaypoint</a>&gt;</span>&nbsp;<span class="element-name">getPassthroughWaypoints</span>()</div>
+<div class="block"><p>Gets the list of passthrough waypoints within this section.
+ <p>Passthrough waypoints are via waypoints with passThrough=true. They appear along
+ the section's polyline without creating a section boundary. Each passthrough waypoint includes
+ its indoor location and offset along the section polyline.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd><p>The list of passthrough waypoints within this section.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getPostActions()">
+<h3>getPostActions</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorManeuver.html" title="class in com.here.sdk.routing">IndoorManeuver</a>&gt;</span>&nbsp;<span class="element-name">getPostActions</span>()</div>
+<div class="block"><p>Gets the list of post actions for this section.
+ <p>Post actions are actions that occur after traversing the section, such as
+ wait actions at via waypoints with stopDuration. These actions are not part of the
+ regular maneuvers but represent additional requirements for completing the section.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd><p>The list of post actions for this section.</dd>
 </dl>
 </section>
 </li>

@@ -98,19 +98,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Identifier of the custom warning type.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#distanceType" class="member-name-link">distanceType</a></code></div>
+<div class="col-first odd-row-color"><code>int</code></div>
+<div class="col-second odd-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The type of distance measurement used for this warning.</div>
-</div>
-<div class="col-first even-row-color"><code>int</code></div>
-<div class="col-second even-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
-<div class="col-last even-row-color">
 <div class="block">Identifier of the warning.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#warningType" class="member-name-link">warningType</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a></code></div>
+<div class="col-second even-row-color"><code><a href="#warningType" class="member-name-link">warningType</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">The specific type of the warning.</div>
 </div>
 </div>
@@ -124,9 +119,7 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,com.here.sdk.navigation.DistanceType,com.here.sdk.navigation.WarningType)" class="member-name-link">Warning</a><wbr>(int&nbsp;id,
- <a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
- <a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&nbsp;warningType)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">Warning</a>()</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new instance.</div>
 </div>
@@ -177,14 +170,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="distanceType">
-<h3>distanceType</h3>
-<div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></span>&nbsp;<span class="element-name">distanceType</span></div>
-<div class="block"><p>The type of distance measurement used for this warning.</div>
-</section>
-</li>
-<li>
 <section class="detail" id="warningType">
 <h3>warningType</h3>
 <div class="member-signature"><span class="annotations">@NonNull
@@ -213,22 +198,10 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(int,com.here.sdk.navigation.DistanceType,com.here.sdk.navigation.WarningType)">
+<section class="detail" id="&lt;init&gt;()">
 <h3>Warning</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Warning</span><wbr><span class="parameters">(int&nbsp;id,
- @NonNull
- <a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType,
- @NonNull
- <a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&nbsp;warningType)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Warning</span>()</div>
 <div class="block"><p>Creates a new instance.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>id</code> - <p>Identifier of the warning.
- The ID is unique only within its specific <code>warningType</code> and can be used
- to retrieve additional information from a corresponding registry.</dd>
-<dd><code>distanceType</code> - <p>The type of distance measurement used for this warning.</dd>
-<dd><code>warningType</code> - <p>The specific type of the warning.</dd>
-</dl>
 </section>
 </li>
 </ul>

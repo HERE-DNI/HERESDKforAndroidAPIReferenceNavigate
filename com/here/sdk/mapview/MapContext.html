@@ -124,9 +124,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Types of system resources used by <a href="MapContext.html" title="class in com.here.sdk.mapview"><code>MapContext</code></a> or any of the entities attached to it, like <a href="HereMap.html" title="class in com.here.sdk.mapview"><code>HereMap</code></a>.</div>
 </div>
-<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="MapContext.SetMemoryManagementOptionsCallback.html" class="type-name-link" title="interface in com.here.sdk.mapview">MapContext.SetMemoryManagementOptionsCallback</a></code></div>
+<div class="col-first odd-row-color"><code>static final class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="MapContext.SceneLoadCacheOptions.html" class="type-name-link" title="class in com.here.sdk.mapview">MapContext.SceneLoadCacheOptions</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">Options for scene load cache.</div>
+</div>
+<div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="MapContext.SetMemoryManagementOptionsCallback.html" class="type-name-link" title="interface in com.here.sdk.mapview">MapContext.SetMemoryManagementOptionsCallback</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Callback to handle the memory management result.</div>
 </div>
 </div>
@@ -156,7 +161,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMemoryManagementOptions(com.here.sdk.mapview.MapContext.MemoryManagementOptions,com.here.sdk.mapview.MapContext.SetMemoryManagementOptionsCallback)" class="member-name-link">setMemoryManagementOptions</a><wbr>(<a href="MapContext.MemoryManagementOptions.html" title="class in com.here.sdk.mapview">MapContext.MemoryManagementOptions</a>&nbsp;memoryManagementOptions,
  <a href="MapContext.SetMemoryManagementOptionsCallback.html" title="interface in com.here.sdk.mapview">MapContext.SetMemoryManagementOptionsCallback</a>&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Sets memory management options for controlling tile cache and video memory usage.</div>
+<div class="block">Sets memory management options for controlling tile cache, video memory usage and scene loading cache.</div>
 </div>
 </div>
 </div>
@@ -213,7 +218,7 @@ loadScripts(document, 'script');</script>
  <a href="MapContext.MemoryManagementOptions.html" title="class in com.here.sdk.mapview">MapContext.MemoryManagementOptions</a>&nbsp;memoryManagementOptions,
  @Nullable
  <a href="MapContext.SetMemoryManagementOptionsCallback.html" title="interface in com.here.sdk.mapview">MapContext.SetMemoryManagementOptionsCallback</a>&nbsp;callback)</span></div>
-<div class="block"><p>Sets memory management options for controlling tile cache and video memory usage.
+<div class="block"><p>Sets memory management options for controlling tile cache, video memory usage and scene loading cache.
  In <a href="MapContext.MemoryManagementOptions.html" title="class in com.here.sdk.mapview"><code>MapContext.MemoryManagementOptions</code></a> optional parameters with <code>null</code>
  or non-positive values will be ignored, preserving their existing settings.
  The maximum memory limit allowed in kibiBytes is

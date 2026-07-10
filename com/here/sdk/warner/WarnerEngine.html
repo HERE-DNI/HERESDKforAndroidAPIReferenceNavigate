@@ -185,62 +185,56 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the currently configured <a href="WarningOptions.html" title="class in com.here.sdk.warner"><code>WarningOptions</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="WarningsRegistry.html" title="class in com.here.sdk.warner">WarningsRegistry</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getWarningsRegistry()" class="member-name-link">getWarningsRegistry</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the centralized access point for retrieving full metadata of any supported
- warning category (e.g., safety cameras, truck restrictions, etc.).</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onElectronicHorizonUpdated(com.here.sdk.electronichorizon.ElectronicHorizonErrorCode,com.here.sdk.electronichorizon.ElectronicHorizonUpdate)" class="member-name-link">onElectronicHorizonUpdated</a><wbr>(<a href="../electronichorizon/ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a>&nbsp;errorCode,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onElectronicHorizonUpdated(com.here.sdk.electronichorizon.ElectronicHorizonErrorCode,com.here.sdk.electronichorizon.ElectronicHorizonUpdate)" class="member-name-link">onElectronicHorizonUpdated</a><wbr>(<a href="../electronichorizon/ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a>&nbsp;errorCode,
  <a href="../electronichorizon/ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;update)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Called whenever the electronic horizon subsystem produces:
  
  a new update,
  an error,
  </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeCustomWarningProvider(com.here.sdk.warner.CustomWarningProvider)" class="member-name-link">removeCustomWarningProvider</a><wbr>(<a href="CustomWarningProvider.html" title="interface in com.here.sdk.warner">CustomWarningProvider</a>&nbsp;customWarningProvider)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeCustomWarningProvider(com.here.sdk.warner.CustomWarningProvider)" class="member-name-link">removeCustomWarningProvider</a><wbr>(<a href="CustomWarningProvider.html" title="interface in com.here.sdk.warner">CustomWarningProvider</a>&nbsp;customWarningProvider)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Unregisters a custom warning provider.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeEnabledWarnings(java.util.List)" class="member-name-link">removeEnabledWarnings</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&gt;&nbsp;warningTypes)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeEnabledWarnings(java.util.List)" class="member-name-link">removeEnabledWarnings</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&gt;&nbsp;warningTypes)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Removes the given warning types from the set of warnings monitored by the engine.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeWarningListener(com.here.sdk.warner.WarningListener)" class="member-name-link">removeWarningListener</a><wbr>(<a href="WarningListener.html" title="interface in com.here.sdk.warner">WarningListener</a>&nbsp;warningListener)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeWarningListener(com.here.sdk.warner.WarningListener)" class="member-name-link">removeWarningListener</a><wbr>(<a href="WarningListener.html" title="interface in com.here.sdk.warner">WarningListener</a>&nbsp;warningListener)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Unregisters a previously added warning listener.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomWarningNotificationDistances(int,com.here.sdk.navigation.WarningNotificationDistances)" class="member-name-link">setCustomWarningNotificationDistances</a><wbr>(int&nbsp;customWarningType,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCustomWarningNotificationDistances(int,com.here.sdk.navigation.WarningNotificationDistances)" class="member-name-link">setCustomWarningNotificationDistances</a><wbr>(int&nbsp;customWarningType,
  <a href="../navigation/WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a>&nbsp;warningNotificationDistances)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the warning notification distances for the specified custom warning type.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnabledWarnings(java.util.List)" class="member-name-link">setEnabledWarnings</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&gt;&nbsp;warningTypes)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEnabledWarnings(java.util.List)" class="member-name-link">setEnabledWarnings</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&gt;&nbsp;warningTypes)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Replaces the current set of enabled warning types with the provided list.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTimingProfile(com.here.sdk.navigation.TimingProfile)" class="member-name-link">setTimingProfile</a><wbr>(<a href="../navigation/TimingProfile.html" title="enum class in com.here.sdk.navigation">TimingProfile</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTimingProfile(com.here.sdk.navigation.TimingProfile)" class="member-name-link">setTimingProfile</a><wbr>(<a href="../navigation/TimingProfile.html" title="enum class in com.here.sdk.navigation">TimingProfile</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the <a href="../navigation/TimingProfile.html" title="enum class in com.here.sdk.navigation"><code>TimingProfile</code></a> of the current position.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setWarningNotificationDistances(com.here.sdk.navigation.WarningType,com.here.sdk.navigation.WarningNotificationDistances)" class="member-name-link">setWarningNotificationDistances</a><wbr>(<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&nbsp;warningType,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setWarningNotificationDistances(com.here.sdk.navigation.WarningType,com.here.sdk.navigation.WarningNotificationDistances)" class="member-name-link">setWarningNotificationDistances</a><wbr>(<a href="../navigation/WarningType.html" title="enum class in com.here.sdk.navigation">WarningType</a>&nbsp;warningType,
  <a href="../navigation/WarningNotificationDistances.html" title="class in com.here.sdk.navigation">WarningNotificationDistances</a>&nbsp;warningNotificationDistances)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the warning notification distances for the specified warning type.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setWarningOptions(com.here.sdk.warner.WarningOptions)" class="member-name-link">setWarningOptions</a><wbr>(<a href="WarningOptions.html" title="class in com.here.sdk.warner">WarningOptions</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setWarningOptions(com.here.sdk.warner.WarningOptions)" class="member-name-link">setWarningOptions</a><wbr>(<a href="WarningOptions.html" title="class in com.here.sdk.warner">WarningOptions</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the <a href="WarningOptions.html" title="class in com.here.sdk.warner"><code>WarningOptions</code></a> and updates the configuration for all the warners.</div>
 </div>
 </div>
@@ -402,21 +396,6 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>warningListener</code> - <p>The listener instance that should no longer receive warning notifications.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="getWarningsRegistry()">
-<h3>getWarningsRegistry</h3>
-<div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="WarningsRegistry.html" title="class in com.here.sdk.warner">WarningsRegistry</a></span>&nbsp;<span class="element-name">getWarningsRegistry</span>()</div>
-<div class="block"><p>Returns the centralized access point for retrieving full metadata of any supported
- warning category (e.g., safety cameras, truck restrictions, etc.).
- <a href="WarningsRegistry.html" title="class in com.here.sdk.warner"><code>WarningsRegistry</code></a> class exposes getter methods, each returning the detailed warning object for the given identifier.
- Use this getter to look up complete warning information by its id, as provided through <code>WarningListener.onWarning</code>.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd><p>The centralized <a href="WarningsRegistry.html" title="class in com.here.sdk.warner"><code>WarningsRegistry</code></a> instance.</dd>
 </dl>
 </section>
 </li>

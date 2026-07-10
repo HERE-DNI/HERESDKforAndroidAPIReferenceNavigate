@@ -102,12 +102,16 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code>double</code></div>
 <div class="col-second even-row-color"><code><a href="#distanceToRealisticViewInMeters" class="member-name-link">distanceToRealisticViewInMeters</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Distance to the junction, for which the realistic view is given, expressed in meters.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#distanceType" class="member-name-link">distanceType</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The distance type for the warning, e.g.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first even-row-color"><code>int</code></div>
 <div class="col-second even-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
@@ -135,10 +139,15 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(double,com.here.sdk.navigation.DistanceType)" class="member-name-link">RealisticViewWarning</a><wbr>(double&nbsp;distanceToRealisticViewInMeters,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,double,com.here.sdk.navigation.RealisticViewVectorImage,com.here.sdk.navigation.RealisticViewRasterImage,com.here.sdk.navigation.DistanceType)" class="member-name-link">RealisticViewWarning</a><wbr>(int&nbsp;id,
+ double&nbsp;distanceToRealisticViewInMeters,
+ <a href="RealisticViewVectorImage.html" title="class in com.here.sdk.navigation">RealisticViewVectorImage</a>&nbsp;realisticViewVectorImage,
+ <a href="RealisticViewRasterImage.html" title="class in com.here.sdk.navigation">RealisticViewRasterImage</a>&nbsp;realisticViewRasterImage,
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates a new instance.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 </div>
 </section>
@@ -189,7 +198,11 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="distanceToRealisticViewInMeters">
 <h3>distanceToRealisticViewInMeters</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceToRealisticViewInMeters</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceToRealisticViewInMeters</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningUpdate</code> implementation instead.</div>
+</div>
 <div class="block"><p>Distance to the junction, for which the realistic view is given, expressed in meters.</div>
 </section>
 </li>
@@ -221,8 +234,12 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="distanceType">
 <h3>distanceType</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></span>&nbsp;<span class="element-name">distanceType</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningStatus</code> implementation instead.</div>
+</div>
 <div class="block"><p>The distance type for the warning, e.g. a warning for a new realistic view ahead or a warning
  for passing a realistic view. Since the realistic view warning is given relative to a single
  position on the route, <a href="DistanceType.html#REACHED"><code>DistanceType.REACHED</code></a> will never be given for this warning.</div>
@@ -237,15 +254,39 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(double,com.here.sdk.navigation.DistanceType)">
+<section class="detail" id="&lt;init&gt;(int,double,com.here.sdk.navigation.RealisticViewVectorImage,com.here.sdk.navigation.RealisticViewRasterImage,com.here.sdk.navigation.DistanceType)">
 <h3>RealisticViewWarning</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RealisticViewWarning</span><wbr><span class="parameters">(double&nbsp;distanceToRealisticViewInMeters,
- @NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="element-name">RealisticViewWarning</span><wbr><span class="parameters">(int&nbsp;id,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+ double&nbsp;distanceToRealisticViewInMeters,
+ @Nullable
+ <a href="RealisticViewVectorImage.html" title="class in com.here.sdk.navigation">RealisticViewVectorImage</a>&nbsp;realisticViewVectorImage,
+ @Nullable
+ <a href="RealisticViewRasterImage.html" title="class in com.here.sdk.navigation">RealisticViewRasterImage</a>&nbsp;realisticViewRasterImage,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a> @NonNull
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the constructor without deprecated fields instead.</div>
+</div>
 <div class="block"><p>Creates a new instance.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>id</code> - <p>Unique identifier for this specific realistic view warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</dd>
 <dd><code>distanceToRealisticViewInMeters</code> - <p>Distance to the junction, for which the realistic view is given, expressed in meters.</dd>
+<dd><code>realisticViewVectorImage</code> - <p>The realistic view object for which the warning is given.
+ Image resources are stored as vector graphics.
+ Within <a href="RealisticViewWarning.html" title="class in com.here.sdk.navigation"><code>RealisticViewWarning</code></a>, only one type of image, either raster or vector, will be provided.
+ If this property is not <code>null</code>, then <a href="#realisticViewRasterImage"><code>realisticViewRasterImage</code></a> will be <code>null</code>.
+ <p><strong>Note:</strong> The realistic views for most of the countries are stored as vector images.</dd>
+<dd><code>realisticViewRasterImage</code> - <p>The realistic view object for which the warning is given.
+ Image resources are stored as raster graphics.
+ Within <a href="RealisticViewWarning.html" title="class in com.here.sdk.navigation"><code>RealisticViewWarning</code></a>, only one type of image, either raster or vector, will be provided.
+ If this property is not <code>null</code>, then <a href="#realisticViewVectorImage"><code>realisticViewVectorImage</code></a> will be <code>null</code>.
+ <strong>Note:</strong> Certain countries support only raster images as realistic views. Currently, this is the case
+ only for Japan, but in the future, more countries might support this type of realistic views.</dd>
 <dd><code>distanceType</code> - <p>The distance type for the warning, e.g. a warning for a new realistic view ahead or a warning
  for passing a realistic view. Since the realistic view warning is given relative to a single
  position on the route, <a href="DistanceType.html#REACHED"><code>DistanceType.REACHED</code></a> will never be given for this warning.</dd>

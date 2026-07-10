@@ -97,14 +97,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The default setting MemoryManagementStrategy.DYNAMIC is suitable for common cases.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#tileCacheMemoryLimitInKiB" class="member-name-link">tileCacheMemoryLimitInKiB</a></code></div>
+<div class="col-first odd-row-color"><code><a href="MapContext.SceneLoadCacheOptions.html" title="class in com.here.sdk.mapview">MapContext.SceneLoadCacheOptions</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#sceneLoadCacheOptions" class="member-name-link">sceneLoadCacheOptions</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Tile cache memory limit in kibibytes.</div>
+<div class="block">Scene load cache options.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
-<div class="col-second even-row-color"><code><a href="#videoMemoryLimitInKiB" class="member-name-link">videoMemoryLimitInKiB</a></code></div>
+<div class="col-second even-row-color"><code><a href="#tileCacheMemoryLimitInKiB" class="member-name-link">tileCacheMemoryLimitInKiB</a></code></div>
 <div class="col-last even-row-color">
+<div class="block">Tile cache memory limit in kibibytes.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#videoMemoryLimitInKiB" class="member-name-link">videoMemoryLimitInKiB</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Target video memory limit in kibibytes.</div>
 </div>
 </div>
@@ -175,6 +180,20 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span>&nbsp;<span class="element-name">videoMemoryLimitInKiB</span></div>
 <div class="block"><p>Target video memory limit in kibibytes. Non-positive values or <code>null</code> are ignored.
  Default value is <code>null</code>.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="sceneLoadCacheOptions">
+<h3>sceneLoadCacheOptions</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapContext.SceneLoadCacheOptions.html" title="class in com.here.sdk.mapview">MapContext.SceneLoadCacheOptions</a></span>&nbsp;<span class="element-name">sceneLoadCacheOptions</span></div>
+<div class="block"><p>Scene load cache options.
+ Default value is <code>null</code>.
+ When loading scenes into <a href="MapScene.html" title="class in com.here.sdk.mapview"><code>MapScene</code></a>, an internal cache is used for speeding up subsequent loads
+ of the same scene. The cache utilizes some amount of memory for each entry and <a href="MapContext.SceneLoadCacheOptions.html" title="class in com.here.sdk.mapview"><code>MapContext.SceneLoadCacheOptions</code></a>
+ allows customization according to the memory profile of the client: under memory constrained conditions
+ the number of entries in this cache can be reduced or the cache can be disabled entirely, and for clients
+ that circle through many scenes, the cache capacity can be increased.</div>
 </section>
 </li>
 </ul>

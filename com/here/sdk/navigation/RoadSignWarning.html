@@ -101,12 +101,16 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>double</code></div>
 <div class="col-second odd-row-color"><code><a href="#distanceToRoadSignInMeters" class="member-name-link">distanceToRoadSignInMeters</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Distance to the road sign in meters.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first even-row-color"><code><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></code></div>
 <div class="col-second even-row-color"><code><a href="#distanceType" class="member-name-link">distanceType</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The distance type for the warning, e.g.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#duration" class="member-name-link">duration</a></code></div>
@@ -175,17 +179,24 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(double,com.here.sdk.navigation.RoadSignType,com.here.sdk.navigation.RoadSignCategory,com.here.sdk.navigation.GeneralWarningRoadSignType,boolean,java.util.List,com.here.sdk.navigation.WeatherType,com.here.sdk.routing.SegmentReference,com.here.sdk.navigation.DistanceType)" class="member-name-link">RoadSignWarning</a><wbr>(double&nbsp;distanceToRoadSignInMeters,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(int,double,com.here.sdk.navigation.RoadSignType,com.here.sdk.navigation.RoadSignCategory,com.here.sdk.navigation.GeneralWarningRoadSignType,boolean,java.util.List,com.here.sdk.navigation.WeatherType,com.here.sdk.core.LocalizedText,com.here.sdk.core.LocalizedText,com.here.sdk.core.LocalizedText,com.here.sdk.core.LocalizedText,com.here.sdk.routing.SegmentReference,com.here.sdk.navigation.DistanceType)" class="member-name-link">RoadSignWarning</a><wbr>(int&nbsp;id,
+ double&nbsp;distanceToRoadSignInMeters,
  <a href="RoadSignType.html" title="enum class in com.here.sdk.navigation">RoadSignType</a>&nbsp;type,
  <a href="RoadSignCategory.html" title="enum class in com.here.sdk.navigation">RoadSignCategory</a>&nbsp;category,
  <a href="GeneralWarningRoadSignType.html" title="enum class in com.here.sdk.navigation">GeneralWarningRoadSignType</a>&nbsp;generalWarningType,
  boolean&nbsp;isPrioritySign,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RoadSignVehicleType.html" title="enum class in com.here.sdk.navigation">RoadSignVehicleType</a>&gt;&nbsp;vehicleTypes,
  <a href="WeatherType.html" title="enum class in com.here.sdk.navigation">WeatherType</a>&nbsp;weatherType,
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;signValue,
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;preWarning,
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;duration,
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;validityTime,
  <a href="../routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a>&nbsp;roadSignSegment,
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates a new instance.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.29.0.</div>
+</div>
 </div>
 </div>
 </section>
@@ -236,7 +247,11 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="distanceToRoadSignInMeters">
 <h3>distanceToRoadSignInMeters</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceToRoadSignInMeters</span></div>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceToRoadSignInMeters</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningUpdate</code> implementation instead.</div>
+</div>
 <div class="block"><p>Distance to the road sign in meters.</div>
 </section>
 </li>
@@ -344,8 +359,12 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="distanceType">
 <h3>distanceType</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></span>&nbsp;<span class="element-name">distanceType</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningStatus</code> implementation instead.</div>
+</div>
 <div class="block"><p>The distance type for the warning, e.g. a warning for a new road sign ahead or a warning for
  passing a road sign. Since the road sign warning is given relative to a single position on
  the route, <a href="DistanceType.html#REACHED"><code>DistanceType.REACHED</code></a> will never be given for this warning.</div>
@@ -360,9 +379,12 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(double,com.here.sdk.navigation.RoadSignType,com.here.sdk.navigation.RoadSignCategory,com.here.sdk.navigation.GeneralWarningRoadSignType,boolean,java.util.List,com.here.sdk.navigation.WeatherType,com.here.sdk.routing.SegmentReference,com.here.sdk.navigation.DistanceType)">
+<section class="detail" id="&lt;init&gt;(int,double,com.here.sdk.navigation.RoadSignType,com.here.sdk.navigation.RoadSignCategory,com.here.sdk.navigation.GeneralWarningRoadSignType,boolean,java.util.List,com.here.sdk.navigation.WeatherType,com.here.sdk.core.LocalizedText,com.here.sdk.core.LocalizedText,com.here.sdk.core.LocalizedText,com.here.sdk.core.LocalizedText,com.here.sdk.routing.SegmentReference,com.here.sdk.navigation.DistanceType)">
 <h3>RoadSignWarning</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RoadSignWarning</span><wbr><span class="parameters">(double&nbsp;distanceToRoadSignInMeters,
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="element-name">RoadSignWarning</span><wbr><span class="parameters">(int&nbsp;id,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+ double&nbsp;distanceToRoadSignInMeters,
  @NonNull
  <a href="RoadSignType.html" title="enum class in com.here.sdk.navigation">RoadSignType</a>&nbsp;type,
  @NonNull
@@ -374,13 +396,27 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RoadSignVehicleType.html" title="enum class in com.here.sdk.navigation">RoadSignVehicleType</a>&gt;&nbsp;vehicleTypes,
  @NonNull
  <a href="WeatherType.html" title="enum class in com.here.sdk.navigation">WeatherType</a>&nbsp;weatherType,
+ @Nullable
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;signValue,
+ @Nullable
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;preWarning,
+ @Nullable
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;duration,
+ @Nullable
+ <a href="../core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a>&nbsp;validityTime,
  @NonNull
  <a href="../routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a>&nbsp;roadSignSegment,
- @NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a> @NonNull
  <a href="DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the constructor without deprecated fields instead.</div>
+</div>
 <div class="block"><p>Creates a new instance.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>id</code> - <p>Unique identifier for this specific road sign warning instance.
+ Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+ Use this ID to track, update, or dismiss individual warning instances of this type.</dd>
 <dd><code>distanceToRoadSignInMeters</code> - <p>Distance to the road sign in meters.</dd>
 <dd><code>type</code> - <p>Type of the road sign.</dd>
 <dd><code>category</code> - <p>The main category to which the road sign belongs.</dd>
@@ -389,6 +425,17 @@ loadScripts(document, 'script');</script>
 <dd><code>vehicleTypes</code> - <p>Specifies a list of vehicle types for which the road sign is applicable.
  The list will be empty when the road sign is applicable for all vehicles including cars.</dd>
 <dd><code>weatherType</code> - <p>Specifies the weather type for which the sign is applicable. If weather type is <code>WeatherType.UNKNOWN</code>, the sign is actual for all weather types.</dd>
+<dd><code>signValue</code> - <p>Optional value visible on the main sign related to specific road sign types, as it is printed on the local road sign.</dd>
+<dd><code>preWarning</code> - <p>Optional pre-warning in terms of distance, of the upcoming warning or regulation.
+ The pre-warning information is given as printed on the local road sign.</dd>
+<dd><code>duration</code> - <p>Optional length information during which the warning is applicable.
+ Usually, this information is shown on a separate shield below the main shield.
+ For example, a sign may warn on playing children for a length of 100 m, starting from
+ the location of the warning sign.
+ The length information (most likely with units) is given as printed on the local road sign.</dd>
+<dd><code>validityTime</code> - <p>Optional text visible on the supplemental sign indicating specific
+ time(s) at which the road sign is applicable.
+ The time information is given as printed on the local road sign.</dd>
 <dd><code>roadSignSegment</code> - <p>The reference to the segment where the road sign is located. It can be used to identify the
  location of the road sign.
  It allows to compare the road sign location with the <code>MapMatchedLocation.segment_reference</code>

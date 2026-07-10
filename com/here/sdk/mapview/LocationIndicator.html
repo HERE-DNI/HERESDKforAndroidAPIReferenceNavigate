@@ -80,19 +80,15 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">LocationIndicator</span>
 <span class="extends-implements">extends <a href="../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
-<div class="block"><p>Graphical object to represent the location of the user on the map.
+<div class="block"><p>A graphical object to represent the location of the user on the map.
  <p>It is either a green dot for pedestrian style or a triangular arrow for vehicle navigation style.
  This style can be changed by <a href="#setLocationIndicatorStyle(com.here.sdk.mapview.LocationIndicator.IndicatorStyle)"><code>setLocationIndicatorStyle(com.here.sdk.mapview.LocationIndicator.IndicatorStyle)</code></a>
  <p>The location is made available to an instance of this class by calling <a href="#updateLocation(com.here.sdk.core.Location)"><code>updateLocation(Location)</code></a> or
  <a href="#updateLocation(com.here.sdk.core.Location,com.here.sdk.mapview.MapCameraUpdate)"><code>updateLocation(Location, MapCameraUpdate)</code></a>.
  <p>Use <a href="#enable(com.here.sdk.mapview.MapViewBase)"><code>enable(com.here.sdk.mapview.MapViewBase)</code></a> to add this object to the map and <a href="#disable()"><code>disable()</code></a> to remove it.
  <p>Take care that the
- location indicator is not accidentally added to the map view multiple times for example when the
- android activity is recreated after an orientation change.
- <p>Note: The LocationIndicator is always rendered at a fixed altitude near 0. Changing the MapCamera
- to look at geographic coordinates with an altitude that is higher can cause the following behavior: If the
- MapCamera angle is tilted and altitude is too high, the LocationIndicator can unexpectedly
- disappear from the viewport due to the new perspective.</div>
+ location indicator is not accidentally added to the map view multiple times. For example, when the
+ Android activity is recreated after an orientation change.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -142,7 +138,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -210,42 +206,33 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the visual style of location indicator.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#setMarker3dModel(com.here.sdk.mapview.MapMarker3DModel,double,com.here.sdk.mapview.LocationIndicator.MarkerType)" class="member-name-link">setMarker3dModel</a><wbr>(<a href="MapMarker3DModel.html" title="class in com.here.sdk.mapview">MapMarker3DModel</a>&nbsp;model,
- double&nbsp;scale,
- <a href="LocationIndicator.MarkerType.html" title="enum class in com.here.sdk.mapview">LocationIndicator.MarkerType</a>&nbsp;type)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.27.0.</div>
-</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMarker3dModel(com.here.sdk.mapview.MapMarker3DModel,double,com.here.sdk.mapview.LocationIndicator.MarkerType,com.here.sdk.mapview.RenderSize.Unit)" class="member-name-link">setMarker3dModel</a><wbr>(<a href="MapMarker3DModel.html" title="class in com.here.sdk.mapview">MapMarker3DModel</a>&nbsp;model,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMarker3dModel(com.here.sdk.mapview.MapMarker3DModel,double,com.here.sdk.mapview.LocationIndicator.MarkerType,com.here.sdk.mapview.RenderSize.Unit)" class="member-name-link">setMarker3dModel</a><wbr>(<a href="MapMarker3DModel.html" title="class in com.here.sdk.mapview">MapMarker3DModel</a>&nbsp;model,
  double&nbsp;scale,
  <a href="LocationIndicator.MarkerType.html" title="enum class in com.here.sdk.mapview">LocationIndicator.MarkerType</a>&nbsp;type,
  <a href="RenderSize.Unit.html" title="enum class in com.here.sdk.mapview">RenderSize.Unit</a>&nbsp;renderSizeUnit)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the <a href="MapMarker3DModel.html" title="class in com.here.sdk.mapview"><code>MapMarker3DModel</code></a> asset to be displayed as location indicator for a specified type.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaterialReflectivity(com.here.sdk.mapview.MaterialReflectivity)" class="member-name-link">setMaterialReflectivity</a><wbr>(<a href="MaterialReflectivity.html" title="class in com.here.sdk.mapview">MaterialReflectivity</a>&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaterialReflectivity(com.here.sdk.mapview.MaterialReflectivity)" class="member-name-link">setMaterialReflectivity</a><wbr>(<a href="MaterialReflectivity.html" title="class in com.here.sdk.mapview">MaterialReflectivity</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the material reflectivity properties for all markers of location indicator including its halo.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOpacity(double)" class="member-name-link">setOpacity</a><wbr>(double&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOpacity(double)" class="member-name-link">setOpacity</a><wbr>(double&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the opacity of the location indicator.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateLocation(com.here.sdk.core.Location)" class="member-name-link">updateLocation</a><wbr>(<a href="../core/Location.html" title="class in com.here.sdk.core">Location</a>&nbsp;location)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateLocation(com.here.sdk.core.Location)" class="member-name-link">updateLocation</a><wbr>(<a href="../core/Location.html" title="class in com.here.sdk.core">Location</a>&nbsp;location)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Updates the indicator to a new location.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateLocation(com.here.sdk.core.Location,com.here.sdk.mapview.MapCameraUpdate)" class="member-name-link">updateLocation</a><wbr>(<a href="../core/Location.html" title="class in com.here.sdk.core">Location</a>&nbsp;location,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateLocation(com.here.sdk.core.Location,com.here.sdk.mapview.MapCameraUpdate)" class="member-name-link">updateLocation</a><wbr>(<a href="../core/Location.html" title="class in com.here.sdk.core">Location</a>&nbsp;location,
  <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a>&nbsp;cameraUpdate)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Updates the indicator to a new location and applies a camera update at the same time.</div>
 </div>
 </div>
@@ -346,38 +333,6 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>location</code> - <p>The updated location of the user.</dd>
 <dd><code>cameraUpdate</code> - <p>The update to apply to the camera.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="setMarker3dModel(com.here.sdk.mapview.MapMarker3DModel,double,com.here.sdk.mapview.LocationIndicator.MarkerType)">
-<h3>setMarker3dModel</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setMarker3dModel</span><wbr><span class="parameters">(@NonNull
- <a href="MapMarker3DModel.html" title="class in com.here.sdk.mapview">MapMarker3DModel</a>&nbsp;model,
- double&nbsp;scale,
- @NonNull
- <a href="LocationIndicator.MarkerType.html" title="enum class in com.here.sdk.mapview">LocationIndicator.MarkerType</a>&nbsp;type)</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.27.0. Please use the overloaded method with <a href="RenderSize.Unit.html" title="enum class in com.here.sdk.mapview"><code>RenderSize.Unit</code></a> instead.</div>
-</div>
-<div class="block"><p>Sets the MapMarker3DModel asset to be displayed as location indicator for a specified type.
- The 3D model should be oriented with y axis up and thus standing on the x/z plane where the
- z axis is the depth. The direction in which the location indicator is pointing is the
- positive z axis. Please note that only MapMarker3DModel created from *.obj files are
- supported. Models created from Mesh will be ignored.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>model</code> - <p>The MapMarker3DModel object to be displayed for the specified type. Only models
-     created from obj files are supported. Those created from mesh will be ignored.</dd>
-<dd><code>scale</code> - <p>The scaling which will be applied to the marker model. As the size of the
-     location marker should be aligned on devices with different resolutions the
-     scale factor is applied relative to the ppi value and thus differs from the
-     scale which is passed to <a href="MapMarker3D.html" title="class in com.here.sdk.mapview"><code>MapMarker3D</code></a> objects.
-     Meter is used for the unit of the map marker 3d model coordinate system.
-     For historical reason, the scale factor is internally devided by 6.
-     To display a unit qube of 1x1x1 meter as is, please use a scale value of 6.0.</dd>
-<dd><code>type</code> - <p>The type of location marker for which the marker 3d model should be replaced.</dd>
 </dl>
 </section>
 </li>

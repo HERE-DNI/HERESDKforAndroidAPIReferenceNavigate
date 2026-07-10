@@ -100,16 +100,6 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>double</code></div>
-<div class="col-second even-row-color"><code><a href="#distanceInMeters" class="member-name-link">distanceInMeters</a></code></div>
-<div class="col-last even-row-color">
-<div class="block">The distance from the current location to the Lane decrease event.</div>
-</div>
-<div class="col-first odd-row-color"><code><a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#distanceType" class="member-name-link">distanceType</a></code></div>
-<div class="col-last odd-row-color">
-<div class="block">Indicates if the specified event is ahead of the vehicle or has just passed by.</div>
-</div>
 <div class="col-first even-row-color"><code>int</code></div>
 <div class="col-second even-row-color"><code><a href="#id" class="member-name-link">id</a></code></div>
 <div class="col-last even-row-color">
@@ -148,8 +138,7 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(double,com.here.sdk.navigation.DistanceType)" class="member-name-link">LaneDecreaseWarning</a><wbr>(double&nbsp;distanceInMeters,
- <a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">LaneDecreaseWarning</a>()</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new instance.</div>
 </div>
@@ -231,22 +220,6 @@ loadScripts(document, 'script');</script>
  <code>null</code> if the right-side change is unknown or not applicable.</div>
 </section>
 </li>
-<li>
-<section class="detail" id="distanceInMeters">
-<h3>distanceInMeters</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">distanceInMeters</span></div>
-<div class="block"><p>The distance from the current location to the Lane decrease event.</div>
-</section>
-</li>
-<li>
-<section class="detail" id="distanceType">
-<h3>distanceType</h3>
-<div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a></span>&nbsp;<span class="element-name">distanceType</span></div>
-<div class="block"><p>Indicates if the specified event is ahead of the vehicle or has just passed by. If it is
- ahead, then <a href="#distanceInMeters"><code>distanceInMeters</code></a> is greater than 0.</div>
-</section>
-</li>
 </ul>
 </section>
 </li>
@@ -256,18 +229,10 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(double,com.here.sdk.navigation.DistanceType)">
+<section class="detail" id="&lt;init&gt;()">
 <h3>LaneDecreaseWarning</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LaneDecreaseWarning</span><wbr><span class="parameters">(double&nbsp;distanceInMeters,
- @NonNull
- <a href="../navigation/DistanceType.html" title="enum class in com.here.sdk.navigation">DistanceType</a>&nbsp;distanceType)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">LaneDecreaseWarning</span>()</div>
 <div class="block"><p>Creates a new instance.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>distanceInMeters</code> - <p>The distance from the current location to the Lane decrease event.</dd>
-<dd><code>distanceType</code> - <p>Indicates if the specified event is ahead of the vehicle or has just passed by. If it is
- ahead, then <a href="#distanceInMeters"><code>distanceInMeters</code></a> is greater than 0.</dd>
-</dl>
 </section>
 </li>
 </ul>

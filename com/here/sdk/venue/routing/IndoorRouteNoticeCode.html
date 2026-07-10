@@ -114,21 +114,29 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Could not match origin.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#IGNORED_VEHICLE_AVOID_FEATURES" class="member-name-link">IGNORED_VEHICLE_AVOID_FEATURES</a></code></div>
+<div class="col-first even-row-color"><code><a href="#COULD_NOT_MATCH_WAYPOINT" class="member-name-link">COULD_NOT_MATCH_WAYPOINT</a></code></div>
 <div class="col-last even-row-color">
+<div class="block">Could not match one or more via waypoints.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#IGNORED_VEHICLE_AVOID_FEATURES" class="member-name-link">IGNORED_VEHICLE_AVOID_FEATURES</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Ignored vehicle avoid features parameter.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#IGNORED_VEHICLE_ENABLE" class="member-name-link">IGNORED_VEHICLE_ENABLE</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="#IGNORED_VEHICLE_ENABLE" class="member-name-link">IGNORED_VEHICLE_ENABLE</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Ignored vehicle enable parameter.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#IGNORED_VEHICLE_SPEED" class="member-name-link">IGNORED_VEHICLE_SPEED</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="#IGNORED_VEHICLE_SPEED" class="member-name-link">IGNORED_VEHICLE_SPEED</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Ignored vehicle speed parameter.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#NO_ROUTE_FOUND" class="member-name-link">NO_ROUTE_FOUND</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="#NO_ROUTE_FOUND" class="member-name-link">NO_ROUTE_FOUND</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">No route found.</div>
+</div>
+<div class="col-first odd-row-color"><code><a href="#NO_ROUTE_FOUND_WITH_WAYPOINT" class="member-name-link">NO_ROUTE_FOUND_WITH_WAYPOINT</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">No route found with the specified via waypoint.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#VIOLATED_ENTIRE_ROUTE_CONDITION" class="member-name-link">VIOLATED_ENTIRE_ROUTE_CONDITION</a></code></div>
 <div class="col-last even-row-color">
@@ -259,6 +267,24 @@ the order they are declared.</div>
 <h3>VIOLATED_TRANSPORT_MODE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></span>&nbsp;<span class="element-name">VIOLATED_TRANSPORT_MODE</span></div>
 <div class="block"><p>Violated transport mode.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="COULD_NOT_MATCH_WAYPOINT">
+<h3>COULD_NOT_MATCH_WAYPOINT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></span>&nbsp;<span class="element-name">COULD_NOT_MATCH_WAYPOINT</span></div>
+<div class="block"><p>Could not match one or more via waypoints.
+ This notice is returned when the routing service cannot match a via waypoint
+ to a valid location on the indoor map.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="NO_ROUTE_FOUND_WITH_WAYPOINT">
+<h3>NO_ROUTE_FOUND_WITH_WAYPOINT</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></span>&nbsp;<span class="element-name">NO_ROUTE_FOUND_WITH_WAYPOINT</span></div>
+<div class="block"><p>No route found with the specified via waypoint.
+ This notice is returned when a route cannot be calculated that passes through
+ the specified via waypoint in the given order.</div>
 </section>
 </li>
 </ul>
