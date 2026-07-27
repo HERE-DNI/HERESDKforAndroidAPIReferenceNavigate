@@ -93,10 +93,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code><a href="HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></code></div>
-<div class="col-second even-row-color"><code><a href="#hazardousMaterial" class="member-name-link">hazardousMaterial</a></code></div>
+<div class="col-first even-row-color"><code><a href="../transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></code></div>
+<div class="col-second even-row-color"><code><a href="#hazardousMaterialRestriction" class="member-name-link">hazardousMaterialRestriction</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Hazardous material condition associated with this profile.</div>
+<div class="block">Restriction on transport of hazardous materials and max allowed tunnel category.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="VehicleTypeCondition.html" title="enum class in com.here.sdk.mapdata">VehicleTypeCondition</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#requestedVehicleType" class="member-name-link">requestedVehicleType</a></code></div>
@@ -129,10 +129,9 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.mapdata.HazardousMaterialType)" class="member-name-link">VehicleProfileRestriction</a><wbr>(<a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredWeightInKilograms,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange)" class="member-name-link">VehicleProfileRestriction</a><wbr>(<a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredWeightInKilograms,
  <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredGrossWeightInKilograms,
- <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredAmountOfTrailers,
- <a href="HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a>&nbsp;hazardousMaterial)</code></div>
+ <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredAmountOfTrailers)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new instance with specified parameters.</div>
 </div>
@@ -206,11 +205,11 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="hazardousMaterial">
-<h3>hazardousMaterial</h3>
-<div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></span>&nbsp;<span class="element-name">hazardousMaterial</span></div>
-<div class="block"><p>Hazardous material condition associated with this profile.</div>
+<section class="detail" id="hazardousMaterialRestriction">
+<h3>hazardousMaterialRestriction</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></span>&nbsp;<span class="element-name">hazardousMaterialRestriction</span></div>
+<div class="block"><p>Restriction on transport of hazardous materials and max allowed tunnel category.</div>
 </section>
 </li>
 </ul>
@@ -222,23 +221,20 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.mapdata.HazardousMaterialType)">
+<section class="detail" id="&lt;init&gt;(com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange)">
 <h3>VehicleProfileRestriction</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">VehicleProfileRestriction</span><wbr><span class="parameters">(@NonNull
  <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredWeightInKilograms,
  @NonNull
  <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredGrossWeightInKilograms,
  @NonNull
- <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredAmountOfTrailers,
- @NonNull
- <a href="HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a>&nbsp;hazardousMaterial)</span></div>
+ <a href="../core/IntegerRange.html" title="class in com.here.sdk.core">IntegerRange</a>&nbsp;requiredAmountOfTrailers)</span></div>
 <div class="block"><p>Creates a new instance with specified parameters.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>requiredWeightInKilograms</code> - <p>Weight limits in kilograms.</dd>
 <dd><code>requiredGrossWeightInKilograms</code> - <p>Gross weight limits in kilograms.</dd>
 <dd><code>requiredAmountOfTrailers</code> - <p>Trailer count limits.</dd>
-<dd><code>hazardousMaterial</code> - <p>Hazardous material condition associated with this profile.</dd>
 </dl>
 </section>
 </li>

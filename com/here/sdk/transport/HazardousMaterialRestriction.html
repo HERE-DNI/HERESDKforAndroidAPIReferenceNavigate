@@ -95,10 +95,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code><a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></code></div>
-<div class="col-second even-row-color"><code><a href="#hazardousMaterial" class="member-name-link">hazardousMaterial</a></code></div>
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#hazardousMaterials" class="member-name-link">hazardousMaterials</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Restricted hazardous material.</div>
+<div class="block">Restricted hazardous materials.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#tunnelCategory" class="member-name-link">tunnelCategory</a></code></div>
@@ -116,13 +116,13 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.transport.HazardousMaterial)" class="member-name-link">HazardousMaterialRestriction</a><wbr>(<a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&nbsp;hazardousMaterial)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.transport.TunnelCategory)" class="member-name-link">HazardousMaterialRestriction</a><wbr>(<a href="TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a>&nbsp;tunnelCategory)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates hazardous material restriction for specified material.</div>
-</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.transport.TunnelCategory)" class="member-name-link">HazardousMaterialRestriction</a><wbr>(<a href="TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a>&nbsp;tunnelCategory)</code></div>
-<div class="col-last odd-row-color">
 <div class="block">Creates hazardous material restriction for specified tunnel category.</div>
+</div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.util.List)" class="member-name-link">HazardousMaterialRestriction</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&gt;&nbsp;hazardousMaterials)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Creates hazardous material restriction for specified materials.</div>
 </div>
 </div>
 </section>
@@ -162,11 +162,11 @@ loadScripts(document, 'script');</script>
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="hazardousMaterial">
-<h3>hazardousMaterial</h3>
-<div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></span>&nbsp;<span class="element-name">hazardousMaterial</span></div>
-<div class="block"><p>Restricted hazardous material.</div>
+<section class="detail" id="hazardousMaterials">
+<h3>hazardousMaterials</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&gt;</span>&nbsp;<span class="element-name">hazardousMaterials</span></div>
+<div class="block"><p>Restricted hazardous materials.</div>
 </section>
 </li>
 <li>
@@ -186,14 +186,14 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.here.sdk.transport.HazardousMaterial)">
+<section class="detail" id="&lt;init&gt;(java.util.List)">
 <h3>HazardousMaterialRestriction</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">HazardousMaterialRestriction</span><wbr><span class="parameters">(@Nullable
- <a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&nbsp;hazardousMaterial)</span></div>
-<div class="block"><p>Creates hazardous material restriction for specified material.</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">HazardousMaterialRestriction</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&gt;&nbsp;hazardousMaterials)</span></div>
+<div class="block"><p>Creates hazardous material restriction for specified materials.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>hazardousMaterial</code> - <p>Restricted hazardous material.</dd>
+<dd><code>hazardousMaterials</code> - <p>Restricted hazardous materials.</dd>
 </dl>
 </section>
 </li>

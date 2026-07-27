@@ -142,7 +142,8 @@ implements <a href="MapViewBase.html" title="interface in com.here.sdk.mapview">
 
  <p>For <code>MapView</code> to work correctly, it is required to call its lifecycle
  methods from the owner Activity: <a href="#onCreate(android.os.Bundle)"><code>onCreate(Bundle)</code></a>, <a href="#onResume()"><code>onResume()</code></a>,
- <a href="#onPause()"><code>onPause()</code></a>, <a href="#onDestroy()"><code>onDestroy()</code></a> and <a href="#onSaveInstanceState(android.os.Bundle)"><code>onSaveInstanceState(Bundle)</code></a>.
+ <a href="#onPause()"><code>onPause()</code></a>, <a href="#onDestroy()"><code>onDestroy()</code></a>, <a href="#onSaveInstanceState(android.os.Bundle)"><code>onSaveInstanceState(Bundle)</code></a>,
+ <a href="#onStop()"><code>onStop()</code></a> and <a href="#onRestart()"><code>onRestart()</code></a>.
 
  <p>When dealing with multiple <code>MapView</code>s in a single Activity,
  an extra identifier needs to be passed to <a href="#onCreate(android.os.Bundle,java.lang.String)"><code>onCreate(Bundle, String)</code></a> and
@@ -1277,6 +1278,9 @@ implements <a href="MapViewBase.html" title="interface in com.here.sdk.mapview">
  size that leads to the new fixed size:
  - width = on-screen width * factor
  - height = on-screen height * factor
+
+ <a href="#setFixedSize(int,int,double)"><code>setFixedSize(int, int, double)</code></a> must be called after <a href="#onCreate(android.os.Bundle)"><code>onCreate(Bundle)</code></a> /
+ <a href="#onCreate(android.os.Bundle,java.lang.String)"><code>onCreate(Bundle, String)</code></a>.
 
  Note: This feature is in beta state and thus there can be bugs and unexpected behavior.</div>
 <dl class="notes">

@@ -81,6 +81,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Alternating Current (AC)</div>
 </dd>
+<dt><a href="com/here/sdk/ev/ElectricCurrentType.html#AC" class="member-name-link">AC</a> - Enum constant in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a></dt>
+<dd>
+<div class="block">Alternating Current (AC)</div>
+</dd>
 <dt><a href="com/here/sdk/routing/ChargingSupplyType.html#AC_SINGLE" class="member-name-link">AC_SINGLE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/ChargingSupplyType.html" title="enum class in com.here.sdk.routing">ChargingSupplyType</a></dt>
 <dd>
 <div class="block">Single phase Alternating Current supply.</div>
@@ -456,9 +460,21 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Adds a map polyline to this map scene.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolyline(com.here.sdk.mapview.MapPolyline,java.lang.String)" class="member-name-link">addMapPolyline(MapPolyline, String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Adds a single polyline to the layer identified by a layer name.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolylineLayer(java.lang.String,com.here.sdk.mapview.MapLayerPriority)" class="member-name-link">addMapPolylineLayer(String, MapLayerPriority)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Creates and registers a new polyline layer for this map scene.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolylines(java.util.List)" class="member-name-link">addMapPolylines(List&lt;MapPolyline&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
 <div class="block">Adds map polylines to this map scene.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#addMapPolylines(java.util.List,java.lang.String)" class="member-name-link">addMapPolylines(List&lt;MapPolyline&gt;, String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Adds multiple polylines to the layer identified by a layer name.</div>
 </dd>
 <dt><a href="com/here/sdk/mapmatcher/LocationManager.html#addMatchedLocationListener(com.here.sdk.mapmatcher.MatchedLocationListener)" class="member-name-link">addMatchedLocationListener(MatchedLocationListener)</a> - Method in class com.here.sdk.mapmatcher.<a href="com/here/sdk/mapmatcher/LocationManager.html" title="class in com.here.sdk.mapmatcher">LocationManager</a></dt>
 <dd>
@@ -957,10 +973,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Pass is valid from Jan 1 to Dec 31</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#ANY_HAZARDOUS_MATERIAL" class="member-name-link">ANY_HAZARDOUS_MATERIAL</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Any type of hazardous material (composite restriction).</div>
-</dd>
 <dt><a href="com/here/sdk/search/POIPaymentMethod.html#APPLE_PAY" class="member-name-link">APPLE_PAY</a> - Static variable in class com.here.sdk.search.<a href="com/here/sdk/search/POIPaymentMethod.html" title="class in com.here.sdk.search">POIPaymentMethod</a></dt>
 <dd>
 <div class="block">Apple pay</div>
@@ -1345,6 +1357,18 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">This lambda is used to retrieve access token in synchronous manner.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html" class="type-name-link" title="enum class in com.here.sdk.core">AuthorizationError</a> - Enum Class in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">AuthorizationError represents an error's enum</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationException.html" class="type-name-link" title="class in com.here.sdk.core">AuthorizationException</a> - Exception in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">Authorization exception</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizedFeaturesCallback.html" class="type-name-link" title="interface in com.here.sdk.core">AuthorizedFeaturesCallback</a> - Interface in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">Callback used to retrieve allowed features.</div>
+</dd>
 <dt><a href="com/here/sdk/navigation/RoadSignVehicleType.html#AUTO_TRAILER" class="member-name-link">AUTO_TRAILER</a> - Enum constant in enum class com.here.sdk.navigation.<a href="com/here/sdk/navigation/RoadSignVehicleType.html" title="enum class in com.here.sdk.navigation">RoadSignVehicleType</a></dt>
 <dd>
 <div class="block">Road sign is applicable for auto trailers.</div>
@@ -1582,33 +1606,17 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:B">B</h2>
 <dl class="index">
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#B" class="member-name-link">B</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Category B.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/TunnelCategory.html#B" class="member-name-link">B</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a></dt>
 <dd>
 <div class="block">Category B.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#B_D" class="member-name-link">B_D</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category B/D</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/VehicleTypeCondition.html#B_DOUBLE" class="member-name-link">B_DOUBLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleTypeCondition.html" title="enum class in com.here.sdk.mapdata">VehicleTypeCondition</a></dt>
 <dd>
 <div class="block">B-Double trailer configuration.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#B_E" class="member-name-link">B_E</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category B/E</div>
-</dd>
 <dt><a href="com/here/sdk/mapdata/VehicleTypeCondition.html#B_TRIPLE" class="member-name-link">B_TRIPLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleTypeCondition.html" title="enum class in com.here.sdk.mapdata">VehicleTypeCondition</a></dt>
 <dd>
 <div class="block">B-Triple trailer configuration.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#B1000C" class="member-name-link">B1000C</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category B/1000C</div>
 </dd>
 <dt><a href="com/here/sdk/transport/TruckRoadType.html#B2" class="member-name-link">B2</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TruckRoadType.html" title="enum class in com.here.sdk.transport">TruckRoadType</a></dt>
 <dd>
@@ -2142,6 +2150,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Bhutan</div>
 </dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Builds an opaque POI criteria object.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/datasource/DataAttributesBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/DataAttributesBuilder.html" title="class in com.here.sdk.mapview.datasource">DataAttributesBuilder</a></dt>
 <dd>
 <div class="block">Builds instance of DataAttributes.</div>
@@ -2486,10 +2498,6 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:C">C</h2>
 <dl class="index">
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#C" class="member-name-link">C</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Category C.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/TruckRoadType.html#C" class="member-name-link">C</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TruckRoadType.html" title="enum class in com.here.sdk.transport">TruckRoadType</a></dt>
 <dd>
 <div class="block">C class truck road type.</div>
@@ -2498,21 +2506,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Category C.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#C_D" class="member-name-link">C_D</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category C/D</div>
-</dd>
 <dt><a href="com/here/sdk/mapdata/VehicleTypeCondition.html#C_DOUBLE" class="member-name-link">C_DOUBLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleTypeCondition.html" title="enum class in com.here.sdk.mapdata">VehicleTypeCondition</a></dt>
 <dd>
 <div class="block">C-Double trailer configuration.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#C_E" class="member-name-link">C_E</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category C/E</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#C5000D" class="member-name-link">C5000D</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category C/5000D</div>
 </dd>
 <dt><a href="com/here/sdk/core/LanguageCode.html#CA_ES" class="member-name-link">CA_ES</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/LanguageCode.html" title="enum class in com.here.sdk.core">LanguageCode</a></dt>
 <dd>
@@ -2966,6 +2962,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapContext.SceneLoadCacheOptions.html#capacity" class="member-name-link">capacity</a> - Variable in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContext.SceneLoadCacheOptions.html" title="class in com.here.sdk.mapview">MapContext.SceneLoadCacheOptions</a></dt>
 <dd>
 <div class="block">Capacity of scene load cache as number of entries.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/ElectricVehicleType.html#CAR" class="member-name-link">CAR</a> - Enum constant in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a></dt>
+<dd>
+<div class="block">Vehicle type is a car.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/SectionTransportMode.html#CAR" class="member-name-link">CAR</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/SectionTransportMode.html" title="enum class in com.here.sdk.routing">SectionTransportMode</a></dt>
 <dd>
@@ -3817,10 +3817,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Time and duration types used across the HERE SDK.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#COMBUSTIBLE" class="member-name-link">COMBUSTIBLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Combustible material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#COMBUSTIBLE" class="member-name-link">COMBUSTIBLE</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
 <div class="block">Combustible material.</div>
@@ -3879,6 +3875,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">This method will be called on the main thread when <a href="com/here/sdk/maploader/remote/connection/ExternalMapDataSourceClient.html#configureRemoteConnectionAsync(java.lang.String,com.here.sdk.core.engine.SDKNativeEngine,com.here.sdk.maploader.remote.connection.SslClientCredentialsOptions,com.here.sdk.maploader.remote.connection.ConfigureConnectionCallback)"><code>ExternalMapDataSourceClient.configureRemoteConnectionAsync(java.lang.String, com.here.sdk.core.engine.SDKNativeEngine, com.here.sdk.maploader.remote.connection.SslClientCredentialsOptions, com.here.sdk.maploader.remote.connection.ConfigureConnectionCallback)</code></a>
  has been completed.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapContentSettings.html#configurePoiFilter(com.here.sdk.core.PoiFilterCriteria)" class="member-name-link">configurePoiFilter(PoiFilterCriteria)</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentSettings.html" title="class in com.here.sdk.mapview">MapContentSettings</a></dt>
+<dd>
+<div class="block">Configures POI filters represented as opaque criteria.</div>
 </dd>
 <dt><a href="com/here/sdk/maploader/remote/connection/ExternalMapDataSourceClient.html#configureRemoteConnectionAsync(java.lang.String,com.here.sdk.core.engine.SDKNativeEngine,com.here.sdk.maploader.remote.connection.SslClientCredentialsOptions,com.here.sdk.maploader.remote.connection.ConfigureConnectionCallback)" class="member-name-link">configureRemoteConnectionAsync(String, SDKNativeEngine, SslClientCredentialsOptions, ConfigureConnectionCallback)</a> - Method in class com.here.sdk.maploader.remote.connection.<a href="com/here/sdk/maploader/remote/connection/ExternalMapDataSourceClient.html" title="class in com.here.sdk.maploader.remote.connection">ExternalMapDataSourceClient</a></dt>
 <dd>
@@ -4195,10 +4195,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/AvoidPolygonAreaOptions.html#corridorExceptionAreas" class="member-name-link">corridorExceptionAreas</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/AvoidPolygonAreaOptions.html" title="class in com.here.sdk.routing">AvoidPolygonAreaOptions</a></dt>
 <dd>
 <div class="block">Areas of corridor shape to exclude from avoidance.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#CORROSIVE" class="member-name-link">CORROSIVE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Corrosive material.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#CORROSIVE" class="member-name-link">CORROSIVE</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
@@ -4651,10 +4647,6 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:D">D</h2>
 <dl class="index">
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#D" class="member-name-link">D</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Category D.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/TruckRoadType.html#D" class="member-name-link">D</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TruckRoadType.html" title="enum class in com.here.sdk.transport">TruckRoadType</a></dt>
 <dd>
 <div class="block">D class truck road type.</div>
@@ -4662,10 +4654,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/TunnelCategory.html#D" class="member-name-link">D</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a></dt>
 <dd>
 <div class="block">Category D.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#D_E" class="member-name-link">D_E</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Tunnel restriction category D/E</div>
 </dd>
 <dt><a href="com/here/sdk/core/LanguageCode.html#DA_DK" class="member-name-link">DA_DK</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/LanguageCode.html" title="enum class in com.here.sdk.core">LanguageCode</a></dt>
 <dd>
@@ -4869,6 +4857,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/core/PowerType.html#DC" class="member-name-link">DC</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/PowerType.html" title="enum class in com.here.sdk.core">PowerType</a></dt>
 <dd>
 <div class="block">Direct current.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/ElectricCurrentType.html#DC" class="member-name-link">DC</a> - Enum constant in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a></dt>
+<dd>
+<div class="block">Direct Current (DC)</div>
 </dd>
 <dt><a href="com/here/sdk/routing/ChargingSupplyType.html#DC" class="member-name-link">DC</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/ChargingSupplyType.html" title="enum class in com.here.sdk.routing">ChargingSupplyType</a></dt>
 <dd>
@@ -5939,10 +5931,6 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#E" class="member-name-link">E</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Category E.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/TunnelCategory.html#E" class="member-name-link">E</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a></dt>
 <dd>
 <div class="block">Category E.</div>
@@ -6043,6 +6031,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Greek</div>
 </dd>
+<dt><a href="com/here/sdk/ev/ElectricCurrentType.html" class="type-name-link" title="enum class in com.here.sdk.ev">ElectricCurrentType</a> - Enum Class in <a href="com/here/sdk/ev/package-summary.html">com.here.sdk.ev</a></dt>
+<dd>
+<div class="block">This enum represents the type of electric current</div>
+</dd>
 <dt><a href="com/here/sdk/routing/ElectricVehicleOptions.html" class="type-name-link" title="class in com.here.sdk.routing">ElectricVehicleOptions</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
 <div class="block">These options define the parameters of the electric vehicle.</div>
@@ -6050,6 +6042,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/ElectricVehicleOptions.html#%3Cinit%3E()" class="member-name-link">ElectricVehicleOptions()</a> - Constructor for class com.here.sdk.routing.<a href="com/here/sdk/routing/ElectricVehicleOptions.html" title="class in com.here.sdk.routing">ElectricVehicleOptions</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/ElectricVehicleType.html" class="type-name-link" title="enum class in com.here.sdk.ev">ElectricVehicleType</a> - Enum Class in <a href="com/here/sdk/ev/package-summary.html">com.here.sdk.ev</a></dt>
+<dd>
+<div class="block">Defines the type of the electric vehicle.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/TollStructureType.html#ELECTRONIC" class="member-name-link">ELECTRONIC</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TollStructureType.html" title="enum class in com.here.sdk.mapdata">TollStructureType</a></dt>
 <dd>
@@ -7799,6 +7795,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Defines the electric vehicle (EV) related parameters to calculate the consumption and reachability.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" class="type-name-link" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a> - Class in <a href="com/here/sdk/ev/package-summary.html">com.here.sdk.ev</a></dt>
+<dd>
+<div class="block">Builder for EV POI filtering criteria.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#%3Cinit%3E()" class="member-name-link">EVPoiFilterCriteriaBuilder()</a> - Constructor for class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Creates a new builder.</div>
+</dd>
 <dt><a href="com/here/sdk/search/Evse.html" class="type-name-link" title="class in com.here.sdk.search">Evse</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">Charge Point Operator (CPO) ID uses the Electric Vehicle Supply Equipment ID (EVSE ID) for an exact identification of the charging infrastructure and charging point.</div>
@@ -7957,14 +7961,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Explosive material.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#EXPLOSIVE_AND_FLAMMABLE" class="member-name-link">EXPLOSIVE_AND_FLAMMABLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Explosive and flammable materials combined (composite restriction).</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#EXPLOSIVES" class="member-name-link">EXPLOSIVES</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Explosive material.</div>
-</dd>
 <dt><a href="com/here/sdk/mapdata/CommercialVehicleRoadType.html#EXPRESS_ROAD" class="member-name-link">EXPRESS_ROAD</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/CommercialVehicleRoadType.html" title="enum class in com.here.sdk.mapdata">CommercialVehicleRoadType</a></dt>
 <dd>
 <div class="block">Express road.</div>
@@ -7984,6 +7980,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/trafficbroadcast/TMCData.html#extent" class="member-name-link">extent</a> - Variable in class com.here.sdk.trafficbroadcast.<a href="com/here/sdk/trafficbroadcast/TMCData.html" title="class in com.here.sdk.trafficbroadcast">TMCData</a></dt>
 <dd>
 <div class="block">Extent.</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#EXTERNAL_AUTHENTICATION" class="member-name-link">EXTERNAL_AUTHENTICATION</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">External authentication is used, therefore authorization is not available.</div>
 </dd>
 <dt><a href="com/here/sdk/core/LocationSource.html#EXTERNAL_SOURCE" class="member-name-link">EXTERNAL_SOURCE</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/LocationSource.html" title="enum class in com.here.sdk.core">LocationSource</a></dt>
 <dd>
@@ -8100,6 +8100,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/datasource/RasterTileSource.LoadResultHandler.html#failed(com.here.sdk.mapview.datasource.TileKey)" class="member-name-link">failed(TileKey)</a> - Method in interface com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/RasterTileSource.LoadResultHandler.html" title="interface in com.here.sdk.mapview.datasource">RasterTileSource.LoadResultHandler</a></dt>
 <dd>
 <div class="block">Called upon failed load tile request.</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#FAILED" class="member-name-link">FAILED</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Operation failed.</div>
 </dd>
 <dt><a href="com/here/sdk/core/errors/InstantiationErrorCode.html#FAILED" class="member-name-link">FAILED</a> - Enum constant in enum class com.here.sdk.core.errors.<a href="com/here/sdk/core/errors/InstantiationErrorCode.html" title="enum class in com.here.sdk.core.errors">InstantiationErrorCode</a></dt>
 <dd>
@@ -8338,17 +8342,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Fiji</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#FLAMMABLE" class="member-name-link">FLAMMABLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Flammable material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#FLAMMABLE" class="member-name-link">FLAMMABLE</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
 <div class="block">Flammable material.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#FLAMMABLE_SOLID_COMBUSTIBLE" class="member-name-link">FLAMMABLE_SOLID_COMBUSTIBLE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Flammable solids and combustible materials.</div>
 </dd>
 <dt><a href="com/here/sdk/search/EVChargingTariffDimension.html#FLAT" class="member-name-link">FLAT</a> - Enum constant in enum class com.here.sdk.search.<a href="com/here/sdk/search/EVChargingTariffDimension.html" title="enum class in com.here.sdk.search">EVChargingTariffDimension</a></dt>
 <dd>
@@ -8719,10 +8715,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/core/CountryCode.html#GAB" class="member-name-link">GAB</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
 <div class="block">Gabon</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#GAS" class="member-name-link">GAS</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Gas.</div>
 </dd>
 <dt><a href="com/here/sdk/search/EnergySourceType.html#GAS" class="member-name-link">GAS</a> - Enum constant in enum class com.here.sdk.search.<a href="com/here/sdk/search/EnergySourceType.html" title="enum class in com.here.sdk.search">EnergySourceType</a></dt>
 <dd>
@@ -12435,10 +12427,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">A lane that goes hard right.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#HARMFUL_TO_WATER" class="member-name-link">HARMFUL_TO_WATER</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Materials that are harmful to water.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#HARMFUL_TO_WATER" class="member-name-link">HARMFUL_TO_WATER</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
 <div class="block">Materials that are harmful to water.</div>
@@ -13229,30 +13217,26 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Indication if vehicles carrying hazardous / dangerous goods (ADR) can enter the EV Charging Location.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/VehicleProfileRestriction.html#hazardousMaterial" class="member-name-link">hazardousMaterial</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleProfileRestriction.html" title="class in com.here.sdk.mapdata">VehicleProfileRestriction</a></dt>
-<dd>
-<div class="block">Hazardous material condition associated with this profile.</div>
-</dd>
-<dt><a href="com/here/sdk/transport/HazardousMaterialRestriction.html#hazardousMaterial" class="member-name-link">hazardousMaterial</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></dt>
-<dd>
-<div class="block">Restricted hazardous material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html" class="type-name-link" title="enum class in com.here.sdk.transport">HazardousMaterial</a> - Enum Class in <a href="com/here/sdk/transport/package-summary.html">com.here.sdk.transport</a></dt>
 <dd>
 <div class="block">Identifiers for different types of hazardous materials which
  can be shipped by the truck.</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/VehicleProfileRestriction.html#hazardousMaterialRestriction" class="member-name-link">hazardousMaterialRestriction</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleProfileRestriction.html" title="class in com.here.sdk.mapdata">VehicleProfileRestriction</a></dt>
+<dd>
+<div class="block">Restriction on transport of hazardous materials and max allowed tunnel category.</div>
+</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterialRestriction.html" class="type-name-link" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a> - Class in <a href="com/here/sdk/transport/package-summary.html">com.here.sdk.transport</a></dt>
 <dd>
 <div class="block">Represents restriction on transport of hazardous materials.</div>
 </dd>
-<dt><a href="com/here/sdk/transport/HazardousMaterialRestriction.html#%3Cinit%3E(com.here.sdk.transport.HazardousMaterial)" class="member-name-link">HazardousMaterialRestriction(HazardousMaterial)</a> - Constructor for class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></dt>
-<dd>
-<div class="block">Creates hazardous material restriction for specified material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterialRestriction.html#%3Cinit%3E(com.here.sdk.transport.TunnelCategory)" class="member-name-link">HazardousMaterialRestriction(TunnelCategory)</a> - Constructor for class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></dt>
 <dd>
 <div class="block">Creates hazardous material restriction for specified tunnel category.</div>
+</dd>
+<dt><a href="com/here/sdk/transport/HazardousMaterialRestriction.html#%3Cinit%3E(java.util.List)" class="member-name-link">HazardousMaterialRestriction(List&lt;HazardousMaterial&gt;)</a> - Constructor for class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></dt>
+<dd>
+<div class="block">Creates hazardous material restriction for specified materials.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/TruckRestrictionWarning.html#hazardousMaterials" class="member-name-link">hazardousMaterials</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/TruckRestrictionWarning.html" title="class in com.here.sdk.navigation">TruckRestrictionWarning</a></dt>
 <dd>
@@ -13268,6 +13252,10 @@ loadScripts(document, 'script');</script>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Specifies a list of hazardous materials shipped in the vehicle.</div>
 </dd>
+<dt><a href="com/here/sdk/transport/HazardousMaterialRestriction.html#hazardousMaterials" class="member-name-link">hazardousMaterials</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterialRestriction.html" title="class in com.here.sdk.transport">HazardousMaterialRestriction</a></dt>
+<dd>
+<div class="block">Restricted hazardous materials.</div>
+</dd>
 <dt><a href="com/here/sdk/transport/VehicleProfile.html#hazardousMaterials" class="member-name-link">hazardousMaterials</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/VehicleProfile.html" title="class in com.here.sdk.transport">VehicleProfile</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
@@ -13276,10 +13264,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/transport/VehicleSpecification.html#hazardousMaterials" class="member-name-link">hazardousMaterials</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/VehicleSpecification.html" title="class in com.here.sdk.transport">VehicleSpecification</a></dt>
 <dd>
 <div class="block">Specifies a list of hazardous materials shipped in the vehicle.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html" class="type-name-link" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a> - Enum Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
-<dd>
-<div class="block">Hazardous material type as defined in the enum applicable for those that carry these</div>
 </dd>
 <dt><a href="com/here/sdk/transport/VehicleRestriction.html#hazmatRestriction" class="member-name-link">hazmatRestriction</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/VehicleRestriction.html" title="class in com.here.sdk.transport">VehicleRestriction</a></dt>
 <dd>
@@ -14714,6 +14698,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/core/AuthenticationError.html#INVALID_PARAMETER" class="member-name-link">INVALID_PARAMETER</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthenticationError.html" title="enum class in com.here.sdk.core">AuthenticationError</a></dt>
 <dd>
 <div class="block">Invalid parameter is received.</div>
+</dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#INVALID_PARAMETER" class="member-name-link">INVALID_PARAMETER</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Invalid parameter was received.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/TranslucentMapLayerGroup.ErrorCode.html#INVALID_PARAMETER" class="member-name-link">INVALID_PARAMETER</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/TranslucentMapLayerGroup.ErrorCode.html" title="enum class in com.here.sdk.mapview">TranslucentMapLayerGroup.ErrorCode</a></dt>
 <dd>
@@ -17272,6 +17260,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/DrawOrderType.html#MAP_SCENE_ADDITION_ORDER_INDEPENDENT" class="member-name-link">MAP_SCENE_ADDITION_ORDER_INDEPENDENT</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/DrawOrderType.html" title="enum class in com.here.sdk.mapview">DrawOrderType</a></dt>
 <dd>
 <div class="block">Draw order does not depend on the order of map item addition to a map scene.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/MapDataLoaderErrorCode.html#MAP_UPDATE_IN_PROGRESS" class="member-name-link">MAP_UPDATE_IN_PROGRESS</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/MapDataLoaderErrorCode.html" title="enum class in com.here.sdk.mapdata">MapDataLoaderErrorCode</a></dt>
+<dd>
+<div class="block">Map update is in progress, the request cannot be processed at this time.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapArrow.html" class="type-name-link" title="class in com.here.sdk.mapview">MapArrow</a> - Class in <a href="com/here/sdk/mapview/package-summary.html">com.here.sdk.mapview</a></dt>
 <dd>
@@ -20114,6 +20106,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Called after start() if any requested location feature is not available
  for the application.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizedFeaturesCallback.html#onFeaturesReceived(java.util.List,com.here.sdk.core.AuthorizationError)" class="member-name-link">onFeaturesReceived(List&lt;LayerConfiguration.Feature&gt;, AuthorizationError)</a> - Method in interface com.here.sdk.core.<a href="com/here/sdk/core/AuthorizedFeaturesCallback.html" title="interface in com.here.sdk.core">AuthorizedFeaturesCallback</a></dt>
+<dd>
+<div class="block">Callback used to retrieve allowed features.</div>
+</dd>
 <dt><a href="com/here/sdk/gestures/FlingHandler.html#onFling(float,float)" class="member-name-link">onFling(float, float)</a> - Method in class com.here.sdk.gestures.<a href="com/here/sdk/gestures/FlingHandler.html" title="class in com.here.sdk.gestures">FlingHandler</a></dt>
 <dd>
 <div class="block">To be called to trigger fling gesture handling.</div>
@@ -20531,7 +20527,6 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/navigation/SpeedLimitListener.html#onSpeedLimitUpdated(com.here.sdk.navigation.SpeedLimit)" class="member-name-link">onSpeedLimitUpdated(SpeedLimit)</a> - Method in interface com.here.sdk.navigation.<a href="com/here/sdk/navigation/SpeedLimitListener.html" title="interface in com.here.sdk.navigation">SpeedLimitListener</a></dt>
 <dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Called whenever the speed limit of the current road changes.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/SpeedWarningListener.html#onSpeedWarningStatusChanged(com.here.sdk.navigation.SpeedWarningStatus)" class="member-name-link">onSpeedWarningStatusChanged(SpeedWarningStatus)</a> - Method in interface com.here.sdk.navigation.<a href="com/here/sdk/navigation/SpeedWarningListener.html" title="interface in com.here.sdk.navigation">SpeedWarningListener</a></dt>
@@ -20820,10 +20815,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates an update to orbit map camera around a pixel origin by specified geodetic orientation delta.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#ORGANIC" class="member-name-link">ORGANIC</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Organic material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#ORGANIC" class="member-name-link">ORGANIC</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
 <div class="block">Organic material.</div>
@@ -20885,10 +20876,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapdata/CommercialVehicleRoadType.html#OTHER" class="member-name-link">OTHER</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/CommercialVehicleRoadType.html" title="enum class in com.here.sdk.mapdata">CommercialVehicleRoadType</a></dt>
 <dd>
 <div class="block">Other road type not covered by specific categories.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#OTHER" class="member-name-link">OTHER</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Any other hazardous material.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/PhysicalStructure.html#OTHER" class="member-name-link">OTHER</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PhysicalStructure.html" title="enum class in com.here.sdk.mapdata">PhysicalStructure</a></dt>
 <dd>
@@ -21838,6 +21825,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Indicates whether the segment range is a POI Access Road.</div>
 </dd>
+<dt><a href="com/here/sdk/core/PoiFilterCriteria.html" class="type-name-link" title="class in com.here.sdk.core">PoiFilterCriteria</a> - Class in <a href="com/here/sdk/core/package-summary.html">com.here.sdk.core</a></dt>
+<dd>
+<div class="block">Opaque POI filtering criteria container that can be passed to map content APIs.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapContentType.html#POINT" class="member-name-link">POINT</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentType.html" title="enum class in com.here.sdk.mapview">MapContentType</a></dt>
 <dd>
 <div class="block">Geodetic point.</div>
@@ -21938,17 +21929,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/search/POIPaymentMethod.html#%3Cinit%3E()" class="member-name-link">POIPaymentMethod()</a> - Constructor for class com.here.sdk.search.<a href="com/here/sdk/search/POIPaymentMethod.html" title="class in com.here.sdk.search">POIPaymentMethod</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#POISON" class="member-name-link">POISON</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Poisonous material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#POISON" class="member-name-link">POISON</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
 <div class="block">Poisonous material.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#POISONOUS_INHALATION" class="member-name-link">POISONOUS_INHALATION</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Materials that are poisonous upon inhalation.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#POISONOUS_INHALATION" class="member-name-link">POISONOUS_INHALATION</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
@@ -22689,10 +22672,6 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:R">R</h2>
 <dl class="index">
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#RADIOACTIVE" class="member-name-link">RADIOACTIVE</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Radioactive material.</div>
-</dd>
 <dt><a href="com/here/sdk/transport/HazardousMaterial.html#RADIOACTIVE" class="member-name-link">RADIOACTIVE</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a></dt>
 <dd>
 <div class="block">Radioactive material.</div>
@@ -23488,6 +23467,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes a map polyline from this map scene.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/MapScene.html#removeMapPolylineLayer(java.lang.String)" class="member-name-link">removeMapPolylineLayer(String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
+<dd>
+<div class="block">Removes the polyline layer identified by a name from this map scene, including all polylines
+ contained in it.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapScene.html#removeMapPolylines(java.util.List)" class="member-name-link">removeMapPolylines(List&lt;MapPolyline&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview">MapScene</a></dt>
 <dd>
 <div class="block">Removes map polylines from this map scene.</div>
@@ -23695,6 +23679,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapContentSettings.html#resetPoiCategoriesVisibility()" class="member-name-link">resetPoiCategoriesVisibility()</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentSettings.html" title="class in com.here.sdk.mapview">MapContentSettings</a></dt>
 <dd>
 <div class="block">Resets POI categories visibility to their default state.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/MapContentSettings.html#resetPoiFilters()" class="member-name-link">resetPoiFilters()</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentSettings.html" title="class in com.here.sdk.mapview">MapContentSettings</a></dt>
+<dd>
+<div class="block">Resets all previously applied POI filters across all POI categories.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapContentSettings.html#resetTrafficIncidentFilter()" class="member-name-link">resetTrafficIncidentFilter()</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentSettings.html" title="class in com.here.sdk.mapview">MapContentSettings</a></dt>
 <dd>
@@ -24232,6 +24220,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/venue/routing/EnableOption.html#ROUTE_HEAD" class="member-name-link">ROUTE_HEAD</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/EnableOption.html" title="enum class in com.here.sdk.venue.routing">EnableOption</a></dt>
 <dd>
 <div class="block">Enable at the start of the route (route head).</div>
+</dd>
+<dt><a href="com/here/sdk/navigation/VisualNavigator.html#ROUTE_LAYER_OVERLAY" class="member-name-link">ROUTE_LAYER_OVERLAY</a> - Static variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/VisualNavigator.html" title="class in com.here.sdk.navigation">VisualNavigator</a></dt>
+<dd>
+<div class="block">Placeholder layer positioned above route polylines in the map layer stack.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#ROUTE_LENGTH_LIMIT_EXCEEDED" class="member-name-link">ROUTE_LENGTH_LIMIT_EXCEEDED</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
@@ -27675,9 +27667,8 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/navigation/SpeedLimitListener.html" class="type-name-link" title="interface in com.here.sdk.navigation">SpeedLimitListener</a> - Interface in <a href="com/here/sdk/navigation/package-summary.html">com.here.sdk.navigation</a></dt>
 <dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.29.0. Use the <code>WarningListener</code> implementation instead.</div>
-</div>
+<div class="block">This interface
+ should be implemented in order to receive the speed limit of the current road.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/SpeedWarningOptions.html#speedLimitOffset" class="member-name-link">speedLimitOffset</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/SpeedWarningOptions.html" title="class in com.here.sdk.navigation">SpeedWarningOptions</a></dt>
 <dd>
@@ -30201,6 +30192,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Represents network traffic statistics for online usage corresponding to the
  <a href="com/here/sdk/core/engine/LayerConfiguration.Feature.html#TRUCK"><code>LayerConfiguration.Feature.TRUCK</code></a> layer configuration.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/ElectricVehicleType.html#TRUCK" class="member-name-link">TRUCK</a> - Enum constant in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a></dt>
+<dd>
+<div class="block">Vehicle type is a truck.</div>
+</dd>
 <dt><a href="com/here/sdk/mapdata/VehicleTypeCondition.html#TRUCK" class="member-name-link">TRUCK</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleTypeCondition.html" title="enum class in com.here.sdk.mapdata">VehicleTypeCondition</a></dt>
 <dd>
 <div class="block">Standard truck.</div>
@@ -30793,10 +30788,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">No status information available or the EVSE/connector is offline.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#UNKNOWN" class="member-name-link">UNKNOWN</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
-<dd>
-<div class="block">Unknown hazardous material classification.</div>
-</dd>
 <dt><a href="com/here/sdk/mapdata/PhysicalStructure.html#UNKNOWN" class="member-name-link">UNKNOWN</a> - Enum constant in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PhysicalStructure.html" title="enum class in com.here.sdk.mapdata">PhysicalStructure</a></dt>
 <dd>
 <div class="block">No physical structure or the structure type is unknown.</div>
@@ -31183,6 +31174,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="com/here/sdk/core/BodyFrame.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/BodyFrame.html" title="enum class in com.here.sdk.core">BodyFrame</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -31291,6 +31286,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/ElectricCurrentType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/ElectricVehicleType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="com/here/sdk/ev/EVChargingConnectorFormat.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/EVChargingConnectorFormat.html" title="enum class in com.here.sdk.ev">EVChargingConnectorFormat</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -31348,10 +31351,6 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/FileReferenceType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/FileReferenceType.html" title="enum class in com.here.sdk.mapdata">FileReferenceType</a></dt>
-<dd>
-<div class="block">Returns the enum constant of this class with the specified name.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
@@ -32170,6 +32169,11 @@ the order they are declared.</div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
+<dt><a href="com/here/sdk/core/AuthorizationError.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/AuthorizationError.html" title="enum class in com.here.sdk.core">AuthorizationError</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
 <dt><a href="com/here/sdk/core/BodyFrame.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.core.<a href="com/here/sdk/core/BodyFrame.html" title="enum class in com.here.sdk.core">BodyFrame</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
@@ -32305,6 +32309,16 @@ the order they are declared.</div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/ElectricCurrentType.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/ElectricVehicleType.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
 <dt><a href="com/here/sdk/ev/EVChargingConnectorFormat.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/EVChargingConnectorFormat.html" title="enum class in com.here.sdk.ev">EVChargingConnectorFormat</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
@@ -32376,11 +32390,6 @@ the order they are declared.</div>
 the order they are declared.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/FileReferenceType.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/FileReferenceType.html" title="enum class in com.here.sdk.mapdata">FileReferenceType</a></dt>
-<dd>
-<div class="block">Returns an array containing the constants of this enum class, in
-the order they are declared.</div>
-</dd>
-<dt><a href="com/here/sdk/mapdata/HazardousMaterialType.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/HazardousMaterialType.html" title="enum class in com.here.sdk.mapdata">HazardousMaterialType</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
@@ -33430,7 +33439,7 @@ the order they are declared.</div>
 <dd>
 <div class="block">Physical and cargo profile of a vehicle that triggers a regulation.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/VehicleProfileRestriction.html#%3Cinit%3E(com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.mapdata.HazardousMaterialType)" class="member-name-link">VehicleProfileRestriction(IntegerRange, IntegerRange, IntegerRange, HazardousMaterialType)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleProfileRestriction.html" title="class in com.here.sdk.mapdata">VehicleProfileRestriction</a></dt>
+<dt><a href="com/here/sdk/mapdata/VehicleProfileRestriction.html#%3Cinit%3E(com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange,com.here.sdk.core.IntegerRange)" class="member-name-link">VehicleProfileRestriction(IntegerRange, IntegerRange, IntegerRange)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/VehicleProfileRestriction.html" title="class in com.here.sdk.mapdata">VehicleProfileRestriction</a></dt>
 <dd>
 <div class="block">Creates a new instance with specified parameters.</div>
 </dd>
@@ -34688,9 +34697,17 @@ the order they are declared.</div>
 <div class="block">Sets the layer category for which a priority could be defined with the next call to the functions
  <code>renderedFirst|Last|BeforeLayer|AfterLayer</code>.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withChargingOnSite(boolean)" class="member-name-link">withChargingOnSite(boolean)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Matches POIs where either general public or just customers are offered charging.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html#withConfigurationFile(java.lang.String)" class="member-name-link">withConfigurationFile(String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html" title="class in com.here.sdk.mapview">MapSceneLoadOptionsBuilder</a></dt>
 <dd>
 <div class="block">Sets the configuration file path to load.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withConnectorTypes(java.util.List)" class="member-name-link">withConnectorTypes(List&lt;String&gt;)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Accepted connector type strings.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/datasource/PointDataBuilder.html#withCoordinates(com.here.sdk.core.GeoCoordinates)" class="member-name-link">withCoordinates(GeoCoordinates)</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/PointDataBuilder.html" title="class in com.here.sdk.mapview.datasource">PointDataBuilder</a></dt>
 <dd>
@@ -34724,6 +34741,14 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html#withDisabledFeatures(java.util.List)" class="member-name-link">withDisabledFeatures(List&lt;String&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html" title="class in com.here.sdk.mapview">MapSceneLoadOptionsBuilder</a></dt>
 <dd>
 <div class="block">Sets the features to disable in the new configuration.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withElectricCurrentType(com.here.sdk.ev.ElectricCurrentType)" class="member-name-link">withElectricCurrentType(ElectricCurrentType)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Required current type (AC or DC).</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withElectricVehicleTypes(java.util.List)" class="member-name-link">withElectricVehicleTypes(List&lt;ElectricVehicleType&gt;)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Accepted electric vehicle types.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/VehicleSpecification.BusBuilder.html#withEmptyWeightInKilograms(int)" class="member-name-link">withEmptyWeightInKilograms(int)</a> - Method in class com.here.sdk.transport.<a href="com/here/sdk/transport/VehicleSpecification.BusBuilder.html" title="class in com.here.sdk.transport">VehicleSpecification.BusBuilder</a></dt>
 <dd>
@@ -34921,6 +34946,18 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets the map scheme to load.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withMinCurrent(int)" class="member-name-link">withMinCurrent(int)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Minimum current required on any matching port in amperes.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withMinPower(int)" class="member-name-link">withMinPower(int)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Minimum charging power required on any matching port in kilowatts.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withMinVoltage(int)" class="member-name-link">withMinVoltage(int)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Minimum voltage required on any matching port in volts.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/datasource/LineDataSourceBuilder.html#withName(java.lang.String)" class="member-name-link">withName(String)</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/LineDataSourceBuilder.html" title="class in com.here.sdk.mapview.datasource">LineDataSourceBuilder</a></dt>
 <dd>
 <div class="block">Configures the builder to use the given name for data source.</div>
@@ -35013,6 +35050,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Configures the builder to set the MapLayerPriority to be used by the layer.</div>
 </dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withReservable(boolean)" class="member-name-link">withReservable(boolean)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Matches POIs whose reservable flag equals this value.</div>
+</dd>
 <dt><a href="com/here/sdk/transport/TransportSpecification.ScooterBuilder.html#withScooterSpecification(com.here.sdk.transport.ScooterSpecification)" class="member-name-link">withScooterSpecification(ScooterSpecification)</a> - Method in class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportSpecification.ScooterBuilder.html" title="class in com.here.sdk.transport">TransportSpecification.ScooterBuilder</a></dt>
 <dd>
 <div class="block">Sets the scooter specification.</div>
@@ -35028,6 +35069,10 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/mapview/MapLayerBuilder.html#withStyle(com.here.sdk.mapview.Style)" class="member-name-link">withStyle(Style)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapLayerBuilder.html" title="class in com.here.sdk.mapview">MapLayerBuilder</a></dt>
 <dd>
 <div class="block">Configures the builder to use a style.</div>
+</dd>
+<dt><a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html#withSubscription(boolean)" class="member-name-link">withSubscription(boolean)</a> - Method in class com.here.sdk.ev.<a href="com/here/sdk/ev/EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></dt>
+<dd>
+<div class="block">Matches POIs whose subscription flag equals this value.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/TransportSpecification.TaxiBuilder.html#withTaxiSpecification(com.here.sdk.transport.TaxiSpecification)" class="member-name-link">withTaxiSpecification(TaxiSpecification)</a> - Method in class com.here.sdk.transport.<a href="com/here/sdk/transport/TransportSpecification.TaxiBuilder.html" title="class in com.here.sdk.transport">TransportSpecification.TaxiBuilder</a></dt>
 <dd>
