@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li><a href="#constructor-summary">Constr</a> | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li><a href="#constructor-detail">Constr</a> | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.mapview</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.mapview</a></div>
 <h1 title="Class MapLayerPriorityBuilder" class="title">Class MapLayerPriorityBuilder</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -82,36 +82,36 @@ loadScripts(document, 'script');</script>
 <span class="extends-implements">extends <a href="../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
 <div class="block"><p>MapLayerPriorityBuilder is an interface used to define the rendering priority of a layer
  and its categories, relative to other layers or layer-category pairs.
- <p>Map layers are rendered in an order according to specified priorities. Rendering order of elements in
+ </p><p>Map layers are rendered in an order according to specified priorities. Rendering order of elements in
  a single map layer can be controlled with categories. Layer names are unique, and category names have
  to be unique within a layer. The layer's default, main category is unnamed.
- <p>The concept of 'category' is tightly linked to styling. The idea behind category is that
+ </p><p>The concept of 'category' is tightly linked to styling. The idea behind category is that
  one should be able to style separately elements in a map layer. Take, for instance, roads.
  If one wants to style separately the bridges it will create a category 'bridges' and style
  it accordingly in the style file. If the user does not intend to or cannot style elements
  of the layer diffenrently then it should opt for a layer with only the default category (e.g.
  raster layer).
- <p>One way to define layers' priorities is by using a layer priority list in the scene configuration.
- <p>For example, a priority list in a scene configuration could define:
- <ul>
+ </p><p>One way to define layers' priorities is by using a layer priority list in the scene configuration.
+ </p><p>For example, a priority list in a scene configuration could define:
+ </p><ul>
  <li>background</li>
  <li>water</li>
  <li>roads:outline</li>
  <li>roads</li>
  <li>labels</li>
  </ul>
- <p>This means layer &quot;background&quot; is rendered first. Next up is layer &quot;water&quot;. Then category &quot;outline&quot; of
- layer &quot;roads&quot;, followed by the main category of layer &quot;roads&quot;. Layer &quot;labels&quot; is then rendered last.
- <p>
+ <p>This means layer "background" is rendered first. Next up is layer "water". Then category "outline" of
+ layer "roads", followed by the main category of layer "roads". Layer "labels" is then rendered last.
+ </p><p>
  Now let's consider a newly created layer 'zone' and its categories:
- <ul>
+ </p><ul>
  <li>zone</li>
  <li>zone:background</li>
  <li>zone:lines-outline</li>
  <li>zone:lines</li>
  </ul>
  <p>The user wants to alter the rendering order so that it looks like:
- <ul>
+ </p><ul>
  <li>background</li>
  <li>water</li>
  <li>zone:background</li>
@@ -124,9 +124,9 @@ loadScripts(document, 'script');</script>
  </ul>
  <p>This could be achieved with the help of the MapLayerPriorityBuilder and a sequence of calls to its
  <code>renderedBeforeLayer()</code> and <code>renderedAfterLayer()</code> member functions.
- <p>Note that the order of calls matters and one can use a previously defined layer or category
+ </p><p>Note that the order of calls matters and one can use a previously defined layer or category
  as a reference:
- <pre><code>MapLayerPriority zoneLayerPriority = new MapLayerPriorityBuilder()
+ </p><pre><code>MapLayerPriority zoneLayerPriority = new MapLayerPriorityBuilder()
        .renderedAfterLayer("water")            // places "zone" after "water"
                                                // in the rendering order
        .withCategory("background")
@@ -146,12 +146,12 @@ loadScripts(document, 'script');</script>
   </code></pre>
  <p>In case an empty MapLayerPriority without any ordering commands is built, it is assumed that the target layer
  is going to be rendered last.
- <p>Due to a current limitation for point map layers, the mentioned APIs to control the rendering
- order are not implemented. All labels will be rendered within the &quot;labels&quot; layer, defined in
+ </p><p>Due to a current limitation for point map layers, the mentioned APIs to control the rendering
+ order are not implemented. All labels will be rendered within the "labels" layer, defined in
  the scene configuration file.
  By default, all labels rendered by a point map layer are rendered last and no overlapping is
  allowed. The following categories can be used to have a different behaviour:
- <ul>
+ </p><ul>
  <li>'custom-labels' A label should be rendered first, is allowed to overlap with other labels of
  the same category and block map labels.</li>
  <li>'custom-labels-no-self-overlap' A label should be rendered after 'custom-labels', is not allowed
@@ -198,30 +198,30 @@ loadScripts(document, 'script');</script>
 <div class="block">Constructs a MapLayerPriority.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#inGroup(java.lang.String)" class="member-name-link">inGroup</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#inGroup(java.lang.String)" class="member-name-link">inGroup</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> group)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the group for which a priority could be defined with the next call to the functions
  <code>renderedFirst|Last|BeforeLayer|AfterLayer</code>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedAfterLayer(java.lang.String)" class="member-name-link">renderedAfterLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedAfterLayer(java.lang.String)" class="member-name-link">renderedAfterLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the priority as rendered after the last one from the referenceLayer and its categories.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedAfterLayer(java.lang.String,java.lang.String)" class="member-name-link">renderedAfterLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceCategory)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedAfterLayer(java.lang.String,java.lang.String)" class="member-name-link">renderedAfterLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceCategory)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the priority as rendered after the referenceCategory of the referenceLayer.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedBeforeLayer(java.lang.String)" class="member-name-link">renderedBeforeLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedBeforeLayer(java.lang.String)" class="member-name-link">renderedBeforeLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the priority as rendered before the first one from the referenceLayer and its categories.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedBeforeLayer(java.lang.String,java.lang.String)" class="member-name-link">renderedBeforeLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceCategory)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#renderedBeforeLayer(java.lang.String,java.lang.String)" class="member-name-link">renderedBeforeLayer</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceCategory)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the priority as rendered before the referenceCategory of the referenceLayer.</div>
 </div>
@@ -236,7 +236,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Sets the priority as rendered after all layers and categories.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withCategory(java.lang.String)" class="member-name-link">withCategory</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;category)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withCategory(java.lang.String)" class="member-name-link">withCategory</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> category)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the layer category for which a priority could be defined with the next call to the functions
  <code>renderedFirst|Last|BeforeLayer|AfterLayer</code>.</div>
@@ -245,7 +245,7 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
+<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 </section>
 </li>
@@ -261,8 +261,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;()">
 <h3>MapLayerPriorityBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">MapLayerPriorityBuilder</span>()</div>
-<div class="block"><p>Creates an instance of the layer priority builder interface.</div>
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">MapLayerPriorityBuilder</span>()</div>
+<div class="block"><p>Creates an instance of the layer priority builder interface.</p></div>
 </section>
 </li>
 </ul>
@@ -277,17 +277,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withCategory(java.lang.String)">
 <h3>withCategory</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">withCategory</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;category)</span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">withCategory</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> category)</span></wbr></div>
 <div class="block"><p>Sets the layer category for which a priority could be defined with the next call to the functions
  <code>renderedFirst|Last|BeforeLayer|AfterLayer</code>.
  After a priority is defined by calling one of the aforementioned functions, the current category
- is cleared and the builder refers again to the layer itself.</div>
+ is cleared and the builder refers again to the layer itself.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>category</code> - <p>The name of the layer category.</dd>
+<dd><code>category</code> - <p>The name of the layer category.</p></dd>
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -295,8 +295,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="inGroup(java.lang.String)">
 <h3>inGroup</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">inGroup</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group)</span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">inGroup</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> group)</span></wbr></div>
 <div class="block"><p>Sets the group for which a priority could be defined with the next call to the functions
  <code>renderedFirst|Last|BeforeLayer|AfterLayer</code>.
  When a group is set, the next defined priority is relative to the layers and layer categories
@@ -309,12 +309,12 @@ loadScripts(document, 'script');</script>
  Note that a group needs to exist when the built <a href="MapLayerPriority.html" title="class in com.here.sdk.mapview"><code>MapLayerPriority</code></a> is used during a
  <a href="MapLayerBuilder.html#build()"><code>MapLayerBuilder.build()</code></a> or <a href="MapLayer.html#setPriority(com.here.sdk.mapview.MapLayerPriority)"><code>MapLayer.setPriority(com.here.sdk.mapview.MapLayerPriority)</code></a>, otherwise the priority
  cannot be applied and the layer will render nothing to the group.
- <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
+ </p><p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>group</code> - <p>The name of the group. For instance the name of a <a href="TranslucentMapLayerGroup.html" title="class in com.here.sdk.mapview"><code>TranslucentMapLayerGroup</code></a>.</dd>
+<dd><code>group</code> - <p>The name of the group. For instance the name of a <a href="TranslucentMapLayerGroup.html" title="class in com.here.sdk.mapview"><code>TranslucentMapLayerGroup</code></a>.</p></dd>
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -322,7 +322,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="renderedFirst()">
 <h3>renderedFirst</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">renderedFirst</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">renderedFirst</span>()</div>
 <div class="block"><p>Sets the priority as rendered before all layers and categories. Applies to the layer itself or the
  category pointed to by the preceding call to <a href="#withCategory(java.lang.String)"><code>withCategory(java.lang.String)</code></a>.
  Notice that the order of calls to the functions
@@ -332,11 +332,11 @@ loadScripts(document, 'script');</script>
  with these functions since previous priorities would be ingored. For example the priority to
  render layer category 'C' after layer 'L' would be overridden by the priority to
  render layer category 'C' before layer 'L' when building something like
- <p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
- <p>The previously defined and prioritised categories can be used as reference.</div>
+ </p><p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
+ </p><p>The previously defined and prioritised categories can be used as reference.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -344,7 +344,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="renderedLast()">
 <h3>renderedLast</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">renderedLast</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">renderedLast</span>()</div>
 <div class="block"><p>Sets the priority as rendered after all layers and categories. Applies to the layer itself or the
  category pointed to by the preceding call to <a href="#withCategory(java.lang.String)"><code>withCategory(java.lang.String)</code></a>.
  Notice that the order of calls to the functions
@@ -354,11 +354,11 @@ loadScripts(document, 'script');</script>
  with these functions since previous priorities would be ingored. For example the priority to
  render layer category 'C' after layer 'L' would be overridden by the priority to
  render layer category 'C' before layer 'L' when building something like
- <p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
- <p>The previously defined and prioritised categories can be used as reference.</div>
+ </p><p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
+ </p><p>The previously defined and prioritised categories can be used as reference.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -366,8 +366,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="renderedBeforeLayer(java.lang.String)">
 <h3>renderedBeforeLayer</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">renderedBeforeLayer</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer)</span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">renderedBeforeLayer</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer)</span></wbr></div>
 <div class="block"><p>Sets the priority as rendered before the first one from the referenceLayer and its categories.
  Applies to the layer itself or the category pointed to by the preceding call to
  <a href="#withCategory(java.lang.String)"><code>withCategory(java.lang.String)</code></a>.
@@ -378,15 +378,15 @@ loadScripts(document, 'script');</script>
  with these functions since previous priorities would be ingored. For example the priority to
  render layer category 'C' after layer 'L' would be overridden by the priority to
  render layer category 'C' before layer 'L' when building something like
- <p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
- <p>The previously defined and prioritised categories can be used as reference.
+ </p><p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
+ </p><p>The previously defined and prioritised categories can be used as reference.
  If the referenceLayer does not exist, then the function will set the priority as rendered
- before all layers and categories.</div>
+ before all layers and categories.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly after the current layer.</dd>
+<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly after the current layer.</p></dd>
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -394,10 +394,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="renderedBeforeLayer(java.lang.String,java.lang.String)">
 <h3>renderedBeforeLayer</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">renderedBeforeLayer</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer,
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">renderedBeforeLayer</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceCategory)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceCategory)</span></wbr></div>
 <div class="block"><p>Sets the priority as rendered before the referenceCategory of the referenceLayer. Applies to the
  layer itself or the category pointed to by the preceding call to
  <a href="#withCategory(java.lang.String)"><code>withCategory(java.lang.String)</code></a>.
@@ -408,16 +408,16 @@ loadScripts(document, 'script');</script>
  with these functions since previous priorities would be ingored. For example the priority to
  render layer category 'C' after layer 'L' would be overridden by the priority to
  render layer category 'C' before layer 'L' when building something like
- <p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
- <p>The previously defined and prioritised categories can be used as reference.
+ </p><p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
+ </p><p>The previously defined and prioritised categories can be used as reference.
  If the referenceLayer and/or the referenceCategory do not exist, then the function will set
- the priority as rendered before all layers and categories.</div>
+ the priority as rendered before all layers and categories.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly after the current layer.</dd>
-<dd><code>referenceCategory</code> - <p>The beforehand defined category name which renders directly after the current layer.</dd>
+<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly after the current layer.</p></dd>
+<dd><code>referenceCategory</code> - <p>The beforehand defined category name which renders directly after the current layer.</p></dd>
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -425,8 +425,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="renderedAfterLayer(java.lang.String)">
 <h3>renderedAfterLayer</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">renderedAfterLayer</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer)</span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">renderedAfterLayer</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer)</span></wbr></div>
 <div class="block"><p>Sets the priority as rendered after the last one from the referenceLayer and its categories.
  Applies to the layer itself or the category pointed to by the preceding call to
  <a href="#withCategory(java.lang.String)"><code>withCategory(java.lang.String)</code></a>.
@@ -437,15 +437,15 @@ loadScripts(document, 'script');</script>
  with these functions since previous priorities would be ingored. For example the priority to
  render layer category 'C' after layer 'L' would be overridden by the priority to
  render layer category 'C' before layer 'L' when building something like
- <p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
- <p>The previously defined and prioritised categories can be used as reference.
+ </p><p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
+ </p><p>The previously defined and prioritised categories can be used as reference.
  If the referenceLayer does not exist, then the function will set the priority as rendered
- after all layers and categories.</div>
+ after all layers and categories.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly before the current layer.</dd>
+<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly before the current layer.</p></dd>
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -453,10 +453,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="renderedAfterLayer(java.lang.String,java.lang.String)">
 <h3>renderedAfterLayer</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span>&nbsp;<span class="element-name">renderedAfterLayer</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceLayer,
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriorityBuilder.html" title="class in com.here.sdk.mapview">MapLayerPriorityBuilder</a></span> <span class="element-name">renderedAfterLayer</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceLayer,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;referenceCategory)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> referenceCategory)</span></wbr></div>
 <div class="block"><p>Sets the priority as rendered after the referenceCategory of the referenceLayer. Applies to the
  layer itself or the category pointed to by the preceding call to
  <a href="#withCategory(java.lang.String)"><code>withCategory(java.lang.String)</code></a>.
@@ -467,16 +467,16 @@ loadScripts(document, 'script');</script>
  with these functions since previous priorities would be ingored. For example the priority to
  render layer category 'C' after layer 'L' would be overridden by the priority to
  render layer category 'C' before layer 'L' when building something like
- <p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
- <p>The previously defined and prioritised categories can be used as reference.
+ </p><p><code>withCategory(&amp;quot;C&amp;quot;).renderedAfterLayer(&amp;quot;L&amp;quot;).withCategory(&amp;quot;C&amp;quot;).renderedBeforeLayer(&amp;quot;L&amp;quot;)</code>
+ </p><p>The previously defined and prioritised categories can be used as reference.
  If the referenceLayer and/or the referenceCategory do not exist, then the function will set
- the priority as rendered after all layers and categories.</div>
+ the priority as rendered after all layers and categories.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly before the current layer.</dd>
-<dd><code>referenceCategory</code> - <p>The beforehand defined category name which renders directly before the current layer.</dd>
+<dd><code>referenceLayer</code> - <p>The beforehand defined layer name which renders directly before the current layer.</p></dd>
+<dd><code>referenceCategory</code> - <p>The beforehand defined category name which renders directly before the current layer.</p></dd>
 <dt>Returns:</dt>
-<dd><p>This class instance.</dd>
+<dd><p>This class instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -484,12 +484,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="build()">
 <h3>build</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="MapLayerPriority.html" title="class in com.here.sdk.mapview">MapLayerPriority</a></span>&nbsp;<span class="element-name">build</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="MapLayerPriority.html" title="class in com.here.sdk.mapview">MapLayerPriority</a></span> <span class="element-name">build</span>()</div>
 <div class="block"><p>Constructs a MapLayerPriority. The builder is then empty and can be re-used to generate a new
- MapLayerPriority.</div>
+ MapLayerPriority.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>A new MapLayerPriority instance.</dd>
+<dd><p>A new MapLayerPriority instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -502,5 +502,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>

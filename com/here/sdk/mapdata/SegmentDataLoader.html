@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li><a href="#constructor-summary">Constr</a> | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li><a href="#constructor-detail">Constr</a> | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.mapdata</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.mapdata</a></div>
 <h1 title="Class SegmentDataLoader" class="title">Class SegmentDataLoader</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -85,11 +85,11 @@ loadScripts(document, 'script');</script>
  load map data synchronously. In the event of absent data in the disk cache, the data will be
  retrieved from the remote server. To mitigate the potential freezing of the calling thread,
  it is advisable to proactively prefetch map data around the working area.
- <p><strong>Note:</strong> Loading map data can be time-consuming, so <code>SegmentDataLoader</code> can be used
+ </p><p><strong>Note:</strong> Loading map data can be time-consuming, so <code>SegmentDataLoader</code> can be used
  in a background thread to avoid blocking the main thread. However, this class is not
  thread-safe, and each instance should be used exclusively by a single thread.
- <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
- behaviors. Related APIs may change for new releases without a deprecation process.</div>
+ </p><p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
+ behaviors. Related APIs may change for new releases without a deprecation process.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -105,7 +105,7 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Creates a new instance of this class.</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.engine.SDKNativeEngine)" class="member-name-link">SegmentDataLoader</a><wbr>(<a href="../core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine">SDKNativeEngine</a>&nbsp;sdkEngine)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.engine.SDKNativeEngine)" class="member-name-link">SegmentDataLoader</a><wbr>(<a href="../core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine">SDKNativeEngine</a> sdkEngine)</wbr></code></div>
 <div class="col-last odd-row-color">
 <div class="block">Creates a new instance of this class.</div>
 </div>
@@ -124,26 +124,26 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;byte[]&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#downloadFile(java.util.List,com.here.sdk.mapdata.DownloadingFileOptions)" class="member-name-link">downloadFile</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a>&gt;&nbsp;fileReferences,
- <a href="DownloadingFileOptions.html" title="class in com.here.sdk.mapdata">DownloadingFileOptions</a>&nbsp;downloadingOptions)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#downloadFile(java.util.List,com.here.sdk.mapdata.DownloadingFileOptions)" class="member-name-link">downloadFile</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a>&gt; fileReferences,
+ <a href="DownloadingFileOptions.html" title="class in com.here.sdk.mapdata">DownloadingFileOptions</a> downloadingOptions)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Synchronously load the optional image providing guidance of a directed or non directed segment.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getSegmentsAroundCoordinates</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
- double&nbsp;radiusInMeters)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getSegmentsAroundCoordinates</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
+ double radiusInMeters)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Loads the segments around a certain coordinates.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadData</a><wbr>(<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&nbsp;segment,
- <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadData</a><wbr>(<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a> segment,
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a> options)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Synchronously load the data for the given map segment.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedSegmentData</a><wbr>(<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segment,
- <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedSegmentData</a><wbr>(<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a> segment,
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a> options)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Synchronously load the data for the given map directed segment.</div>
 </div>
@@ -151,7 +151,7 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
+<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 </section>
 </li>
@@ -167,27 +167,27 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;()">
 <h3>SegmentDataLoader</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SegmentDataLoader</span>()
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">SegmentDataLoader</span>()
                   throws <span class="exceptions"><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></span></div>
-<div class="block"><p>Creates a new instance of this class.</div>
+<div class="block"><p>Creates a new instance of this class.</p></div>
 <dl class="notes">
 <dt>Throws:</dt>
-<dd><code><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></code> - <p>Indicates what went wrong when the instantiation was attempted.</dd>
+<dd><code><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></code> - <p>Indicates what went wrong when the instantiation was attempted.</p></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(com.here.sdk.core.engine.SDKNativeEngine)">
 <h3>SegmentDataLoader</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SegmentDataLoader</span><wbr><span class="parameters">(@NonNull
- <a href="../core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine">SDKNativeEngine</a>&nbsp;sdkEngine)</span>
-                  throws <span class="exceptions"><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></span></div>
-<div class="block"><p>Creates a new instance of this class.</div>
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">SegmentDataLoader</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine">SDKNativeEngine</a> sdkEngine)</span>
+                  throws <span class="exceptions"><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></span></wbr></div>
+<div class="block"><p>Creates a new instance of this class.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>sdkEngine</code> - <p>A SDKEngine instance.</dd>
+<dd><code>sdkEngine</code> - <p>A SDKEngine instance.</p></dd>
 <dt>Throws:</dt>
-<dd><code><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></code> - <p>Indicates what went wrong when the instantiation was attempted.</dd>
+<dd><code><a href="../core/errors/InstantiationErrorException.html" title="class in com.here.sdk.core.errors">InstantiationErrorException</a></code> - <p>Indicates what went wrong when the instantiation was attempted.</p></dd>
 </dl>
 </section>
 </li>
@@ -203,22 +203,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)">
 <h3>getSegmentsAroundCoordinates</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&gt;</span>&nbsp;<span class="element-name">getSegmentsAroundCoordinates</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
- double&nbsp;radiusInMeters)</span>
-                                                throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&gt;</span> <span class="element-name">getSegmentsAroundCoordinates</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
+ double radiusInMeters)</span>
+                                                throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></wbr></div>
 <div class="block"><p>Loads the segments around a certain coordinates.
- Returns an empty list in case no segments could be found around the coordinates.</div>
+ Returns an empty list in case no segments could be found around the coordinates.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>The location to explore</dd>
-<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.</dd>
+<dd><code>coordinates</code> - <p>The location to explore</p></dd>
+<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.</p></dd>
 <dt>Returns:</dt>
 <dd><p>The list of segments around the given position. The segments are sorted by distance
      from the point.
-     Throws if it's not possible to return list of a list of segments.</dd>
+     Throws if it's not possible to return list of a list of segments.</p></dd>
 <dt>Throws:</dt>
-<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of a list of segments is not returned.</dd>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of a list of segments is not returned.</p></dd>
 </dl>
 </section>
 </li>
@@ -226,20 +226,20 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)">
 <h3>loadData</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span>&nbsp;<span class="element-name">loadData</span><wbr><span class="parameters">(@NonNull
- <a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&nbsp;segment,
+</span><span class="modifiers">public</span> <span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span> <span class="element-name">loadData</span><wbr><span class="parameters">(@NonNull
+ <a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a> segment,
  @NonNull
- <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</span>
-                     throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
-<div class="block"><p>Synchronously load the data for the given map segment.</div>
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a> options)</span>
+                     throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></wbr></div>
+<div class="block"><p>Synchronously load the data for the given map segment.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>segment</code> - <p>The segment to load.</dd>
-<dd><code>options</code> - <p>Request options</dd>
+<dd><code>segment</code> - <p>The segment to load.</p></dd>
+<dd><code>options</code> - <p>Request options</p></dd>
 <dt>Returns:</dt>
-<dd><p>Requested data of a segment.</dd>
+<dd><p>Requested data of a segment.</p></dd>
 <dt>Throws:</dt>
-<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</dd>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</p></dd>
 </dl>
 </section>
 </li>
@@ -247,20 +247,20 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)">
 <h3>loadDirectedSegmentData</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span>&nbsp;<span class="element-name">loadDirectedSegmentData</span><wbr><span class="parameters">(@NonNull
- <a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segment,
+</span><span class="modifiers">public</span> <span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span> <span class="element-name">loadDirectedSegmentData</span><wbr><span class="parameters">(@NonNull
+ <a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a> segment,
  @NonNull
- <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</span>
-                                    throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
-<div class="block"><p>Synchronously load the data for the given map directed segment.</div>
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a> options)</span>
+                                    throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></wbr></div>
+<div class="block"><p>Synchronously load the data for the given map directed segment.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>segment</code> - <p>The directed segment to load.</dd>
-<dd><code>options</code> - <p>Request options</dd>
+<dd><code>segment</code> - <p>The directed segment to load.</p></dd>
+<dd><code>options</code> - <p>Request options</p></dd>
 <dt>Returns:</dt>
-<dd><p>Requested data of a segment.</dd>
+<dd><p>Requested data of a segment.</p></dd>
 <dt>Throws:</dt>
-<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</dd>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</p></dd>
 </dl>
 </section>
 </li>
@@ -268,20 +268,20 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="downloadFile(java.util.List,com.here.sdk.mapdata.DownloadingFileOptions)">
 <h3>downloadFile</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;byte[]&gt;</span>&nbsp;<span class="element-name">downloadFile</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a>&gt;&nbsp;fileReferences,
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;byte[]&gt;</span> <span class="element-name">downloadFile</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a>&gt; fileReferences,
  @NonNull
- <a href="DownloadingFileOptions.html" title="class in com.here.sdk.mapdata">DownloadingFileOptions</a>&nbsp;downloadingOptions)</span>
-                          throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
-<div class="block"><p>Synchronously load the optional image providing guidance of a directed or non directed segment.</div>
+ <a href="DownloadingFileOptions.html" title="class in com.here.sdk.mapdata">DownloadingFileOptions</a> downloadingOptions)</span>
+                          throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></wbr></div>
+<div class="block"><p>Synchronously load the optional image providing guidance of a directed or non directed segment.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>fileReferences</code> - <p>Provides information for a file reference.</dd>
-<dd><code>downloadingOptions</code> - <p>Provides information regarding downloading configuration.</dd>
+<dd><code>fileReferences</code> - <p>Provides information for a file reference.</p></dd>
+<dd><code>downloadingOptions</code> - <p>Provides information regarding downloading configuration.</p></dd>
 <dt>Returns:</dt>
-<dd><p>Requested data of a segment.</dd>
+<dd><p>Requested data of a segment.</p></dd>
 <dt>Throws:</dt>
-<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</dd>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</p></dd>
 </dl>
 </section>
 </li>
@@ -294,5 +294,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>

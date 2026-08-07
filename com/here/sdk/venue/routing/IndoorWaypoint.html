@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li><a href="#constructor-summary">Constr</a> | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li><a href="#constructor-detail">Constr</a> | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.venue.routing</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.venue.routing</a></div>
 <h1 title="Class IndoorWaypoint" class="title">Class IndoorWaypoint</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -81,24 +81,24 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">IndoorWaypoint</span>
 <span class="extends-implements">extends <a href="../../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
 <div class="block"><p>Represents an indoor waypoint, used as input for indoor route calculation.
- <p>IndoorWaypoint can be used to specify the origin, destination, and via waypoints
+ </p><p>IndoorWaypoint can be used to specify the origin, destination, and via waypoints
  in a route request. Each waypoint type has different constraints on the supported
  properties:
- <p><strong>Origin Waypoint:</strong>
- <ul>
+ </p><p><strong>Origin Waypoint:</strong>
+ </p><ul>
  <li>Does NOT support <code>stop_duration</code></li>
  <li>Does NOT support <code>pass_through</code></li>
  <li>Use the basic constructor <code>make(coordinates, venue_id, level_id)</code></li>
  </ul>
  <p><strong>Destination Waypoint:</strong>
- <ul>
+ </p><ul>
  <li>Supports <code>stop_duration</code> (e.g., for specifying arrival/waiting time)</li>
  <li>Does NOT support <code>pass_through</code></li>
  <li>Use <code>make(coordinates, venue_id, level_id)</code> or
  <code>make(coordinates, venue_id, level_id, stop_duration)</code> constructors</li>
  </ul>
  <p><strong>Via Waypoint:</strong>
- <ul>
+ </p><ul>
  <li>Supports both <code>stop_duration</code> and <code>pass_through</code></li>
  <li>Use <code>make(coordinates, venue_id, level_id)</code>,
  <code>make(coordinates, venue_id, level_id, stop_duration)</code>, or
@@ -110,7 +110,7 @@ loadScripts(document, 'script');</script>
  <p><strong>Validation:</strong>
  When a route request is made, the waypoints are validated according to the rules above.
  If validation fails (e.g., origin has stop_duration or pass_through, or destination has
- pass_through), the route request returns an error with <a href="IndoorRoutingError.html#BAD_REQUEST"><code>IndoorRoutingError.BAD_REQUEST</code></a>.</div>
+ pass_through), the route request returns an error with <a href="IndoorRoutingError.html#BAD_REQUEST"><code>IndoorRoutingError.BAD_REQUEST</code></a>.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -122,27 +122,27 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates)</wbr></code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates an outdoor waypoint.</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;venueId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;levelId)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> venueId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> levelId)</wbr></code></div>
 <div class="col-last odd-row-color">
 <div class="block">Creates an indoor waypoint.</div>
 </div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String,boolean)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;venueId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;levelId,
- boolean&nbsp;passThrough)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String,boolean)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> venueId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> levelId,
+ boolean passThrough)</wbr></code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a passthrough indoor waypoint (for via waypoints).</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String,int)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;venueId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;levelId,
- int&nbsp;stopDuration)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String,int)" class="member-name-link">IndoorWaypoint</a><wbr>(<a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> venueId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> levelId,
+ int stopDuration)</wbr></code></div>
 <div class="col-last odd-row-color">
 <div class="block">Creates an indoor waypoint with stop duration.</div>
 </div>
@@ -162,24 +162,24 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCoordinates()" class="member-name-link">getCoordinates</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"> </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLevelId()" class="member-name-link">getLevelId</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"> </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStopDuration()" class="member-name-link">getStopDuration</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"> </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getVenueId()" class="member-name-link">getVenueId</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"> </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isPassThrough()" class="member-name-link">isPassThrough</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"> </div>
 </div>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
+<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 </section>
 </li>
@@ -195,75 +195,75 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String)">
 <h3>IndoorWaypoint</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
- <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
+ <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;venueId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> venueId,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;levelId)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> levelId)</span></wbr></div>
 <div class="block"><p>Creates an indoor waypoint.
  This is the basic constructor that maintains backward compatibility.
- Sets <a href="#getStopDuration()"><code>getStopDuration()</code></a> to <code>null</code> and <a href="#isPassThrough()"><code>isPassThrough()</code></a> to <code>null</code> (equivalent to <code>false</code>).</div>
+ Sets <a href="#getStopDuration()"><code>getStopDuration()</code></a> to <code>null</code> and <a href="#isPassThrough()"><code>isPassThrough()</code></a> to <code>null</code> (equivalent to <code>false</code>).</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</dd>
-<dd><code>venueId</code> - <p>An ID of the venue where the waypoint is located.</dd>
-<dd><code>levelId</code> - <p>An ID of the level where the waypoint is located</dd>
+<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</p></dd>
+<dd><code>venueId</code> - <p>An ID of the venue where the waypoint is located.</p></dd>
+<dd><code>levelId</code> - <p>An ID of the level where the waypoint is located</p></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String,int)">
 <h3>IndoorWaypoint</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
- <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
+ <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;venueId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> venueId,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;levelId,
- int&nbsp;stopDuration)</span></div>
-<div class="block"><p>Creates an indoor waypoint with stop duration.</div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> levelId,
+ int stopDuration)</span></wbr></div>
+<div class="block"><p>Creates an indoor waypoint with stop duration.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</dd>
-<dd><code>venueId</code> - <p>An ID of the venue where the waypoint is located.</dd>
-<dd><code>levelId</code> - <p>An ID of the level where the waypoint is located.</dd>
-<dd><code>stopDuration</code> - <p>The duration in seconds to stop at this waypoint (1-49999).</dd>
+<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</p></dd>
+<dd><code>venueId</code> - <p>An ID of the venue where the waypoint is located.</p></dd>
+<dd><code>levelId</code> - <p>An ID of the level where the waypoint is located.</p></dd>
+<dd><code>stopDuration</code> - <p>The duration in seconds to stop at this waypoint (1-49999).</p></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(com.here.sdk.core.GeoCoordinates,java.lang.String,java.lang.String,boolean)">
 <h3>IndoorWaypoint</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
- <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
+ <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;venueId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> venueId,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;levelId,
- boolean&nbsp;passThrough)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a> levelId,
+ boolean passThrough)</span></wbr></div>
 <div class="block"><p>Creates a passthrough indoor waypoint (for via waypoints).
  The route will continue through this waypoint without stopping when <code>pass_through</code> is <code>true</code>.
- When <code>pass_through</code> is <code>false</code>, it behaves the same as the basic constructor.</div>
+ When <code>pass_through</code> is <code>false</code>, it behaves the same as the basic constructor.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</dd>
-<dd><code>venueId</code> - <p>An ID of the venue where the waypoint is located.</dd>
-<dd><code>levelId</code> - <p>An ID of the level where the waypoint is located.</dd>
+<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</p></dd>
+<dd><code>venueId</code> - <p>An ID of the venue where the waypoint is located.</p></dd>
+<dd><code>levelId</code> - <p>An ID of the level where the waypoint is located.</p></dd>
 <dd><code>passThrough</code> - <p>If <code>true</code>, the route passes through without stopping.
-     If <code>false</code>, the route stops at this waypoint.</dd>
+     If <code>false</code>, the route stops at this waypoint.</p></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(com.here.sdk.core.GeoCoordinates)">
 <h3>IndoorWaypoint</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
- <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates)</span></div>
-<div class="block"><p>Creates an outdoor waypoint.</div>
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">IndoorWaypoint</span><wbr><span class="parameters">(@NonNull
+ <a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> coordinates)</span></wbr></div>
+<div class="block"><p>Creates an outdoor waypoint.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</dd>
+<dd><code>coordinates</code> - <p>A waypoint's geographic coordinates.</p></dd>
 </dl>
 </section>
 </li>
@@ -279,10 +279,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getCoordinates()">
 <h3>getCoordinates</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a></span>&nbsp;<span class="element-name">getCoordinates</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a></span> <span class="element-name">getCoordinates</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The waypoint's geographic coordinates.</dd>
+<dd><p>The waypoint's geographic coordinates.</p></dd>
 </dl>
 </section>
 </li>
@@ -290,10 +290,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getVenueId()">
 <h3>getVenueId</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getVenueId</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span> <span class="element-name">getVenueId</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The ID of the venue where the waypoint is located, if applicable.</dd>
+<dd><p>The ID of the venue where the waypoint is located, if applicable.</p></dd>
 </dl>
 </section>
 </li>
@@ -301,10 +301,10 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getLevelId()">
 <h3>getLevelId</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getLevelId</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span> <span class="element-name">getLevelId</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The ID of the level where the waypoint is located, if applicable.</dd>
+<dd><p>The ID of the level where the waypoint is located, if applicable.</p></dd>
 </dl>
 </section>
 </li>
@@ -312,12 +312,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getStopDuration()">
 <h3>getStopDuration</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span>&nbsp;<span class="element-name">getStopDuration</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></span> <span class="element-name">getStopDuration</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The duration in seconds to stop at this waypoint (0-49999 seconds).
      This is typically used for destination waypoints or via waypoints to specify a waiting time.
-     Returns <code>null</code> if no stop duration is specified.</dd>
+     Returns <code>null</code> if no stop duration is specified.</p></dd>
 </dl>
 </section>
 </li>
@@ -325,12 +325,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isPassThrough()">
 <h3>isPassThrough</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name">isPassThrough</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span> <span class="element-name">isPassThrough</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>If <code>true</code>, the route passes through this waypoint without stopping (for via waypoints).
      If <code>false</code> or <code>null</code>, the route stops at this waypoint.
-     Returns <code>null</code> if not explicitly set (equivalent to <code>false</code>).</dd>
+     Returns <code>null</code> if not explicitly set (equivalent to <code>false</code>).</p></dd>
 </dl>
 </section>
 </li>
@@ -343,5 +343,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>

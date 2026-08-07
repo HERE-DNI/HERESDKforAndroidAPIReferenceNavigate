@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li><a href="#constructor-summary">Constr</a> | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor-detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li><a href="#constructor-detail">Constr</a> | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.ev</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.ev</a></div>
 <h1 title="Class EVPoiFilterCriteriaBuilder" class="title">Class EVPoiFilterCriteriaBuilder</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -81,16 +81,16 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">EVPoiFilterCriteriaBuilder</span>
 <span class="extends-implements">extends <a href="../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
 <div class="block"><p>Builder for EV POI filtering criteria.
- <p>For all list-based filter methods, an empty list means accept all.
- <p>Filtering takes effect only when the corresponding EV charging station POI categories are
+ </p><p>For all list-based filter methods, an empty list means accept all.
+ </p><p>Filtering takes effect only when the corresponding EV charging station POI categories are
  enabled.
- <ul>
+ </p><ul>
  <li>Charging station for cars: 700-7600-0322 (required when filtering for cars)</li>
  <li>Charging station for trucks: 700-7600-0323 (required when filtering for trucks)</li>
  </ul>
  <p>POI category visibility can be controlled using
  <code>MapContentSettings.setPoiCategoriesVisibility</code>.
- <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
+ </p><p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -126,47 +126,47 @@ loadScripts(document, 'script');</script>
 <div class="block">Builds an opaque POI criteria object.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withChargingOnSite(boolean)" class="member-name-link">withChargingOnSite</a><wbr>(boolean&nbsp;value)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withChargingOnSite(boolean)" class="member-name-link">withChargingOnSite</a><wbr>(boolean value)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Matches POIs where either general public or just customers are offered charging.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withConnectorTypes(java.util.List)" class="member-name-link">withConnectorTypes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;ids)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withConnectorTypes(java.util.List)" class="member-name-link">withConnectorTypes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt; ids)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Accepted connector type strings.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withElectricCurrentType(com.here.sdk.ev.ElectricCurrentType)" class="member-name-link">withElectricCurrentType</a><wbr>(<a href="ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a>&nbsp;type)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withElectricCurrentType(com.here.sdk.ev.ElectricCurrentType)" class="member-name-link">withElectricCurrentType</a><wbr>(<a href="ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a> type)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Required current type (AC or DC).</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withElectricVehicleTypes(java.util.List)" class="member-name-link">withElectricVehicleTypes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a>&gt;&nbsp;types)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withElectricVehicleTypes(java.util.List)" class="member-name-link">withElectricVehicleTypes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a>&gt; types)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Accepted electric vehicle types.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withMinCurrent(int)" class="member-name-link">withMinCurrent</a><wbr>(int&nbsp;amperes)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withMinCurrent(int)" class="member-name-link">withMinCurrent</a><wbr>(int amperes)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Minimum current required on any matching port in amperes.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withMinPower(int)" class="member-name-link">withMinPower</a><wbr>(int&nbsp;kilowatts)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withMinPower(int)" class="member-name-link">withMinPower</a><wbr>(int kilowatts)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Minimum charging power required on any matching port in kilowatts.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withMinVoltage(int)" class="member-name-link">withMinVoltage</a><wbr>(int&nbsp;volts)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withMinVoltage(int)" class="member-name-link">withMinVoltage</a><wbr>(int volts)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Minimum voltage required on any matching port in volts.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withReservable(boolean)" class="member-name-link">withReservable</a><wbr>(boolean&nbsp;value)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withReservable(boolean)" class="member-name-link">withReservable</a><wbr>(boolean value)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Matches POIs whose reservable flag equals this value.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withSubscription(boolean)" class="member-name-link">withSubscription</a><wbr>(boolean&nbsp;value)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withSubscription(boolean)" class="member-name-link">withSubscription</a><wbr>(boolean value)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Matches POIs whose subscription flag equals this value.</div>
 </div>
@@ -174,7 +174,7 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
+<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 </section>
 </li>
@@ -190,8 +190,8 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;()">
 <h3>EVPoiFilterCriteriaBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">EVPoiFilterCriteriaBuilder</span>()</div>
-<div class="block"><p>Creates a new builder.</div>
+<div class="member-signature"><span class="modifiers">public</span> <span class="element-name">EVPoiFilterCriteriaBuilder</span>()</div>
+<div class="block"><p>Creates a new builder.</p></div>
 </section>
 </li>
 </ul>
@@ -206,13 +206,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withChargingOnSite(boolean)">
 <h3>withChargingOnSite</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withChargingOnSite</span><wbr><span class="parameters">(boolean&nbsp;value)</span></div>
-<div class="block"><p>Matches POIs where either general public or just customers are offered charging.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withChargingOnSite</span><wbr><span class="parameters">(boolean value)</span></wbr></div>
+<div class="block"><p>Matches POIs where either general public or just customers are offered charging.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>value</code> - <p>Desired flag value. Use <code>True</code>for general public allowence or <code>False</code> for customers only.</dd>
+<dd><code>value</code> - <p>Desired flag value. Use <code>True</code>for general public allowence or <code>False</code> for customers only.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -220,15 +220,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withConnectorTypes(java.util.List)">
 <h3>withConnectorTypes</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withConnectorTypes</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;ids)</span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withConnectorTypes</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt; ids)</span></wbr></div>
 <div class="block"><p>Accepted connector type strings.
- Supported types are listed here: <a href="EVChargingConnectorType.html" title="class in com.here.sdk.ev"><code>EVChargingConnectorType</code></a>.</div>
+ Supported types are listed here: <a href="EVChargingConnectorType.html" title="class in com.here.sdk.ev"><code>EVChargingConnectorType</code></a>.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>ids</code> - <p>Accepted connector type identifiers.</dd>
+<dd><code>ids</code> - <p>Accepted connector type identifiers.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -236,14 +236,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withElectricCurrentType(com.here.sdk.ev.ElectricCurrentType)">
 <h3>withElectricCurrentType</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withElectricCurrentType</span><wbr><span class="parameters">(@NonNull
- <a href="ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a>&nbsp;type)</span></div>
-<div class="block"><p>Required current type (AC or DC).</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withElectricCurrentType</span><wbr><span class="parameters">(@NonNull
+ <a href="ElectricCurrentType.html" title="enum class in com.here.sdk.ev">ElectricCurrentType</a> type)</span></wbr></div>
+<div class="block"><p>Required current type (AC or DC).</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>type</code> - <p>Desired current type.</dd>
+<dd><code>type</code> - <p>Desired current type.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -251,15 +251,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withElectricVehicleTypes(java.util.List)">
 <h3>withElectricVehicleTypes</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withElectricVehicleTypes</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a>&gt;&nbsp;types)</span></div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withElectricVehicleTypes</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ElectricVehicleType.html" title="enum class in com.here.sdk.ev">ElectricVehicleType</a>&gt; types)</span></wbr></div>
 <div class="block"><p>Accepted electric vehicle types.
- Empty list is equivalent to all supported electric vehicle types.</div>
+ Empty list is equivalent to all supported electric vehicle types.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>types</code> - <p>Accepted vehicle types.</dd>
+<dd><code>types</code> - <p>Accepted vehicle types.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -267,13 +267,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withMinCurrent(int)">
 <h3>withMinCurrent</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withMinCurrent</span><wbr><span class="parameters">(int&nbsp;amperes)</span></div>
-<div class="block"><p>Minimum current required on any matching port in amperes.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withMinCurrent</span><wbr><span class="parameters">(int amperes)</span></wbr></div>
+<div class="block"><p>Minimum current required on any matching port in amperes.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>amperes</code> - <p>Minimum required connector current in amperes.</dd>
+<dd><code>amperes</code> - <p>Minimum required connector current in amperes.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -281,13 +281,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withMinPower(int)">
 <h3>withMinPower</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withMinPower</span><wbr><span class="parameters">(int&nbsp;kilowatts)</span></div>
-<div class="block"><p>Minimum charging power required on any matching port in kilowatts.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withMinPower</span><wbr><span class="parameters">(int kilowatts)</span></wbr></div>
+<div class="block"><p>Minimum charging power required on any matching port in kilowatts.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>kilowatts</code> - <p>Minimum required connector power in kilowatts.</dd>
+<dd><code>kilowatts</code> - <p>Minimum required connector power in kilowatts.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -295,13 +295,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withMinVoltage(int)">
 <h3>withMinVoltage</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withMinVoltage</span><wbr><span class="parameters">(int&nbsp;volts)</span></div>
-<div class="block"><p>Minimum voltage required on any matching port in volts.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withMinVoltage</span><wbr><span class="parameters">(int volts)</span></wbr></div>
+<div class="block"><p>Minimum voltage required on any matching port in volts.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>volts</code> - <p>Minimum required connector voltage in volts.</dd>
+<dd><code>volts</code> - <p>Minimum required connector voltage in volts.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -309,13 +309,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withReservable(boolean)">
 <h3>withReservable</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withReservable</span><wbr><span class="parameters">(boolean&nbsp;value)</span></div>
-<div class="block"><p>Matches POIs whose reservable flag equals this value.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withReservable</span><wbr><span class="parameters">(boolean value)</span></wbr></div>
+<div class="block"><p>Matches POIs whose reservable flag equals this value.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>value</code> - <p>Desired reservable flag value.</dd>
+<dd><code>value</code> - <p>Desired reservable flag value.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -323,13 +323,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="withSubscription(boolean)">
 <h3>withSubscription</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span>&nbsp;<span class="element-name">withSubscription</span><wbr><span class="parameters">(boolean&nbsp;value)</span></div>
-<div class="block"><p>Matches POIs whose subscription flag equals this value.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="EVPoiFilterCriteriaBuilder.html" title="class in com.here.sdk.ev">EVPoiFilterCriteriaBuilder</a></span> <span class="element-name">withSubscription</span><wbr><span class="parameters">(boolean value)</span></wbr></div>
+<div class="block"><p>Matches POIs whose subscription flag equals this value.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>value</code> - <p>Desired subscription flag value.</dd>
+<dd><code>value</code> - <p>Desired subscription flag value.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The builder instance.</dd>
+<dd><p>The builder instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -337,11 +337,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="build()">
 <h3>build</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../core/PoiFilterCriteria.html" title="class in com.here.sdk.core">PoiFilterCriteria</a></span>&nbsp;<span class="element-name">build</span>()</div>
-<div class="block"><p>Builds an opaque POI criteria object.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/PoiFilterCriteria.html" title="class in com.here.sdk.core">PoiFilterCriteria</a></span> <span class="element-name">build</span>()</div>
+<div class="block"><p>Builds an opaque POI criteria object.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>A POI criteria instance that can be passed to map content settings.</dd>
+<dd><p>A POI criteria instance that can be passed to map content settings.</p></dd>
 </dl>
 </section>
 </li>
@@ -354,5 +354,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>

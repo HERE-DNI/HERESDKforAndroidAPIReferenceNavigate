@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li>Constr | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li>Constr | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.mapview</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.mapview</a></div>
 <h1 title="Interface MapView.OnReadyListener" class="title">Interface MapView.OnReadyListener</h1>
 </div>
 <section class="class-description" id="class-description">
@@ -87,14 +87,14 @@ loadScripts(document, 'script');</script>
  operations, which means that map scene is loaded and drawing surface is ready to render
  a map.
 
- <p>Whenever there is a need to call any map view related functions directly after
+ </p><p>Whenever there is a need to call any map view related functions directly after
  the <code>Activity</code> resumes, <a href="#onMapViewReady()"><code>onMapViewReady()</code></a> should be used for this purpose,
  as it guarantees that those operations will work. It is not recommended to call
  map view functionality directly from <code>Activity</code>'s <code>onResume()</code>.
 
- <p>There are few typical moments in the lifecycle where it's useful to execute map view
+ </p><p>There are few typical moments in the lifecycle where it's useful to execute map view
  related operations:
-     <ul>
+     </p><ul>
          <li>After map is shown for the very first time
              - use <a href="MapScene.LoadSceneCallback.html" title="interface in com.here.sdk.mapview"><code>MapScene.LoadSceneCallback</code></a> that is passed to
              <a href="MapScene.html#loadScene(com.here.sdk.mapview.MapScheme,com.here.sdk.mapview.MapScene.LoadSceneCallback)"><code>MapScene.loadScene(MapScheme, MapScene.LoadSceneCallback)</code></a>.</li>
@@ -150,7 +150,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="onMapViewReady()">
 <h3>onMapViewReady</h3>
-<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">onMapViewReady</span>()</div>
+<div class="member-signature"><span class="return-type">void</span> <span class="element-name">onMapViewReady</span>()</div>
 <div class="block">Callback to be called when MapView is fully initialized and ready to handle all
  operations.</div>
 </section>
@@ -164,5 +164,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>

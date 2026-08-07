@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li>Constr | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li>Constr | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.routing</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.routing</a></div>
 <h1 title="Class Route" class="title">Class Route</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -81,10 +81,10 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">Route</span>
 <span class="extends-implements">extends <a href="../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
 <div class="block"><p>A route is a path through a road network over which someone travels.
- <p><strong>Note:</strong> Each <a href="Section.html" title="class in com.here.sdk.routing"><code>Section</code></a> of a route contains a list of <a href="SectionNotice.html" title="class in com.here.sdk.routing"><code>SectionNotice</code></a> objects
+ </p><p><strong>Note:</strong> Each <a href="Section.html" title="class in com.here.sdk.routing"><code>Section</code></a> of a route contains a list of <a href="SectionNotice.html" title="class in com.here.sdk.routing"><code>SectionNotice</code></a> objects
  that describe <em>potential issues</em> after the route was calculated. If the list is non-empty,
  it is recommended to evaluate possible violations against the requested route options and
- reject the route if deemed necessary.</div>
+ reject the route if deemed necessary.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -100,7 +100,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Route.html" title="class in com.here.sdk.routing">Route</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deserialize(byte%5B%5D)" class="member-name-link">deserialize</a><wbr>(byte[]&nbsp;routeData)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deserialize(byte%5B%5D)" class="member-name-link">deserialize</a><wbr>(byte[] routeData)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates route from the given binary data.</div>
 </div>
@@ -182,7 +182,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the estimated time in seconds spent in traffic along this route.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static byte[]</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#serialize(com.here.sdk.routing.Route)" class="member-name-link">serialize</a><wbr>(<a href="Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#serialize(com.here.sdk.routing.Route)" class="member-name-link">serialize</a><wbr>(<a href="Route.html" title="class in com.here.sdk.routing">Route</a> route)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Serializes given route to a binary data.</div>
 </div>
@@ -190,7 +190,7 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
+<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 </section>
 </li>
@@ -207,16 +207,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="serialize(com.here.sdk.routing.Route)">
 <h3>serialize</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">byte[]</span>&nbsp;<span class="element-name">serialize</span><wbr><span class="parameters">(@NonNull
- <a href="Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type">byte[]</span> <span class="element-name">serialize</span><wbr><span class="parameters">(@NonNull
+ <a href="Route.html" title="class in com.here.sdk.routing">Route</a> route)</span></wbr></div>
 <div class="block"><p>Serializes given route to a binary data.
  <strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
- Related APIs may change for new releases without a deprecation process.</div>
+ Related APIs may change for new releases without a deprecation process.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>route</code> - <p>The route which should be serialized.</dd>
+<dd><code>route</code> - <p>The route which should be serialized.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The binary data of the route.</dd>
+<dd><p>The binary data of the route.</p></dd>
 </dl>
 </section>
 </li>
@@ -224,16 +224,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="deserialize(byte[])">
 <h3>deserialize</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Route.html" title="class in com.here.sdk.routing">Route</a></span>&nbsp;<span class="element-name">deserialize</span><wbr><span class="parameters">(@NonNull
- byte[]&nbsp;routeData)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="Route.html" title="class in com.here.sdk.routing">Route</a></span> <span class="element-name">deserialize</span><wbr><span class="parameters">(@NonNull
+ byte[] routeData)</span></wbr></div>
 <div class="block"><p>Creates route from the given binary data.
  <strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
- Related APIs may change for new releases without a deprecation process.</div>
+ Related APIs may change for new releases without a deprecation process.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>routeData</code> - <p>The binary of a serialized route.</dd>
+<dd><code>routeData</code> - <p>The binary of a serialized route.</p></dd>
 <dt>Returns:</dt>
-<dd><p>The route object restored from the binary data.</dd>
+<dd><p>The route object restored from the binary data.</p></dd>
 </dl>
 </section>
 </li>
@@ -241,11 +241,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getSections()">
 <h3>getSections</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Section.html" title="class in com.here.sdk.routing">Section</a>&gt;</span>&nbsp;<span class="element-name">getSections</span>()</div>
-<div class="block"><p>Gets the sections that make up this route.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Section.html" title="class in com.here.sdk.routing">Section</a>&gt;</span> <span class="element-name">getSections</span>()</div>
+<div class="block"><p>Gets the sections that make up this route.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The sections that make up this route.</dd>
+<dd><p>The sections that make up this route.</p></dd>
 </dl>
 </section>
 </li>
@@ -253,13 +253,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getGeometry()">
 <h3>getGeometry</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../core/GeoPolyline.html" title="class in com.here.sdk.core">GeoPolyline</a></span>&nbsp;<span class="element-name">getGeometry</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/GeoPolyline.html" title="class in com.here.sdk.core">GeoPolyline</a></span> <span class="element-name">getGeometry</span>()</div>
 <div class="block"><p>Gets the <a href="../core/GeoPolyline.html" title="class in com.here.sdk.core"><code>GeoPolyline</code></a> object representing the polyline of this route. It may not contain the original
- coordinates specified in the request for a route.</div>
+ coordinates specified in the request for a route.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The <a href="../core/GeoPolyline.html" title="class in com.here.sdk.core"><code>GeoPolyline</code></a> object representing the polyline of this route. It may not contain the original
-     coordinates specified in the request for a route.</dd>
+     coordinates specified in the request for a route.</p></dd>
 </dl>
 </section>
 </li>
@@ -267,22 +267,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getBoundingBox()">
 <h3>getBoundingBox</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a></span>&nbsp;<span class="element-name">getBoundingBox</span>()</div>
-<div class="block"><p>Gets the closest rectangular area where this route fits in.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a></span> <span class="element-name">getBoundingBox</span>()</div>
+<div class="block"><p>Gets the closest rectangular area where this route fits in.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The closest rectangular area where this route fits in.</dd>
+<dd><p>The closest rectangular area where this route fits in.</p></dd>
 </dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getLengthInMeters()">
 <h3>getLengthInMeters</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getLengthInMeters</span>()</div>
-<div class="block"><p>Gets the length of this route in meters.</div>
+<div class="member-signature"><span class="modifiers">public</span> <span class="return-type">int</span> <span class="element-name">getLengthInMeters</span>()</div>
+<div class="block"><p>Gets the length of this route in meters.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The length of this route in meters.</dd>
+<dd><p>The length of this route in meters.</p></dd>
 </dl>
 </section>
 </li>
@@ -290,11 +290,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getLanguage()">
 <h3>getLanguage</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../core/LanguageCode.html" title="enum class in com.here.sdk.core">LanguageCode</a></span>&nbsp;<span class="element-name">getLanguage</span>()</div>
-<div class="block"><p>Gets the language requested for all textual information related to this route.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../core/LanguageCode.html" title="enum class in com.here.sdk.core">LanguageCode</a></span> <span class="element-name">getLanguage</span>()</div>
+<div class="block"><p>Gets the language requested for all textual information related to this route.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>Indicates the language requested for all textual information related to this route.</dd>
+<dd><p>Indicates the language requested for all textual information related to this route.</p></dd>
 </dl>
 </section>
 </li>
@@ -302,11 +302,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getOptimizationMode()">
 <h3>getOptimizationMode</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OptimizationMode.html" title="enum class in com.here.sdk.routing">OptimizationMode</a></span>&nbsp;<span class="element-name">getOptimizationMode</span>()</div>
-<div class="block"><p>Gets the optimization mode requested for route calculation.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="OptimizationMode.html" title="enum class in com.here.sdk.routing">OptimizationMode</a></span> <span class="element-name">getOptimizationMode</span>()</div>
+<div class="block"><p>Gets the optimization mode requested for route calculation.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The optimization mode requested for route calculation.</dd>
+<dd><p>The optimization mode requested for route calculation.</p></dd>
 </dl>
 </section>
 </li>
@@ -314,11 +314,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRequestedTransportMode()">
 <h3>getRequestedTransportMode</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a></span>&nbsp;<span class="element-name">getRequestedTransportMode</span>()</div>
-<div class="block"><p>Gets the transport mode requested for route calculation.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a></span> <span class="element-name">getRequestedTransportMode</span>()</div>
+<div class="block"><p>Gets the transport mode requested for route calculation.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The transport mode requested for route calculation.</dd>
+<dd><p>The transport mode requested for route calculation.</p></dd>
 </dl>
 </section>
 </li>
@@ -326,13 +326,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getConsumptionInKilowattHours()">
 <h3>getConsumptionInKilowattHours</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a></span>&nbsp;<span class="element-name">getConsumptionInKilowattHours</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a></span> <span class="element-name">getConsumptionInKilowattHours</span>()</div>
 <div class="block"><p>Gets estimated net energy consumption (in kWh) if the transportation mode used for this route
- is an electric vehicle. Note that it can be negative due to energy recuperation.</div>
+ is an electric vehicle. Note that it can be negative due to energy recuperation.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>Estimated net energy consumption (in kWh) if the transportation mode used for this route
-     is an electric vehicle. Note that it can be negative due to energy recuperation.</dd>
+     is an electric vehicle. Note that it can be negative due to energy recuperation.</p></dd>
 </dl>
 </section>
 </li>
@@ -340,12 +340,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRouteTag()">
 <h3>getRouteTag</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></span>&nbsp;<span class="element-name">getRouteTag</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="RouteTag.html" title="class in com.here.sdk.routing">RouteTag</a></span> <span class="element-name">getRouteTag</span>()</div>
 <div class="block"><p>Gets the unique identifier of this route.
- <strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
+ <strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The unique identifier of this route.</dd>
+<dd><p>The unique identifier of this route.</p></dd>
 </dl>
 </section>
 </li>
@@ -353,13 +353,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRouteHandle()">
 <h3>getRouteHandle</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a></span>&nbsp;<span class="element-name">getRouteHandle</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a></span> <span class="element-name">getRouteHandle</span>()</div>
 <div class="block"><p>Gets the route handle of this route. Note that it is provided only if
- <a href="RouteOptions.html#enableRouteHandle"><code>RouteOptions.enableRouteHandle</code></a> is set before route calculation.</div>
+ <a href="RouteOptions.html#enableRouteHandle"><code>RouteOptions.enableRouteHandle</code></a> is set before route calculation.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The route handle of this route. Note that it is provided only if
-     <a href="RouteOptions.html#enableRouteHandle"><code>RouteOptions.enableRouteHandle</code></a> is set before route calculation.</dd>
+     <a href="RouteOptions.html#enableRouteHandle"><code>RouteOptions.enableRouteHandle</code></a> is set before route calculation.</p></dd>
 </dl>
 </section>
 </li>
@@ -367,13 +367,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getDuration()">
 <h3>getDuration</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../time/Duration.html" title="class in com.here.time">Duration</a></span>&nbsp;<span class="element-name">getDuration</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../../time/Duration.html" title="class in com.here.time">Duration</a></span> <span class="element-name">getDuration</span>()</div>
 <div class="block"><p>Gets the estimated time in seconds needed to travel along this route, including
- real-time traffic delays if available.</div>
+ real-time traffic delays if available.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The estimated time in seconds needed to travel along this route, including
-     real-time traffic delays if available.</dd>
+     real-time traffic delays if available.</p></dd>
 </dl>
 </section>
 </li>
@@ -381,13 +381,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getTrafficDelay()">
 <h3>getTrafficDelay</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../time/Duration.html" title="class in com.here.time">Duration</a></span>&nbsp;<span class="element-name">getTrafficDelay</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="../../time/Duration.html" title="class in com.here.time">Duration</a></span> <span class="element-name">getTrafficDelay</span>()</div>
 <div class="block"><p>Gets the estimated time in seconds spent in traffic along this route. Negative values
- indicate that the route can be traversed faster than usual.</div>
+ indicate that the route can be traversed faster than usual.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd><p>The estimated time in seconds spent in traffic along this route. Negative values
-     indicate that the route can be traversed faster than usual.</dd>
+     indicate that the route can be traversed faster than usual.</p></dd>
 </dl>
 </section>
 </li>
@@ -395,11 +395,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRoutingOptions()">
 <h3>getRoutingOptions</h3>
 <div class="member-signature"><span class="annotations">@Nullable
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a></span>&nbsp;<span class="element-name">getRoutingOptions</span>()</div>
-<div class="block"><p>Gets the options used to calculate this route.</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a></span> <span class="element-name">getRoutingOptions</span>()</div>
+<div class="block"><p>Gets the options used to calculate this route.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The set of options used to calculate the route.</dd>
+<dd><p>The set of options used to calculate the route.</p></dd>
 </dl>
 </section>
 </li>
@@ -407,12 +407,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRailwayCrossings()">
 <h3>getRailwayCrossings</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RouteRailwayCrossing.html" title="class in com.here.sdk.routing">RouteRailwayCrossing</a>&gt;</span>&nbsp;<span class="element-name">getRailwayCrossings</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RouteRailwayCrossing.html" title="class in com.here.sdk.routing">RouteRailwayCrossing</a>&gt;</span> <span class="element-name">getRailwayCrossings</span>()</div>
 <div class="block"><p>Gets the railway crossings along the route.
- <p>Railway crossing information for routes created with the <code>RoutingEngine</code> (online) or the <code>OfflineRoutingEngine</code>.</div>
+ </p><p>Railway crossing information for routes created with the <code>RoutingEngine</code> (online) or the <code>OfflineRoutingEngine</code>.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>Collection of railway crossings along the route.</dd>
+<dd><p>Collection of railway crossings along the route.</p></dd>
 </dl>
 </section>
 </li>
@@ -420,14 +420,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getRouteLabels()">
 <h3>getRouteLabels</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RouteLabel.html" title="class in com.here.sdk.routing">RouteLabel</a>&gt;</span>&nbsp;<span class="element-name">getRouteLabels</span>()</div>
+</span><span class="modifiers">public</span> <span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="RouteLabel.html" title="class in com.here.sdk.routing">RouteLabel</a>&gt;</span> <span class="element-name">getRouteLabels</span>()</div>
 <div class="block"><p>Gets route labels.
- <p>The main street names or route numbers through which the route is going to pass that differentiate it from other alternatives routes.
+ </p><p>The main street names or route numbers through which the route is going to pass that differentiate it from other alternatives routes.
  The labels are ordered by importance based on how much time the route spends on each road segment, not by traversal sequence. This helps users quickly identify and distinguish between different route alternatives
- when alternative routes have been quested via <code>RouteOptions</code>.</div>
+ when alternative routes have been quested via <code>RouteOptions</code>.</p></div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>A collection containing a maximum of 2 <code>RouteLabel</code> instances for the route. It will return an empty list if no labels are available.</dd>
+<dd><p>A collection containing a maximum of 2 <code>RouteLabel</code> instances for the route. It will return an empty list if no labels are available.</p></dd>
 </dl>
 </section>
 </li>
@@ -440,5 +440,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>

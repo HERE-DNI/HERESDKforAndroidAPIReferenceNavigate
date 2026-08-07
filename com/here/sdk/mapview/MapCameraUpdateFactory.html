@@ -13,7 +13,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.min.js"></script>
-</head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Android Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="b669122a-2917-4b63-8607-288b528fa627"><meta name="DC.Document.Name" content="HERE SDK for Android - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Android"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:44:16+00:00"></head>
 <body class="class-declaration-page">
 <script type="text/javascript">var evenRowColor = "even-row-color";
 var oddRowColor = "odd-row-color";
@@ -25,7 +25,7 @@ loadScripts(document, 'script');</script>
 <div>JavaScript is disabled on your browser.</div>
 </noscript>
 <div class="flex-box">
-<header role="banner" class="flex-header">
+
 <nav role="navigation">
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="top-nav" id="navbar-top">
@@ -43,32 +43,32 @@ loadScripts(document, 'script');</script>
 <div class="sub-nav">
 <div>
 <ul class="sub-nav-list">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Summary: </li>
+<li>Nested | </li>
+<li>Field | </li>
+<li>Constr | </li>
 <li><a href="#method-summary">Method</a></li>
 </ul>
 <ul class="sub-nav-list">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Detail: </li>
+<li>Field | </li>
+<li>Constr | </li>
 <li><a href="#method-detail">Method</a></li>
 </ul>
 </div>
 <div class="nav-list-search"><label for="search-input">SEARCH:</label>
-<input type="text" id="search-input" value="search" disabled="disabled">
-<input type="reset" id="reset-button" value="reset" disabled="disabled">
+<input type="text" id="search-input" value="search" disabled>
+<input type="reset" id="reset-button" value="reset" disabled>
 </div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <span class="skip-nav" id="skip-navbar-top"></span></nav>
-</header>
+
 <div class="flex-content">
 <main role="main">
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">com.here.sdk.mapview</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span> <a href="package-summary.html">com.here.sdk.mapview</a></div>
 <h1 title="Class MapCameraUpdateFactory" class="title">Class MapCameraUpdateFactory</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
@@ -81,9 +81,9 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">MapCameraUpdateFactory</span>
 <span class="extends-implements">extends <a href="../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
 <div class="block"><p>Factory for creating MapCameraUpdate to change map's camera.
- <p>For some factory methods you can apply an additional padding in pixels by setting a
+ </p><p>For some factory methods you can apply an additional padding in pixels by setting a
  <code>viewRectangle</code> parameter based on the current size of the map view:
- <pre><code>int leftPaddingInPixels = 5;
+ </p><pre><code>int leftPaddingInPixels = 5;
  int rightPaddingInPixels = 5;
  int topPaddingInPixels = 5;
  int bottomPaddingInPixels = 5;
@@ -95,7 +95,7 @@ loadScripts(document, 'script');</script>
  Rectangle2D paddedViewRectangle = new Rectangle2D(origin, sizeInPixels);
  </code></pre>
  <p>The origin indicates the top-left corner of the rectangle. An origin of (0, 0) indicates
- also the top-left corner of the map's viewport.</div>
+ also the top-left corner of the map's viewport.</p></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -111,138 +111,138 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#compositeUpdate(java.util.List)" class="member-name-link">compositeUpdate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a>&gt;&nbsp;mapCameraUpdates)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#compositeUpdate(java.util.List)" class="member-name-link">compositeUpdate</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a>&gt; mapCameraUpdates)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates a composite camera update from a list of camera updates.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoBox)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a>&nbsp;target)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoBox)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a> target)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to look at the given geo-box,
  preserving current orientation and zooming at the center of viewport.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoBox,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.core.Rectangle2D)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a>&nbsp;target,
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoBox,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.core.Rectangle2D)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a> target,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Create an update to look at the given geo-box and fit it inside the given rectangle.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoBox,com.here.sdk.core.Rectangle2D)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a>&nbsp;target,
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoBox,com.here.sdk.core.Rectangle2D)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a> target,
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to look at the given geo-box and fit it inside the given rectangle,
  preserving current orientation and zooming at the center of view rectangle.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the map camera to look at the given target,
  preserving the current orientation at look-at target and map measure.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the map camera to look at the given target with the given
  orientation preserving the current map measure (zoom level/distance/scale)
  Any target or orientation sub-element value that is not finite will be excluded from the update.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measure)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measure)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the map camera to look at the given target with the given
  orientation and map measure.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate,java.util.List,com.here.sdk.core.Rectangle2D,com.here.sdk.mapview.MapMeasure,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt;&nbsp;points,
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle,
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;minMeasure,
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;maxMeasure)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate,java.util.List,com.here.sdk.core.Rectangle2D,com.here.sdk.mapview.MapMeasure,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt; points,
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> minMeasure,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> maxMeasure)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the camera to look at the given target with the given
  orientation and obeying map measure limits, so that the given geo locations are inside the given rectangle.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measure)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measure)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the map camera to look at the given target with the given
  map measure preserving the current orientation at look-at target.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(java.util.List,com.here.sdk.core.Rectangle2D,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt;&nbsp;points,
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle,
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measureLimit)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookAt(java.util.List,com.here.sdk.core.Rectangle2D,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookAt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt; points,
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measureLimit)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Create an update to look at the given geo locations and fit them inside the given rectangle,
  in accordance with a map measure limit.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookToMatch(com.here.sdk.core.GeoCoordinates,com.here.sdk.core.Point2D)" class="member-name-link">lookToMatch</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;geoPoint,
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;viewPoint)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookToMatch(com.here.sdk.core.GeoCoordinates,com.here.sdk.core.Point2D)" class="member-name-link">lookToMatch</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> geoPoint,
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> viewPoint)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the map camera to look at the map
  with the given geo point located at the given view point.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookToMatch(com.here.sdk.core.GeoCoordinates,com.here.sdk.core.Point2D,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookToMatch</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;geoPoint,
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;viewPoint,
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measure)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#lookToMatch(com.here.sdk.core.GeoCoordinates,com.here.sdk.core.Point2D,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)" class="member-name-link">lookToMatch</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> geoPoint,
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> viewPoint,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measure)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to position the map camera to look at the map with the given
  orientation and map measure and with the given geo point located at the given view point.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#orbitBy(com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.core.Point2D)" class="member-name-link">orbitBy</a><wbr>(<a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;delta,
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;origin)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#orbitBy(com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.core.Point2D)" class="member-name-link">orbitBy</a><wbr>(<a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> delta,
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> origin)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to orbit map camera around a pixel origin by specified geodetic orientation delta.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#panBy(double,double)" class="member-name-link">panBy</a><wbr>(double&nbsp;xOffset,
- double&nbsp;yOffset)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#panBy(double,double)" class="member-name-link">panBy</a><wbr>(double xOffset,
+ double yOffset)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to pan map camera over the map by the specified number of pixels
  in the x and y direction starting from current principal point position.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#rotateBy(com.here.sdk.core.GeoOrientationUpdate)" class="member-name-link">rotateBy</a><wbr>(<a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;delta)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#rotateBy(com.here.sdk.core.GeoOrientationUpdate)" class="member-name-link">rotateBy</a><wbr>(<a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> delta)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to change map camera orientation by specified geodetic orientation delta.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)" class="member-name-link">setNormalizedPrincipalPoint</a><wbr>(<a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a>&nbsp;principalPoint)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)" class="member-name-link">setNormalizedPrincipalPoint</a><wbr>(<a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a> principalPoint)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to change the map camera's principal point (where the view vector
  intersects the image plane - default is (0.5, 0.5)).</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setPrincipalPoint(com.here.sdk.core.Point2D)" class="member-name-link">setPrincipalPoint</a><wbr>(<a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;principalPoint)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setPrincipalPoint(com.here.sdk.core.Point2D)" class="member-name-link">setPrincipalPoint</a><wbr>(<a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> principalPoint)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to change the map camera's principal point (where the view vector intersects
  the image plane - default is the center of the view).</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setVerticalFieldOfView(double)" class="member-name-link">setVerticalFieldOfView</a><wbr>(double&nbsp;verticalFieldOfView)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setVerticalFieldOfView(double)" class="member-name-link">setVerticalFieldOfView</a><wbr>(double verticalFieldOfView)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to change the vertical field of view of the map camera.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#zoomBy(double,com.here.sdk.core.Point2D)" class="member-name-link">zoomBy</a><wbr>(double&nbsp;factor,
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;origin)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#zoomBy(double,com.here.sdk.core.Point2D)" class="member-name-link">zoomBy</a><wbr>(double factor,
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> origin)</wbr></code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to zoom map camera by a given factor preserving a given focus point.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#zoomTo(double)" class="member-name-link">zoomTo</a><wbr>(double&nbsp;zoomLevel)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#zoomTo(double)" class="member-name-link">zoomTo</a><wbr>(double zoomLevel)</wbr></code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates an update to move map camera's viewpoint to a particular zoom level by adjusting its position.</div>
 </div>
@@ -250,7 +250,7 @@ loadScripts(document, 'script');</script>
 </div>
 </div>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
+<h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
 <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 </section>
 </li>
@@ -267,19 +267,19 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoCoordinatesUpdate)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target)</span></wbr></div>
 <div class="block"><p>Creates an update to position the map camera to look at the given target,
  preserving the current orientation at look-at target and map measure.
- <p>Any target sub-element value that is not finite will be excluded from the update.
- <p>The altitude of the target point is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>Any target sub-element value that is not finite will be excluded from the update.
+ </p><p>The altitude of the target point is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>target</code> - <p>The look-at target position in geodetic coordinates, altitude is ignored,
-     the target is considered to be located on the ground.</dd>
+     the target is considered to be located on the ground.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -287,21 +287,21 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
  @NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation)</span></div>
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation)</span></wbr></div>
 <div class="block"><p>Creates an update to position the map camera to look at the given target with the given
  orientation preserving the current map measure (zoom level/distance/scale)
  Any target or orientation sub-element value that is not finite will be excluded from the update.
- <p>The altitude of the target point is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>The altitude of the target point is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</dd>
-<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</dd>
+<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</p></dd>
+<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -309,22 +309,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.mapview.MapMeasure)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
  @NonNull
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measure)</span></div>
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measure)</span></wbr></div>
 <div class="block"><p>Creates an update to position the map camera to look at the given target with the given
  map measure preserving the current orientation at look-at target.
  Any target sub-element value that is not finite will be excluded from the update.
  If the map measure is not valid, the current map camera distance to the target point is preserved.
- <p>The altitude of the target point is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>The altitude of the target point is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</dd>
-<dd><code>measure</code> - <p>The desired map measure.</dd>
+<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</p></dd>
+<dd><code>measure</code> - <p>The desired map measure.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -332,25 +332,25 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
  @NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
  @NonNull
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measure)</span></div>
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measure)</span></wbr></div>
 <div class="block"><p>Creates an update to position the map camera to look at the given target with the given
  orientation and map measure.
  Any target or orientation sub-element value that is not finite will be excluded from the update.
  If the map measure is not valid, the current map camera distance to the target point is preserved.
- <p>The altitude of the target point is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>The altitude of the target point is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</dd>
-<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</dd>
-<dd><code>measure</code> - <p>The desired map measure.</dd>
+<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</p></dd>
+<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</p></dd>
+<dd><code>measure</code> - <p>The desired map measure.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -358,19 +358,19 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookToMatch(com.here.sdk.core.GeoCoordinates,com.here.sdk.core.Point2D,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)">
 <h3>lookToMatch</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookToMatch</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;geoPoint,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookToMatch</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> geoPoint,
  @NonNull
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;viewPoint,
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> viewPoint,
  @NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
  @NonNull
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measure)</span></div>
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measure)</span></wbr></div>
 <div class="block"><p>Creates an update to position the map camera to look at the map with the given
  orientation and map measure and with the given geo point located at the given view point.
- <p>The altitude of the target point is ignored. Any subsequent camera updates and animations
+ </p><p>The altitude of the target point is ignored. Any subsequent camera updates and animations
  will consider the target point as being located on the ground.
- <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
+ </p><p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>geoPoint</code> - <p>The geo point that will be matched to the given view point.
@@ -378,12 +378,12 @@ loadScripts(document, 'script');</script>
      will still look at the principal point and therefore the look at target will be different from the geo
      point, since the geo point will correspond to the given view point and the look at target
      will correspond to the principal point. Look at target and the geo point will be identical only
-     if the given view point is identical to the principal point.</dd>
-<dd><code>viewPoint</code> - <p>View point coordinates in pixels.</dd>
-<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</dd>
-<dd><code>measure</code> - <p>The desired map measure.</dd>
+     if the given view point is identical to the principal point.</p></dd>
+<dd><code>viewPoint</code> - <p>View point coordinates in pixels.</p></dd>
+<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</p></dd>
+<dd><code>measure</code> - <p>The desired map measure.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -391,15 +391,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookToMatch(com.here.sdk.core.GeoCoordinates,com.here.sdk.core.Point2D)">
 <h3>lookToMatch</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookToMatch</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;geoPoint,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookToMatch</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a> geoPoint,
  @NonNull
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;viewPoint)</span></div>
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> viewPoint)</span></wbr></div>
 <div class="block"><p>Creates an update to position the map camera to look at the map
  with the given geo point located at the given view point.
- <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
- <p>The altitude of the target point is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
+ </p><p>The altitude of the target point is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>geoPoint</code> - <p>The geo point that will be matched to the given view point.
@@ -407,10 +407,10 @@ loadScripts(document, 'script');</script>
      will still look at the principal point and therefore the look at target will be different from the geo
      point, since the geo point will correspond to the given view point and the look at target
      will correspond to the principal point. Look at target and the geo point will be identical only
-     if the given view point is identical to the principal point.</dd>
-<dd><code>viewPoint</code> - <p>View point coordinates in pixels.</dd>
+     if the given view point is identical to the principal point.</p></dd>
+<dd><code>viewPoint</code> - <p>View point coordinates in pixels.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -418,32 +418,32 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(java.util.List,com.here.sdk.core.Rectangle2D,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.mapview.MapMeasure)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt;&nbsp;points,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt; points,
  @NonNull
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle,
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle,
  @NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
  @NonNull
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;measureLimit)</span></div>
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> measureLimit)</span></wbr></div>
 <div class="block"><p>Create an update to look at the given geo locations and fit them inside the given rectangle,
  in accordance with a map measure limit.
- <p>If the provided <code>points</code> list is empty, no update will be applied to the camera.
- <p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
+ </p><p>If the provided <code>points</code> list is empty, no update will be applied to the camera.
+ </p><p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
  then the entire map viewport will be used as <code>viewRectangle</code>. Thus, no padding will be applied.
  A <code>viewRectangle</code> is considered invalid, when its width or height are negative or zero, its origin
  coordinates (x, y) are invalid, when they are negative.
- <p>All <code>viewRectangle</code> values need to be finite to be considered as valid.
+ </p><p>All <code>viewRectangle</code> values need to be finite to be considered as valid.
  If measure limit is not valid, no update will be applied to the map camera.
- <p>The altitude of the target points is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>The altitude of the target points is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>points</code> - <p>Array of points in geodetic space that should be visible inside the given view rectangle.</dd>
-<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates inside which the geographical target area is displayed.</dd>
-<dd><code>orientation</code> - <p>Geodetic orientation at the new calculated target point.</dd>
+<dd><code>points</code> - <p>Array of points in geodetic space that should be visible inside the given view rectangle.</p></dd>
+<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates inside which the geographical target area is displayed.</p></dd>
+<dd><code>orientation</code> - <p>Geodetic orientation at the new calculated target point.</p></dd>
 <dd><code>measureLimit</code> - <p>Map measure limit:
-     <ul>
+     </p><ul>
      <li>as distance: the minimum distance from map camera to earth surface at the center of the view rectangle in meters.
      The map camera should not be positioned closer to the center of view rectangle than this.</li>
      <li>as zoom level: the maximum zoom level for the new map camera state. Internally converted to minimum distance
@@ -454,7 +454,7 @@ loadScripts(document, 'script');</script>
      the calculated lookAt target point.</li>
      </ul></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -462,38 +462,38 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoCoordinatesUpdate,com.here.sdk.core.GeoOrientationUpdate,java.util.List,com.here.sdk.core.Rectangle2D,com.here.sdk.mapview.MapMeasure,com.here.sdk.mapview.MapMeasure)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a>&nbsp;target,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinatesUpdate.html" title="class in com.here.sdk.core">GeoCoordinatesUpdate</a> target,
  @NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
  @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt;&nbsp;points,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&gt; points,
  @NonNull
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle,
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle,
  @NonNull
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;minMeasure,
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> minMeasure,
  @NonNull
- <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;maxMeasure)</span></div>
+ <a href="MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a> maxMeasure)</span></wbr></div>
 <div class="block"><p>Creates an update to position the camera to look at the given target with the given
  orientation and obeying map measure limits, so that the given geo locations are inside the given rectangle.
  Such position update can possibly not be found.
- <p>Any target or orientation sub-element value that is not finite will be excluded from the update.
- <p>If the provided <code>points</code> list is empty, no update will be applied to the map camera.
- <p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
+ </p><p>Any target or orientation sub-element value that is not finite will be excluded from the update.
+ </p><p>If the provided <code>points</code> list is empty, no update will be applied to the map camera.
+ </p><p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
  then the entire map viewport will be used as <code>viewRectangle</code>. Thus, no padding will be applied.
  A <code>viewRectangle</code> is considered invalid, when its width or height are negative or zero, its origin
  coordinates (x, y) are invalid, when they are negative.
- <p>If map measures are not valid, no update will be applied to the map camera.
- <p>The altitude of the target points is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>If map measures are not valid, no update will be applied to the map camera.
+ </p><p>The altitude of the target points is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</dd>
-<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</dd>
-<dd><code>points</code> - <p>Array of points in geodetic space that should be visible inside the given view rectangle.</dd>
-<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates inside which the geographical points are displayed.</dd>
+<dd><code>target</code> - <p>The look-at target position in geodetic coordinates.</p></dd>
+<dd><code>orientation</code> - <p>Geodetic orientation at look-at target.</p></dd>
+<dd><code>points</code> - <p>Array of points in geodetic space that should be visible inside the given view rectangle.</p></dd>
+<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates inside which the geographical points are displayed.</p></dd>
 <dd><code>minMeasure</code> - <p>Minimum map measure:
-     <ul>
+     </p><ul>
      <li>as distance: the minimum distance from map camera to earth surface at the look-at target in meters.
      The map camera should not be positioned closer to target than this.</li>
      <li>as zoom level: the maximum zoom level for the new map camera state. Internally converted to minimum distance
@@ -503,7 +503,7 @@ loadScripts(document, 'script');</script>
      from map camera to earth surface at the look-at target in meters.</li>
      </ul></dd>
 <dd><code>maxMeasure</code> - <p>Maximum map measure:
-     <ul>
+     </p><ul>
      <li>as distance: the maximum distance from map camera to earth surface at the look-at target in meters.
      The map camera should not be positioned further from target than this.</li>
      <li>as zoom level: the minimum zoom level for the new map camera state. Internally converted to minimum distance
@@ -513,7 +513,7 @@ loadScripts(document, 'script');</script>
      from map camera to earth surface at the look-at target in meters.</li>
      </ul></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -521,30 +521,30 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoBox,com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.core.Rectangle2D)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a>&nbsp;target,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a> target,
  @NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;orientation,
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> orientation,
  @NonNull
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle)</span></div>
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle)</span></wbr></div>
 <div class="block"><p>Create an update to look at the given geo-box and fit it inside the given rectangle.
- <p>If geoBox is not valid, no update will be applied to the map camera.
- <p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
+ </p><p>If geoBox is not valid, no update will be applied to the map camera.
+ </p><p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
  then the entire map viewport will be used as <code>viewRectangle</code>. Thus, no padding will be applied.
  A <code>viewRectangle</code> is considered invalid, when its width or height are negative or zero, its origin
  coordinates (x, y) are invalid, when they are negative.
- <p>All <code>viewRectangle</code> values need to be finite to be considered as valid.
- <p>In cases where it is not possible to find a solution for the given parameters,
+ </p><p>All <code>viewRectangle</code> values need to be finite to be considered as valid.
+ </p><p>In cases where it is not possible to find a solution for the given parameters,
  the resulting MapCameraUpdate will not change the map camera.
- <p>The altitude of the target points is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>The altitude of the target points is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>Geodetic box that should be visible inside the given view rectangle.</dd>
-<dd><code>orientation</code> - <p>Geodetic orientation at the target point.</dd>
-<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates inside which the geographical target area is displayed.</dd>
+<dd><code>target</code> - <p>Geodetic box that should be visible inside the given view rectangle.</p></dd>
+<dd><code>orientation</code> - <p>Geodetic orientation at the target point.</p></dd>
+<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates inside which the geographical target area is displayed.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -552,27 +552,27 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoBox,com.here.sdk.core.Rectangle2D)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a>&nbsp;target,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a> target,
  @NonNull
- <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;viewRectangle)</span></div>
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a> viewRectangle)</span></wbr></div>
 <div class="block"><p>Creates an update to look at the given geo-box and fit it inside the given rectangle,
  preserving current orientation and zooming at the center of view rectangle.
- <p>If geoBox is not valid, no update will be applied to the map camera.
- <p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
+ </p><p>If geoBox is not valid, no update will be applied to the map camera.
+ </p><p>If the <code>viewRectangle</code> parameter is invalid, fully or partially outside the map view,
  then the entire map viewport will be used as <code>viewRectangle</code>. Thus, no padding will be applied.
  A <code>viewRectangle</code> is considered invalid, when its width or height are negative or zero, its origin
  coordinates (x, y) are invalid, when they are negative.
- <p>In cases where it is not possible to find a solution for the given parameters,
+ </p><p>In cases where it is not possible to find a solution for the given parameters,
  the resulting MapCameraUpdate will not change the map camera.
- <p>The altitude of the target points is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>The altitude of the target points is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>Geodetic box that should be visible inside the given view rectangle.</dd>
-<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates.</dd>
+<dd><code>target</code> - <p>Geodetic box that should be visible inside the given view rectangle.</p></dd>
+<dd><code>viewRectangle</code> - <p>View rectangle in viewport pixel coordinates.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -580,18 +580,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="lookAt(com.here.sdk.core.GeoBox)">
 <h3>lookAt</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a>&nbsp;target)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">lookAt</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a> target)</span></wbr></div>
 <div class="block"><p>Creates an update to look at the given geo-box,
  preserving current orientation and zooming at the center of viewport.
- <p>If geoBox is not valid, no update will be applied to the map camera.
- <p>The altitude of the target points is ignored. Any subsequent camera updates and animations
- will consider the target point as being located on the ground.</div>
+ </p><p>If geoBox is not valid, no update will be applied to the map camera.
+ </p><p>The altitude of the target points is ignored. Any subsequent camera updates and animations
+ will consider the target point as being located on the ground.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>target</code> - <p>Geodetic box that should be visible inside the viewport rectangle.</dd>
+<dd><code>target</code> - <p>Geodetic box that should be visible inside the viewport rectangle.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -599,16 +599,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="panBy(double,double)">
 <h3>panBy</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">panBy</span><wbr><span class="parameters">(double&nbsp;xOffset,
- double&nbsp;yOffset)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">panBy</span><wbr><span class="parameters">(double xOffset,
+ double yOffset)</span></wbr></div>
 <div class="block"><p>Creates an update to pan map camera over the map by the specified number of pixels
- in the x and y direction starting from current principal point position.</div>
+ in the x and y direction starting from current principal point position.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>xOffset</code> - <p>X offset in pixels</dd>
-<dd><code>yOffset</code> - <p>Y offset in pixels</dd>
+<dd><code>xOffset</code> - <p>X offset in pixels</p></dd>
+<dd><code>yOffset</code> - <p>Y offset in pixels</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -616,22 +616,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="orbitBy(com.here.sdk.core.GeoOrientationUpdate,com.here.sdk.core.Point2D)">
 <h3>orbitBy</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">orbitBy</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;delta,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">orbitBy</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> delta,
  @NonNull
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;origin)</span></div>
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> origin)</span></wbr></div>
 <div class="block"><p>Creates an update to orbit map camera around a pixel origin by specified geodetic orientation delta.
  If the origin cannot be converted to geo coordinates, no update will be applied to the map camera.
- <p>Orientation elements that are not valid will be excluded from the update.
+ </p><p>Orientation elements that are not valid will be excluded from the update.
  Resulting bearing values are wrapped around degrees range [0, 360].
  Resulting tilt values are clamped inside degrees range [0, 180].
- Resulting roll values are wrapped around degrees range [-180, 180].</div>
+ Resulting roll values are wrapped around degrees range [-180, 180].</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>delta</code> - <p>Geodetic orientation delta update.</dd>
-<dd><code>origin</code> - <p>Screen pixel origin of rotation.</dd>
+<dd><code>delta</code> - <p>Geodetic orientation delta update.</p></dd>
+<dd><code>origin</code> - <p>Screen pixel origin of rotation.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -639,18 +639,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="rotateBy(com.here.sdk.core.GeoOrientationUpdate)">
 <h3>rotateBy</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">rotateBy</span><wbr><span class="parameters">(@NonNull
- <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a>&nbsp;delta)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">rotateBy</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoOrientationUpdate.html" title="class in com.here.sdk.core">GeoOrientationUpdate</a> delta)</span></wbr></div>
 <div class="block"><p>Creates an update to change map camera orientation by specified geodetic orientation delta.
  Orientation elements that are not valid will be excluded from the update.
  Resulting bearing values are wrapped around degrees range [0, 360].
  Resulting tilt values are clamped inside degrees range [0, 180].
- Resulting roll values are wrapped around degrees range [-180, 180].</div>
+ Resulting roll values are wrapped around degrees range [-180, 180].</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>delta</code> - <p>Geodetic orientation delta update.</dd>
+<dd><code>delta</code> - <p>Geodetic orientation delta update.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -658,20 +658,20 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="zoomBy(double,com.here.sdk.core.Point2D)">
 <h3>zoomBy</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">zoomBy</span><wbr><span class="parameters">(double&nbsp;factor,
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">zoomBy</span><wbr><span class="parameters">(double factor,
  @NonNull
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;origin)</span></div>
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> origin)</span></wbr></div>
 <div class="block"><p>Creates an update to zoom map camera by a given factor preserving a given focus point.
- <p>Values greater than 1 zoom in map camera, by moving it closer to the ground; less than 1 - zoom out,
+ </p><p>Values greater than 1 zoom in map camera, by moving it closer to the ground; less than 1 - zoom out,
  which moves map camera further.
- <p>If factor is zero, negative or not finite, no update will be applied to the map camera.
- <p>If the focusPoint is not inside the viewport bounds, then the current principal point will be used.</div>
+ </p><p>If factor is zero, negative or not finite, no update will be applied to the map camera.
+ </p><p>If the focusPoint is not inside the viewport bounds, then the current principal point will be used.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>factor</code> - <p>Zooming factor.</dd>
-<dd><code>origin</code> - <p>Pixel location on the screen to use as zoom origin.</dd>
+<dd><code>factor</code> - <p>Zooming factor.</p></dd>
+<dd><code>origin</code> - <p>Pixel location on the screen to use as zoom origin.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -679,14 +679,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="zoomTo(double)">
 <h3>zoomTo</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">zoomTo</span><wbr><span class="parameters">(double&nbsp;zoomLevel)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">zoomTo</span><wbr><span class="parameters">(double zoomLevel)</span></wbr></div>
 <div class="block"><p>Creates an update to move map camera's viewpoint to a particular zoom level by adjusting its position.
- <p>If zoomLevel is not finite, no update will be applied to the map camera.</div>
+ </p><p>If zoomLevel is not finite, no update will be applied to the map camera.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>zoomLevel</code> - <p>The desired zoom level.</dd>
+<dd><code>zoomLevel</code> - <p>The desired zoom level.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -694,17 +694,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setPrincipalPoint(com.here.sdk.core.Point2D)">
 <h3>setPrincipalPoint</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">setPrincipalPoint</span><wbr><span class="parameters">(@NonNull
- <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a>&nbsp;principalPoint)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">setPrincipalPoint</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/Point2D.html" title="class in com.here.sdk.core">Point2D</a> principalPoint)</span></wbr></div>
 <div class="block"><p>Creates an update to change the map camera's principal point (where the view vector intersects
  the image plane - default is the center of the view). Point values are in screen coordinates
  and values that fall outside of the viewport, are clamped.
- (0,0) is top left of the viewport.</div>
+ (0,0) is top left of the viewport.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>principalPoint</code> - <p>Principal point in absolute viewport pixel coordinates.</dd>
+<dd><code>principalPoint</code> - <p>Principal point in absolute viewport pixel coordinates.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -712,17 +712,17 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)">
 <h3>setNormalizedPrincipalPoint</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">setNormalizedPrincipalPoint</span><wbr><span class="parameters">(@NonNull
- <a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a>&nbsp;principalPoint)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">setNormalizedPrincipalPoint</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a> principalPoint)</span></wbr></div>
 <div class="block"><p>Creates an update to change the map camera's principal point (where the view vector
  intersects the image plane - default is (0.5, 0.5)). Point values are in normalized screen coordinates.
- <p>If the principalPoint is outside [0,1] interval, it is clamped.
- (0,0) is top left of the viewport, (1,1) is bottom right.</div>
+ </p><p>If the principalPoint is outside [0,1] interval, it is clamped.
+ (0,0) is top left of the viewport, (1,1) is bottom right.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>principalPoint</code> - <p>Principal point in normalized screen coordinates.</dd>
+<dd><code>principalPoint</code> - <p>Principal point in normalized screen coordinates.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -730,15 +730,15 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setVerticalFieldOfView(double)">
 <h3>setVerticalFieldOfView</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">setVerticalFieldOfView</span><wbr><span class="parameters">(double&nbsp;verticalFieldOfView)</span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">setVerticalFieldOfView</span><wbr><span class="parameters">(double verticalFieldOfView)</span></wbr></div>
 <div class="block"><p>Creates an update to change the vertical field of view of the map camera.
- <p>If verticalFieldOfView is not finite, no update will be applied to the map camera.
- <p>If the verticalFieldOfView is outside [1, 150] interval, it is clamped.</div>
+ </p><p>If verticalFieldOfView is not finite, no update will be applied to the map camera.
+ </p><p>If the verticalFieldOfView is outside [1, 150] interval, it is clamped.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>verticalFieldOfView</code> - <p>Vertical field of view in degrees.</dd>
+<dd><code>verticalFieldOfView</code> - <p>Vertical field of view in degrees.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 </dl>
 </section>
 </li>
@@ -746,21 +746,21 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="compositeUpdate(java.util.List)">
 <h3>compositeUpdate</h3>
 <div class="member-signature"><span class="annotations">@NonNull
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span>&nbsp;<span class="element-name">compositeUpdate</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a>&gt;&nbsp;mapCameraUpdates)</span>
-                                       throws <span class="exceptions"><a href="MapCameraUpdate.InstantiationException.html" title="class in com.here.sdk.mapview">MapCameraUpdate.InstantiationException</a></span></div>
+</span><span class="modifiers">public static</span> <span class="return-type"><a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a></span> <span class="element-name">compositeUpdate</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MapCameraUpdate.html" title="class in com.here.sdk.mapview">MapCameraUpdate</a>&gt; mapCameraUpdates)</span>
+                                       throws <span class="exceptions"><a href="MapCameraUpdate.InstantiationException.html" title="class in com.here.sdk.mapview">MapCameraUpdate.InstantiationException</a></span></wbr></div>
 <div class="block"><p>Creates a composite camera update from a list of camera updates. The result update will be
  equivalent to executing all given updates sequentially in the order they were provided.
- <p>MapCameraAnimation instances derived from the MapCameraAnimationFactory and a composite camera
+ </p><p>MapCameraAnimation instances derived from the MapCameraAnimationFactory and a composite camera
  update are not supported. An AnimationListener will receive an AnimationState.Cancelled signal
- when trying to apply such animations.</div>
+ when trying to apply such animations.</p></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>mapCameraUpdates</code> - <p>List of MapCamera updates.</dd>
+<dd><code>mapCameraUpdates</code> - <p>List of MapCamera updates.</p></dd>
 <dt>Returns:</dt>
-<dd><p>MapCameraUpdate instance.</dd>
+<dd><p>MapCameraUpdate instance.</p></dd>
 <dt>Throws:</dt>
-<dd><code><a href="MapCameraUpdate.InstantiationException.html" title="class in com.here.sdk.mapview">MapCameraUpdate.InstantiationException</a></code> - <p>Indicates an instantiation issue.</dd>
+<dd><code><a href="MapCameraUpdate.InstantiationException.html" title="class in com.here.sdk.mapview">MapCameraUpdate.InstantiationException</a></code> - <p>Indicates an instantiation issue.</p></dd>
 </dl>
 </section>
 </li>
@@ -773,5 +773,5 @@ loadScripts(document, 'script');</script>
 </main>
 </div>
 </div>
-</body>
-</html>
+
+</body></html>
