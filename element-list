@@ -16,6 +16,7 @@ com.here.sdk.maploader.remote.connection
 com.here.sdk.mapmatcher
 com.here.sdk.mapview
 com.here.sdk.mapview.datasource
+com.here.sdk.mapview.mapobject
 com.here.sdk.navigation
 com.here.sdk.prefetcher
 com.here.sdk.routing
