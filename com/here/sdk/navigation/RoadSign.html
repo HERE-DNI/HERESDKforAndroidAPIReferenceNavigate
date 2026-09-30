@@ -243,14 +243,16 @@ loadScripts(document, 'script');</script>
 <h3>roadSignCategory</h3>
 <div class="member-signature"><span class="annotations">@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="RoadSignCategory.html" title="enum class in com.here.sdk.navigation">RoadSignCategory</a></span>&nbsp;<span class="element-name">roadSignCategory</span></div>
-<div class="block"><p>The main category to which the road sign belongs.</div>
+<div class="block"><p>The main category to which the road sign belongs. It defines the general purpose of the sign (e.g.: regulatory sign).</div>
 </section>
 </li>
 <li>
 <section class="detail" id="isPrioritySign">
 <h3>isPrioritySign</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isPrioritySign</span></div>
-<div class="block"><p>Flag indicating if the road sign is a priority sign.</div>
+<div class="block"><p>Flag indicating if the road sign is a priority sign. This flag will be set to <code>true</code> only for <a href="#roadSignCategory"><code>roadSignCategory</code></a> with value
+ <a href="RoadSignCategory.html#REGULATORY_SIGN"><code>RoadSignCategory.REGULATORY_SIGN</code></a>. Examples of road signs types with priority flag set to <code>true</code> are <a href="RoadSignType.html#PRIORITY_OVER_ONCOMING_TRAFFIC"><code>RoadSignType.PRIORITY_OVER_ONCOMING_TRAFFIC</code></a>,
+ <a href="RoadSignType.html#YIELD_TO_ONCOMING_TRAFFIC"><code>RoadSignType.YIELD_TO_ONCOMING_TRAFFIC</code></a>, <a href="RoadSignType.html#STOP_SIGN"><code>RoadSignType.STOP_SIGN</code></a>, <a href="RoadSignType.html#YIELD"><code>RoadSignType.YIELD</code></a>, <a href="RoadSignType.html#YIELD_TO_BICYCLES"><code>RoadSignType.YIELD_TO_BICYCLES</code></a>.</div>
 </section>
 </li>
 <li>
@@ -349,8 +351,10 @@ loadScripts(document, 'script');</script>
  in positive direction.</dd>
 <dd><code>travelDirection</code> - <p>Segment direction which the road sign is applied.</dd>
 <dd><code>roadSignType</code> - <p>Type of the road sign.</dd>
-<dd><code>roadSignCategory</code> - <p>The main category to which the road sign belongs.</dd>
-<dd><code>isPrioritySign</code> - <p>Flag indicating if the road sign is a priority sign.</dd>
+<dd><code>roadSignCategory</code> - <p>The main category to which the road sign belongs. It defines the general purpose of the sign (e.g.: regulatory sign).</dd>
+<dd><code>isPrioritySign</code> - <p>Flag indicating if the road sign is a priority sign. This flag will be set to <code>true</code> only for <a href="#roadSignCategory"><code>roadSignCategory</code></a> with value
+ <a href="RoadSignCategory.html#REGULATORY_SIGN"><code>RoadSignCategory.REGULATORY_SIGN</code></a>. Examples of road signs types with priority flag set to <code>true</code> are <a href="RoadSignType.html#PRIORITY_OVER_ONCOMING_TRAFFIC"><code>RoadSignType.PRIORITY_OVER_ONCOMING_TRAFFIC</code></a>,
+ <a href="RoadSignType.html#YIELD_TO_ONCOMING_TRAFFIC"><code>RoadSignType.YIELD_TO_ONCOMING_TRAFFIC</code></a>, <a href="RoadSignType.html#STOP_SIGN"><code>RoadSignType.STOP_SIGN</code></a>, <a href="RoadSignType.html#YIELD"><code>RoadSignType.YIELD</code></a>, <a href="RoadSignType.html#YIELD_TO_BICYCLES"><code>RoadSignType.YIELD_TO_BICYCLES</code></a>.</dd>
 <dd><code>generalWarningType</code> - <p>Specifies the general warning to which the road sign belongs.</dd>
 <dd><code>vehicleTypes</code> - <p>Specifies a list of vehicle types for which the road sign is applicable.
  The list will be empty when the road sign is applicable for all vehicles including cars.</dd>

@@ -81,7 +81,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">SegmentDataLoader</span>
 <span class="extends-implements">extends <a href="../../NativeBase.html" title="class in com.here">NativeBase</a></span></div>
 <div class="block"><p>Provides the interface for the access to the
- segments data available in the local OCM map. Please be aware that the methods within this class
+ segments data available in the local map. Please be aware that the methods within this class
  load map data synchronously. In the event of absent data in the disk cache, the data will be
  retrieved from the remote server. To mitigate the potential freezing of the calling thread,
  it is advisable to proactively prefetch map data around the working area.
@@ -117,7 +117,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -129,23 +129,47 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Synchronously load the optional image providing guidance of a directed or non directed segment.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getSegmentsAroundCoordinates</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLocalSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getLocalSegmentsAroundCoordinates</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
  double&nbsp;radiusInMeters)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Loads the segments around a certain coordinates.</div>
+<div class="block">Loads the local segments around a certain coordinates.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getSegmentsAroundCoordinates</a><wbr>(<a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
+ double&nbsp;radiusInMeters)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadData</a><wbr>(<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&nbsp;segment,
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadData</a><wbr>(<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&nbsp;segment,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadDirectedLocalSegmentData(com.here.sdk.mapdata.DirectedLocalSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedLocalSegmentData</a><wbr>(<a href="DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a>&nbsp;segment,
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Synchronously load the data for the given map directed segment.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedSegmentData</a><wbr>(<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segment,
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadLocalData(com.here.sdk.mapdata.LocalSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadLocalData</a><wbr>(<a href="LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a>&nbsp;segment,
  <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Synchronously load the data for the given map segment.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedSegmentData</a><wbr>(<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segment,
- <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Synchronously load the data for the given map directed segment.</div>
 </div>
 </div>
 </div>
@@ -202,11 +226,15 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)">
 <h3>getSegmentsAroundCoordinates</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&gt;</span>&nbsp;<span class="element-name">getSegmentsAroundCoordinates</span><wbr><span class="parameters">(@NonNull
  <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
  double&nbsp;radiusInMeters)</span>
                                                 throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>getLocalSegmentsAroundCoordinates()</code> instead.</div>
+</div>
 <div class="block"><p>Loads the segments around a certain coordinates.
  Returns an empty list in case no segments could be found around the coordinates.</div>
 <dl class="notes">
@@ -223,14 +251,41 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="getLocalSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)">
+<h3>getLocalSegmentsAroundCoordinates</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a>&gt;</span>&nbsp;<span class="element-name">getLocalSegmentsAroundCoordinates</span><wbr><span class="parameters">(@NonNull
+ <a href="../core/GeoCoordinates.html" title="class in com.here.sdk.core">GeoCoordinates</a>&nbsp;coordinates,
+ double&nbsp;radiusInMeters)</span>
+                                                       throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+<div class="block"><p>Loads the local segments around a certain coordinates.
+ Returns an empty list in case no segments could be found around the coordinates.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>coordinates</code> - <p>The location to explore.</dd>
+<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.</dd>
+<dt>Returns:</dt>
+<dd><p>The list of segments around the given position. The segments are sorted by distance
+     from the point.
+     Throws if it's not possible to return list of a list of segments.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of a list of segments is not returned.</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)">
 <h3>loadData</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span>&nbsp;<span class="element-name">loadData</span><wbr><span class="parameters">(@NonNull
  <a href="OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a>&nbsp;segment,
  @NonNull
  <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</span>
                      throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>loadLocalData</code> with <code>LocalSegmentId</code> instead.</div>
+</div>
 <div class="block"><p>Synchronously load the data for the given map segment.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -244,19 +299,65 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="loadLocalData(com.here.sdk.mapdata.LocalSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)">
+<h3>loadLocalData</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span>&nbsp;<span class="element-name">loadLocalData</span><wbr><span class="parameters">(@NonNull
+ <a href="LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a>&nbsp;segment,
+ @NonNull
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</span>
+                          throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+<div class="block"><p>Synchronously load the data for the given map segment.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>segment</code> - <p>The segment to load.</dd>
+<dd><code>options</code> - <p>Request options.</dd>
+<dt>Returns:</dt>
+<dd><p>Requested data of a segment.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)">
 <h3>loadDirectedSegmentData</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span>&nbsp;<span class="element-name">loadDirectedSegmentData</span><wbr><span class="parameters">(@NonNull
  <a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segment,
  @NonNull
  <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</span>
                                     throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>load_directed_local_segment_data()</code> instead.</div>
+</div>
 <div class="block"><p>Synchronously load the data for the given map directed segment.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>segment</code> - <p>The directed segment to load.</dd>
 <dd><code>options</code> - <p>Request options</dd>
+<dt>Returns:</dt>
+<dd><p>Requested data of a segment.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></code> - <p>Specifies reason, why list of data of a segment is not returned.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="loadDirectedLocalSegmentData(com.here.sdk.mapdata.DirectedLocalSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)">
+<h3>loadDirectedLocalSegmentData</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></span>&nbsp;<span class="element-name">loadDirectedLocalSegmentData</span><wbr><span class="parameters">(@NonNull
+ <a href="DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a>&nbsp;segment,
+ @NonNull
+ <a href="SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a>&nbsp;options)</span>
+                                         throws <span class="exceptions"><a href="MapDataLoaderException.html" title="class in com.here.sdk.mapdata">MapDataLoaderException</a></span></div>
+<div class="block"><p>Synchronously load the data for the given map directed segment.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>segment</code> - <p>The directed segment to load.</dd>
+<dd><code>options</code> - <p>Request options.</dd>
 <dt>Returns:</dt>
 <dd><p>Requested data of a segment.</dd>
 <dt>Throws:</dt>

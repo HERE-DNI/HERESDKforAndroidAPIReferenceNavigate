@@ -76,7 +76,17 @@ loadScripts(document, 'script');</script>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block"><p>Holds constants for map features, to be used with
  <a href="MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> and <a href="MapScene.html#disableFeatures(java.util.List)"><code>MapScene.disableFeatures(java.util.List&lt;java.lang.String&gt;)</code></a>.
- <p>See <a href="MapFeatureModes.html" title="class in com.here.sdk.mapview"><code>MapFeatureModes</code></a> for constants representing feature modes.</div>
+ <p>See <a href="MapFeatureModes.html" title="class in com.here.sdk.mapview"><code>MapFeatureModes</code></a> for constants representing feature modes.
+ <p>Note: On Android devices using PowerVR Rogue GPUs,
+ Adreno 730-740 GPUs, or ARM Mali GPU drivers version 32-38, map rendering
+ automatically adjusts or disables certain features to improve stability.
+ Enabling affected features may increase memory usage and lead to application
+ freezes or map view instability. See the notes per map feature.
+ <p>On impacted GPUs, roads in <a href="MapScheme.html#HYBRID_DAY"><code>MapScheme.HYBRID_DAY</code></a>,
+ <a href="MapScheme.html#HYBRID_NIGHT"><code>MapScheme.HYBRID_NIGHT</code></a>, <a href="MapScheme.html#LITE_HYBRID_DAY"><code>MapScheme.LITE_HYBRID_DAY</code></a>,
+ <a href="MapScheme.html#LITE_HYBRID_NIGHT"><code>MapScheme.LITE_HYBRID_NIGHT</code></a>, <a href="MapScheme.html#LOGISTICS_HYBRID_DAY"><code>MapScheme.LOGISTICS_HYBRID_DAY</code></a> and
+ <a href="MapScheme.html#LOGISTICS_HYBRID_NIGHT"><code>MapScheme.LOGISTICS_HYBRID_NIGHT</code></a> may
+ appear darkened at road junctions due to overlapping rendering.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -411,7 +421,8 @@ loadScripts(document, 'script');</script>
  <p>Supports only one mode: <a href="MapFeatureModes.html#ENVIRONMENTAL_ZONES_ALL"><code>MapFeatureModes.ENVIRONMENTAL_ZONES_ALL</code></a>.
  <p>Not supported for <a href="MapScheme.html#SATELLITE"><code>MapScheme.SATELLITE</code></a>, <a href="MapScheme.html#ROAD_NETWORK_DAY"><code>MapScheme.ROAD_NETWORK_DAY</code></a>
  and <a href="MapScheme.html#ROAD_NETWORK_NIGHT"><code>MapScheme.ROAD_NETWORK_NIGHT</code></a>.
- By default, this map feature is not enabled.</div>
+ By default, this map feature is not enabled.
+ Note: On PowerVR Rogue, Adreno 730-740, or ARM Mali GPUs (driver version 32-38), environmental zones may appear visibly darkened due to overlapping rendering.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -431,7 +442,8 @@ loadScripts(document, 'script');</script>
  <p>Supports only one mode: <a href="MapFeatureModes.html#CONGESTION_ZONES_ALL"><code>MapFeatureModes.CONGESTION_ZONES_ALL</code></a>.
  <p>Not supported for <a href="MapScheme.html#SATELLITE"><code>MapScheme.SATELLITE</code></a>, <a href="MapScheme.html#ROAD_NETWORK_DAY"><code>MapScheme.ROAD_NETWORK_DAY</code></a>
  and <a href="MapScheme.html#ROAD_NETWORK_NIGHT"><code>MapScheme.ROAD_NETWORK_NIGHT</code></a>.
- By default, this map feature is not enabled.</div>
+ By default, this map feature is not enabled.
+ Note: On PowerVR Rogue, Adreno 730-740, or ARM Mali GPUs (driver version 32-38), congestion zones may appear visibly darkened due to overlapping rendering.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -451,7 +463,8 @@ loadScripts(document, 'script');</script>
  <p>Supports only one mode: <a href="MapFeatureModes.html#LOW_SPEED_ZONES_ALL"><code>MapFeatureModes.LOW_SPEED_ZONES_ALL</code></a>.
  <p>Not supported for <a href="MapScheme.html#SATELLITE"><code>MapScheme.SATELLITE</code></a>, <a href="MapScheme.html#ROAD_NETWORK_DAY"><code>MapScheme.ROAD_NETWORK_DAY</code></a>
  and <a href="MapScheme.html#ROAD_NETWORK_NIGHT"><code>MapScheme.ROAD_NETWORK_NIGHT</code></a>.
- By default, this map feature is not enabled.</div>
+ By default, this map feature is not enabled.
+ Note: On PowerVR Rogue, Adreno 730-740, or ARM Mali GPUs (driver version 32-38), low speed zones may appear visibly darkened due to overlapping rendering.</div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -480,6 +493,7 @@ loadScripts(document, 'script');</script>
  loading the map scene.
  <p>Not supported for <a href="MapScheme.html#SATELLITE"><code>MapScheme.SATELLITE</code></a>, <a href="MapScheme.html#ROAD_NETWORK_DAY"><code>MapScheme.ROAD_NETWORK_DAY</code></a>
  and <a href="MapScheme.html#ROAD_NETWORK_NIGHT"><code>MapScheme.ROAD_NETWORK_NIGHT</code></a>.
+ <p>Note: On PowerVR Rogue GPUs, when <a href="MapFeatureModes.html#TERRAIN_3D"><code>MapFeatureModes.TERRAIN_3D</code></a> is requested, it is automatically switched to <a href="MapFeatureModes.html#TERRAIN_HILLSHADE"><code>MapFeatureModes.TERRAIN_HILLSHADE</code></a>.
  <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -557,6 +571,7 @@ loadScripts(document, 'script');</script>
  <a href="MapScheme.html#HYBRID_NIGHT"><code>MapScheme.HYBRID_NIGHT</code></a>, <a href="MapScheme.html#LITE_HYBRID_DAY"><code>MapScheme.LITE_HYBRID_DAY</code></a>
  <a href="MapScheme.html#LITE_HYBRID_NIGHT"><code>MapScheme.LITE_HYBRID_NIGHT</code></a>, <a href="MapScheme.html#LOGISTICS_HYBRID_DAY"><code>MapScheme.LOGISTICS_HYBRID_DAY</code></a> and
  <a href="MapScheme.html#LOGISTICS_HYBRID_NIGHT"><code>MapScheme.LOGISTICS_HYBRID_NIGHT</code></a>.
+ <p>Note: On PowerVR Rogue, Adreno 730-740, or ARM Mali GPUs (driver version 32-38), this feature cannot be enabled and requests to enable it are ignored.
  <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
  By default, this map feature is not enabled.</div>
 <dl class="notes">
@@ -582,6 +597,7 @@ loadScripts(document, 'script');</script>
  <a href="MapScheme.html#HYBRID_NIGHT"><code>MapScheme.HYBRID_NIGHT</code></a>, <a href="MapScheme.html#LITE_HYBRID_DAY"><code>MapScheme.LITE_HYBRID_DAY</code></a>
  <a href="MapScheme.html#LITE_HYBRID_NIGHT"><code>MapScheme.LITE_HYBRID_NIGHT</code></a>, <a href="MapScheme.html#LOGISTICS_HYBRID_DAY"><code>MapScheme.LOGISTICS_HYBRID_DAY</code></a> and
  <a href="MapScheme.html#LOGISTICS_HYBRID_NIGHT"><code>MapScheme.LOGISTICS_HYBRID_NIGHT</code></a>.
+ <p>Note: On PowerVR Rogue, Adreno 730-740, or ARM Mali GPUs (driver version 32-38), this feature cannot be enabled and requests to enable it are ignored.
  <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
  By default, this map feature is not enabled.</div>
 <dl class="notes">

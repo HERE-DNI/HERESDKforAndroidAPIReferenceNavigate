@@ -150,47 +150,37 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#start(com.here.sdk.routing.RouteHandle,java.util.List,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start</a><wbr>(<a href="../routing/RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a>&nbsp;routeHandle,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../routing/Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a>&gt;&nbsp;waypoints,
- <a href="../routing/RefreshRouteOptions.html" title="class in com.here.sdk.routing">RefreshRouteOptions</a>&nbsp;refreshRouteOptions,
- <a href="DynamicRoutingListener.html" title="interface in com.here.sdk.trafficawarenavigation">DynamicRoutingListener</a>&nbsp;listener)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.28.0.</div>
-</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#start(com.here.sdk.routing.RouteHandle,java.util.List,com.here.sdk.routing.RoutingOptions,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start</a><wbr>(<a href="../routing/RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a>&nbsp;routeHandle,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#start(com.here.sdk.routing.RouteHandle,java.util.List,com.here.sdk.routing.RoutingOptions,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start</a><wbr>(<a href="../routing/RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a>&nbsp;routeHandle,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../routing/Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a>&gt;&nbsp;waypoints,
  <a href="../routing/RoutingOptions.html" title="class in com.here.sdk.routing">RoutingOptions</a>&nbsp;routingOptions,
  <a href="DynamicRoutingListener.html" title="interface in com.here.sdk.trafficawarenavigation">DynamicRoutingListener</a>&nbsp;listener)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Starts polling the HERE backend services to find a better route,
  as defined by the <a href="DynamicRoutingEngineOptions.html" title="class in com.here.sdk.trafficawarenavigation"><code>DynamicRoutingEngineOptions</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#start(com.here.sdk.routing.Route,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start</a><wbr>(<a href="../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#start(com.here.sdk.routing.Route,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start</a><wbr>(<a href="../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route,
  <a href="DynamicRoutingListener.html" title="interface in com.here.sdk.trafficawarenavigation">DynamicRoutingListener</a>&nbsp;listener)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Starts polling the HERE backend services to find a better route,
  as defined by the DynamicRoutingEngineOptions.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stop()" class="member-name-link">stop</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stop()" class="member-name-link">stop</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Stops polling the HERE backend services.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateCurrentLocation(com.here.sdk.navigation.MapMatchedLocation,int)" class="member-name-link">updateCurrentLocation</a><wbr>(<a href="../navigation/MapMatchedLocation.html" title="class in com.here.sdk.navigation">MapMatchedLocation</a>&nbsp;mapMatchedLocation,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateCurrentLocation(com.here.sdk.navigation.MapMatchedLocation,int)" class="member-name-link">updateCurrentLocation</a><wbr>(<a href="../navigation/MapMatchedLocation.html" title="class in com.here.sdk.navigation">MapMatchedLocation</a>&nbsp;mapMatchedLocation,
  int&nbsp;sectionIndex)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Updates the current location.</div>
 </div>
 </div>
@@ -271,41 +261,6 @@ loadScripts(document, 'script');</script>
      The information to calculate new routes will be extracted from the provided route parameter.
      If more information from the original waypoints is important besides their location,
      consider to use one of the overloaded methods instead.</dd>
-<dd><code>listener</code> - <p>The listener to receive the events.</dd>
-<dt>Throws:</dt>
-<dd><code><a href="DynamicRoutingEngine.StartException.html" title="class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine.StartException</a></code> - <p>when the passed parameter are invalid.</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="start(com.here.sdk.routing.RouteHandle,java.util.List,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)">
-<h3>start</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">start</span><wbr><span class="parameters">(@NonNull
- <a href="../routing/RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a>&nbsp;routeHandle,
- @NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../routing/Waypoint.html" title="class in com.here.sdk.routing">Waypoint</a>&gt;&nbsp;waypoints,
- @NonNull
- <a href="../routing/RefreshRouteOptions.html" title="class in com.here.sdk.routing">RefreshRouteOptions</a>&nbsp;refreshRouteOptions,
- @NonNull
- <a href="DynamicRoutingListener.html" title="interface in com.here.sdk.trafficawarenavigation">DynamicRoutingListener</a>&nbsp;listener)</span>
-           throws <span class="exceptions"><a href="DynamicRoutingEngine.StartException.html" title="class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine.StartException</a></span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>start()</code> method with RoutingOptions parameter instead.</div>
-</div>
-<div class="block"><p>Starts polling the HERE backend services to find a better route,
- as defined by the <a href="DynamicRoutingEngineOptions.html" title="class in com.here.sdk.trafficawarenavigation"><code>DynamicRoutingEngineOptions</code></a>.
- <p><strong>Note:</strong> The engine will be internally stopped, if it was started before.
- Therefore, it is not necessary to stop the engine before starting it again.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>routeHandle</code> - <p>The route handle from the HERE routing backend.</dd>
-<dd><code>waypoints</code> - <p>Allows to specify detailed information on the waypoints of the route.
-     This parameter can be useful, when additional information needs to be
-     specified besides the coordinates - as the coordinates can be retrieved
-     from the contained <a href="../routing/RoutePlace.html" title="class in com.here.sdk.routing"><code>RoutePlace</code></a> that are already contained in
-     the <a href="../routing/RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a> parameter.</dd>
-<dd><code>refreshRouteOptions</code> - <p>The options for the route calculation.</dd>
 <dd><code>listener</code> - <p>The listener to receive the events.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="DynamicRoutingEngine.StartException.html" title="class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine.StartException</a></code> - <p>when the passed parameter are invalid.</dd>

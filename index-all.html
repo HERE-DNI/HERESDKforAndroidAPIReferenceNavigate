@@ -73,6 +73,18 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">String to display if there are more markers clustered than <a href="com/here/sdk/mapview/MapMarkerCluster.CounterStyle.html#maxCountNumber"><code>MapMarkerCluster.CounterStyle.maxCountNumber</code></a>.</div>
 </dd>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html" class="type-name-link" title="class in com.here.sdk.location">AbstractLocationEngine</a> - Class in <a href="com/here/sdk/location/package-summary.html">com.here.sdk.location</a></dt>
+<dd>
+<div class="block">This abstract base class handles location updates received according to the desired <a href="com/here/sdk/location/LocationAccuracy.html" title="enum class in com.here.sdk.location"><code>LocationAccuracy</code></a> or <a href="com/here/sdk/location/LocationOptions.html" title="class in com.here.sdk.location"><code>LocationOptions</code></a>.</div>
+</dd>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#%3Cinit%3E()" class="member-name-link">AbstractLocationEngine()</a> - Constructor for class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
+<dd>
+<div class="block">Constructor of the AbstractLocationEngine</div>
+</dd>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#%3Cinit%3E(com.here.sdk.core.engine.SDKNativeEngine)" class="member-name-link">AbstractLocationEngine(SDKNativeEngine)</a> - Constructor for class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
+<dd>
+<div class="block">Constructor of the AbstractLocationEngine</div>
+</dd>
 <dt><a href="com/here/sdk/core/CountryCode.html#ABW" class="member-name-link">ABW</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
 <div class="block">Aruba</div>
@@ -378,7 +390,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Adds a listener to this camera that will be notified on the main thread
  every time the map is redrawn with new camera parameters.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#addLocationIssueListener(com.here.sdk.location.LocationIssueListener)" class="member-name-link">addLocationIssueListener(LocationIssueListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#addLocationIssueListener(com.here.sdk.location.LocationIssueListener)" class="member-name-link">addLocationIssueListener(LocationIssueListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Adds a <a href="com/here/sdk/location/LocationIssueListener.html" title="interface in com.here.sdk.location"><code>LocationIssueListener</code></a> to the engine to get notified when a location issue
  has occurred</div>
@@ -387,7 +399,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Adds a <a href="com/here/sdk/location/LocationIssueListener.html" title="interface in com.here.sdk.location"><code>LocationIssueListener</code></a> to the engine to get notified when a location issue has occurred.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#addLocationListener(com.here.sdk.core.LocationListener)" class="member-name-link">addLocationListener(LocationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#addLocationListener(com.here.sdk.core.LocationListener)" class="member-name-link">addLocationListener(LocationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Adds a <a href="com/here/sdk/core/LocationListener.html" title="interface in com.here.sdk.core"><code>LocationListener</code></a> to the engine to get notified when there is a new
  <a href="com/here/sdk/core/Location.html" title="class in com.here.sdk.core"><code>Location</code></a>.</div>
@@ -397,7 +409,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Adds a <code>LocationListener</code> to the engine to get notified when there is a new location
  update available.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#addLocationStatusListener(com.here.sdk.location.LocationStatusListener)" class="member-name-link">addLocationStatusListener(LocationStatusListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#addLocationStatusListener(com.here.sdk.location.LocationStatusListener)" class="member-name-link">addLocationStatusListener(LocationStatusListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Adds a <a href="com/here/sdk/location/LocationStatusListener.html" title="interface in com.here.sdk.location"><code>LocationStatusListener</code></a> to the engine to get notified when there is an
  important status change.</div>
@@ -480,7 +492,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Adds the <a href="com/here/sdk/mapmatcher/MatchedLocationListener.html" title="interface in com.here.sdk.mapmatcher"><code>MatchedLocationListener</code></a> to the subscribtion list.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#addOrientationListener(com.here.sdk.core.OrientationListener)" class="member-name-link">addOrientationListener(OrientationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#addOrientationListener(com.here.sdk.core.OrientationListener)" class="member-name-link">addOrientationListener(OrientationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Adds an OrientationListener to the engine.</div>
 </dd>
@@ -661,7 +673,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapdata/AdministrativeRulesLoader.html" class="type-name-link" title="class in com.here.sdk.mapdata">AdministrativeRulesLoader</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
 <dd>
 <div class="block">Provides the interface for the access to the administrative rules available
- for a country or a state in the local OCM map.</div>
+ for a country or a state in the local map.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/AdministrativeRulesLoader.html#%3Cinit%3E()" class="member-name-link">AdministrativeRulesLoader()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/AdministrativeRulesLoader.html" title="class in com.here.sdk.mapdata">AdministrativeRulesLoader</a></dt>
 <dd>
@@ -1679,6 +1691,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Payment with a bank card.</div>
 </dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#baseName" class="member-name-link">baseName</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
+<dd>
+<div class="block">Base name part of the street name.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/DynamicSpeedInfo.html#baseSpeedInMetersPerSecond" class="member-name-link">baseSpeedInMetersPerSecond</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/DynamicSpeedInfo.html" title="class in com.here.sdk.routing">DynamicSpeedInfo</a></dt>
 <dd>
 <div class="block">The speed in meters per second without taking traffic into consideration.</div>
@@ -2195,6 +2211,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Constructs a MapLayerPriority.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Builds an immutable PositionIndicatorMeshRepresentation with the configured properties.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html#build()" class="member-name-link">build()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html" title="class in com.here.sdk.mapview">MapSceneLoadOptionsBuilder</a></dt>
 <dd>
 <div class="block">Builds the <a href="com/here/sdk/mapview/MapSceneLoadOptions.html" title="class in com.here.sdk.mapview"><code>MapSceneLoadOptions</code></a> instance.</div>
@@ -2572,10 +2592,6 @@ loadScripts(document, 'script');</script>
 <div class="block">When enabled and bearing is not present in a GPX track point, it is calculated from the
  coordinates of adjacent track points.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/CalculateIndoorRouteCallback.html" class="type-name-link" title="interface in com.here.sdk.venue.routing">CalculateIndoorRouteCallback</a> - Interface in <a href="com/here/sdk/venue/routing/package-summary.html">com.here.sdk.venue.routing</a></dt>
-<dd>
-<div class="block">A function which is called by the IndoorRoutingEngine after route calculation has completed.</div>
-</dd>
 <dt><a href="com/here/sdk/routing/IsolineRoutingEngine.html#calculateIsoline(com.here.sdk.routing.Waypoint,com.here.sdk.routing.IsolineOptions,com.here.sdk.routing.CalculateIsolineCallback)" class="member-name-link">calculateIsoline(Waypoint, IsolineOptions, CalculateIsolineCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/IsolineRoutingEngine.html" title="class in com.here.sdk.routing">IsolineRoutingEngine</a></dt>
 <dd>
 <div class="block">Asynchronously calculates isolines to indicate the reachable area from a center point.</div>
@@ -2604,141 +2620,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Asynchronously calculates a public transit route from the origin to the destination.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.CalculateIndoorRouteCallback)" class="member-name-link">calculateRoute(IndoorWaypoint, IndoorWaypoint, IndoorRouteOptions, CalculateIndoorRouteCallback)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html" title="class in com.here.sdk.venue.routing">IndoorRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with IndoorRouteCallback parameter instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html#calculateRoute(com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorWaypoint,com.here.sdk.venue.routing.IndoorRouteOptions,com.here.sdk.venue.routing.IndoorRouteCallback)" class="member-name-link">calculateRoute(IndoorWaypoint, IndoorWaypoint, IndoorRouteOptions, IndoorRouteCallback)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingEngine.html" title="class in com.here.sdk.venue.routing">IndoorRoutingEngine</a></dt>
 <dd>
 <div class="block">Asynchronously calculates a route inside a venue with route notices.</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BicycleOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BicycleOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BicycleOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.BusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.BusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.BusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, BusOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.CarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, CarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.CarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, CarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.CarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, CarOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.EVCarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, EVCarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.EVCarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, EVCarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.EVCarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, EVCarOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.EVTruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, EVTruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.EVTruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, EVTruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.EVTruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, EVTruckOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.PedestrianOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, PedestrianOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.PedestrianOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, PedestrianOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.PedestrianOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, PedestrianOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.PrivateBusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, PrivateBusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.PrivateBusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, PrivateBusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.PrivateBusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, PrivateBusOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
 </dd>
 <dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, RoutingOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
 <dd>
@@ -2754,60 +2638,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Asynchronously calculates a route from one point to another,
  passing through the given waypoints in the given order.</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.ScooterOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, ScooterOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.ScooterOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, ScooterOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.ScooterOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, ScooterOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.TaxiOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, TaxiOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.TaxiOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, TaxiOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.TaxiOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, TaxiOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.TruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, TruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#calculateRoute(java.util.List,com.here.sdk.routing.TruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, TruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingInterface.html#calculateRoute(java.util.List,com.here.sdk.routing.TruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">calculateRoute(List&lt;Waypoint&gt;, TruckOptions, CalculateRouteCallback)</a> - Method in interface com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingInterface.html" title="interface in com.here.sdk.routing">RoutingInterface</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>calculate_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
 </dd>
 <dt><a href="com/here/sdk/routing/CalculateRouteCallback.html" class="type-name-link" title="interface in com.here.sdk.routing">CalculateRouteCallback</a> - Interface in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
@@ -3890,12 +3720,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Initialize <a href="com/here/sdk/core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine"><code>SDKNativeEngine</code></a> with URL of the remote map data source gRPC server.</div>
 </dd>
-<dt><a href="com/here/sdk/mapview/MapContentSettings.html#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportMode,com.here.sdk.transport.TruckSpecifications,java.util.List,com.here.sdk.transport.TunnelCategory)" class="member-name-link">configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, List&lt;HazardousMaterial&gt;, TunnelCategory)</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentSettings.html" title="class in com.here.sdk.mapview">MapContentSettings</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0, use <a href="com/here/sdk/mapview/MapContentSettings.html#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)"><code>MapContentSettings.configureVehicleRestrictionFilter(TransportSpecification)</code></a> instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/mapview/MapContentSettings.html#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)" class="member-name-link">configureVehicleRestrictionFilter(TransportSpecification)</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapContentSettings.html" title="class in com.here.sdk.mapview">MapContentSettings</a></dt>
 <dd>
 <div class="block">Configures a filter for <a href="com/here/sdk/mapview/MapFeatures.html#VEHICLE_RESTRICTIONS"><code>MapFeatures.VEHICLE_RESTRICTIONS</code></a> to show only the restrictions
@@ -3905,7 +3729,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Confirmation action specific status codes.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#confirmHEREPrivacyNoticeException()" class="member-name-link">confirmHEREPrivacyNoticeException()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#confirmHEREPrivacyNoticeException()" class="member-name-link">confirmHEREPrivacyNoticeException()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">By calling this method, the application developer confirms that they have received an
  exceptional permission from HERE in written form to **not** include a reference to the HERE
@@ -3916,7 +3740,7 @@ loadScripts(document, 'script');</script>
 <div class="block">By calling this method, the application developer confirms that they have received an exceptional permission
  from HERE in written form to <strong>not</strong> include a reference to the HERE Privacy Notice.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#confirmHEREPrivacyNoticeInclusion()" class="member-name-link">confirmHEREPrivacyNoticeInclusion()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#confirmHEREPrivacyNoticeInclusion()" class="member-name-link">confirmHEREPrivacyNoticeInclusion()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">It is the responsibility of the application developer to ensure that
  the application user is informed about the collection of characteristic information
@@ -3958,7 +3782,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">A class that provides information about link id and accessibility.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/Connectivity.html#%3Cinit%3E(com.here.sdk.mapdata.DirectedOCMSegmentId,java.util.List)" class="member-name-link">Connectivity(DirectedOCMSegmentId, List&lt;TransportType&gt;)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/Connectivity.html" title="class in com.here.sdk.mapdata">Connectivity</a></dt>
+<dt><a href="com/here/sdk/mapdata/Connectivity.html#%3Cinit%3E(java.util.List)" class="member-name-link">Connectivity(List&lt;TransportType&gt;)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/Connectivity.html" title="class in com.here.sdk.mapdata">Connectivity</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
@@ -4219,12 +4043,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Could not match destination.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#COULD_NOT_MATCH_DESTINATION" class="member-name-link">COULD_NOT_MATCH_DESTINATION</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>IndoorRouteNoticeCode.COULD_NOT_MATCH_DESTINATION</code> instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
 <div class="block">Origin waypoint could not be matched to a road network.</div>
@@ -4232,12 +4050,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
 <div class="block">Could not match origin.</div>
-</dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#COULD_NOT_MATCH_ORIGIN" class="member-name-link">COULD_NOT_MATCH_ORIGIN</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>IndoorRouteNoticeCode.COULD_NOT_MATCH_ORIGIN</code> instead.</div>
-</div>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#COULD_NOT_MATCH_WAYPOINT" class="member-name-link">COULD_NOT_MATCH_WAYPOINT</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
@@ -4397,6 +4209,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/JsonStyleFactory.html#createFromString(java.lang.String)" class="member-name-link">createFromString(String)</a> - Static method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/JsonStyleFactory.html" title="class in com.here.sdk.mapview">JsonStyleFactory</a></dt>
 <dd>
 <div class="block">Creates an instance of Style from a JSON string.</div>
+</dd>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#createHerePositioningClient(com.here.sdk.core.engine.SDKNativeEngine)" class="member-name-link">createHerePositioningClient(SDKNativeEngine)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
+<dd>
+<div class="block">Creates HerePositioningClient from SDKNativeEngine</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/IconProvider.html#createRoadShieldIcon(com.here.sdk.mapview.RoadShieldIconProperties,com.here.sdk.mapview.MapScheme,com.here.sdk.mapview.IconProviderAssetType,long,long,com.here.sdk.mapview.IconProvider.IconCallback)" class="member-name-link">createRoadShieldIcon(RoadShieldIconProperties, MapScheme, IconProviderAssetType, long, long, IconProvider.IconCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/IconProvider.html" title="class in com.here.sdk.mapview">IconProvider</a></dt>
 <dd>
@@ -5031,7 +4847,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapdata/TollStructureManeuver.html#destinations" class="member-name-link">destinations</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TollStructureManeuver.html" title="class in com.here.sdk.mapdata">TollStructureManeuver</a></dt>
 <dd>
-<div class="block">Optional destinations segment references.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>local_destinations</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/datasource/LineDataSource.html#destroy()" class="member-name-link">destroy()</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/LineDataSource.html" title="class in com.here.sdk.mapview.datasource">LineDataSource</a></dt>
 <dd>
@@ -5151,6 +4969,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
+<dt><a href="com/here/sdk/search/Details.html#%3Cinit%3E(java.util.List,java.util.List,java.util.List,java.util.List,java.util.List,java.util.List,java.util.List,com.here.sdk.search.EVChargingPool,com.here.sdk.search.TruckAmenities,com.here.sdk.search.FuelStation,java.util.List,com.here.sdk.search.POIPaymentDetails,com.here.sdk.search.EVChargingLocation,java.util.List)" class="member-name-link">Details(List&lt;Contact&gt;, List&lt;OpeningHours&gt;, List&lt;PlaceCategory&gt;, List&lt;WebImage&gt;, List&lt;WebEditorial&gt;, List&lt;WebRating&gt;, List&lt;SupplierReference&gt;, EVChargingPool, TruckAmenities, FuelStation, List&lt;PlaceFoodType&gt;, POIPaymentDetails, EVChargingLocation, List&lt;StreetInfo&gt;)</a> - Constructor for class com.here.sdk.search.<a href="com/here/sdk/search/Details.html" title="class in com.here.sdk.search">Details</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/TransitIncidentEffect.html#DETOUR" class="member-name-link">DETOUR</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/TransitIncidentEffect.html" title="enum class in com.here.sdk.routing">TransitIncidentEffect</a></dt>
 <dd>
 <div class="block">Detour</div>
@@ -5217,17 +5039,34 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Diners club credit card</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/Connectivity.html#directedLocalSegmentId" class="member-name-link">directedLocalSegmentId</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/Connectivity.html" title="class in com.here.sdk.mapdata">Connectivity</a></dt>
+<dd>
+<div class="block">Local link ID.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" class="type-name-link" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
+<dd>
+<div class="block">Local Segment ID with travel direction of segment.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html#%3Cinit%3E()" class="member-name-link">DirectedLocalSegmentId()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" class="type-name-link" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
 <dd>
-<div class="block">OCM Segment ID with travel direction of segment.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>DirectedLocalSegmentId</code> instead.</div>
+</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#%3Cinit%3E(com.here.sdk.mapdata.OCMSegmentId)" class="member-name-link">DirectedOCMSegmentId(OCMSegmentId)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
+<dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#%3Cinit%3E()" class="member-name-link">DirectedOCMSegmentId()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Creates a new instance.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/Connectivity.html#directedSegmentId" class="member-name-link">directedSegmentId</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/Connectivity.html" title="class in com.here.sdk.mapdata">Connectivity</a></dt>
 <dd>
-<div class="block">Link ID</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>directed_local_segment_id</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/routing/LocalizedRoadNumber.html#direction" class="member-name-link">direction</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/LocalizedRoadNumber.html" title="class in com.here.sdk.routing">LocalizedRoadNumber</a></dt>
 <dd>
@@ -5310,7 +5149,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Disables HERE SDK logging messages to console.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#disableVehicleSensors()" class="member-name-link">disableVehicleSensors()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#disableVehicleSensors()" class="member-name-link">disableVehicleSensors()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Disables access to vehicle's sensor information.</div>
 </dd>
@@ -6360,10 +6199,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">A flag that indicates whether lane recommendation should be used when generating notifications.</div>
 </dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#enableLighting(boolean)" class="member-name-link">enableLighting(boolean)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
-<dd>
-<div class="block">Enables/Disables light interaction with the object color.</div>
-</dd>
 <dt><a href="com/here/sdk/core/engine/LogControl.html#enableLoggingToConsole(com.here.sdk.core.engine.LogLevel)" class="member-name-link">enableLoggingToConsole(LogLevel)</a> - Static method in class com.here.sdk.core.engine.<a href="com/here/sdk/core/engine/LogControl.html" title="class in com.here.sdk.core.engine">LogControl</a></dt>
 <dd>
 <div class="block">Enables HERE SDK logging messages to console that can be
@@ -6427,7 +6262,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Enable or disable <a href="com/here/sdk/core/engine/UsageStats.html" title="class in com.here.sdk.core.engine"><code>UsageStats</code></a> for the HERE SDK.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#enableVehicleSensors(androidx.car.app.hardware.CarHardwareManager)" class="member-name-link">enableVehicleSensors(CarHardwareManager)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#enableVehicleSensors(androidx.car.app.hardware.CarHardwareManager)" class="member-name-link">enableVehicleSensors(CarHardwareManager)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">This feature enables the utilization of the vehicle's GNSS and movement sensor information.</div>
 </dd>
@@ -6770,16 +6605,24 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/Connectivity.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/Connectivity.html" title="class in com.here.sdk.mapdata">Connectivity</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
+<dt><a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/DownloadingFileOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DownloadingFileOptions.html" title="class in com.here.sdk.mapdata">DownloadingFileOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/DriveRestRegulation.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DriveRestRegulation.html" title="class in com.here.sdk.mapdata">DriveRestRegulation</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/FileReference.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
+<dt><a href="com/here/sdk/mapdata/LocalSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/PhysicalAttributes.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PhysicalAttributes.html" title="class in com.here.sdk.mapdata">PhysicalAttributes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/PreTripPlanning.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PreTripPlanning.html" title="class in com.here.sdk.mapdata">PreTripPlanning</a></dt>
@@ -7236,6 +7079,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/PlaceIdQuery.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdQuery.html" title="class in com.here.sdk.search">PlaceIdQuery</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/search/PlaceIdResult.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdResult.html" title="class in com.here.sdk.search">PlaceIdResult</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/POIPaymentDetails.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/POIPaymentDetails.html" title="class in com.here.sdk.search">POIPaymentDetails</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/ResponseDetails.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/ResponseDetails.html" title="class in com.here.sdk.search">ResponseDetails</a></dt>
@@ -7243,6 +7088,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/ScheduleDetails.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/ScheduleDetails.html" title="class in com.here.sdk.search">ScheduleDetails</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/SearchOptions.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/SearchOptions.html" title="class in com.here.sdk.search">SearchOptions</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/StructuredQuery.AddressElements.html#equals(java.lang.Object)" class="member-name-link">equals(Object)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/StructuredQuery.AddressElements.html" title="class in com.here.sdk.search">StructuredQuery.AddressElements</a></dt>
 <dd>&nbsp;</dd>
@@ -9252,12 +9099,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the currently set camera behavior.</div>
 </dd>
-<dt><a href="com/here/sdk/navigation/FixedCameraBehavior.html#getCameraDistanceInMeters()" class="member-name-link">getCameraDistanceInMeters()</a> - Method in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/FixedCameraBehavior.html" title="class in com.here.sdk.navigation">FixedCameraBehavior</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <a href="com/here/sdk/navigation/FixedCameraBehavior.html#getZoom()"><code>FixedCameraBehavior.getZoom()</code></a> instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/navigation/FixedCameraBehavior.html#getCameraTiltInDegrees()" class="member-name-link">getCameraTiltInDegrees()</a> - Method in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/FixedCameraBehavior.html" title="class in com.here.sdk.navigation">FixedCameraBehavior</a></dt>
 <dd>
 <div class="block">Gets the currently set camera tilt with axis parallel to the ground.</div>
@@ -10113,8 +9954,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteStyle.html#getIndoorMarkerFor(com.here.sdk.routing.IndoorLevelChangeFeatures,int)" class="member-name-link">getIndoorMarkerFor(IndoorLevelChangeFeatures, int)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a></dt>
 <dd>
-<div class="block">Returns a <a href="com/here/sdk/mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a> for a given indoor feature and
- the number of levels to change.</div>
+<div class="block">Returns a <a href="com/here/sdk/mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a> for a given indoor feature and direction.</div>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteStyle.html#getIndoorPolylineColor()" class="member-name-link">getIndoorPolylineColor()</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a></dt>
 <dd>
@@ -10268,7 +10108,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Gets the languages available in the venue service.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#getLastKnownLocation()" class="member-name-link">getLastKnownLocation()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#getLastKnownLocation()" class="member-name-link">getLastKnownLocation()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Gets the last known location obtained by the engine.</div>
 </dd>
@@ -10361,6 +10201,22 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapdata/SegmentSpanData.html#getLocalRoadCharacteristics()" class="member-name-link">getLocalRoadCharacteristics()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentSpanData.html" title="class in com.here.sdk.mapdata">SegmentSpanData</a></dt>
 <dd>
 <div class="block">Gets the local road characteristics.</div>
+</dd>
+<dt><a href="com/here/sdk/electronichorizon/ElectronicHorizonDataLoader.html#getLocalSegment(com.here.sdk.mapdata.DirectedLocalSegmentId)" class="member-name-link">getLocalSegment(DirectedLocalSegmentId)</a> - Method in class com.here.sdk.electronichorizon.<a href="com/here/sdk/electronichorizon/ElectronicHorizonDataLoader.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoader</a></dt>
+<dd>
+<div class="block">Returns loaded data for the given local segment identifier.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/SegmentData.html#getLocalSegmentId()" class="member-name-link">getLocalSegmentId()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></dt>
+<dd>
+<div class="block">Gets the <a href="com/here/sdk/mapdata/LocalSegmentId.html" title="class in com.here.sdk.mapdata"><code>LocalSegmentId</code></a> object representing the segment.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/SegmentReferenceConverter.html#getLocalSegmentId(com.here.sdk.routing.SegmentReference)" class="member-name-link">getLocalSegmentId(SegmentReference)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentReferenceConverter.html" title="class in com.here.sdk.mapdata">SegmentReferenceConverter</a></dt>
+<dd>
+<div class="block">The <a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata"><code>DirectedLocalSegmentId</code></a> for provided <a href="com/here/sdk/routing/SegmentReference.html" title="class in com.here.sdk.routing"><code>SegmentReference</code></a>.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#getLocalSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getLocalSegmentsAroundCoordinates(GeoCoordinates, double)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
+<dd>
+<div class="block">Loads the local segments around a certain coordinates.</div>
 </dd>
 <dt><a href="com/here/sdk/traffic/TrafficFlow.html#getLocation()" class="member-name-link">getLocation()</a> - Method in class com.here.sdk.traffic.<a href="com/here/sdk/traffic/TrafficFlow.html" title="class in com.here.sdk.traffic">TrafficFlow</a></dt>
 <dd>
@@ -10676,11 +10532,15 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentData.html#getOcmSegmentId()" class="member-name-link">getOcmSegmentId()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></dt>
 <dd>
-<div class="block">Gets the <a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata"><code>OCMSegmentId</code></a> object representing the the segment.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>SegmentData.localSegmentId</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentReferenceConverter.html#getOCMSegmentId(com.here.sdk.routing.SegmentReference)" class="member-name-link">getOCMSegmentId(SegmentReference)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentReferenceConverter.html" title="class in com.here.sdk.mapdata">SegmentReferenceConverter</a></dt>
 <dd>
-<div class="block">The <a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata"><code>DirectedOCMSegmentId</code></a> for provided <a href="com/here/sdk/routing/SegmentReference.html" title="class in com.here.sdk.routing"><code>SegmentReference</code></a>.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>getLocalSegmentId()</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/maploader/MapDownloader.html#getOfflineMapsStorageSizeInBytes()" class="member-name-link">getOfflineMapsStorageSizeInBytes()</a> - Method in class com.here.sdk.maploader.<a href="com/here/sdk/maploader/MapDownloader.html" title="class in com.here.sdk.maploader">MapDownloader</a></dt>
 <dd>
@@ -11186,7 +11046,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/routing/Maneuver.html#getRoundaboutAngleInDegrees()" class="member-name-link">getRoundaboutAngleInDegrees()</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/Maneuver.html" title="class in com.here.sdk.routing">Maneuver</a></dt>
 <dd>
-<div class="block">The angle is estimated between the incoming and outgoing route parts before entering the actual roundabout.</div>
+<div class="block">The estimated rotation performed while traversing the roundabout.</div>
 </dd>
 <dt><a href="com/here/sdk/electronichorizon/ElectronicHorizonEngine.html#getRoute()" class="member-name-link">getRoute()</a> - Method in class com.here.sdk.electronichorizon.<a href="com/here/sdk/electronichorizon/ElectronicHorizonEngine.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonEngine</a></dt>
 <dd>
@@ -11386,7 +11246,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/electronichorizon/ElectronicHorizonDataLoader.html#getSegment(com.here.sdk.mapdata.DirectedOCMSegmentId)" class="member-name-link">getSegment(DirectedOCMSegmentId)</a> - Method in class com.here.sdk.electronichorizon.<a href="com/here/sdk/electronichorizon/ElectronicHorizonDataLoader.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoader</a></dt>
 <dd>
-<div class="block">Returns loaded data for the given segment identifier.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>get_local_segment()</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentData.html#getSegmentReference()" class="member-name-link">getSegmentReference()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentData.html" title="class in com.here.sdk.mapdata">SegmentData</a></dt>
 <dd>
@@ -11398,7 +11260,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#getSegmentsAroundCoordinates(com.here.sdk.core.GeoCoordinates,double)" class="member-name-link">getSegmentsAroundCoordinates(GeoCoordinates, double)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
 <dd>
-<div class="block">Loads the segments around a certain coordinates.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>getLocalSegmentsAroundCoordinates()</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/venue/control/Venue.html#getSelectedDrawing()" class="member-name-link">getSelectedDrawing()</a> - Method in class com.here.sdk.venue.control.<a href="com/here/sdk/venue/control/Venue.html" title="class in com.here.sdk.venue.control">Venue</a></dt>
 <dd>
@@ -12420,7 +12284,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/routing/RouteHandle.html#handle" class="member-name-link">handle</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a></dt>
 <dd>
-<div class="block">Handle value as it is provided by routing server.</div>
+<div class="block">Handle value as provided by the routing engine that created this handle.</div>
 </dd>
 <dt><a href="com/here/sdk/navigation/LaneDirection.html#HARD_LEFT" class="member-name-link">HARD_LEFT</a> - Enum constant in enum class com.here.sdk.navigation.<a href="com/here/sdk/navigation/LaneDirection.html" title="enum class in com.here.sdk.navigation">LaneDirection</a></dt>
 <dd>
@@ -12589,16 +12453,24 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/Connectivity.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/Connectivity.html" title="class in com.here.sdk.mapdata">Connectivity</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
+<dt><a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/DownloadingFileOptions.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DownloadingFileOptions.html" title="class in com.here.sdk.mapdata">DownloadingFileOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/DriveRestRegulation.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DriveRestRegulation.html" title="class in com.here.sdk.mapdata">DriveRestRegulation</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/FileReference.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
+<dt><a href="com/here/sdk/mapdata/LocalSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/PhysicalAttributes.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PhysicalAttributes.html" title="class in com.here.sdk.mapdata">PhysicalAttributes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/mapdata/PreTripPlanning.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/PreTripPlanning.html" title="class in com.here.sdk.mapdata">PreTripPlanning</a></dt>
@@ -13055,6 +12927,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/PlaceIdQuery.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdQuery.html" title="class in com.here.sdk.search">PlaceIdQuery</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/search/PlaceIdResult.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdResult.html" title="class in com.here.sdk.search">PlaceIdResult</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/POIPaymentDetails.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/POIPaymentDetails.html" title="class in com.here.sdk.search">POIPaymentDetails</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/ResponseDetails.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/ResponseDetails.html" title="class in com.here.sdk.search">ResponseDetails</a></dt>
@@ -13062,6 +12936,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/ScheduleDetails.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/ScheduleDetails.html" title="class in com.here.sdk.search">ScheduleDetails</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/SearchOptions.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/SearchOptions.html" title="class in com.here.sdk.search">SearchOptions</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/search/StructuredQuery.AddressElements.html#hashCode()" class="member-name-link">hashCode()</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/StructuredQuery.AddressElements.html" title="class in com.here.sdk.search">StructuredQuery.AddressElements</a></dt>
 <dd>&nbsp;</dd>
@@ -13679,8 +13555,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Administrative context identifier for this set of rules.</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html#id" class="member-name-link">id</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></dt>
+<dd>
+<div class="block">Segment ID in the local map.</div>
+</dd>
 <dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#id" class="member-name-link">id</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Segment ID in OCM map</div>
 </dd>
 <dt><a href="com/here/sdk/maploader/RegionId.html#id" class="member-name-link">id</a> - Variable in class com.here.sdk.maploader.<a href="com/here/sdk/maploader/RegionId.html" title="class in com.here.sdk.maploader">RegionId</a></dt>
@@ -13931,18 +13812,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">No route section was found for imported waypoints.</div>
 </dd>
-<dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#importRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(RouteHandle, RefreshRouteOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> method with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(RouteHandle, RefreshRouteOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/routing/OfflineRoutingEngine.html#importRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(RouteHandle, RoutingOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/OfflineRoutingEngine.html" title="class in com.here.sdk.routing">OfflineRoutingEngine</a></dt>
 <dd>
 <div class="block">Asynchronously recreates a route from the <a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a> provided, i.e.</div>
@@ -13951,133 +13820,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Asynchronously recreates a route from the <a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a> provided, i.e.</div>
 </dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, BicycleOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.BusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, BusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.CarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, CarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.EVCarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, EVCarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.EVTruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, EVTruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.PedestrianOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, PedestrianOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.PrivateBusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, PrivateBusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, RoutingOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
 <dd>
 <div class="block">Asynchronously creates a route from a sequence of geographic coordinates very close to each other.</div>
 </dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.ScooterOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, ScooterOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.TaxiOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, TaxiOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,com.here.sdk.routing.TruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, TruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.BicycleOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, BicycleOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.BusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, BusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.CarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, CarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.EVCarOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, EVCarOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.EVTruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, EVTruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.PedestrianOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, PedestrianOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.PrivateBusOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, PrivateBusOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, RoutingOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
 <dd>
 <div class="block">Asynchronously creates a route from a sequence of geographic coordinates very close to each other.</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.ScooterOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, ScooterOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.TaxiOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, TaxiOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#importRoute(java.util.List,java.util.List,com.here.sdk.routing.TruckOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">importRoute(List&lt;Location&gt;, List&lt;RouteStop&gt;, TruckOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>import_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
 </dd>
 <dt><a href="com/here/sdk/animation/EasingFunction.html#IN_BACK" class="member-name-link">IN_BACK</a> - Enum constant in enum class com.here.sdk.animation.<a href="com/here/sdk/animation/EasingFunction.html" title="enum class in com.here.sdk.animation">EasingFunction</a></dt>
 <dd>
@@ -14203,6 +13952,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/CategoryQuery.html#includeFoodTypes" class="member-name-link">includeFoodTypes</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/CategoryQuery.html" title="class in com.here.sdk.search">CategoryQuery</a></dt>
 <dd>
 <div class="block">List of food types to be included.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RoutingError.html#INCOMPATIBLE_ROUTE_HANDLE" class="member-name-link">INCOMPATIBLE_ROUTE_HANDLE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
+<dd>
+<div class="block">The <a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a> was created by a different routing engine than the one it is used with.</div>
 </dd>
 <dt><a href="com/here/sdk/animation/MapMarkerAnimation.InstantiationErrorCode.html#INCOMPATIBLE_TRACK" class="member-name-link">INCOMPATIBLE_TRACK</a> - Enum constant in enum class com.here.sdk.animation.<a href="com/here/sdk/animation/MapMarkerAnimation.InstantiationErrorCode.html" title="enum class in com.here.sdk.animation">MapMarkerAnimation.InstantiationErrorCode</a></dt>
 <dd>
@@ -14642,6 +14395,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">An intersection of two, or more, streets.</div>
 </dd>
+<dt><a href="com/here/sdk/search/Address.html#intersectionStreets" class="member-name-link">intersectionStreets</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/Address.html" title="class in com.here.sdk.search">Address</a></dt>
+<dd>
+<div class="block">Streets participating in an intersection.</div>
+</dd>
 <dt><a href="com/here/sdk/core/GeoBox.html#intersects(com.here.sdk.core.GeoBox)" class="member-name-link">intersects(GeoBox)</a> - Method in class com.here.sdk.core.<a href="com/here/sdk/core/GeoBox.html" title="class in com.here.sdk.core">GeoBox</a></dt>
 <dd>
 <div class="block">Determines whether this <code>GeoBox</code> intersects with the passed <code>GeoBox</code>.</div>
@@ -14747,13 +14504,13 @@ loadScripts(document, 'script');</script>
 <div class="block">Unreachable <code>SDKOptions.persistentMapStoragePath</code> or lacking required permission
  to generate index inside.</div>
 </dd>
-<dt><a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.StartError.html#INVALID_REFRESH_ROUTE_OPTIONS" class="member-name-link">INVALID_REFRESH_ROUTE_OPTIONS</a> - Enum constant in enum class com.here.sdk.trafficawarenavigation.<a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.StartError.html" title="enum class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine.StartError</a></dt>
-<dd>
-<div class="block">Invalid RefreshRouteOptions passed.</div>
-</dd>
 <dt><a href="com/here/sdk/mapview/MapError.html#INVALID_RENDER_TARGET" class="member-name-link">INVALID_RENDER_TARGET</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapError.html" title="enum class in com.here.sdk.mapview">MapError</a></dt>
 <dd>
 <div class="block">Provided render target is invalid.</div>
+</dd>
+<dt><a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.StartError.html#INVALID_ROUTING_OPTIONS" class="member-name-link">INVALID_ROUTING_OPTIONS</a> - Enum constant in enum class com.here.sdk.trafficawarenavigation.<a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.StartError.html" title="enum class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine.StartError</a></dt>
+<dd>
+<div class="block">Invalid RoutingOptions passed.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapError.html#INVALID_SCENE" class="member-name-link">INVALID_SCENE</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapError.html" title="enum class in com.here.sdk.mapview">MapError</a></dt>
 <dd>
@@ -15025,7 +14782,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapMarker.html#isIconOverlapAllowed()" class="member-name-link">isIconOverlapAllowed()</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a></dt>
 <dd>
-<div class="block">Returns <code>true</code> if the icon is allowed to overlap other icons, <code>false</code> otherwise.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <a href="com/here/sdk/mapview/MapMarker.html#isOverlapAllowed()"><code>MapMarker.isOverlapAllowed()</code></a> together with <a href="com/here/sdk/mapview/MapMarker.html#isTextOptional()"><code>MapMarker.isTextOptional()</code></a> instead. Together, these properties provide the same behavior.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/venue/service/VenueService.html#isInitialized()" class="member-name-link">isInitialized()</a> - Method in class com.here.sdk.venue.service.<a href="com/here/sdk/venue/service/VenueService.html" title="class in com.here.sdk.venue.service">VenueService</a></dt>
 <dd>
@@ -15351,7 +15110,7 @@ loadScripts(document, 'script');</script>
 <div class="block">A slow lane, also known as truck (US) or crawler lane (UK), is a lane on long and/or steep
  uphill/downhill stretches of high-speed roads that is designated to facilitate slow traffic.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#isStarted()" class="member-name-link">isStarted()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#isStarted()" class="member-name-link">isStarted()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Checks if the engine is in started state.</div>
 </dd>
@@ -15866,6 +15625,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/routing/RouteTextOptions.html#language" class="member-name-link">language</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteTextOptions.html" title="class in com.here.sdk.routing">RouteTextOptions</a></dt>
 <dd>
 <div class="block">The language for all textual information.</div>
+</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#language" class="member-name-link">language</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
+<dd>
+<div class="block">BCP 47 compliant language code.</div>
 </dd>
 <dt><a href="com/here/sdk/search/WebEditorial.html#language" class="member-name-link">language</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/WebEditorial.html" title="class in com.here.sdk.search">WebEditorial</a></dt>
 <dd>
@@ -16427,11 +16190,19 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadData(OCMSegmentId, SegmentDataLoaderOptions)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
 <dd>
-<div class="block">Synchronously load the data for the given map segment.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>loadLocalData</code> with <code>LocalSegmentId</code> instead.</div>
+</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadDirectedLocalSegmentData(com.here.sdk.mapdata.DirectedLocalSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedLocalSegmentData(DirectedLocalSegmentId, SegmentDataLoaderOptions)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
+<dd>
+<div class="block">Synchronously load the data for the given map directed segment.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadDirectedSegmentData(DirectedOCMSegmentId, SegmentDataLoaderOptions)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
 <dd>
-<div class="block">Synchronously load the data for the given map directed segment.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>load_directed_local_segment_data()</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/datasource/RasterTileSource.LoadResultHandler.html#loaded(com.here.sdk.mapview.datasource.TileKey,byte%5B%5D,com.here.sdk.mapview.datasource.TileSource.TileMetadata)" class="member-name-link">loaded(TileKey, byte[], TileSource.TileMetadata)</a> - Method in interface com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/RasterTileSource.LoadResultHandler.html" title="interface in com.here.sdk.mapview.datasource">RasterTileSource.LoadResultHandler</a></dt>
 <dd>
@@ -16453,6 +16224,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">If it is true, the <a href="com/here/sdk/mapdata/SegmentSpanData.html#getFunctionalRoadClass()"><code>SegmentSpanData.getFunctionalRoadClass()</code></a> will be loaded when <a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)"><code>SegmentDataLoader.loadData(com.here.sdk.mapdata.OCMSegmentId, com.here.sdk.mapdata.SegmentDataLoaderOptions)</code></a> or
  <a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)"><code>SegmentDataLoader.loadDirectedSegmentData(com.here.sdk.mapdata.DirectedOCMSegmentId, com.here.sdk.mapdata.SegmentDataLoaderOptions)</code></a> is called.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadLocalData(com.here.sdk.mapdata.LocalSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)" class="member-name-link">loadLocalData(LocalSegmentId, SegmentDataLoaderOptions)</a> - Method in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
+<dd>
+<div class="block">Synchronously load the data for the given map segment.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoaderOptions.html#loadLocalRoadCharacteristics" class="member-name-link">loadLocalRoadCharacteristics</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoaderOptions.html" title="class in com.here.sdk.mapdata">SegmentDataLoaderOptions</a></dt>
 <dd>
@@ -16556,12 +16331,21 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">If it is true, <a href="com/here/sdk/mapdata/SegmentSpanData.html#isUrban()"><code>SegmentSpanData.isUrban()</code></a> will be loaded when <a href="com/here/sdk/mapdata/SegmentDataLoader.html#loadData(com.here.sdk.mapdata.OCMSegmentId,com.here.sdk.mapdata.SegmentDataLoaderOptions)"><code>SegmentDataLoader.loadData(com.here.sdk.mapdata.OCMSegmentId, com.here.sdk.mapdata.SegmentDataLoaderOptions)</code></a> is called.</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/TollStructureManeuver.html#localDestinations" class="member-name-link">localDestinations</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TollStructureManeuver.html" title="class in com.here.sdk.mapdata">TollStructureManeuver</a></dt>
+<dd>
+<div class="block">Optional destinations segment references.</div>
+</dd>
 <dt><a href="com/here/sdk/core/LocalizedText.html#locale" class="member-name-link">locale</a> - Variable in class com.here.sdk.core.<a href="com/here/sdk/core/LocalizedText.html" title="class in com.here.sdk.core">LocalizedText</a></dt>
 <dd>
 <div class="block">Locale of text, in most cases contains only language code.</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/LocalSegmentId.html#localId" class="member-name-link">localId</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a></dt>
+<dd>
+<div class="block">Local ID of the segment inside the local tile.</div>
+</dd>
 <dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#localId" class="member-name-link">localId</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Local ID of the segment inside the OCM tile.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/SegmentReference.html#localId" class="member-name-link">localId</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a></dt>
@@ -16637,6 +16421,19 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Specifies the local road characteristics: frontage, parking lot road, poi access.</div>
 </dd>
+<dt><a href="com/here/sdk/electronichorizon/ElectronicHorizonSegmentId.html#localSegmentId" class="member-name-link">localSegmentId</a> - Variable in class com.here.sdk.electronichorizon.<a href="com/here/sdk/electronichorizon/ElectronicHorizonSegmentId.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonSegmentId</a></dt>
+<dd>
+<div class="block">The directed local segment identifier.</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/LocalSegmentId.html" class="type-name-link" title="class in com.here.sdk.mapdata">LocalSegmentId</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
+<dd>
+<div class="block">Local Segment ID of particular matched <a href="com/here/sdk/routing/SegmentReference.html" title="class in com.here.sdk.routing"><code>SegmentReference</code></a> from the local map,
+ represented in form: Tile + Local ID's .</div>
+</dd>
+<dt><a href="com/here/sdk/mapdata/LocalSegmentId.html#%3Cinit%3E()" class="member-name-link">LocalSegmentId()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/core/LocationTime.html#localTime" class="member-name-link">localTime</a> - Variable in class com.here.sdk.core.<a href="com/here/sdk/core/LocationTime.html" title="class in com.here.sdk.core">LocationTime</a></dt>
 <dd>
 <div class="block">The time as observed in the tied location.</div>
@@ -16687,7 +16484,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/location/LocationEngine.html" class="type-name-link" title="class in com.here.sdk.location">LocationEngine</a> - Class in <a href="com/here/sdk/location/package-summary.html">com.here.sdk.location</a></dt>
 <dd>
-<div class="block">This class handles location updates received according to the desired <a href="com/here/sdk/location/LocationAccuracy.html" title="enum class in com.here.sdk.location"><code>LocationAccuracy</code></a> or <a href="com/here/sdk/location/LocationOptions.html" title="class in com.here.sdk.location"><code>LocationOptions</code></a>.</div>
+<div class="block">LocationEngine to access location related service with official released functionality.</div>
 </dd>
 <dt><a href="com/here/sdk/location/LocationEngine.html#%3Cinit%3E()" class="member-name-link">LocationEngine()</a> - Constructor for class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
 <dd>
@@ -17263,7 +17060,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapScene.MapPickFilter.ContentType.html#MAP_ITEMS" class="member-name-link">MAP_ITEMS</a> - Enum constant in enum class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapScene.MapPickFilter.ContentType.html" title="enum class in com.here.sdk.mapview">MapScene.MapPickFilter.ContentType</a></dt>
 <dd>
-<div class="block">Map items added through a <a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview"><code>MapScene</code></a> like <a href="com/here/sdk/mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a>, <a href="com/here/sdk/mapview/MapPolyline.html" title="class in com.here.sdk.mapview"><code>MapPolyline</code></a>, <a href="com/here/sdk/mapview/MapPolygon.html" title="class in com.here.sdk.mapview"><code>MapPolygon</code></a>.</div>
+<div class="block">Map items added through a <a href="com/here/sdk/mapview/MapScene.html" title="class in com.here.sdk.mapview"><code>MapScene</code></a> like <a href="com/here/sdk/mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a>, <a href="com/here/sdk/mapview/MapPolyline.html" title="class in com.here.sdk.mapview"><code>MapPolyline</code></a>, <a href="com/here/sdk/mapview/MapPolygon.html" title="class in com.here.sdk.mapview"><code>MapPolygon</code></a></div>
 </dd>
 <dt><a href="com/here/sdk/maploader/MapLoaderError.html#MAP_MANAGER_ERROR" class="member-name-link">MAP_MANAGER_ERROR</a> - Enum constant in enum class com.here.sdk.maploader.<a href="com/here/sdk/maploader/MapLoaderError.html" title="enum class in com.here.sdk.maploader">MapLoaderError</a></dt>
 <dd>
@@ -18402,7 +18199,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The unit used for the key in <a href="com/here/sdk/mapview/MapMeasureDependentRenderSize.html#sizes"><code>MapMeasureDependentRenderSize.sizes</code></a>.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#mediateOrientationToListeners(com.here.posclient.Orientation)" class="member-name-link">mediateOrientationToListeners(Orientation)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#mediateOrientationToListeners(com.here.posclient.Orientation)" class="member-name-link">mediateOrientationToListeners(Orientation)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/here/sdk/routing/TransitIncidentType.html#MEDICAL_EMERGENCY" class="member-name-link">MEDICAL_EMERGENCY</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/TransitIncidentType.html" title="enum class in com.here.sdk.routing">TransitIncidentType</a></dt>
 <dd>
@@ -18497,6 +18294,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/core/CountryCode.html#MEX" class="member-name-link">MEX</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
 <div class="block">Mexico</div>
+</dd>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#mHerePositioningClient" class="member-name-link">mHerePositioningClient</a> - Variable in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
+<dd>
+<div class="block">Positioning client used internally by the LocationEngine.</div>
 </dd>
 <dt><a href="com/here/sdk/core/CountryCode.html#MHL" class="member-name-link">MHL</a> - Enum constant in enum class com.here.sdk.core.<a href="com/here/sdk/core/CountryCode.html" title="enum class in com.here.sdk.core">CountryCode</a></dt>
 <dd>
@@ -19383,12 +19184,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">No route found.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRoutingError.html#NO_ROUTE_FOUND" class="member-name-link">NO_ROUTE_FOUND</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingError.html" title="enum class in com.here.sdk.venue.routing">IndoorRoutingError</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>IndoorRouteNoticeCode.NO_ROUTE_FOUND</code> instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html#NO_ROUTE_FOUND_WITH_WAYPOINT" class="member-name-link">NO_ROUTE_FOUND_WITH_WAYPOINT</a> - Enum constant in enum class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteNoticeCode.html" title="enum class in com.here.sdk.venue.routing">IndoorRouteNoticeCode</a></dt>
 <dd>
 <div class="block">No route found with the specified via waypoint.</div>
@@ -19677,15 +19472,19 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/electronichorizon/ElectronicHorizonSegmentId.html#ocmSegmentId" class="member-name-link">ocmSegmentId</a> - Variable in class com.here.sdk.electronichorizon.<a href="com/here/sdk/electronichorizon/ElectronicHorizonSegmentId.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonSegmentId</a></dt>
 <dd>
-<div class="block">The directed OCM segment identifier.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>local_segment_id</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/OCMSegmentId.html" class="type-name-link" title="class in com.here.sdk.mapdata">OCMSegmentId</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
 <dd>
-<div class="block">OCM Segment ID of particular matched <a href="com/here/sdk/routing/SegmentReference.html" title="class in com.here.sdk.routing"><code>SegmentReference</code></a> from OCM map,
- represented in form: Tile + Local ID's .</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>LocalSegmentId</code> instead.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#%3Cinit%3E()" class="member-name-link">OCMSegmentId()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Creates a new instance.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/FuelType.html#OCTANE_100" class="member-name-link">OCTANE_100</a> - Enum constant in enum class com.here.sdk.transport.<a href="com/here/sdk/transport/FuelType.html" title="enum class in com.here.sdk.transport">FuelType</a></dt>
@@ -19731,6 +19530,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/maploader/MapLoaderError.html#OFFLINE" class="member-name-link">OFFLINE</a> - Enum constant in enum class com.here.sdk.maploader.<a href="com/here/sdk/maploader/MapLoaderError.html" title="enum class in com.here.sdk.maploader">MapLoaderError</a></dt>
 <dd>
 <div class="block">Online operation is not permitted because offline mode is enabled.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RoutingEngineSource.html#OFFLINE" class="member-name-link">OFFLINE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngineSource.html" title="enum class in com.here.sdk.routing">RoutingEngineSource</a></dt>
+<dd>
+<div class="block">Handle created by the <code>OfflineRoutingEngine</code>.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html#OFFLINE" class="member-name-link">OFFLINE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingError.html" title="enum class in com.here.sdk.routing">RoutingError</a></dt>
 <dd>
@@ -20155,10 +19958,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Called when loading of a venue or its retrieval from the cache is completed.</div>
 </dd>
-<dt><a href="com/here/sdk/venue/routing/CalculateIndoorRouteCallback.html#onIndoorRouteCalculated(com.here.sdk.venue.routing.IndoorRoutingError,java.util.List)" class="member-name-link">onIndoorRouteCalculated(IndoorRoutingError, List&lt;Route&gt;)</a> - Method in interface com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/CalculateIndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">CalculateIndoorRouteCallback</a></dt>
-<dd>
-<div class="block">A function which is called by the IndoorRoutingEngine after route calculation has completed.</div>
-</dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteCallback.html#onIndoorRouteCalculated(com.here.sdk.venue.routing.IndoorRoutingError,java.util.List,java.util.List)" class="member-name-link">onIndoorRouteCalculated(IndoorRoutingError, List&lt;Route&gt;, List&lt;IndoorRouteNotice&gt;)</a> - Method in interface com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteCallback.html" title="interface in com.here.sdk.venue.routing">IndoorRouteCallback</a></dt>
 <dd>
 <div class="block">A function which is called by the IndoorRoutingEngine after route calculation has completed.</div>
@@ -20186,6 +19985,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/venue/control/VenueLevelSelectionListener.html#onLevelSelected(com.here.sdk.venue.control.Venue,com.here.sdk.venue.data.VenueDrawing,com.here.sdk.venue.data.VenueLevel,com.here.sdk.venue.data.VenueLevel)" class="member-name-link">onLevelSelected(Venue, VenueDrawing, VenueLevel, VenueLevel)</a> - Method in interface com.here.sdk.venue.control.<a href="com/here/sdk/venue/control/VenueLevelSelectionListener.html" title="interface in com.here.sdk.venue.control">VenueLevelSelectionListener</a></dt>
 <dd>
 <div class="block">Indicates that the selected <a href="com/here/sdk/venue/data/VenueLevel.html" title="class in com.here.sdk.venue.data"><code>VenueLevel</code></a> of a venue changed.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RoutingEngineSource.html#ONLINE" class="member-name-link">ONLINE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngineSource.html" title="enum class in com.here.sdk.routing">RoutingEngineSource</a></dt>
+<dd>
+<div class="block">Handle created by the online <code>RoutingEngine</code>.</div>
 </dd>
 <dt><a href="com/here/sdk/ev/EVSEPaymentSupport.html#ONLINE_APPLE_PAY" class="member-name-link">ONLINE_APPLE_PAY</a> - Enum constant in enum class com.here.sdk.ev.<a href="com/here/sdk/ev/EVSEPaymentSupport.html" title="enum class in com.here.sdk.ev">EVSEPaymentSupport</a></dt>
 <dd>
@@ -20376,6 +20179,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/PlaceIdSearchCallbackExtended.html#onPlaceIdSearchExtendedCompleted(com.here.sdk.search.SearchError,com.here.sdk.search.Place,com.here.sdk.search.ResponseDetails)" class="member-name-link">onPlaceIdSearchExtendedCompleted(SearchError, Place, ResponseDetails)</a> - Method in interface com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdSearchCallbackExtended.html" title="interface in com.here.sdk.search">PlaceIdSearchCallbackExtended</a></dt>
 <dd>
 <div class="block">The method will be called on the main thread when a search by id call has been completed.</div>
+</dd>
+<dt><a href="com/here/sdk/search/PlaceIdsSearchCallback.html#onPlaceIdsSearchCompleted(com.here.sdk.search.SearchError,java.util.List,com.here.sdk.search.ResponseDetails)" class="member-name-link">onPlaceIdsSearchCompleted(SearchError, List&lt;PlaceIdResult&gt;, ResponseDetails)</a> - Method in interface com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdsSearchCallback.html" title="interface in com.here.sdk.search">PlaceIdsSearchCallback</a></dt>
+<dd>
+<div class="block">The method will be called on the main thread when a search call has been completed.</div>
 </dd>
 <dt><a href="com/here/sdk/core/PolylineSimplificationCallback.html#onPolylineSimplified(com.here.sdk.core.PolylineSimplificationError,java.util.List)" class="member-name-link">onPolylineSimplified(PolylineSimplificationError, List&lt;GeoCoordinates&gt;)</a> - Method in interface com.here.sdk.core.<a href="com/here/sdk/core/PolylineSimplificationCallback.html" title="interface in com.here.sdk.core">PolylineSimplificationCallback</a></dt>
 <dd>
@@ -20737,6 +20544,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/maploader/PersistentMapRepairError.html#OPERATION_AFTER_DISPOSE" class="member-name-link">OPERATION_AFTER_DISPOSE</a> - Enum constant in enum class com.here.sdk.maploader.<a href="com/here/sdk/maploader/PersistentMapRepairError.html" title="enum class in com.here.sdk.maploader">PersistentMapRepairError</a></dt>
 <dd>
 <div class="block">Repair is invoked on object connected to the disposed <a href="com/here/sdk/core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine"><code>SDKNativeEngine</code></a></div>
+</dd>
+<dt><a href="com/here/sdk/search/SearchError.html#OPERATION_AFTER_DISPOSE" class="member-name-link">OPERATION_AFTER_DISPOSE</a> - Enum constant in enum class com.here.sdk.search.<a href="com/here/sdk/search/SearchError.html" title="enum class in com.here.sdk.search">SearchError</a></dt>
+<dd>
+<div class="block">Method is invoked on object connected to the disposed SDKNativeEngine.</div>
 </dd>
 <dt><a href="com/here/sdk/maploader/MapLoaderError.html#OPERATION_CANCELLED" class="member-name-link">OPERATION_CANCELLED</a> - Enum constant in enum class com.here.sdk.maploader.<a href="com/here/sdk/maploader/MapLoaderError.html" title="enum class in com.here.sdk.maploader">MapLoaderError</a></dt>
 <dd>
@@ -21714,6 +21525,11 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The departure or arrival place.</div>
 </dd>
+<dt><a href="com/here/sdk/search/PlaceIdResult.html#place" class="member-name-link">place</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdResult.html" title="class in com.here.sdk.search">PlaceIdResult</a></dt>
+<dd>
+<div class="block">The resolved <a href="com/here/sdk/search/Place.html" title="class in com.here.sdk.search"><code>Place</code></a>, or <code>null</code> if no place could be
+ resolved for the input <a href="com/here/sdk/search/PlaceIdQuery.html#id"><code>PlaceIdQuery.id</code></a>.</div>
+</dd>
 <dt><a href="com/here/sdk/search/Place.html" class="type-name-link" title="class in com.here.sdk.search">Place</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">Represents a location object, such as a country, a city, a point of interest (POI) etc.</div>
@@ -21787,6 +21603,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Constructs a PlaceIdQuery from the provided Place id.</div>
 </dd>
+<dt><a href="com/here/sdk/search/PlaceIdResult.html" class="type-name-link" title="class in com.here.sdk.search">PlaceIdResult</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
+<dd>
+<div class="block">Holds the result for a single place ID from a <code>SearchEngine.searchByPlaceIds</code> request.</div>
+</dd>
+<dt><a href="com/here/sdk/search/PlaceIdResult.html#%3Cinit%3E(java.lang.String)" class="member-name-link">PlaceIdResult(String)</a> - Constructor for class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdResult.html" title="class in com.here.sdk.search">PlaceIdResult</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
 <dt><a href="com/here/sdk/search/PlaceIdSearchCallback.html" class="type-name-link" title="interface in com.here.sdk.search">PlaceIdSearchCallback</a> - Interface in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">The method will be called on the main thread when a search by id call has been completed.</div>
@@ -21794,6 +21618,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/PlaceIdSearchCallbackExtended.html" class="type-name-link" title="interface in com.here.sdk.search">PlaceIdSearchCallbackExtended</a> - Interface in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
 <dd>
 <div class="block">The method will be called on the main thread when a search by id call has been completed.</div>
+</dd>
+<dt><a href="com/here/sdk/search/PlaceIdsSearchCallback.html" class="type-name-link" title="interface in com.here.sdk.search">PlaceIdsSearchCallback</a> - Interface in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
+<dd>
+<div class="block">The method will be called on the main thread when a search call has been completed.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/TransitWaypoint.html#placeName" class="member-name-link">placeName</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/TransitWaypoint.html" title="class in com.here.sdk.routing">TransitWaypoint</a></dt>
 <dd>
@@ -22138,9 +21966,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Mesh-based visual representation of a PositionIndicator: geometry, texture, color and lighting.</div>
 </dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#%3Cinit%3E(java.lang.String)" class="member-name-link">PositionIndicatorMeshRepresentation(String)</a> - Constructor for class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" class="type-name-link" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a> - Class in <a href="com/here/sdk/mapview/mapobject/package-summary.html">com.here.sdk.mapview.mapobject</a></dt>
 <dd>
-<div class="block">Creates a mesh representation with the given geometry.</div>
+<div class="block">Builder for creating immutable PositionIndicatorMeshRepresentation instances.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#%3Cinit%3E(java.lang.String)" class="member-name-link">PositionIndicatorMeshRepresentationBuilder(String)</a> - Constructor for class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Creates a new builder with the required geometry URI.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorRepresentation.html" class="type-name-link" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorRepresentation</a> - Class in <a href="com/here/sdk/mapview/mapobject/package-summary.html">com.here.sdk.mapview.mapobject</a></dt>
 <dd>
@@ -22689,6 +22521,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Asynchronously queries for traffic incidents by a corridor as a filter.</div>
 </dd>
+<dt><a href="com/here/sdk/search/PlaceIdResult.html#queryId" class="member-name-link">queryId</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/PlaceIdResult.html" title="class in com.here.sdk.search">PlaceIdResult</a></dt>
+<dd>
+<div class="block">The place ID provided in the corresponding <a href="com/here/sdk/search/PlaceIdQuery.html#id"><code>PlaceIdQuery.id</code></a>.</div>
+</dd>
 <dt><a href="com/here/sdk/transport/WeightPerAxleGroup.html#quintAxleGroupInKilograms" class="member-name-link">quintAxleGroupInKilograms</a> - Variable in class com.here.sdk.transport.<a href="com/here/sdk/transport/WeightPerAxleGroup.html" title="class in com.here.sdk.transport">WeightPerAxleGroup</a></dt>
 <dd>
 <div class="block">Quint axle group in kilograms.</div>
@@ -23062,30 +22898,6 @@ loadScripts(document, 'script');</script>
 <div class="block">Asynchronously refreshes a previously calculated route from the provided <a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>, updating
  the starting point and route metadata based on <a href="com/here/sdk/routing/RoutingOptions.html" title="class in com.here.sdk.routing"><code>RoutingOptions</code></a>.</div>
 </dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute(RouteHandle, Waypoint, RefreshRouteOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute(RouteHandle, Waypoint, RoutingOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RefreshRouteParameters parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute(RouteHandle, Waypoint, Integer, Integer, RefreshRouteOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RoutingOptions parameter instead.</div>
-</div>
-</dd>
-<dt><a href="com/here/sdk/routing/RoutingEngine.html#refreshRoute(com.here.sdk.routing.RouteHandle,com.here.sdk.routing.Waypoint,java.lang.Integer,java.lang.Integer,com.here.sdk.routing.RoutingOptions,com.here.sdk.routing.CalculateRouteCallback)" class="member-name-link">refreshRoute(RouteHandle, Waypoint, Integer, Integer, RoutingOptions, CalculateRouteCallback)</a> - Method in class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngine.html" title="class in com.here.sdk.routing">RoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>refresh_route()</code> methods with RefreshRouteParameters parameter instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/routing/RefreshRouteOptions.html" class="type-name-link" title="class in com.here.sdk.routing">RefreshRouteOptions</a> - Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
@@ -23435,7 +23247,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes all registered listeners.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#removeLocationIssueListener(com.here.sdk.location.LocationIssueListener)" class="member-name-link">removeLocationIssueListener(LocationIssueListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#removeLocationIssueListener(com.here.sdk.location.LocationIssueListener)" class="member-name-link">removeLocationIssueListener(LocationIssueListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Removes a <a href="com/here/sdk/location/LocationIssueListener.html" title="interface in com.here.sdk.location"><code>LocationIssueListener</code></a> from the engine</div>
 </dd>
@@ -23443,7 +23255,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes a <a href="com/here/sdk/location/LocationIssueListener.html" title="interface in com.here.sdk.location"><code>LocationIssueListener</code></a> from the engine.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#removeLocationListener(com.here.sdk.core.LocationListener)" class="member-name-link">removeLocationListener(LocationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#removeLocationListener(com.here.sdk.core.LocationListener)" class="member-name-link">removeLocationListener(LocationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Removes a <a href="com/here/sdk/core/LocationListener.html" title="interface in com.here.sdk.core"><code>LocationListener</code></a> from the engine</div>
 </dd>
@@ -23451,7 +23263,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes a <code>LocationListener</code> from the engine.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#removeLocationStatusListener(com.here.sdk.location.LocationStatusListener)" class="member-name-link">removeLocationStatusListener(LocationStatusListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#removeLocationStatusListener(com.here.sdk.location.LocationStatusListener)" class="member-name-link">removeLocationStatusListener(LocationStatusListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Removes a <a href="com/here/sdk/location/LocationStatusListener.html" title="interface in com.here.sdk.location"><code>LocationStatusListener</code></a> from the engine</div>
 </dd>
@@ -23525,7 +23337,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Removes the <a href="com/here/sdk/mapmatcher/MatchedLocationListener.html" title="interface in com.here.sdk.mapmatcher"><code>MatchedLocationListener</code></a> from the subscribtion list.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#removeOrientationListener(com.here.sdk.core.OrientationListener)" class="member-name-link">removeOrientationListener(OrientationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#removeOrientationListener(com.here.sdk.core.OrientationListener)" class="member-name-link">removeOrientationListener(OrientationListener)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Removes an OrientationListener from the engine.</div>
 </dd>
@@ -24604,6 +24416,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance of RoutingEngine.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/RoutingEngineSource.html" class="type-name-link" title="enum class in com.here.sdk.routing">RoutingEngineSource</a> - Enum Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
+<dd>
+<div class="block">Identifies the routing engine that created a <a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing"><code>RouteHandle</code></a>.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/RoutingError.html" class="type-name-link" title="enum class in com.here.sdk.routing">RoutingError</a> - Enum Class in <a href="com/here/sdk/routing/package-summary.html">com.here.sdk.routing</a></dt>
 <dd>
 <div class="block">Specifies possible errors that may result from the calculation of a route.</div>
@@ -25134,6 +24950,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Performs an asynchronous search for a <a href="com/here/sdk/search/Place.html" title="class in com.here.sdk.search"><code>Place</code></a> based on its ID and
  <a href="com/here/sdk/core/LanguageCode.html" title="enum class in com.here.sdk.core"><code>LanguageCode</code></a>.</div>
 </dd>
+<dt><a href="com/here/sdk/search/SearchEngine.html#searchByPlaceIds(java.util.List,com.here.sdk.core.LanguageCode,com.here.sdk.search.PlaceIdsSearchCallback)" class="member-name-link">searchByPlaceIds(List&lt;PlaceIdQuery&gt;, LanguageCode, PlaceIdsSearchCallback)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/SearchEngine.html" title="class in com.here.sdk.search">SearchEngine</a></dt>
+<dd>
+<div class="block">Performs an asynchronous request to search for <a href="com/here/sdk/search/PlaceIdResult.html" title="class in com.here.sdk.search"><code>PlaceIdResult</code></a> instances
+ based on the provided IDs and <a href="com/here/sdk/core/LanguageCode.html" title="enum class in com.here.sdk.core"><code>LanguageCode</code></a>.</div>
+</dd>
 <dt><a href="com/here/sdk/search/OfflineSearchEngine.html#searchByText(com.here.sdk.search.TextQuery,com.here.sdk.search.SearchOptions,com.here.sdk.search.SearchCallback)" class="member-name-link">searchByText(TextQuery, SearchOptions, SearchCallback)</a> - Method in class com.here.sdk.search.<a href="com/here/sdk/search/OfflineSearchEngine.html" title="class in com.here.sdk.search">OfflineSearchEngine</a></dt>
 <dd>
 <div class="block">Performs an asynchronous text query search for <a href="com/here/sdk/search/Place.html" title="class in com.here.sdk.search"><code>Place</code></a> instances within a given <a href="com/here/sdk/search/TextQuery.Area.html" title="class in com.here.sdk.search"><code>TextQuery.Area</code></a>.</div>
@@ -25292,7 +25113,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html" class="type-name-link" title="class in com.here.sdk.mapdata">SegmentDataLoader</a> - Class in <a href="com/here/sdk/mapdata/package-summary.html">com.here.sdk.mapdata</a></dt>
 <dd>
 <div class="block">Provides the interface for the access to the
- segments data available in the local OCM map.</div>
+ segments data available in the local map.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/SegmentDataLoader.html#%3Cinit%3E()" class="member-name-link">SegmentDataLoader()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/SegmentDataLoader.html" title="class in com.here.sdk.mapdata">SegmentDataLoader</a></dt>
 <dd>
@@ -25552,10 +25373,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets whether the active or inactive version of location indicator is to be shown.</div>
 </dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#setAmbientFactor(double)" class="member-name-link">setAmbientFactor(double)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
-<dd>
-<div class="block">Sets the ambient factor used when computing lighting.</div>
-</dd>
 <dt><a href="com/here/sdk/mapview/MapImageOverlay.html#setAnchor(com.here.sdk.core.Anchor2D)" class="member-name-link">setAnchor(Anchor2D)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapImageOverlay.html" title="class in com.here.sdk.mapview">MapImageOverlay</a></dt>
 <dd>
 <div class="block">Sets anchor point of the overlay image which specifies the position offset relative
@@ -25646,19 +25463,9 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets how the VisualNavigator handles the camera.</div>
 </dd>
-<dt><a href="com/here/sdk/navigation/FixedCameraBehavior.html#setCameraDistanceInMeters(double)" class="member-name-link">setCameraDistanceInMeters(double)</a> - Method in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/FixedCameraBehavior.html" title="class in com.here.sdk.navigation">FixedCameraBehavior</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <a href="com/here/sdk/navigation/FixedCameraBehavior.html#getZoom()"><code>FixedCameraBehavior.getZoom()</code></a> instead.</div>
-</div>
-</dd>
 <dt><a href="com/here/sdk/navigation/FixedCameraBehavior.html#setCameraTiltInDegrees(double)" class="member-name-link">setCameraTiltInDegrees(double)</a> - Method in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/FixedCameraBehavior.html" title="class in com.here.sdk.navigation">FixedCameraBehavior</a></dt>
 <dd>
 <div class="block">Sets camera tilt with axis parallel to the ground.</div>
-</dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#setColor(com.here.sdk.core.Color)" class="member-name-link">setColor(Color)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
-<dd>
-<div class="block">Sets the color which will modulate the diffuse texture color.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapSceneLights.html#setColor(com.here.sdk.mapview.MapSceneLights.Category,com.here.sdk.core.Color,com.here.sdk.mapview.MapSceneLights.AttributeSettingCallback)" class="member-name-link">setColor(MapSceneLights.Category, Color, MapSceneLights.AttributeSettingCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLights.html" title="class in com.here.sdk.mapview">MapSceneLights</a></dt>
 <dd>
@@ -25792,10 +25599,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets the listener that notify when the destination has been reached.</div>
 </dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#setDiffuseFactor(double)" class="member-name-link">setDiffuseFactor(double)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
-<dd>
-<div class="block">Sets the diffuse factor used when computing lighting.</div>
-</dd>
 <dt><a href="com/here/sdk/mapview/MapSceneLights.html#setDirection(com.here.sdk.mapview.MapSceneLights.Category,com.here.sdk.mapview.MapSceneLights.Direction,com.here.sdk.mapview.MapSceneLights.AttributeSettingCallback)" class="member-name-link">setDirection(MapSceneLights.Category, MapSceneLights.Direction, MapSceneLights.AttributeSettingCallback)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLights.html" title="class in com.here.sdk.mapview">MapSceneLights</a></dt>
 <dd>
 <div class="block">Set a new direction for the light based on its category.</div>
@@ -25917,7 +25720,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapCamera.html#setFarPlaneConfiguration(java.util.Map)" class="member-name-link">setFarPlaneConfiguration(Map&lt;Double, MapCamera.FarPlaneConfiguration&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapCamera.html" title="class in com.here.sdk.mapview">MapCamera</a></dt>
 <dd>
-<div class="block">Sets far plane distance configs per zoom level.</div>
+<div class="block">Sets far plane distance configuration per zoom level.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapPolygon.html#setFillColor(com.here.sdk.core.Color)" class="member-name-link">setFillColor(Color)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapPolygon.html" title="class in com.here.sdk.mapview">MapPolygon</a></dt>
 <dd>
@@ -25926,10 +25729,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/mapview/MapView.html#setFixedSize(int,int,double)" class="member-name-link">setFixedSize(int, int, double)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapView.html" title="class in com.here.sdk.mapview">MapView</a></dt>
 <dd>
 <div class="block">Requests a fixed size to be used for rendering this MapView.</div>
-</dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#setFlipTextureVertically(boolean)" class="member-name-link">setFlipTextureVertically(boolean)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
-<dd>
-<div class="block">Sets whether to flip the image vertically.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapSurface.html#setFrameRate(int)" class="member-name-link">setFrameRate(int)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSurface.html" title="class in com.here.sdk.mapview">MapSurface</a></dt>
 <dd>
@@ -25981,7 +25780,9 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapMarker.html#setIconOverlapAllowed(boolean)" class="member-name-link">setIconOverlapAllowed(boolean)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapMarker.html" title="class in com.here.sdk.mapview">MapMarker</a></dt>
 <dd>
-<div class="block">Sets whether the icon is allowed to overlap other icons.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <a href="com/here/sdk/mapview/MapMarker.html#isOverlapAllowed()"><code>MapMarker.isOverlapAllowed()</code></a> together with <a href="com/here/sdk/mapview/MapMarker.html#isTextOptional()"><code>MapMarker.isTextOptional()</code></a> instead. Together, these properties provide the same behavior.</div>
+</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapImageOverlay.html#setImage(com.here.sdk.mapview.MapImage)" class="member-name-link">setImage(MapImage)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapImageOverlay.html" title="class in com.here.sdk.mapview">MapImageOverlay</a></dt>
 <dd>
@@ -25997,7 +25798,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteStyle.html#setIndoorMarkersFor(com.here.sdk.routing.IndoorLevelChangeFeatures,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker,com.here.sdk.mapview.MapMarker)" class="member-name-link">setIndoorMarkersFor(IndoorLevelChangeFeatures, MapMarker, MapMarker, MapMarker)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a></dt>
 <dd>
-<div class="block">Sets map markers for the given indoor feature.</div>
+<div class="block">Sets custom map markers for the given indoor feature.</div>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRouteStyle.html#setIndoorPolylineColor(com.here.sdk.core.Color)" class="member-name-link">setIndoorPolylineColor(Color)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a></dt>
 <dd>
@@ -26043,7 +25844,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets an active language.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#setLastKnownLocationPersistent(boolean)" class="member-name-link">setLastKnownLocationPersistent(boolean)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#setLastKnownLocationPersistent(boolean)" class="member-name-link">setLastKnownLocationPersistent(boolean)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Enables or disables saving of last known location so it persists between application
  sessions.</div>
@@ -26809,10 +26610,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Sets the <code>TextStyle</code> to be used by the <code>MapMarker</code>.</div>
 </dd>
-<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html#setTexture(java.lang.String)" class="member-name-link">setTexture(String)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentation.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentation</a></dt>
-<dd>
-<div class="block">Sets the diffuse texture.</div>
-</dd>
 <dt><a href="com/here/sdk/mapview/MapCameraLimits.html#setTiltRange(com.here.sdk.core.AngleRange)" class="member-name-link">setTiltRange(AngleRange)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapCameraLimits.html" title="class in com.here.sdk.mapview">MapCameraLimits</a></dt>
 <dd>
 <div class="block">Sets a new tilt limit range.</div>
@@ -27113,6 +26910,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Instantiation attempt failed because the shared SDK engine is not instantiated.</div>
 </dd>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#sharedSdkEngineOrException()" class="member-name-link">sharedSdkEngineOrException()</a> - Static method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
+<dd>
+<div class="block">Returns current shared instance of <a href="com/here/sdk/core/engine/SDKNativeEngine.html" title="class in com.here.sdk.core.engine"><code>SDKNativeEngine</code></a></div>
+</dd>
 <dt><a href="com/here/sdk/navigation/RoadSignType.html#SHARP_CURVE_LEFT" class="member-name-link">SHARP_CURVE_LEFT</a> - Enum constant in enum class com.here.sdk.navigation.<a href="com/here/sdk/navigation/RoadSignType.html" title="enum class in com.here.sdk.navigation">RoadSignType</a></dt>
 <dd>
 <div class="block">A sign indicating a sharp curve to the left.</div>
@@ -27210,6 +27011,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/search/TruckAmenities.html#showerCount" class="member-name-link">showerCount</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/TruckAmenities.html" title="class in com.here.sdk.search">TruckAmenities</a></dt>
 <dd>
 <div class="block">Shower count, if shower data is present</div>
+</dd>
+<dt><a href="com/here/sdk/venue/routing/IndoorRoutingController.html#showRoute(com.here.sdk.routing.Route)" class="member-name-link">showRoute(Route)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingController.html" title="class in com.here.sdk.venue.routing">IndoorRoutingController</a></dt>
+<dd>
+<div class="block">Shows an indoor route on the map using SDK default style.</div>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/IndoorRoutingController.html#showRoute(com.here.sdk.routing.Route,com.here.sdk.venue.routing.IndoorRouteStyle)" class="member-name-link">showRoute(Route, IndoorRouteStyle)</a> - Method in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRoutingController.html" title="class in com.here.sdk.venue.routing">IndoorRoutingController</a></dt>
 <dd>
@@ -27508,6 +27313,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Optional source of this location.</div>
 </dd>
+<dt><a href="com/here/sdk/routing/RouteHandle.html#source" class="member-name-link">source</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteHandle.html" title="class in com.here.sdk.routing">RouteHandle</a></dt>
+<dd>
+<div class="block">The routing engine that created this handle.</div>
+</dd>
 <dt><a href="com/here/sdk/search/EnergySource.html#source" class="member-name-link">source</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/EnergySource.html" title="class in com.here.sdk.search">EnergySource</a></dt>
 <dd>
 <div class="block">Source of the energy.</div>
@@ -27668,12 +27477,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/here/sdk/navigation/MapMatchedLocation.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.navigation.<a href="com/here/sdk/navigation/MapMatchedLocation.html" title="class in com.here.sdk.navigation">MapMatchedLocation</a></dt>
 <dd>
 <div class="block">Speed in meters per second.</div>
-</dd>
-<dt><a href="com/here/sdk/venue/routing/IndoorRouteOptions.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/IndoorRouteOptions.html" title="class in com.here.sdk.venue.routing">IndoorRouteOptions</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>VenuePedestrianSpecification.walking_speed_in_meters_per_second</code> instead.</div>
-</div>
 </dd>
 <dt><a href="com/here/sdk/venue/routing/VenueCarSpecification.html#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a> - Variable in class com.here.sdk.venue.routing.<a href="com/here/sdk/venue/routing/VenueCarSpecification.html" title="class in com.here.sdk.venue.routing">VenueCarSpecification</a></dt>
 <dd>
@@ -27864,7 +27667,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Authenticates asynchronously using HERE SDK credentials and uses a result token to start
  the <a href="com/here/sdk/venue/service/VenueService.html" title="class in com.here.sdk.venue.service"><code>VenueService</code></a>.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#start(com.here.sdk.location.LocationAccuracy)" class="member-name-link">start(LocationAccuracy)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#start(com.here.sdk.location.LocationAccuracy)" class="member-name-link">start(LocationAccuracy)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Starts the location engine with desired <a href="com/here/sdk/location/LocationAccuracy.html" title="enum class in com.here.sdk.location"><code>LocationAccuracy</code></a>.</div>
 </dd>
@@ -27872,19 +27675,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Starts the location engine with desired <a href="com/here/sdk/location/LocationAccuracy.html" title="enum class in com.here.sdk.location"><code>LocationAccuracy</code></a>.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#start(com.here.sdk.location.LocationOptions)" class="member-name-link">start(LocationOptions)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#start(com.here.sdk.location.LocationOptions)" class="member-name-link">start(LocationOptions)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Starts the location engine with desired <a href="com/here/sdk/location/LocationOptions.html" title="class in com.here.sdk.location"><code>LocationOptions</code></a>.</div>
 </dd>
 <dt><a href="com/here/sdk/location/LocationEngineBase.html#start(com.here.sdk.location.LocationOptions)" class="member-name-link">start(LocationOptions)</a> - Method in interface com.here.sdk.location.<a href="com/here/sdk/location/LocationEngineBase.html" title="interface in com.here.sdk.location">LocationEngineBase</a></dt>
 <dd>
 <div class="block">Starts the location engine with desired <a href="com/here/sdk/location/LocationOptions.html" title="class in com.here.sdk.location"><code>LocationOptions</code></a>.</div>
-</dd>
-<dt><a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.html#start(com.here.sdk.routing.RouteHandle,java.util.List,com.here.sdk.routing.RefreshRouteOptions,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start(RouteHandle, List&lt;Waypoint&gt;, RefreshRouteOptions, DynamicRoutingListener)</a> - Method in class com.here.sdk.trafficawarenavigation.<a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.html" title="class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine</a></dt>
-<dd>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use the <code>start()</code> method with RoutingOptions parameter instead.</div>
-</div>
 </dd>
 <dt><a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.html#start(com.here.sdk.routing.RouteHandle,java.util.List,com.here.sdk.routing.RoutingOptions,com.here.sdk.trafficawarenavigation.DynamicRoutingListener)" class="member-name-link">start(RouteHandle, List&lt;Waypoint&gt;, RoutingOptions, DynamicRoutingListener)</a> - Method in class com.here.sdk.trafficawarenavigation.<a href="com/here/sdk/trafficawarenavigation/DynamicRoutingEngine.html" title="class in com.here.sdk.trafficawarenavigation">DynamicRoutingEngine</a></dt>
 <dd>
@@ -28049,7 +27846,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Step interpolation with sharp transition in the middle.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#stop()" class="member-name-link">stop()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#stop()" class="member-name-link">stop()</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Stops the location engine.</div>
 </dd>
@@ -28164,9 +27961,40 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Types of street attributes.</div>
 </dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html" class="type-name-link" title="class in com.here.sdk.search">StreetInfo</a> - Class in <a href="com/here/sdk/search/package-summary.html">com.here.sdk.search</a></dt>
+<dd>
+<div class="block">Street name details.</div>
+</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#%3Cinit%3E()" class="member-name-link">StreetInfo()</a> - Constructor for class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
+<dd>
+<div class="block">Creates a new instance.</div>
+</dd>
+<dt><a href="com/here/sdk/search/Details.html#streetInfos" class="member-name-link">streetInfos</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/Details.html" title="class in com.here.sdk.search">Details</a></dt>
+<dd>
+<div class="block">Street name decomposition.</div>
+</dd>
 <dt><a href="com/here/sdk/routing/TextUsageOptions.html#streetName" class="member-name-link">streetName</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/TextUsageOptions.html" title="class in com.here.sdk.routing">TextUsageOptions</a></dt>
 <dd>
 <div class="block">An option whether street name should be used when generating notification.</div>
+</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#streetType" class="member-name-link">streetType</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
+<dd>
+<div class="block">Street type untranslated (not localized) part of the street name
+ For example:
+ 
+ <em>straße</em> of <em>Saalestraße</em>
+ <em>ulica</em> of <em>ulica Mariacka</em>
+ <em>Avenue</em> of <em>20th Avenue</em>
+ empty of <em>Ffordd Pen Llech</em>
+ </div>
+</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#streetTypeAttached" class="member-name-link">streetTypeAttached</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
+<dd>
+<div class="block">Defines if the street type is attached or unattached to the base name.</div>
+</dd>
+<dt><a href="com/here/sdk/search/StreetInfo.html#streetTypePrecedes" class="member-name-link">streetTypePrecedes</a> - Variable in class com.here.sdk.search.<a href="com/here/sdk/search/StreetInfo.html" title="class in com.here.sdk.search">StreetInfo</a></dt>
+<dd>
+<div class="block">Defines if the street type is before or after the base name.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/TransitIncidentType.html#STRIKE" class="member-name-link">STRIKE</a> - Enum constant in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/TransitIncidentType.html" title="enum class in com.here.sdk.routing">TransitIncidentType</a></dt>
 <dd>
@@ -28838,8 +28666,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/LocalSegmentId.html#tilePartitionId" class="member-name-link">tilePartitionId</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/LocalSegmentId.html" title="class in com.here.sdk.mapdata">LocalSegmentId</a></dt>
+<dd>
+<div class="block">Here tile partition id (Morton-encoding + level indicator) of the segment.</div>
+</dd>
 <dt><a href="com/here/sdk/mapdata/OCMSegmentId.html#tilePartitionId" class="member-name-link">tilePartitionId</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/OCMSegmentId.html" title="class in com.here.sdk.mapdata">OCMSegmentId</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Here tile partition id (Morton-encoding + level indicator) of the segment.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/SegmentReference.html#tilePartitionId" class="member-name-link">tilePartitionId</a> - Variable in class com.here.sdk.routing.<a href="com/here/sdk/routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a></dt>
@@ -29373,7 +29206,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">A class that provides information for a toll structure at a toll point.</div>
 </dd>
-<dt><a href="com/here/sdk/mapdata/TollStructureManeuver.html#%3Cinit%3E(java.util.List)" class="member-name-link">TollStructureManeuver(List&lt;DirectedOCMSegmentId&gt;)</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TollStructureManeuver.html" title="class in com.here.sdk.mapdata">TollStructureManeuver</a></dt>
+<dt><a href="com/here/sdk/mapdata/TollStructureManeuver.html#%3Cinit%3E()" class="member-name-link">TollStructureManeuver()</a> - Constructor for class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TollStructureManeuver.html" title="class in com.here.sdk.mapdata">TollStructureManeuver</a></dt>
 <dd>
 <div class="block">Creates a new instance.</div>
 </dd>
@@ -30189,8 +30022,13 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Payment with a travel card.</div>
 </dd>
+<dt><a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html#travelDirection" class="member-name-link">travelDirection</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></dt>
+<dd>
+<div class="block">Travel direction of the segment.</div>
+</dd>
 <dt><a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html#travelDirection" class="member-name-link">travelDirection</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Travel direction of the segment.</div>
 </dd>
 <dt><a href="com/here/sdk/mapdata/TrafficSignal.html#travelDirection" class="member-name-link">travelDirection</a> - Variable in class com.here.sdk.mapdata.<a href="com/here/sdk/mapdata/TrafficSignal.html" title="class in com.here.sdk.mapdata">TrafficSignal</a></dt>
@@ -30996,7 +30834,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Updates the indicator to a new location and applies a camera update at the same time.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#updateLocationAccuracy(com.here.sdk.location.LocationAccuracy)" class="member-name-link">updateLocationAccuracy(LocationAccuracy)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#updateLocationAccuracy(com.here.sdk.location.LocationAccuracy)" class="member-name-link">updateLocationAccuracy(LocationAccuracy)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Reconfigures the location engine with desired LocationAccuracy.</div>
 </dd>
@@ -31004,7 +30842,7 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Reconfigures the location engine with desired <a href="com/here/sdk/location/LocationAccuracy.html" title="enum class in com.here.sdk.location"><code>LocationAccuracy</code></a>.</div>
 </dd>
-<dt><a href="com/here/sdk/location/LocationEngine.html#updateLocationOptions(com.here.sdk.location.LocationOptions)" class="member-name-link">updateLocationOptions(LocationOptions)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/LocationEngine.html" title="class in com.here.sdk.location">LocationEngine</a></dt>
+<dt><a href="com/here/sdk/location/AbstractLocationEngine.html#updateLocationOptions(com.here.sdk.location.LocationOptions)" class="member-name-link">updateLocationOptions(LocationOptions)</a> - Method in class com.here.sdk.location.<a href="com/here/sdk/location/AbstractLocationEngine.html" title="class in com.here.sdk.location">AbstractLocationEngine</a></dt>
 <dd>
 <div class="block">Reconfigures the location engine with desired LocationOptions.</div>
 </dd>
@@ -31879,6 +31717,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RouteRailwayCrossingType.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteRailwayCrossingType.html" title="enum class in com.here.sdk.routing">RouteRailwayCrossingType</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RoutingEngineSource.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngineSource.html" title="enum class in com.here.sdk.routing">RoutingEngineSource</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
@@ -33034,6 +32876,11 @@ the order they are declared.</div>
 the order they are declared.</div>
 </dd>
 <dt><a href="com/here/sdk/routing/RouteRailwayCrossingType.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RouteRailwayCrossingType.html" title="enum class in com.here.sdk.routing">RouteRailwayCrossingType</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="com/here/sdk/routing/RoutingEngineSource.html#values()" class="member-name-link">values()</a> - Static method in enum class com.here.sdk.routing.<a href="com/here/sdk/routing/RoutingEngineSource.html" title="enum class in com.here.sdk.routing">RoutingEngineSource</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
@@ -34723,6 +34570,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Configures the builder to add the given attribute.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#withAmbientFactor(double)" class="member-name-link">withAmbientFactor(double)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Sets the ambient lighting factor in range 0.0 to 1.0.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/datasource/LineDataBuilder.html#withAttributes(com.here.sdk.mapview.datasource.DataAttributes)" class="member-name-link">withAttributes(DataAttributes)</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/LineDataBuilder.html" title="class in com.here.sdk.mapview.datasource">LineDataBuilder</a></dt>
 <dd>
 <div class="block">Configures the builder with custom attributes for line to be created.</div>
@@ -34768,6 +34619,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Matches POIs where either general public or just customers are offered charging.</div>
 </dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#withColor(com.here.sdk.core.Color)" class="member-name-link">withColor(Color)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Sets the modulation color.</div>
+</dd>
 <dt><a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html#withConfigurationFile(java.lang.String)" class="member-name-link">withConfigurationFile(String)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html" title="class in com.here.sdk.mapview">MapSceneLoadOptionsBuilder</a></dt>
 <dd>
 <div class="block">Sets the configuration file path to load.</div>
@@ -34804,6 +34659,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Configures the builder to use a data source with the given name as the source
  of data for the layer.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#withDiffuseFactor(double)" class="member-name-link">withDiffuseFactor(double)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Sets the diffuse lighting factor in range 0.0 to 1.0.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html#withDisabledFeatures(java.util.List)" class="member-name-link">withDisabledFeatures(List&lt;String&gt;)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapSceneLoadOptionsBuilder.html" title="class in com.here.sdk.mapview">MapSceneLoadOptionsBuilder</a></dt>
 <dd>
@@ -34868,6 +34727,10 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/core/engine/AuthenticationMode.html#withExternal()" class="member-name-link">withExternal()</a> - Static method in class com.here.sdk.core.engine.<a href="com/here/sdk/core/engine/AuthenticationMode.html" title="class in com.here.sdk.core.engine">AuthenticationMode</a></dt>
 <dd>
 <div class="block">Assumes the authentication is provided by the client.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#withFlipTextureVertically(boolean)" class="member-name-link">withFlipTextureVertically(boolean)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Sets whether the texture image is flipped vertically before use.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/datasource/PolygonDataBuilder.html#withGeometry(com.here.sdk.core.GeoPolygon)" class="member-name-link">withGeometry(GeoPolygon)</a> - Method in class com.here.sdk.mapview.datasource.<a href="com/here/sdk/mapview/datasource/PolygonDataBuilder.html" title="class in com.here.sdk.mapview.datasource">PolygonDataBuilder</a></dt>
 <dd>
@@ -35000,6 +34863,10 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/transport/VehicleSpecification.TruckBuilder.html#withLengthInCentimeters(int)" class="member-name-link">withLengthInCentimeters(int)</a> - Method in class com.here.sdk.transport.<a href="com/here/sdk/transport/VehicleSpecification.TruckBuilder.html" title="class in com.here.sdk.transport">VehicleSpecification.TruckBuilder</a></dt>
 <dd>
 <div class="block">Sets the vehicle length in centimeters.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#withLightingEnabled(boolean)" class="member-name-link">withLightingEnabled(boolean)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Sets whether lighting is applied to the object color.</div>
 </dd>
 <dt><a href="com/here/sdk/mapview/MapLayerBuilder.html#withLoadPriority(double)" class="member-name-link">withLoadPriority(double)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/MapLayerBuilder.html" title="class in com.here.sdk.mapview">MapLayerBuilder</a></dt>
 <dd>
@@ -35156,6 +35023,10 @@ the order they are declared.</div>
 <dt><a href="com/here/sdk/mapview/QuadMeshBuilder.html#withTextureCoordinates(com.here.sdk.core.Anchor2D,com.here.sdk.core.Anchor2D,com.here.sdk.core.Anchor2D,com.here.sdk.core.Anchor2D)" class="member-name-link">withTextureCoordinates(Anchor2D, Anchor2D, Anchor2D, Anchor2D)</a> - Method in class com.here.sdk.mapview.<a href="com/here/sdk/mapview/QuadMeshBuilder.html" title="class in com.here.sdk.mapview">QuadMeshBuilder</a></dt>
 <dd>
 <div class="block">Adds texture coordinates to a quad.</div>
+</dd>
+<dt><a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html#withTextureUri(java.lang.String)" class="member-name-link">withTextureUri(String)</a> - Method in class com.here.sdk.mapview.mapobject.<a href="com/here/sdk/mapview/mapobject/PositionIndicatorMeshRepresentationBuilder.html" title="class in com.here.sdk.mapview.mapobject">PositionIndicatorMeshRepresentationBuilder</a></dt>
+<dd>
+<div class="block">Sets the diffuse texture URI.</div>
 </dd>
 <dt><a href="com/here/sdk/transport/VehicleSpecification.BusBuilder.html#withTiresCount(int)" class="member-name-link">withTiresCount(int)</a> - Method in class com.here.sdk.transport.<a href="com/here/sdk/transport/VehicleSpecification.BusBuilder.html" title="class in com.here.sdk.transport">VehicleSpecification.BusBuilder</a></dt>
 <dd>

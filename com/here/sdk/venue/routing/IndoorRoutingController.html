@@ -120,9 +120,14 @@ loadScripts(document, 'script');</script>
 <div class="block">Hides an indoor route, visible on the map.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showRoute(com.here.sdk.routing.Route,com.here.sdk.venue.routing.IndoorRouteStyle)" class="member-name-link">showRoute</a><wbr>(<a href="../../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route,
- <a href="IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a>&nbsp;style)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showRoute(com.here.sdk.routing.Route)" class="member-name-link">showRoute</a><wbr>(<a href="../../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Shows an indoor route on the map using SDK default style.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showRoute(com.here.sdk.routing.Route,com.here.sdk.venue.routing.IndoorRouteStyle)" class="member-name-link">showRoute</a><wbr>(<a href="../../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route,
+ <a href="IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a>&nbsp;style)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Shows an indoor route on the map.</div>
 </div>
 </div>
@@ -172,11 +177,26 @@ loadScripts(document, 'script');</script>
  <a href="../../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route,
  @NonNull
  <a href="IndoorRouteStyle.html" title="class in com.here.sdk.venue.routing">IndoorRouteStyle</a>&nbsp;style)</span></div>
-<div class="block"><p>Shows an indoor route on the map. The previously visible indoor route will be hidden.</div>
+<div class="block"><p>Shows an indoor route on the map. The previously visible indoor route will be hidden.
+ Any markers not explicitly set in the style will use SDK built-in default icons.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>route</code> - <p>A route to show</dd>
-<dd><code>style</code> - <p>A route style for the given route.</dd>
+<dd><code>route</code> - <p>A route to show.</dd>
+<dd><code>style</code> - <p>A route style for the given route. Unset markers fall back to SDK defaults.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="showRoute(com.here.sdk.routing.Route)">
+<h3>showRoute</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">showRoute</span><wbr><span class="parameters">(@NonNull
+ <a href="../../routing/Route.html" title="class in com.here.sdk.routing">Route</a>&nbsp;route)</span></div>
+<div class="block"><p>Shows an indoor route on the map using SDK default style. All markers use SDK built-in
+ default icons with default polyline color (#48DAD0) and width (15 pixels).
+ The previously visible indoor route will be hidden.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>route</code> - <p>A route to show.</dd>
 </dl>
 </section>
 </li>

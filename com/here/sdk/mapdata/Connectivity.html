@@ -98,10 +98,17 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The list of transport types which have access</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#directedSegmentId" class="member-name-link">directedSegmentId</a></code></div>
+<div class="col-first odd-row-color"><code><a href="DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#directedLocalSegmentId" class="member-name-link">directedLocalSegmentId</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Link ID</div>
+<div class="block">Local link ID.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></code></div>
+<div class="col-second even-row-color"><code><a href="#directedSegmentId" class="member-name-link">directedSegmentId</a></code></div>
+<div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
 </div>
 </div>
 </section>
@@ -114,8 +121,7 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(com.here.sdk.mapdata.DirectedOCMSegmentId,java.util.List)" class="member-name-link">Connectivity</a><wbr>(<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;directedSegmentId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../transport/TransportType.html" title="enum class in com.here.sdk.transport">TransportType</a>&gt;&nbsp;access)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.util.List)" class="member-name-link">Connectivity</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../transport/TransportType.html" title="enum class in com.here.sdk.transport">TransportType</a>&gt;&nbsp;access)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new instance.</div>
 </div>
@@ -159,9 +165,21 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="directedSegmentId">
 <h3>directedSegmentId</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></span>&nbsp;<span class="element-name">directedSegmentId</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>directed_local_segment_id</code> instead.</div>
+</div>
 <div class="block"><p>Link ID</div>
+</section>
+</li>
+<li>
+<section class="detail" id="directedLocalSegmentId">
+<h3>directedLocalSegmentId</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></span>&nbsp;<span class="element-name">directedLocalSegmentId</span></div>
+<div class="block"><p>Local link ID.</div>
 </section>
 </li>
 <li>
@@ -181,16 +199,13 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(com.here.sdk.mapdata.DirectedOCMSegmentId,java.util.List)">
+<section class="detail" id="&lt;init&gt;(java.util.List)">
 <h3>Connectivity</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Connectivity</span><wbr><span class="parameters">(@NonNull
- <a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;directedSegmentId,
- @NonNull
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../transport/TransportType.html" title="enum class in com.here.sdk.transport">TransportType</a>&gt;&nbsp;access)</span></div>
 <div class="block"><p>Creates a new instance.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>directedSegmentId</code> - <p>Link ID</dd>
 <dd><code>access</code> - <p>The list of transport types which have access</dd>
 </dl>
 </section>

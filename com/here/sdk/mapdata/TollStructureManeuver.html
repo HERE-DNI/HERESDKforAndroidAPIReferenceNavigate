@@ -90,7 +90,9 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#destinations" class="member-name-link">destinations</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Optional destinations segment references.</div>
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="FileReference.html" title="class in com.here.sdk.mapdata">FileReference</a></code></div>
 <div class="col-second odd-row-color"><code><a href="#etcGuidanceFile" class="member-name-link">etcGuidanceFile</a></code></div>
@@ -104,9 +106,14 @@ loadScripts(document, 'script');</script>
  are required to slow down/stop with the intended purpose of inspecting vehicles to deter illegal immigration
  and smuggling activities, to perform customs/passport checks, toll payment, etc.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="TollStructure.html" title="class in com.here.sdk.mapdata">TollStructure</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#tollStructure" class="member-name-link">tollStructure</a></code></div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#localDestinations" class="member-name-link">localDestinations</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">Optional destinations segment references.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="TollStructure.html" title="class in com.here.sdk.mapdata">TollStructure</a></code></div>
+<div class="col-second even-row-color"><code><a href="#tollStructure" class="member-name-link">tollStructure</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Toll structure properties
  Could be empty for checkpoint not related to toll.</div>
 </div>
@@ -121,7 +128,7 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.util.List)" class="member-name-link">TollStructureManeuver</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&gt;&nbsp;destinations)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">TollStructureManeuver</a>()</code></div>
 <div class="col-last even-row-color">
 <div class="block">Creates a new instance.</div>
 </div>
@@ -167,8 +174,22 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="destinations">
 <h3>destinations</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&gt;</span>&nbsp;<span class="element-name">destinations</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>local_destinations</code> instead.</div>
+</div>
+<div class="block"><p>Optional destinations segment references.
+ Destination shows for which exactly outgoing segment current toll/checkpoint is applied.
+ Empty if structure applied to all outgoing connected segments.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="localDestinations">
+<h3>localDestinations</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a>&gt;</span>&nbsp;<span class="element-name">localDestinations</span></div>
 <div class="block"><p>Optional destinations segment references.
  Destination shows for which exactly outgoing segment current toll/checkpoint is applied.
  Empty if structure applied to all outgoing connected segments.</div>
@@ -191,17 +212,10 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.util.List)">
+<section class="detail" id="&lt;init&gt;()">
 <h3>TollStructureManeuver</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TollStructureManeuver</span><wbr><span class="parameters">(@NonNull
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&gt;&nbsp;destinations)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">TollStructureManeuver</span>()</div>
 <div class="block"><p>Creates a new instance.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>destinations</code> - <p>Optional destinations segment references.
- Destination shows for which exactly outgoing segment current toll/checkpoint is applied.
- Empty if structure applied to all outgoing connected segments.</dd>
-</dl>
 </section>
 </li>
 </ul>

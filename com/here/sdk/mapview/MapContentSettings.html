@@ -112,7 +112,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab1" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab1', 3)" class="table-tab">Static Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -123,69 +123,59 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Configures POI filters represented as opaque criteria.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportMode,com.here.sdk.transport.TruckSpecifications,java.util.List,com.here.sdk.transport.TunnelCategory)" class="member-name-link">configureVehicleRestrictionFilter</a><wbr>(<a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a>&nbsp;transportMode,
- <a href="../transport/TruckSpecifications.html" title="class in com.here.sdk.transport">TruckSpecifications</a>&nbsp;truckSpecifications,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&gt;&nbsp;hazardousMaterials,
- <a href="../transport/TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a>&nbsp;tunnelCategory)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.28.0, use <a href="#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)"><code>configureVehicleRestrictionFilter(TransportSpecification)</code></a> instead.</div>
-</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)" class="member-name-link">configureVehicleRestrictionFilter</a><wbr>(<a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a>&nbsp;transportSpecs)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)" class="member-name-link">configureVehicleRestrictionFilter</a><wbr>(<a href="../transport/TransportSpecification.html" title="class in com.here.sdk.transport">TransportSpecification</a>&nbsp;transportSpecs)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Configures a filter for <a href="MapFeatures.html#VEHICLE_RESTRICTIONS"><code>MapFeatures.VEHICLE_RESTRICTIONS</code></a> to show only the restrictions
  matching the transport specifications when the feature is enabled.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#filterTrafficIncidents(java.util.List)" class="member-name-link">filterTrafficIncidents</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../traffic/TrafficIncidentType.html" title="enum class in com.here.sdk.traffic">TrafficIncidentType</a>&gt;&nbsp;trafficIncidents)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#filterTrafficIncidents(java.util.List)" class="member-name-link">filterTrafficIncidents</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../traffic/TrafficIncidentType.html" title="enum class in com.here.sdk.traffic">TrafficIncidentType</a>&gt;&nbsp;trafficIncidents)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Filters the displayed traffic incidents so that only the ones applicable to the specified
  criteria are shown when general display of traffic incidents is enabled.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetPoiCategoriesVisibility()" class="member-name-link">resetPoiCategoriesVisibility</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetPoiCategoriesVisibility()" class="member-name-link">resetPoiCategoriesVisibility</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Resets POI categories visibility to their default state.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetPoiFilters()" class="member-name-link">resetPoiFilters</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetPoiFilters()" class="member-name-link">resetPoiFilters</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Resets all previously applied POI filters across all POI categories.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetTrafficIncidentFilter()" class="member-name-link">resetTrafficIncidentFilter</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetTrafficIncidentFilter()" class="member-name-link">resetTrafficIncidentFilter</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Removes all filters regarding Traffic Incidents so that all incidents will be displayed,
  when the display of Traffic Incidents is enabled using <a href="MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> with
  <a href="MapFeatures.html#TRAFFIC_INCIDENTS"><code>MapFeatures.TRAFFIC_INCIDENTS</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetTrafficRefreshPeriod()" class="member-name-link">resetTrafficRefreshPeriod</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetTrafficRefreshPeriod()" class="member-name-link">resetTrafficRefreshPeriod</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Resets the traffic data (both flow and incidents) refresh period so the default traffic information
  validity time and the refresh period derived from the refresh period of the traffic server is used.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetVehicleRestrictionFilter()" class="member-name-link">resetVehicleRestrictionFilter</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetVehicleRestrictionFilter()" class="member-name-link">resetVehicleRestrictionFilter</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Removes all filters regarding vehicle restrictions so that all restrictions will be displayed,
  when the display of vehicle restrictions is enabled by enabling feature
  using <a href="MapScene.html#enableFeatures(java.util.Map)"><code>MapScene.enableFeatures(java.util.Map&lt;java.lang.String, java.lang.String&gt;)</code></a> with <a href="MapFeatures.html#VEHICLE_RESTRICTIONS"><code>MapFeatures.VEHICLE_RESTRICTIONS</code></a> and setting layer
  visibility using <a href="MapScene.html#setLayerVisibility(java.lang.String,com.here.sdk.mapview.VisibilityState)"><code>MapScene.setLayerVisibility(java.lang.String, com.here.sdk.mapview.VisibilityState)</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setPoiCategoriesVisibility(java.util.List,com.here.sdk.mapview.VisibilityState)" class="member-name-link">setPoiCategoriesVisibility</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;categoryIds,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setPoiCategoriesVisibility(java.util.List,com.here.sdk.mapview.VisibilityState)" class="member-name-link">setPoiCategoriesVisibility</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;categoryIds,
  <a href="VisibilityState.html" title="enum class in com.here.sdk.mapview">VisibilityState</a>&nbsp;visibility)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Sets visibility for embedded carto POI categories (points of interest that are visible on the
  map, by default).</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setTrafficRefreshPeriod(com.here.time.Duration)" class="member-name-link">setTrafficRefreshPeriod</a><wbr>(<a href="../../time/Duration.html" title="class in com.here.time">Duration</a>&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setTrafficRefreshPeriod(com.here.time.Duration)" class="member-name-link">setTrafficRefreshPeriod</a><wbr>(<a href="../../time/Duration.html" title="class in com.here.time">Duration</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Sets the traffic data refresh period for both <a href="MapFeatures.html#TRAFFIC_FLOW"><code>MapFeatures.TRAFFIC_FLOW</code></a> and
  <a href="MapFeatures.html#TRAFFIC_INCIDENTS"><code>MapFeatures.TRAFFIC_INCIDENTS</code></a>.</div>
 </div>
@@ -206,96 +196,6 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="configureVehicleRestrictionFilter(com.here.sdk.transport.TransportMode,com.here.sdk.transport.TruckSpecifications,java.util.List,com.here.sdk.transport.TunnelCategory)">
-<h3>configureVehicleRestrictionFilter</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-</span><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">configureVehicleRestrictionFilter</span><wbr><span class="parameters">(@NonNull
- <a href="../transport/TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a>&nbsp;transportMode,
- @NonNull
- <a href="../transport/TruckSpecifications.html" title="class in com.here.sdk.transport">TruckSpecifications</a>&nbsp;truckSpecifications,
- @Nullable
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../transport/HazardousMaterial.html" title="enum class in com.here.sdk.transport">HazardousMaterial</a>&gt;&nbsp;hazardousMaterials,
- @Nullable
- <a href="../transport/TunnelCategory.html" title="enum class in com.here.sdk.transport">TunnelCategory</a>&nbsp;tunnelCategory)</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0, use <a href="#configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)"><code>configureVehicleRestrictionFilter(TransportSpecification)</code></a> instead.</div>
-</div>
-<div class="block"><p>Configure a filter for <a href="MapFeatures.html#VEHICLE_RESTRICTIONS"><code>MapFeatures.VEHICLE_RESTRICTIONS</code></a> to show only the restrictions
- matching the specified criteria when the feature is enabled.
- <h1>Filtering rules for truck specifications</h1>
- <p>Only restrictions applicable to the supplied truck specifications will be shown.
- <p>Examples:
- <ul>
- <li>If the height in <code>truckSpecifications</code> is set to 200 cm, then height restrictions
- with a height greater than 200 cm will not be displayed.</li>
- <li>If the trailer count in <code>truckSpecifications</code> is set to 2, then trailer
- restrictions for a count greater than 2 will not be displayed.</li>
- </ul>
- <h1>Filtering rules for hazardous materials</h1>
- <p>Only restrictions applicable to specified hazardous materials will be shown.
- If at least one hazardous material of any type is present in the list, all available
- tunnel category restrictions will be displayed. In order to filter-out non-applicable
- tunnel categories, a tunnel category, that applies to the vehicle, can be specified
- additionally.
- <p>Examples:
- <ul>
- <li>If the <code>hazardousMaterials</code> contains <a href="../transport/HazardousMaterial.html#POISON"><code>HazardousMaterial.POISON</code></a>
- and <a href="../transport/HazardousMaterial.html#GAS"><code>HazardousMaterial.GAS</code></a>, then only material restrictions
- for poison and gas will be displayed.</li>
- <li>If the <code>hazardousMaterials</code> list is empty, then no material restrictions
- will be shown.</li>
- <li>If the <code>hazardousMaterials</code> list is not supplied at all (is <code>null</code>), then
- no material restrictions will be shown.</li>
- <li>If the <code>hazardousMaterials</code> contains at least one hazardous material of any
- type and <code>tunnelCategory</code> is <code>null</code>, then only corresponding material
- restrictions will be displayed together with all available tunnel categories.</li>
- </ul>
- <h1>Filtering rules for tunnel category</h1>
- <p>Tunnel categories are labeled and rated based on the level of restriction they provide.
- The lowest level of restriction is <a href="../transport/TunnelCategory.html#B"><code>TunnelCategory.B</code></a>, the highest and most
- restrictive one is <a href="../transport/TunnelCategory.html#E"><code>TunnelCategory.E</code></a>.
- <p>Specifying tunnel category means that:
- <ul>
- <li>The truck carries goods which could cause only the additional dangerous effects
- described in specified tunnel category and other categories below it with lower level
- of restriction.</li>
- <li>The truck does not carry goods that could cause the dangerous effects described in
- tunnel categories above with higher restriction levels than the one specified.</li>
- </ul>
- <p>Tunnel categories are closely related to hazardous materials.
- <p>Since the type of hazardous material alone does not define the exact level of danger,
- to ensure comprehensive coverage; the HERE SDK follows:
- <ul>
- <li>If at least one hazardous material is specified but no <code>tunnelCategory</code> is provided,
- the SDK enables and displays <strong>all tunnel category restrictions</strong> to ensure that no relevant
- restrictions are omitted.</li>
- <li>If both hazardous materials and a <code>tunnelCategory</code> are specified, the SDK
- <strong>strictly follows the given tunnel category parameter</strong> and displays only the
- applicable restrictions.</li>
- </ul>
- <p>Example:
- If <code>tunnelCategory</code> is set to <a href="../transport/TunnelCategory.html#D"><code>TunnelCategory.D</code></a>, then restrictions for
- tunnel category <a href="../transport/TunnelCategory.html#E"><code>TunnelCategory.E</code></a> and <a href="../transport/TunnelCategory.html#D"><code>TunnelCategory.D</code></a>
- will be displayed, but not the categories <a href="../transport/TunnelCategory.html#B"><code>TunnelCategory.B</code></a> and
- <a href="../transport/TunnelCategory.html#C"><code>TunnelCategory.C</code></a>.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>transportMode</code> - <p>Specifies the current transport type. Currently, it's used to distinguish
-     between truck and other transport modes. This distinction ensures consistency
-     between the routing logic and the information displayed on the map.
-     At present, this is primarily used to suppress the generic truck restriction icon.</dd>
-<dd><code>truckSpecifications</code> - <p>The size, weight, type and trailer count specifications to filter for, so that only
-     restrictions which are relevant for the given specifications are displayed.</dd>
-<dd><code>hazardousMaterials</code> - <p>The hazardous materials to filter for, so that only applicable restrictions are
-     displayed. When the list is <code>null</code> or empty, then no material restrictions
-     will be displayed.</dd>
-<dd><code>tunnelCategory</code> - <p>The tunnel category to filter for, so that only applicable restrictions are
-     displayed. If <code>null</code>, then no tunnel category restrictions will be
-     displayed.</dd>
-</dl>
-</section>
-</li>
 <li>
 <section class="detail" id="configureVehicleRestrictionFilter(com.here.sdk.transport.TransportSpecification)">
 <h3>configureVehicleRestrictionFilter</h3>

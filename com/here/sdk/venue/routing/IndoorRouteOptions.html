@@ -101,27 +101,20 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Specifies the common route calculation options.</div>
 </div>
-<div class="col-first even-row-color"><code>double</code></div>
-<div class="col-second even-row-color"><code><a href="#speedInMetersPerSecond" class="member-name-link">speedInMetersPerSecond</a></code></div>
+<div class="col-first even-row-color"><code><a href="VenueTransportMode.html" title="enum class in com.here.sdk.venue.routing">VenueTransportMode</a></code></div>
+<div class="col-second even-row-color"><code><a href="#transportMode" class="member-name-link">transportMode</a></code></div>
 <div class="col-last even-row-color">
-<div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Will be removed in v4.28.0.</div>
-</div>
-</div>
-<div class="col-first odd-row-color"><code><a href="VenueTransportMode.html" title="enum class in com.here.sdk.venue.routing">VenueTransportMode</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#transportMode" class="member-name-link">transportMode</a></code></div>
-<div class="col-last odd-row-color">
 <div class="block">The transport mode for route calculation.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></code></div>
-<div class="col-second even-row-color"><code><a href="#venueTransportSpecification" class="member-name-link">venueTransportSpecification</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="VenueTransportSpecification.html" title="class in com.here.sdk.venue.routing">VenueTransportSpecification</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#venueTransportSpecification" class="member-name-link">venueTransportSpecification</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Defines the venue transport specification which contains the vehicle specifications
  for the transport mode chosen via <a href="#transportMode"><code>transportMode</code></a>.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#viaWaypoints" class="member-name-link">viaWaypoints</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="IndoorWaypoint.html" title="class in com.here.sdk.venue.routing">IndoorWaypoint</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#viaWaypoints" class="member-name-link">viaWaypoints</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Specifies the via waypoints that the route should pass through between the
  origin and destination.</div>
 </div>
@@ -219,20 +212,6 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="IndoorAvoidanceOptions.html" title="class in com.here.sdk.venue.routing">IndoorAvoidanceOptions</a></span>&nbsp;<span class="element-name">indoorAvoidanceOptions</span></div>
 <div class="block"><p>Options to specify restrictions for indoor route calculations. By default
  no restrictions are applied.</div>
-</section>
-</li>
-<li>
-<section class="detail" id="speedInMetersPerSecond">
-<h3>speedInMetersPerSecond</h3>
-<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">speedInMetersPerSecond</span></div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment"><p>Will be removed in v4.28.0. Use <code>VenuePedestrianSpecification.walking_speed_in_meters_per_second</code> instead.</div>
-</div>
-<div class="block"><p>Specifies the speed that will be used by the service as the speed
- for <a href="VenueTransportMode.html" title="enum class in com.here.sdk.venue.routing"><code>VenueTransportMode</code></a> in meters per second.
- It influences the duration of segments along the route.
- The default speed is 1 meter per second.</div>
 </section>
 </li>
 <li>

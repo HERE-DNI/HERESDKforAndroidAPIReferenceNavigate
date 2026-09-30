@@ -109,7 +109,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel" aria-labelledby="method-summary-table-tab0">
 <div class="summary-table three-column-summary">
 <div class="table-header col-first">Modifier and Type</div>
@@ -121,18 +121,25 @@ loadScripts(document, 'script');</script>
 <div class="block">Adds an <a href="ElectronicHorizonDataLoaderStatusListener.html" title="interface in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoaderStatusListener</code></a> to the subscription list.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ElectronicHorizonDataLoaderResult.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoaderResult</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSegment(com.here.sdk.mapdata.DirectedOCMSegmentId)" class="member-name-link">getSegment</a><wbr>(<a href="../mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segmentId)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLocalSegment(com.here.sdk.mapdata.DirectedLocalSegmentId)" class="member-name-link">getLocalSegment</a><wbr>(<a href="../mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a>&nbsp;segmentId)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns loaded data for the given segment identifier.</div>
+<div class="block">Returns loaded data for the given local segment identifier.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadData(com.here.sdk.electronichorizon.ElectronicHorizonUpdate)" class="member-name-link">loadData</a><wbr>(<a href="ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;electronicHorizonUpdate)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Requests data for all added segments and removes cached data for segments that are not part of the horizon anymore.</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="ElectronicHorizonDataLoaderResult.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoaderResult</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getSegment(com.here.sdk.mapdata.DirectedOCMSegmentId)" class="member-name-link">getSegment</a><wbr>(<a href="../mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segmentId)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeElectronicHorizonDataLoaderStatusListener(com.here.sdk.electronichorizon.ElectronicHorizonDataLoaderStatusListener)" class="member-name-link">removeElectronicHorizonDataLoaderStatusListener</a><wbr>(<a href="ElectronicHorizonDataLoaderStatusListener.html" title="interface in com.here.sdk.electronichorizon">ElectronicHorizonDataLoaderStatusListener</a>&nbsp;electronicHorizonListener)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadData(com.here.sdk.electronichorizon.ElectronicHorizonUpdate)" class="member-name-link">loadData</a><wbr>(<a href="ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;electronicHorizonUpdate)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Requests data for all added segments and removes cached data for segments that are not part of the horizon anymore.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeElectronicHorizonDataLoaderStatusListener(com.here.sdk.electronichorizon.ElectronicHorizonDataLoaderStatusListener)" class="member-name-link">removeElectronicHorizonDataLoaderStatusListener</a><wbr>(<a href="ElectronicHorizonDataLoaderStatusListener.html" title="interface in com.here.sdk.electronichorizon">ElectronicHorizonDataLoaderStatusListener</a>&nbsp;electronicHorizonListener)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Removes an <a href="ElectronicHorizonDataLoaderStatusListener.html" title="interface in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoaderStatusListener</code></a> from the subscription list.</div>
 </div>
 </div>
@@ -197,14 +204,34 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getSegment(com.here.sdk.mapdata.DirectedOCMSegmentId)">
 <h3>getSegment</h3>
-<div class="member-signature"><span class="annotations">@NonNull
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@NonNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="ElectronicHorizonDataLoaderResult.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoaderResult</a></span>&nbsp;<span class="element-name">getSegment</span><wbr><span class="parameters">(@NonNull
  <a href="../mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a>&nbsp;segmentId)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>get_local_segment()</code> instead.</div>
+</div>
 <div class="block"><p>Returns loaded data for the given segment identifier.
  The result contains either the loaded data or an error code.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>segmentId</code> - <p>The segment identifier for which to return the loaded data from the cache.</dd>
+<dt>Returns:</dt>
+<dd><p>The result object that contains either the loaded segment data or an error code.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getLocalSegment(com.here.sdk.mapdata.DirectedLocalSegmentId)">
+<h3>getLocalSegment</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="ElectronicHorizonDataLoaderResult.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoaderResult</a></span>&nbsp;<span class="element-name">getLocalSegment</span><wbr><span class="parameters">(@NonNull
+ <a href="../mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a>&nbsp;segmentId)</span></div>
+<div class="block"><p>Returns loaded data for the given local segment identifier.
+ The result contains either the loaded data or an error code.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>segmentId</code> - <p>The local segment identifier for which to return the loaded data from the cache.</dd>
 <dt>Returns:</dt>
 <dd><p>The result object that contains either the loaded segment data or an error code.</dd>
 </dl>

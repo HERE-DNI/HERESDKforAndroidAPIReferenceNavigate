@@ -93,14 +93,21 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code><a href="../mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></code></div>
-<div class="col-second even-row-color"><code><a href="#ocmSegmentId" class="member-name-link">ocmSegmentId</a></code></div>
+<div class="col-first even-row-color"><code><a href="../mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></code></div>
+<div class="col-second even-row-color"><code><a href="#localSegmentId" class="member-name-link">localSegmentId</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The directed OCM segment identifier.</div>
+<div class="block">The directed local segment identifier.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="../routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#segmentReference" class="member-name-link">segmentReference</a></code></div>
+<div class="col-first odd-row-color"><code><a href="../mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#ocmSegmentId" class="member-name-link">ocmSegmentId</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Will be removed in v4.30.0.</div>
+</div>
+</div>
+<div class="col-first even-row-color"><code><a href="../routing/SegmentReference.html" title="class in com.here.sdk.routing">SegmentReference</a></code></div>
+<div class="col-second even-row-color"><code><a href="#segmentReference" class="member-name-link">segmentReference</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">The segment reference, which is provided when a segment matches the route spans.</div>
 </div>
 </div>
@@ -158,10 +165,24 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="ocmSegmentId">
 <h3>ocmSegmentId</h3>
-<div class="member-signature"><span class="annotations">@Nullable
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+@Nullable
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../mapdata/DirectedOCMSegmentId.html" title="class in com.here.sdk.mapdata">DirectedOCMSegmentId</a></span>&nbsp;<span class="element-name">ocmSegmentId</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment"><p>Will be removed in v4.30.0. Use <code>local_segment_id</code> instead.</div>
+</div>
 <div class="block"><p>The directed OCM segment identifier.
  This value can be <code>null</code> if a route was built on a different version of the map and the route spans do not match any OCM segments.
+ In this case, only <a href="#segmentReference"><code>segmentReference</code></a> is provided.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="localSegmentId">
+<h3>localSegmentId</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../mapdata/DirectedLocalSegmentId.html" title="class in com.here.sdk.mapdata">DirectedLocalSegmentId</a></span>&nbsp;<span class="element-name">localSegmentId</span></div>
+<div class="block"><p>The directed local segment identifier.
+ This value can be <code>null</code> if a route was built on a different version of the map and the route spans do not match any local segments.
  In this case, only <a href="#segmentReference"><code>segmentReference</code></a> is provided.</div>
 </section>
 </li>
