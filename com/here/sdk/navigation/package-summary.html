@@ -77,13 +77,31 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Class</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color class-summary class-summary-tab3"><a href="ArrivalNotificationOption.html" title="enum class in com.here.sdk.navigation">ArrivalNotificationOption</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="AreaCameraBehavior.html" title="class in com.here.sdk.navigation">AreaCameraBehavior</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Use this class to show an overview of geo points.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="ArrivalNotificationOption.html" title="enum class in com.here.sdk.navigation">ArrivalNotificationOption</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab3">
 <div class="block">Indicates arrival point type to announce in maneuver notification.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="AspectRatio.html" title="enum class in com.here.sdk.navigation">AspectRatio</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab3">
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="AspectRatio.html" title="enum class in com.here.sdk.navigation">AspectRatio</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
 <div class="block">The aspect ratio of the image.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="AutomotiveCameraBehavior.html" title="class in com.here.sdk.navigation">AutomotiveCameraBehavior</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">High-level camera controller for automotive navigation that delegates to either a
+ <a href="TrackingCameraBehavior.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior</code></a> for following the vehicle or an <a href="AreaCameraBehavior.html" title="class in com.here.sdk.navigation"><code>AreaCameraBehavior</code></a> for showing
+ geographic regions.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="AutomotiveCameraBehavior.ActiveCameraType.html" title="enum class in com.here.sdk.navigation">AutomotiveCameraBehavior.ActiveCameraType</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="block">Identifies which child camera is currently active.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="AutomotiveCameraBehavior.OrientationMode.html" title="enum class in com.here.sdk.navigation">AutomotiveCameraBehavior.OrientationMode</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab3">
+<div class="block">Visual presentation mode applied to the <a href="TrackingCameraBehavior.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior</code></a>.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab3"><a href="BorderCrossingType.html" title="enum class in com.here.sdk.navigation">BorderCrossingType</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab3">
@@ -105,6 +123,16 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color class-summary class-summary-tab1">
 <div class="block">Interface used to change implement different
  camera behaviors.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="CameraHdTransition.html" title="interface in com.here.sdk.navigation">CameraHdTransition</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab1">
+<div class="block">Interface used to implement HD roads support
+ for camera behaviors.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="CameraTransitionMode.html" title="enum class in com.here.sdk.navigation">CameraTransitionMode</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="block">Defines how the camera starts following the current position when a camera behavior becomes
+ active.</div>
 </div>
 <div class="col-first odd-row-color class-summary class-summary-tab2"><a href="CurrentSituationLaneAssistanceView.html" title="class in com.here.sdk.navigation">CurrentSituationLaneAssistanceView</a></div>
 <div class="col-last odd-row-color class-summary class-summary-tab2">
@@ -588,30 +616,90 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color class-summary class-summary-tab1">Deprecated.
 <div class="deprecation-comment">Will be removed in v4.29.0.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab3"><a href="TrafficMergeRoadType.html" title="enum class in com.here.sdk.navigation">TrafficMergeRoadType</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab3">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Use this class to follow a moving target.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.DynamicSpeedOptions.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.DynamicSpeedOptions</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Defines the animation speed of camera attributes, how quickly they move
+ toward their target values.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.FunctionalRoadClassZoomPolicyOptions.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.FunctionalRoadClassZoomPolicyOptions</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Configuration for mapping functional road classes to zoom values.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.ManeuverModeConfiguration.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverModeConfiguration</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Configuration that defines how <a href="TrackingCameraBehavior.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior</code></a> reacts to nearby maneuvers.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.ManeuverRule.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverRule</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Defines a single rule that determines how <a href="TrackingCameraBehavior.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior</code></a> reacts to nearby
+ maneuvers when the current position matches this rule.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.ManeuverRuleConfiguration.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverRuleConfiguration</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">A matched rule configuration holding a target value and the distance thresholds
+ that determine when the rule becomes active around a maneuver point.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.ManeuverRuleOptions.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ManeuverRuleOptions</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Defines a set of configurations specific to a <a href="TrackingCameraBehavior.ManeuverRule.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior.ManeuverRule</code></a>.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.SpeedBasedTiltEntry.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.SpeedBasedTiltEntry</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Definition of single speed-based tilt entry used in <a href="TrackingCameraBehavior.SpeedBasedTiltPolicyOptions.html" title="class in com.here.sdk.navigation"><code>TrackingCameraBehavior.SpeedBasedTiltPolicyOptions</code></a>.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.SpeedBasedTiltPolicyOptions.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.SpeedBasedTiltPolicyOptions</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Configuration for the speed-based tilt policy.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.SpeedBasedZoomPolicyOptions.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.SpeedBasedZoomPolicyOptions</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Configuration for computing zoom values from speed thresholds defined per road classification.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.SpeedThreshold.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.SpeedThreshold</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Defines a zoom value triggered when the vehicle reaches a specific speed.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.TiltPolicy.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.TiltPolicy</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Defines tilt behavior in different policy settings.</div>
+</div>
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrackingCameraBehavior.ZoomPolicy.html" title="class in com.here.sdk.navigation">TrackingCameraBehavior.ZoomPolicy</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="block">Defines zoom behavior in different policy settings.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="TrafficMergeRoadType.html" title="enum class in com.here.sdk.navigation">TrafficMergeRoadType</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab3">
 <div class="block">The type of road which is merging onto the current road.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab3"><a href="TrafficMergeSide.html" title="enum class in com.here.sdk.navigation">TrafficMergeSide</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab3">
+<div class="col-first even-row-color class-summary class-summary-tab3"><a href="TrafficMergeSide.html" title="enum class in com.here.sdk.navigation">TrafficMergeSide</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab3">
 <div class="block">The side from where the merging traffic is joining with the current highway.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrafficMergeWarning.html" title="class in com.here.sdk.navigation">TrafficMergeWarning</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrafficMergeWarning.html" title="class in com.here.sdk.navigation">TrafficMergeWarning</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">A class that provides warning for merging traffic.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab1"><a href="TrafficMergeWarningListener.html" title="interface in com.here.sdk.navigation">TrafficMergeWarningListener</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab1">Deprecated.
+<div class="col-first even-row-color class-summary class-summary-tab1"><a href="TrafficMergeWarningListener.html" title="interface in com.here.sdk.navigation">TrafficMergeWarningListener</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab1">Deprecated.
 <div class="deprecation-comment">Will be removed in v4.29.0.</div>
 </div>
-<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrafficMergeWarningOptions.html" title="class in com.here.sdk.navigation">TrafficMergeWarningOptions</a></div>
-<div class="col-last even-row-color class-summary class-summary-tab2">
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrafficMergeWarningOptions.html" title="class in com.here.sdk.navigation">TrafficMergeWarningOptions</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
 <div class="block">A class that provides traffic merge warning options.</div>
 </div>
-<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TrafficOnRouteColors.html" title="class in com.here.sdk.navigation">TrafficOnRouteColors</a></div>
-<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="col-first even-row-color class-summary class-summary-tab2"><a href="TrafficOnRouteColors.html" title="class in com.here.sdk.navigation">TrafficOnRouteColors</a></div>
+<div class="col-last even-row-color class-summary class-summary-tab2">
 <div class="block">This type contains colors used for the traffic with jam factor greater or equal to 4.0 on route
  ahead of the current location visualization.</div>
+</div>
+<div class="col-first odd-row-color class-summary class-summary-tab2"><a href="TransitionCameraBehavior.html" title="class in com.here.sdk.navigation">TransitionCameraBehavior</a></div>
+<div class="col-last odd-row-color class-summary class-summary-tab2">
+<div class="block">Provides a generic dynamic camera behavior that transitions between two pre-configured camera behaviors
+ based on lane detection and data consistency.</div>
 </div>
 <div class="col-first even-row-color class-summary class-summary-tab1"><a href="TruckRestrictionsWarningListener.html" title="interface in com.here.sdk.navigation">TruckRestrictionsWarningListener</a></div>
 <div class="col-last even-row-color class-summary class-summary-tab1">Deprecated.

@@ -79,8 +79,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ElectronicHorizonListener</span></div>
 <div class="block"><p>Provides a listener for receiving updates during execution of the <a href="ElectronicHorizonEngine.html#update(com.here.sdk.navigation.MapMatchedLocation)"><code>ElectronicHorizonEngine.update(com.here.sdk.navigation.MapMatchedLocation)</code></a> method.
- <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
- behaviors. Related APIs may change for new releases without a deprecation process.
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
  <p>Offline availability: This property is available online and offline.</div>
 </section>
 <section class="summary">
@@ -100,11 +99,8 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onElectronicHorizonUpdated(com.here.sdk.electronichorizon.ElectronicHorizonErrorCode,com.here.sdk.electronichorizon.ElectronicHorizonUpdate)" class="member-name-link">onElectronicHorizonUpdated</a><wbr>(<a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a>&nbsp;errorCode,
  <a href="ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;update)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called whenever the electronic horizon subsystem produces:
- 
- a new update,
- an error,
- </div>
+<div class="block">If multiple listeners are registered, callbacks are delivered sequentially, but their
+ order is not defined.</div>
 </div>
 </div>
 </div>
@@ -127,7 +123,9 @@ loadScripts(document, 'script');</script>
  <a href="ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a>&nbsp;errorCode,
  @Nullable
  <a href="ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;update)</span></div>
-<div class="block"><p>Called whenever the electronic horizon subsystem produces:
+<div class="block"><p>If multiple listeners are registered, callbacks are delivered sequentially, but their
+ order is not defined. Do not depend on one listener receiving an update before another.
+ Called whenever the electronic horizon subsystem produces:
  <ul>
  <li>a new update,</li>
  <li>an error,</li>
@@ -140,8 +138,7 @@ loadScripts(document, 'script');</script>
      <code>null</code> means no error.</dd>
 <dd><code>update</code> - <p>The update describing the current electronic horizon state.
      May be <code>null</code> if an update could not be produced.
-     <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
-     behaviors. Related APIs may change for new releases without a deprecation process.</dd>
+     <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</dd>
 </dl>
 </section>
 </li>

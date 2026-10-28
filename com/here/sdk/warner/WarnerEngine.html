@@ -187,11 +187,8 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onElectronicHorizonUpdated(com.here.sdk.electronichorizon.ElectronicHorizonErrorCode,com.here.sdk.electronichorizon.ElectronicHorizonUpdate)" class="member-name-link">onElectronicHorizonUpdated</a><wbr>(<a href="../electronichorizon/ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a>&nbsp;errorCode,
  <a href="../electronichorizon/ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;update)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Called whenever the electronic horizon subsystem produces:
- 
- a new update,
- an error,
- </div>
+<div class="block">If multiple listeners are registered, callbacks are delivered sequentially, but their
+ order is not defined.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#removeCustomWarningProvider(com.here.sdk.warner.CustomWarningProvider)" class="member-name-link">removeCustomWarningProvider</a><wbr>(<a href="CustomWarningProvider.html" title="interface in com.here.sdk.warner">CustomWarningProvider</a>&nbsp;customWarningProvider)</code></div>
@@ -616,7 +613,9 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
  <a href="../electronichorizon/ElectronicHorizonErrorCode.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonErrorCode</a>&nbsp;errorCode,
  @Nullable
  <a href="../electronichorizon/ElectronicHorizonUpdate.html" title="class in com.here.sdk.electronichorizon">ElectronicHorizonUpdate</a>&nbsp;update)</span></div>
-<div class="block"><p>Called whenever the electronic horizon subsystem produces:
+<div class="block"><p>If multiple listeners are registered, callbacks are delivered sequentially, but their
+ order is not defined. Do not depend on one listener receiving an update before another.
+ Called whenever the electronic horizon subsystem produces:
  <ul>
  <li>a new update,</li>
  <li>an error,</li>
@@ -631,8 +630,7 @@ implements <a href="../electronichorizon/ElectronicHorizonListener.html" title="
      <code>null</code> means no error.</dd>
 <dd><code>update</code> - <p>The update describing the current electronic horizon state.
      May be <code>null</code> if an update could not be produced.
-     <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
-     behaviors. Related APIs may change for new releases without a deprecation process.</dd>
+     <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</dd>
 </dl>
 </section>
 </li>

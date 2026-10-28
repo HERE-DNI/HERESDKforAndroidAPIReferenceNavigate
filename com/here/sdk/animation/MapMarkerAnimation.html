@@ -114,6 +114,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">Creates an animation of <a href="../mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a> based on provided keyframe track.</div>
 </div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.util.List,int)" class="member-name-link">MapMarkerAnimation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a>&gt;&nbsp;tracks,
+ int&nbsp;repeatCount)</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Creates an animation based on multiple keyframe tracks.</div>
+</div>
 </div>
 </section>
 </li>
@@ -142,13 +147,40 @@ loadScripts(document, 'script');</script>
  <a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a>&nbsp;track)</span>
                    throws <span class="exceptions"><a href="MapMarkerAnimation.InstantiationException.html" title="class in com.here.sdk.animation">MapMarkerAnimation.InstantiationException</a></span></div>
 <div class="block"><p>Creates an animation of <a href="../mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a> based on provided keyframe track.
- <p>Supports tracks created with <a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation"><code>MapItemKeyFrameTrack</code></a> 'moveTo*' methods.
- <p>For starting the animation see <a href="../mapview/MapMarker.html#startAnimation(com.here.sdk.animation.MapMarkerAnimation,com.here.sdk.animation.AnimationListener)"><code>MapMarker.startAnimation(com.here.sdk.animation.MapMarkerAnimation, com.here.sdk.animation.AnimationListener)</code></a>.</div>
+ <p>Supports tracks created with <a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation"><code>MapItemKeyFrameTrack</code></a> 'moveTo', 'scale' and 'opacity' methods.
+ <p>For starting the animation see <a href="../mapview/MapMarker.html#startAnimation(com.here.sdk.animation.MapMarkerAnimation,com.here.sdk.animation.AnimationListener)"><code>MapMarker.startAnimation(com.here.sdk.animation.MapMarkerAnimation, com.here.sdk.animation.AnimationListener)</code></a>
+ or <a href="../mapview/MapMarker3D.html#startAnimation(com.here.sdk.animation.MapMarkerAnimation,com.here.sdk.animation.AnimationListener)"><code>MapMarker3D.startAnimation(com.here.sdk.animation.MapMarkerAnimation, com.here.sdk.animation.AnimationListener)</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>track</code> - <p>The track holding the keyframes for the animation.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="MapMarkerAnimation.InstantiationException.html" title="class in com.here.sdk.animation">MapMarkerAnimation.InstantiationException</a></code> - <p>If the specified keyframe track cannot be used to create animation of a <a href="../mapview/MapMarker.html" title="class in com.here.sdk.mapview"><code>MapMarker</code></a>.</dd>
+<dd><code><a href="MapMarkerAnimation.InstantiationException.html" title="class in com.here.sdk.animation">MapMarkerAnimation.InstantiationException</a></code> - <p>If the specified keyframe track cannot be used to create animation of a marker.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(java.util.List,int)">
+<h3>MapMarkerAnimation</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">MapMarkerAnimation</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a>&gt;&nbsp;tracks,
+ int&nbsp;repeatCount)</span>
+                   throws <span class="exceptions"><a href="MapMarkerAnimation.InstantiationException.html" title="class in com.here.sdk.animation">MapMarkerAnimation.InstantiationException</a></span></div>
+<div class="block"><p>Creates an animation based on multiple keyframe tracks.
+ <p>Allows combining multiple property animations (e.g. scale and opacity)
+ into a single animation that plays them simultaneously.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>tracks</code> - <p>List of keyframe tracks for the animation. Must not be empty.</dd>
+<dd><code>repeatCount</code> - <p>Number of times to play the animation.
+     0 means repeat infinitely, 1 means play once, N means play N times.
+     Negative values are treated as 1.
+     The duration of one iteration is determined by the longest track.
+     Shorter tracks hold their final value until the iteration ends.
+     When repeating, all tracks restart together from their first keyframe
+     without interpolation from the previous iteration's last keyframe.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="MapMarkerAnimation.InstantiationException.html" title="class in com.here.sdk.animation">MapMarkerAnimation.InstantiationException</a></code> - <p>If the list of tracks is empty or any of the specified keyframe tracks
+     cannot be used to create animation of a marker.</dd>
 </dl>
 </section>
 </li>

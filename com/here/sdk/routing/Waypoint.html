@@ -390,7 +390,7 @@ loadScripts(document, 'script');</script>
  The resulting <code>Route</code> may contain this waypoint as a <code>RoutePlace</code> with a non-null <code>ChargingStation</code> member
  when the provided specifications indicate that a stop is required to charge the EV battery.
  <strong>Note:</strong>
- If [EVCarOptions.ensure_reachability] is not set as <code>true</code> and [ChargingStop.min_duration] is not provided,
+ If [ElectricVehicleOptions.ensure_reachability] is not set as <code>true</code> and [ChargingStop.min_duration] is not provided,
  route calculation may suggest a better charging stop instead of this stop.</div>
 </section>
 </li>
@@ -410,8 +410,7 @@ loadScripts(document, 'script');</script>
  <li>This feature is supported in transport modes of <a href="../transport/TransportMode.html#CAR"><code>TransportMode.CAR</code></a>, <a href="../transport/TransportMode.html#TAXI"><code>TransportMode.TAXI</code></a>, or
  <a href="../transport/TransportMode.html#TRUCK"><code>TransportMode.TRUCK</code></a>.</li>
  </ul>
- <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
- Related APIs may change for new releases without a deprecation process.</div>
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
 </section>
 </li>
 <li>

@@ -128,11 +128,25 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a map item position keyframe track.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#polylineProgress(java.util.List,com.here.sdk.animation.Easing,com.here.sdk.animation.KeyframeInterpolationMode)" class="member-name-link">polylineProgress</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ScalarKeyframe.html" title="class in com.here.sdk.animation">ScalarKeyframe</a>&gt;&nbsp;keyframes,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#opacity(java.util.List,com.here.sdk.animation.Easing,com.here.sdk.animation.KeyframeInterpolationMode)" class="member-name-link">opacity</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ScalarKeyframe.html" title="class in com.here.sdk.animation">ScalarKeyframe</a>&gt;&nbsp;keyframes,
  <a href="Easing.html" title="class in com.here.sdk.animation">Easing</a>&nbsp;easing,
  <a href="KeyframeInterpolationMode.html" title="enum class in com.here.sdk.animation">KeyframeInterpolationMode</a>&nbsp;interpolationMode)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates a keyframe track used to animate the opacity of a map item.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#polylineProgress(java.util.List,com.here.sdk.animation.Easing,com.here.sdk.animation.KeyframeInterpolationMode)" class="member-name-link">polylineProgress</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ScalarKeyframe.html" title="class in com.here.sdk.animation">ScalarKeyframe</a>&gt;&nbsp;keyframes,
+ <a href="Easing.html" title="class in com.here.sdk.animation">Easing</a>&nbsp;easing,
+ <a href="KeyframeInterpolationMode.html" title="enum class in com.here.sdk.animation">KeyframeInterpolationMode</a>&nbsp;interpolationMode)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates a keyframe track used to animate the progress of a polyline.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#scale(java.util.List,com.here.sdk.animation.Easing,com.here.sdk.animation.KeyframeInterpolationMode)" class="member-name-link">scale</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ScalarKeyframe.html" title="class in com.here.sdk.animation">ScalarKeyframe</a>&gt;&nbsp;keyframes,
+ <a href="Easing.html" title="class in com.here.sdk.animation">Easing</a>&nbsp;easing,
+ <a href="KeyframeInterpolationMode.html" title="enum class in com.here.sdk.animation">KeyframeInterpolationMode</a>&nbsp;interpolationMode)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates a keyframe track used to animate the scale of a map item.</div>
 </div>
 </div>
 </div>
@@ -194,6 +208,58 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>keyframes</code> - <p>The list of keyframes that specify how the polyline progress changes
      over time.</dd>
+<dd><code>easing</code> - <p>The easing to apply during keyframe interpolation.</dd>
+<dd><code>interpolationMode</code> - <p>The type of interpolation done between keyframe values.</dd>
+<dt>Returns:</dt>
+<dd><p>MapItemKeyFrameTrack instance.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="MapItemKeyFrameTrack.InstantiationException.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack.InstantiationException</a></code> - <p>If the supplied keyframe list is empty or first keyframe duration is not 0.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="scale(java.util.List,com.here.sdk.animation.Easing,com.here.sdk.animation.KeyframeInterpolationMode)">
+<h3>scale</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a></span>&nbsp;<span class="element-name">scale</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ScalarKeyframe.html" title="class in com.here.sdk.animation">ScalarKeyframe</a>&gt;&nbsp;keyframes,
+ @NonNull
+ <a href="Easing.html" title="class in com.here.sdk.animation">Easing</a>&nbsp;easing,
+ @NonNull
+ <a href="KeyframeInterpolationMode.html" title="enum class in com.here.sdk.animation">KeyframeInterpolationMode</a>&nbsp;interpolationMode)</span>
+                                  throws <span class="exceptions"><a href="MapItemKeyFrameTrack.InstantiationException.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack.InstantiationException</a></span></div>
+<div class="block"><p>Creates a keyframe track used to animate the scale of a map item.
+ <p>Each scalar keyframe specifies the scale value at key points of the animation.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>keyframes</code> - <p>The list of keyframes that specify how the scale changes over time.</dd>
+<dd><code>easing</code> - <p>The easing to apply during keyframe interpolation.</dd>
+<dd><code>interpolationMode</code> - <p>The type of interpolation done between keyframe values.</dd>
+<dt>Returns:</dt>
+<dd><p>MapItemKeyFrameTrack instance.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="MapItemKeyFrameTrack.InstantiationException.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack.InstantiationException</a></code> - <p>If the supplied keyframe list is empty or first keyframe duration is not 0.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="opacity(java.util.List,com.here.sdk.animation.Easing,com.here.sdk.animation.KeyframeInterpolationMode)">
+<h3>opacity</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="MapItemKeyFrameTrack.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack</a></span>&nbsp;<span class="element-name">opacity</span><wbr><span class="parameters">(@NonNull
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="ScalarKeyframe.html" title="class in com.here.sdk.animation">ScalarKeyframe</a>&gt;&nbsp;keyframes,
+ @NonNull
+ <a href="Easing.html" title="class in com.here.sdk.animation">Easing</a>&nbsp;easing,
+ @NonNull
+ <a href="KeyframeInterpolationMode.html" title="enum class in com.here.sdk.animation">KeyframeInterpolationMode</a>&nbsp;interpolationMode)</span>
+                                    throws <span class="exceptions"><a href="MapItemKeyFrameTrack.InstantiationException.html" title="class in com.here.sdk.animation">MapItemKeyFrameTrack.InstantiationException</a></span></div>
+<div class="block"><p>Creates a keyframe track used to animate the opacity of a map item.
+ <p>Each scalar keyframe specifies the opacity value (in the range [0.0, 1.0])
+ at key points of the animation. Values outside this range are clamped
+ by the map item when the animation is applied.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>keyframes</code> - <p>The list of keyframes that specify how the opacity changes over time.</dd>
 <dd><code>easing</code> - <p>The easing to apply during keyframe interpolation.</dd>
 <dd><code>interpolationMode</code> - <p>The type of interpolation done between keyframe values.</dd>
 <dt>Returns:</dt>

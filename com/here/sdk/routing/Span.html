@@ -220,6 +220,11 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The list of walk attributes on the span.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOffPreferredTruckNetworks()" class="member-name-link">isOffPreferredTruckNetworks</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets whether this span leaves the preferred (approved) truck network the route was requested for.</div>
+</div>
 </div>
 </div>
 </div>
@@ -563,6 +568,22 @@ loadScripts(document, 'script');</script>
 <dd><p>The list of indexes to <a href="Section.html#getNoThroughRestrictions()"><code>Section.getNoThroughRestrictions()</code></a> the parent section owns.
      In case the list is not empty, the user must judge all the indexed sdk routing noThroughRestriction's
      carefully before proceeding.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="isOffPreferredTruckNetworks()">
+<h3>isOffPreferredTruckNetworks</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name">isOffPreferredTruckNetworks</span>()</div>
+<div class="block"><p>Gets whether this span leaves the preferred (approved) truck network the route was requested for.
+ <p>Relevant only for routes calculated with <a href="../transport/TransportMode.html#NETWORK_RESTRICTED_TRUCK"><code>TransportMode.NETWORK_RESTRICTED_TRUCK</code></a>
+ and <a href="../transport/VehicleSpecification.html#preferredTruckNetworks"><code>VehicleSpecification.preferredTruckNetworks</code></a>. A value of <code>true</code> means the span has a road that is not part
+ of any of the requested networks.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd><p>Indicates whether this span leaves the preferred (approved) truck network the route was
+     requested for.</dd>
 </dl>
 </section>
 </li>

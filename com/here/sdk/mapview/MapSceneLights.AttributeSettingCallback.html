@@ -125,9 +125,10 @@ loadScripts(document, 'script');</script>
 <div class="block"><p>This callback function allows handling errors that occur during the setting of light attributes.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>setLightError</code> - <p>The cause for the failure when setting the light attributes, or <code>null</code> if no error occurred.
-     <p>Note: The error code <code>NO_LIGHTS</code> may be returned when attempting to set light attributes in map schemes
-     that do not support lights, for instance <code>road.network</code> map scheme.
+<dd><code>setLightError</code> - <p>The cause for the failure when setting the light attributes, or <code>null</code>
+     if no error occurred.
+     <p>Note: The error code <a href="MapSceneLights.AttributeSettingError.html#NO_LIGHTS"><code>MapSceneLights.AttributeSettingError.NO_LIGHTS</code></a> may be returned when attempting to set light attributes in
+     map schemes not supporting lights, for instance <a href="MapScheme.html#ROAD_NETWORK_DAY"><code>MapScheme.ROAD_NETWORK_DAY</code></a> map scheme.
      <p>Please refer to the error code documentation for further details on error handling.</dd>
 </dl>
 </section>

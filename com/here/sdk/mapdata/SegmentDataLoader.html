@@ -88,8 +88,7 @@ loadScripts(document, 'script');</script>
  <p><strong>Note:</strong> Loading map data can be time-consuming, so <code>SegmentDataLoader</code> can be used
  in a background thread to avoid blocking the main thread. However, this class is not
  thread-safe, and each instance should be used exclusively by a single thread.
- <p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
- behaviors. Related APIs may change for new releases without a deprecation process.</div>
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -239,8 +238,10 @@ loadScripts(document, 'script');</script>
  Returns an empty list in case no segments could be found around the coordinates.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>The location to explore</dd>
-<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.</dd>
+<dd><code>coordinates</code> - <p>The location to explore
+     The center coordinate around which to search.</dd>
+<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.
+     The radius is measured in meters.</dd>
 <dt>Returns:</dt>
 <dd><p>The list of segments around the given position. The segments are sorted by distance
      from the point.
@@ -262,8 +263,10 @@ loadScripts(document, 'script');</script>
  Returns an empty list in case no segments could be found around the coordinates.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>coordinates</code> - <p>The location to explore.</dd>
-<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.</dd>
+<dd><code>coordinates</code> - <p>The location to explore.
+     The center coordinate around which to search.</dd>
+<dd><code>radiusInMeters</code> - <p>The radius of the search. Only values between 1m and 5000m are accepted.
+     The radius is measured in meters.</dd>
 <dt>Returns:</dt>
 <dd><p>The list of segments around the given position. The segments are sorted by distance
      from the point.

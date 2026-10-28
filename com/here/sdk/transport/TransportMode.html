@@ -117,29 +117,33 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">
 <div class="block">The calculated route is optimized for cars.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#PEDESTRIAN" class="member-name-link">PEDESTRIAN</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#NETWORK_RESTRICTED_TRUCK" class="member-name-link">NETWORK_RESTRICTED_TRUCK</a></code></div>
 <div class="col-last odd-row-color">
+<div class="block">Route calculation for oversized trucks that are approved to use specific road networks only.</div>
+</div>
+<div class="col-first even-row-color"><code><a href="#PEDESTRIAN" class="member-name-link">PEDESTRIAN</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">The calculated route is optimized for pedestrians.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#PRIVATE_BUS" class="member-name-link">PRIVATE_BUS</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="#PRIVATE_BUS" class="member-name-link">PRIVATE_BUS</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Route calculation for private buses.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#PUBLIC_TRANSIT" class="member-name-link">PUBLIC_TRANSIT</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="#PUBLIC_TRANSIT" class="member-name-link">PUBLIC_TRANSIT</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">The calculated route is optimized for public transit.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#SCOOTER" class="member-name-link">SCOOTER</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="#SCOOTER" class="member-name-link">SCOOTER</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">The calculated route is optimized for scooters.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#TAXI" class="member-name-link">TAXI</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="#TAXI" class="member-name-link">TAXI</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">The taxi transport mode takes into account tax restricted streets as well as streets reserved for
  exclusive taxi access.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#TRUCK" class="member-name-link">TRUCK</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code><a href="#TRUCK" class="member-name-link">TRUCK</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">The calculated route is optimized for trucks.</div>
 </div>
 </div>
@@ -242,9 +246,7 @@ the order they are declared.</div>
 <div class="block"><p>The taxi transport mode takes into account tax restricted streets as well as streets reserved for
  exclusive taxi access. Note that roads that are restricted or reserved for taxis are avoided, unless
  a waypoint is set on such a road - as this may indicate to pick-up or to drop-off a passenger.
- <p><strong>Note:</strong> This is a beta release of this transport mode, so there could be a few bugs and unexpected
- behaviors. Related APIs may change for new releases or even become unsupported, without a
- deprecation process.</div>
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
 </section>
 </li>
 <li>
@@ -263,6 +265,20 @@ the order they are declared.</div>
 <div class="block"><p>Route calculation for private buses.
  Denotes those vehicles operated by private transport company.
  This transport mode does not have the access to the bus-only lane/road.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="NETWORK_RESTRICTED_TRUCK">
+<h3>NETWORK_RESTRICTED_TRUCK</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="TransportMode.html" title="enum class in com.here.sdk.transport">TransportMode</a></span>&nbsp;<span class="element-name">NETWORK_RESTRICTED_TRUCK</span></div>
+<div class="block"><p>Route calculation for oversized trucks that are approved to use specific road networks only.
+ <p>This mode is conceptually distinct from <code>TRUCK</code>: it targets vehicle configurations that exceed
+ the legal height/weight limits for general truck traffic, such as High Productivity Motor Vehicles
+ (HPMV) in New Zealand or B-Double and Performance-Based Standards (PBS) networks in Australia.
+ <code>TRUCK</code> is not suitable for these vehicles, as the restrictions governing
+ their operation are typically not signposted. Use this mode instead to be guided
+ only on roads approved for your specific network-restricted configuration.
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</div>
 </section>
 </li>
 </ul>

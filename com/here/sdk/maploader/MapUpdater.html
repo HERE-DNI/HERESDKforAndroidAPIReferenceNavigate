@@ -92,7 +92,7 @@ loadScripts(document, 'script');</script>
  MapUpdater also aligns previously downloaded content with <code>LayerConfiguration</code> changes made via <code>SDKOptions</code>.
  <p>Note that patching (also called &quot;incremental updates&quot;) is only supported for up to 8 versions. For example, if an update started
  with version x.y.0 then it will be supported till x.y.8 and stopped starting with x.y.9.
- Usually, OCM updates are released weekly. Incremental updates will stop after 2 months and a full update is performed instead.
+ Usually, map updates are released weekly. Incremental updates will stop after 2 months and a full update is performed instead.
  <p>In case of an error, the previous map data remains available for use. It is only replaced
  after new map data has been successfully downloaded. Regions that fail to update
  must be retried in a new call. Paused updates can be resumed later.

@@ -128,10 +128,20 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the currently set camera tilt with axis parallel to the ground.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNormalizedPrincipalPoint()" class="member-name-link">getNormalizedPrincipalPoint</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="CameraTransitionMode.html" title="enum class in com.here.sdk.navigation">CameraTransitionMode</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCameraTransitionMode()" class="member-name-link">getCameraTransitionMode</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the currently set camera transition mode.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNormalizedPrincipalPoint()" class="member-name-link">getNormalizedPrincipalPoint</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the currently set normalized principal point to be used during navigation.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getViewRectangle()" class="member-name-link">getViewRectangle</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the current view rectangle, if it's set.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getZoom()" class="member-name-link">getZoom</a>()</code></div>
@@ -149,9 +159,19 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <div class="block">Sets camera tilt with axis parallel to the ground.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)" class="member-name-link">setNormalizedPrincipalPoint</a><wbr>(<a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a>&nbsp;value)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCameraTransitionMode(com.here.sdk.navigation.CameraTransitionMode)" class="member-name-link">setCameraTransitionMode</a><wbr>(<a href="CameraTransitionMode.html" title="enum class in com.here.sdk.navigation">CameraTransitionMode</a>&nbsp;value)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets how the camera starts following the current position when this camera behavior becomes active.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)" class="member-name-link">setNormalizedPrincipalPoint</a><wbr>(<a href="../core/Anchor2D.html" title="class in com.here.sdk.core">Anchor2D</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets a normalized principal point to be used during navigation.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setViewRectangle(com.here.sdk.core.Rectangle2D)" class="member-name-link">setViewRectangle</a><wbr>(<a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets a view rectangle.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setZoom(com.here.sdk.mapview.MapMeasure)" class="member-name-link">setZoom</a><wbr>(<a href="../mapview/MapMeasure.html" title="class in com.here.sdk.mapview">MapMeasure</a>&nbsp;value)</code></div>
@@ -313,6 +333,81 @@ implements <a href="CameraBehavior.html" title="interface in com.here.sdk.naviga
 <dd><code><a href="CameraBehavior.html#setNormalizedPrincipalPoint(com.here.sdk.core.Anchor2D)">setNormalizedPrincipalPoint</a></code>&nbsp;in interface&nbsp;<code><a href="CameraBehavior.html" title="interface in com.here.sdk.navigation">CameraBehavior</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>value</code> - <p>The normalized principal point.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getViewRectangle()">
+<h3>getViewRectangle</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a></span>&nbsp;<span class="element-name">getViewRectangle</span>()</div>
+<div class="block"><p>Gets the current view rectangle, if it's set.
+ <p>Defines a sub-space of the screen that the behavior should consider
+ for camera updates. Using a view rectangle keeps the camera positioning consistent
+ across different screen types and orientations without per-screen principal point
+ adjustments.
+ Defaults to <code>null</code>. If not set, it uses the viewport bounds of the underlying map view.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="CameraBehavior.html#getViewRectangle()">getViewRectangle</a></code>&nbsp;in interface&nbsp;<code><a href="CameraBehavior.html" title="interface in com.here.sdk.navigation">CameraBehavior</a></code></dd>
+<dt>Returns:</dt>
+<dd><p>The view rectangle for camera updates.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setViewRectangle(com.here.sdk.core.Rectangle2D)">
+<h3>setViewRectangle</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setViewRectangle</span><wbr><span class="parameters">(@Nullable
+ <a href="../core/Rectangle2D.html" title="class in com.here.sdk.core">Rectangle2D</a>&nbsp;value)</span></div>
+<div class="block"><p>Sets a view rectangle.
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
+ <p>Defines a sub-space of the screen that the behavior should consider
+ for camera updates. Using a view rectangle keeps the camera positioning consistent
+ across different screen types and orientations without per-screen principal point
+ adjustments.
+ Defaults to <code>null</code>. If not set, it uses the viewport bounds of the underlying map view.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="CameraBehavior.html#setViewRectangle(com.here.sdk.core.Rectangle2D)">setViewRectangle</a></code>&nbsp;in interface&nbsp;<code><a href="CameraBehavior.html" title="interface in com.here.sdk.navigation">CameraBehavior</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>value</code> - <p>The view rectangle for camera updates.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCameraTransitionMode()">
+<h3>getCameraTransitionMode</h3>
+<div class="member-signature"><span class="annotations">@NonNull
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="CameraTransitionMode.html" title="enum class in com.here.sdk.navigation">CameraTransitionMode</a></span>&nbsp;<span class="element-name">getCameraTransitionMode</span>()</div>
+<div class="block"><p>Gets the currently set camera transition mode.
+ <p>Use <a href="CameraTransitionMode.html#INSTANT"><code>CameraTransitionMode.INSTANT</code></a> to skip the camera animation, for example
+ when returning from a route overview to guidance.
+ The default value is <a href="CameraTransitionMode.html#ANIMATED"><code>CameraTransitionMode.ANIMATED</code></a>.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="CameraBehavior.html#getCameraTransitionMode()">getCameraTransitionMode</a></code>&nbsp;in interface&nbsp;<code><a href="CameraBehavior.html" title="interface in com.here.sdk.navigation">CameraBehavior</a></code></dd>
+<dt>Returns:</dt>
+<dd><p>Defines how the camera starts following the current position when this camera
+     behavior becomes active.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setCameraTransitionMode(com.here.sdk.navigation.CameraTransitionMode)">
+<h3>setCameraTransitionMode</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCameraTransitionMode</span><wbr><span class="parameters">(@NonNull
+ <a href="CameraTransitionMode.html" title="enum class in com.here.sdk.navigation">CameraTransitionMode</a>&nbsp;value)</span></div>
+<div class="block"><p>Sets how the camera starts following the current position when this camera behavior becomes active.
+ <p>Use <a href="CameraTransitionMode.html#INSTANT"><code>CameraTransitionMode.INSTANT</code></a> to skip the camera animation, for example
+ when returning from a route overview to guidance.
+ The default value is <a href="CameraTransitionMode.html#ANIMATED"><code>CameraTransitionMode.ANIMATED</code></a>.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="CameraBehavior.html#setCameraTransitionMode(com.here.sdk.navigation.CameraTransitionMode)">setCameraTransitionMode</a></code>&nbsp;in interface&nbsp;<code><a href="CameraBehavior.html" title="interface in com.here.sdk.navigation">CameraBehavior</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>value</code> - <p>Defines how the camera starts following the current position when this camera
+     behavior becomes active.</dd>
 </dl>
 </section>
 </li>

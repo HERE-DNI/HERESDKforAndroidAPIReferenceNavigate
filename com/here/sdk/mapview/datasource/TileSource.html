@@ -76,6 +76,10 @@ loadScripts(document, 'script');</script>
 <dt>All Known Subinterfaces:</dt>
 <dd><code><a href="LineTileSource.html" title="interface in com.here.sdk.mapview.datasource">LineTileSource</a></code>, <code><a href="PointTileSource.html" title="interface in com.here.sdk.mapview.datasource">PointTileSource</a></code>, <code><a href="PolygonTileSource.html" title="interface in com.here.sdk.mapview.datasource">PolygonTileSource</a></code>, <code><a href="RasterTileSource.html" title="interface in com.here.sdk.mapview.datasource">RasterTileSource</a></code></dd>
 </dl>
+<dl class="notes">
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="MapTileDataSource.html" title="class in com.here.sdk.mapview.datasource">MapTileDataSource</a></code></dd>
+</dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">TileSource</span></div>
 <div class="block"><p>A source of tiles.
@@ -101,7 +105,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="TileSource.Listener.html" class="type-name-link" title="interface in com.here.sdk.mapview.datasource">TileSource.Listener</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Listener of <a href="TileSource.html" title="interface in com.here.sdk.mapview.datasource"><code>TileSource</code></a> events.</div>
+<div class="block">Listener to receive <a href="TileSource.html" title="interface in com.here.sdk.mapview.datasource"><code>TileSource</code></a> events.</div>
 </div>
 <div class="col-first even-row-color"><code>static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="TileSource.LoadTileRequestHandle.html" class="type-name-link" title="interface in com.here.sdk.mapview.datasource">TileSource.LoadTileRequestHandle</a></code></div>
@@ -226,7 +230,7 @@ loadScripts(document, 'script');</script>
  <p>At least one level must be available for this to be used as a source of data.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd><p>The storage levels available for this data source. Supported range [0, 31].</dd>
+<dd><p>The storage levels available for this data source.</dd>
 </dl>
 </section>
 </li>

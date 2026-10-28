@@ -76,8 +76,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ElectronicHorizonDataLoaderStatusListener</span></div>
 <div class="block"><p>Provides a listener for status updates from the <a href="ElectronicHorizonDataLoader.html#loadData(com.here.sdk.electronichorizon.ElectronicHorizonUpdate)"><code>ElectronicHorizonDataLoader.loadData(com.here.sdk.electronichorizon.ElectronicHorizonUpdate)</code></a> method.
  The listener receives the current state for different levels of the paths as <a href="ElectronicHorizonDataLoadedStatus.html" title="enum class in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoadedStatus</code></a>.
- <p>Note: This is a <strong>beta</strong> release of this feature, so there could be a few bugs and unexpected behaviors.
- Related APIs may change for new releases without a deprecation process.
+ <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.
  <p>Offline availability: This property is available online and offline.</div>
 </section>
 <section class="summary">
@@ -96,7 +95,8 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#onElectronicHorizonDataLoaderStatusUpdated(java.util.Map)" class="member-name-link">onElectronicHorizonDataLoaderStatusUpdated</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="ElectronicHorizonDataLoadedStatus.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoadedStatus</a>&gt;&nbsp;electronicHorizonDataLoaderStatuses)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Called whenever there is a change in the status of the loaded data from <a href="ElectronicHorizonDataLoader.html" title="class in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoader</code></a>.</div>
+<div class="block">If multiple listeners are registered, callbacks are delivered sequentially, but their
+ order is not defined.</div>
 </div>
 </div>
 </div>
@@ -117,7 +117,9 @@ loadScripts(document, 'script');</script>
 <h3>onElectronicHorizonDataLoaderStatusUpdated</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">onElectronicHorizonDataLoaderStatusUpdated</span><wbr><span class="parameters">(@NonNull
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="ElectronicHorizonDataLoadedStatus.html" title="enum class in com.here.sdk.electronichorizon">ElectronicHorizonDataLoadedStatus</a>&gt;&nbsp;electronicHorizonDataLoaderStatuses)</span></div>
-<div class="block"><p>Called whenever there is a change in the status of the loaded data from <a href="ElectronicHorizonDataLoader.html" title="class in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoader</code></a>.</div>
+<div class="block"><p>If multiple listeners are registered, callbacks are delivered sequentially, but their
+ order is not defined. Do not depend on one listener receiving a status before another.
+ Called whenever there is a change in the status of the loaded data from <a href="ElectronicHorizonDataLoader.html" title="class in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoader</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>electronicHorizonDataLoaderStatuses</code> - <p>The updated statuses of the loaded data from <a href="ElectronicHorizonDataLoader.html" title="class in com.here.sdk.electronichorizon"><code>ElectronicHorizonDataLoader</code></a>.
